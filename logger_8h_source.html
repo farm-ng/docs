@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">// The header format is a {fmt}-style format string that may include the</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">//  named arguments {level}, {text}, {file}, {line}, {function}, {time},</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">//  {time_ms}.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfarm__ng_1_1_stream_logger.html#aedcf6a971c5ad0f759f71ceca8417f39">setHeaderFormat</a>(std::string <span class="keyword">const</span>&amp; <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfarm__ng_1_1_stream_logger.html#aedcf6a971c5ad0f759f71ceca8417f39">setHeaderFormat</a>(std::string <span class="keyword">const</span>&amp; str);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::string <a class="code" href="classfarm__ng_1_1_stream_logger.html#a127ba73c679243f2882cce005a91fc1a">getHeaderFormat</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// Set the runtime log level</span></div>
@@ -155,10 +155,10 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordtype">int</span> line,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      std::string <span class="keyword">const</span>&amp; <span class="keyword">function</span>,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      std::string <span class="keyword">const</span>&amp; message,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      T&amp;&amp;... <a class="code" href="namespacecamera__client_1_1main.html#aa3e5bfcb0272e3b86f360028f85de921">args</a>) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      T&amp;&amp;... args) {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (log_level_ &lt;= log_level) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      writeHeader(log_level, header_text, file, line, <span class="keyword">function</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      write(<a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(message, std::forward&lt;T&gt;(<a class="code" href="namespacecamera__client_1_1main.html#aa3e5bfcb0272e3b86f360028f85de921">args</a>)...));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      write(<a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(message, std::forward&lt;T&gt;(args)...));</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      flush();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      std::string <span class="keyword">const</span>&amp; file,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordtype">int</span> line,</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      std::string <span class="keyword">const</span>&amp; <span class="keyword">function</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> write(std::string <span class="keyword">const</span>&amp; <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> write(std::string <span class="keyword">const</span>&amp; str);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> flush();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  std::string header_format_ = <span class="stringliteral">&quot;[FARM {text} in {file}:{line}]&quot;</span>;</div>
@@ -431,7 +431,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    std::string <span class="keyword">const</span>&amp; file,</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">int</span> line,</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    std::string <span class="keyword">const</span>&amp; func,</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    std::string <span class="keyword">const</span>&amp; <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>) -&gt; decltype(container[index]) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    std::string <span class="keyword">const</span>&amp; str) -&gt; decltype(container[index]) {</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">if</span> (index &gt;= container.size()) {</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a25f48b6633a949e7f8bfa3dc708b41b0">log</a>(</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        farm_ng::LogLevel::critical,</div>
@@ -445,7 +445,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        file,</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        line,</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        func,</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        str);</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="format_8h.html#ab1a749dfd7206da5a259a7ff47e6dc78">FARM_IMPL_ABORT</a>();</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordflow">return</span> container[index];</div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    std::string <span class="keyword">const</span>&amp; file,</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordtype">int</span> line,</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    std::string <span class="keyword">const</span>&amp; func,</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    std::string <span class="keyword">const</span>&amp; <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>) -&gt; decltype(*(container.find(key))) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    std::string <span class="keyword">const</span>&amp; str) -&gt; decltype(*(container.find(key))) {</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keyword">auto</span> it = container.find(key);</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordflow">if</span> (it == container.end()) {</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a25f48b6633a949e7f8bfa3dc708b41b0">log</a>(</div>
@@ -475,7 +475,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        file,</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        line,</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        func,</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        str);</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="format_8h.html#ab1a749dfd7206da5a259a7ff47e6dc78">FARM_IMPL_ABORT</a>();</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">return</span> *it;</div>
@@ -492,7 +492,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    std::string <span class="keyword">const</span>&amp; file,</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">int</span> line,</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    std::string <span class="keyword">const</span>&amp; func,</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    std::string <span class="keyword">const</span>&amp; <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    std::string <span class="keyword">const</span>&amp; str) {</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> [iterator, success] = map.insert({key, value});</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="keywordflow">if</span> (!success) {</div>
@@ -509,7 +509,7 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        file,</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        line,</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        func,</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <a class="code" href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">str</a>);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        str);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <a class="code" href="format_8h.html#ab1a749dfd7206da5a259a7ff47e6dc78">FARM_IMPL_ABORT</a>();</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  }</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keywordflow">return</span> iterator;</div>
@@ -688,7 +688,6 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="ttc" id="anamespacefarm__ng_html_ad6d4877059522f6ccddff4e1970ded92"><div class="ttname"><a href="namespacefarm__ng.html#ad6d4877059522f6ccddff4e1970ded92">farm_ng::stringFromLogLevel</a></div><div class="ttdeci">std::string stringFromLogLevel(LogLevel level)</div><div class="ttdef"><b>Definition:</b> logger.cpp:21</div></div>
 <div class="ttc" id="aformat_8h_html_a433412d321d236f0533bf9f9011fe0c0"><div class="ttname"><a href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a></div><div class="ttdeci">#define FARM_FORMAT(...)</div><div class="ttdoc">Formats the cstr using the libfmt library.</div><div class="ttdef"><b>Definition:</b> format.h:125</div></div>
 <div class="ttc" id="anamespacefarm__ng_html"><div class="ttname"><a href="namespacefarm__ng.html">farm_ng</a></div><div class="ttdef"><b>Definition:</b> backtrace.cpp:99</div></div>
-<div class="ttc" id="anamespacecamera__client_1_1main_html_aa3e5bfcb0272e3b86f360028f85de921"><div class="ttname"><a href="namespacecamera__client_1_1main.html#aa3e5bfcb0272e3b86f360028f85de921">camera_client.main.args</a></div><div class="ttdeci">args</div><div class="ttdef"><b>Definition:</b> main.py:71</div></div>
 <div class="ttc" id="astructfarm__ng_1_1_error_detail_html"><div class="ttname"><a href="structfarm__ng_1_1_error_detail.html">farm_ng::ErrorDetail</a></div><div class="ttdef"><b>Definition:</b> logger.h:328</div></div>
 <div class="ttc" id="anamespacefarm__ng_html_aabe92270562561657f2b24f670a56b58"><div class="ttname"><a href="namespacefarm__ng.html#aabe92270562561657f2b24f670a56b58">farm_ng::FARM_ENUM</a></div><div class="ttdeci">FARM_ENUM(LogLevel, int,((trace, 0),(debug, 1),(info, 2),(warning, 3),(error, 4),(critical, 5)))</div></div>
 <div class="ttc" id="aclassfarm__ng_1_1_stream_logger_html_abce4813deba2bbf0831d70f5e4b1ec98"><div class="ttname"><a href="classfarm__ng_1_1_stream_logger.html#abce4813deba2bbf0831d70f5e4b1ec98">farm_ng::StreamLogger::kDefaultLogLevel</a></div><div class="ttdeci">static const LogLevel kDefaultLogLevel</div><div class="ttdef"><b>Definition:</b> logger.h:41</div></div>
@@ -696,7 +695,6 @@ $(document).ready(function(){initNavTree('logger_8h_source.html',''); initResiza
 <div class="ttc" id="aclassfarm__ng_1_1_stream_logger_html_a127ba73c679243f2882cce005a91fc1a"><div class="ttname"><a href="classfarm__ng_1_1_stream_logger.html#a127ba73c679243f2882cce005a91fc1a">farm_ng::StreamLogger::getHeaderFormat</a></div><div class="ttdeci">std::string getHeaderFormat() const</div><div class="ttdef"><b>Definition:</b> logger.cpp:30</div></div>
 <div class="ttc" id="astructfarm__ng_1_1details_1_1_unwrap_impl_html"><div class="ttname"><a href="structfarm__ng_1_1details_1_1_unwrap_impl.html">farm_ng::details::UnwrapImpl</a></div><div class="ttdef"><b>Definition:</b> logger.h:430</div></div>
 <div class="ttc" id="astructfarm__ng_1_1_error_detail_html_ad21d388c5b6669dc2ccad72be33947d1"><div class="ttname"><a href="structfarm__ng_1_1_error_detail.html#ad21d388c5b6669dc2ccad72be33947d1">farm_ng::ErrorDetail::line</a></div><div class="ttdeci">int line</div><div class="ttdef"><b>Definition:</b> logger.h:330</div></div>
-<div class="ttc" id="anamespacecamera__client_1_1main_html_a6da7740dd0bfea81babf0aafb55e40ed"><div class="ttname"><a href="namespacecamera__client_1_1main.html#a6da7740dd0bfea81babf0aafb55e40ed">camera_client.main.str</a></div><div class="ttdeci">str</div><div class="ttdef"><b>Definition:</b> main.py:69</div></div>
 <div class="ttc" id="aclassfarm__ng_1_1_stream_logger_html_a25f48b6633a949e7f8bfa3dc708b41b0"><div class="ttname"><a href="classfarm__ng_1_1_stream_logger.html#a25f48b6633a949e7f8bfa3dc708b41b0">farm_ng::StreamLogger::log</a></div><div class="ttdeci">void log(LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function)</div><div class="ttdef"><b>Definition:</b> logger.cpp:35</div></div>
 <div class="ttc" id="aclassfarm__ng_1_1details_1_1_max_metric_html"><div class="ttname"><a href="classfarm__ng_1_1details_1_1_max_metric.html">farm_ng::details::MaxMetric</a></div><div class="ttdef"><b>Definition:</b> logger.h:279</div></div>
 <div class="ttc" id="anamespacefarm__ng_1_1details_html_ad39361767f6713f0709a35b810d7554d"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#ad39361767f6713f0709a35b810d7554d">farm_ng::details::checkedGetFromAssociativeContainer</a></div><div class="ttdeci">auto checkedGetFromAssociativeContainer(TContainer &amp;container, TKey const &amp;key, char const *container_cstr, char const *key_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str) -&gt; decltype(*(container.find(key)))</div><div class="ttdef"><b>Definition:</b> logger.h:366</div></div>

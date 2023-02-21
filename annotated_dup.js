@@ -1,7 +1,5 @@
 var annotated_dup =
 [
-    [ "camera_client", "namespacecamera__client.html", null ],
-    [ "camera_pipeline", "namespacecamera__pipeline.html", "namespacecamera__pipeline" ],
     [ "canbus", "namespacecanbus.html", "namespacecanbus" ],
     [ "ceres", "namespaceceres.html", "namespaceceres" ],
     [ "core", "namespacecore.html", "namespacecore" ],
@@ -10,7 +8,6 @@ var annotated_dup =
     [ "oak", "namespaceoak.html", "namespaceoak" ],
     [ "service_client", "namespaceservice__client.html", "namespaceservice__client" ],
     [ "sophus", "namespacesophus.html", "namespacesophus" ],
-    [ "tests", "namespacetests.html", "namespacetests" ],
     [ "ErrorTag", "struct_error_tag.html", null ],
     [ "Foo", "struct_foo.html", "struct_foo" ],
     [ "Garage", "struct_garage.html", "struct_garage" ],

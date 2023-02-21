@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['camera_5fclient_1779',['camera_client',['../namespaceoak_1_1camera__client.html',1,'oak']]],
-  ['oak_1780',['oak',['../namespaceoak.html',1,'']]]
+  ['affine_5fcamera_1722',['affine_camera',['../namespacesophus_1_1affine__camera.html',1,'sophus']]],
+  ['brown_5fconrady_5fcamera_1723',['brown_conrady_camera',['../namespacesophus_1_1brown__conrady__camera.html',1,'sophus']]],
+  ['complex_1724',['complex',['../namespacesophus_1_1complex.html',1,'sophus']]],
+  ['cse_5fcodegen_1725',['cse_codegen',['../namespacesophus_1_1cse__codegen.html',1,'sophus']]],
+  ['detail_1726',['detail',['../namespacesophus_1_1detail.html',1,'sophus']]],
+  ['dual_5fquaternion_1727',['dual_quaternion',['../namespacesophus_1_1dual__quaternion.html',1,'sophus']]],
+  ['inverse_5fdepth_1728',['inverse_depth',['../namespacesophus_1_1inverse__depth.html',1,'sophus']]],
+  ['jet_5fhelpers_1729',['jet_helpers',['../namespacesophus_1_1jet__helpers.html',1,'sophus']]],
+  ['kannala_5fbrandt_5fcamera_1730',['kannala_brandt_camera',['../namespacesophus_1_1kannala__brandt__camera.html',1,'sophus']]],
+  ['matrix_1731',['matrix',['../namespacesophus_1_1matrix.html',1,'sophus']]],
+  ['quaternion_1732',['quaternion',['../namespacesophus_1_1quaternion.html',1,'sophus']]],
+  ['se2_1733',['se2',['../namespacesophus_1_1se2.html',1,'sophus']]],
+  ['se3_1734',['se3',['../namespacesophus_1_1se3.html',1,'sophus']]],
+  ['service_5fclient_1735',['service_client',['../namespaceservice__client.html',1,'']]],
+  ['so2_1736',['so2',['../namespacesophus_1_1so2.html',1,'sophus']]],
+  ['so3_1737',['so3',['../namespacesophus_1_1so3.html',1,'sophus']]],
+  ['sophus_1738',['sophus',['../namespacesophus.html',1,'']]]
 ];

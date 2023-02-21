@@ -26,18 +26,6 @@ var NAVTREE =
     [ "FARM_ENUM", "md_projects_farm-ng-core_cpp_farm_ng_core_enum__r_e_a_d_m_e.html", [
       [ "Examples", "md_projects_farm-ng-core_cpp_farm_ng_core_enum__r_e_a_d_m_e.html#autotoc_md1", null ]
     ] ],
-    [ "Amiga Brain Camera example", "md_projects_farm-ng-amiga_py_examples_camera_client__r_e_a_d_m_e.html", null ],
-    [ "farm-ng-amiga file read example", "md_projects_farm-ng-amiga_py_examples_file_reader__r_e_a_d_m_e.html", [
-      [ "Setup", "md_projects_farm-ng-amiga_py_examples_file_reader__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "Install", "md_projects_farm-ng-amiga_py_examples_file_reader__r_e_a_d_m_e.html#autotoc_md5", null ],
-      [ "Run example", "md_projects_farm-ng-amiga_py_examples_file_reader__r_e_a_d_m_e.html#autotoc_md6", null ]
-    ] ],
-    [ "farm-ng-amiga CAN file reader example", "md_projects_farm-ng-amiga_py_examples_file_reader_can__r_e_a_d_m_e.html", [
-      [ "Setup", "md_projects_farm-ng-amiga_py_examples_file_reader_can__r_e_a_d_m_e.html#autotoc_md8", null ],
-      [ "Install", "md_projects_farm-ng-amiga_py_examples_file_reader_can__r_e_a_d_m_e.html#autotoc_md9", null ],
-      [ "Run example", "md_projects_farm-ng-amiga_py_examples_file_reader_can__r_e_a_d_m_e.html#autotoc_md10", null ]
-    ] ],
-    [ "Examples Amiga Brain", "md_projects_farm-ng-amiga_py_examples__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -76,19 +64,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_sophus_2cpp_2sophus_2common_2concept__utils_8h.html",
-"class_eigen_1_1_map_3_01sophus_1_1_cartesian_3_01_t_scalar_00_01k_m_01_4_01_4.html#ae261532360ce7146cf3b0270a14f9926",
-"class_eigen_1_1_map_3_01sophus_1_1_so3_3_01_t_scalar_01_4_01_4.html#a30bca9a939343bf15c5f53bad7838901",
-"classsophus_1_1_basis_spline.html#ac957ad83c2a819f26a2ed74d32f4ed0c",
-"classsophus_1_1_lie_group_tests.html#ad3f06fdd325041da01944c8c1b1b9398",
-"classsophus_1_1_rx_so3_base.html#a9facdeb01455b1f529c58eb714a6df12",
-"classsophus_1_1_sim3_base.html",
-"classsophus_1_1affine__camera_1_1_test_pinhole.html#ad6cdd644fe6b38210078cfdbf1e55481",
-"common_8h.html#ade3de0907bb0fd6f33cf2f644475f1fd",
-"farm-ng-core_2cpp_2farm__ng_2core_2misc_2concept__utils_8h.html#a15b9f1fea82c08eec5b6c1b8e6e6308d",
-"image__types_8h.html#a77fea79ddc32bf7913dca93c7c10d2d9",
-"mut__image__test_8cpp.html#a059be5d4f232be4e2c6a388d8821d736",
-"proto__reader__writer_8h_source.html",
-"structsophus_1_1_image_view.html#a4ce2ed4ae226bc4176a383dad39f4c65"
+"class_eigen_1_1_map_3_01sophus_1_1_rx_so2_3_01_t_scalar_01_4_01_4.html#a2a27d4efa7e9243ea4b81ddded475cfd",
+"class_eigen_1_1_map_3_01sophus_1_1_so3_3_01_t_scalar_01_4_01const_01_4.html#a0f3f5fc5efd5f97fe32f2e401c2ddaf9",
+"classsophus_1_1_camera_model.html#a42050e96c9f0c5284aee0cf19728ef76",
+"classsophus_1_1_mut_dyn_image.html#af50f0a8460d990cec4c845d3c9bfca02",
+"classsophus_1_1_se2.html#a913b85fdc285f1b54a48bfd01a05faf4",
+"classsophus_1_1_sim3_base.html#aad2c97baf3e896fe5693757039c1ae05",
+"classsophus_1_1complex_1_1_complex.html#a73cc28962d1d74c42de17d3ef426c0bf",
+"dir_a9ec1ef424966475f993eb98877e3088.html",
+"format__test_8cpp.html",
+"index.html",
+"namespacemembers_type.html",
+"sim2_8h.html#abaefd404cc4b3904c1a283dc410af9b3",
+"structsophus_1_1_random_3_01double_01_4.html#ac23bafe8cde842a5d77bd4cfa4c48319"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

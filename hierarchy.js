@@ -149,8 +149,8 @@ var hierarchy =
     [ "sophus::ScalingNonOrthogonalityAcceleroModel< TT >", "structsophus_1_1_scaling_non_orthogonality_accelero_model.html", null ],
     [ "sophus::ScalingNonOrthogonalityGyroModel< TT >", "structsophus_1_1_scaling_non_orthogonality_gyro_model.html", null ],
     [ "farm_ng::ScopedTimer", "structfarm__ng_1_1_scoped_timer.html", null ],
-    [ "sophus.se2.Se2", "classsophus_1_1se2_1_1_se2.html", null ],
     [ "sophus::Se2< TScalar >", "classsophus_1_1_se2.html", null ],
+    [ "sophus.se2.Se2", "classsophus_1_1se2_1_1_se2.html", null ],
     [ "sophus::Se2Base< TDerived >", "classsophus_1_1_se2_base.html", null ],
     [ "sophus::Se2Base< Map< sophus::Se2< TScalar > > >", "classsophus_1_1_se2_base.html", [
       [ "Eigen::Map< sophus::Se2< TScalar > >", "class_eigen_1_1_map_3_01sophus_1_1_se2_3_01_t_scalar_01_4_01_4.html", null ]
@@ -187,18 +187,18 @@ var hierarchy =
     [ "sophus::Sim3Base< Map< sophus::Sim3< TScalar > const > >", "classsophus_1_1_sim3_base.html", [
       [ "Eigen::Map< sophus::Sim3< TScalar > const >", "class_eigen_1_1_map_3_01sophus_1_1_sim3_3_01_t_scalar_01_4_01const_01_4.html", null ]
     ] ],
-    [ "sophus.so2.So2", "classsophus_1_1so2_1_1_so2.html", null ],
     [ "sophus::So2< TScalar >", "classsophus_1_1_so2.html", null ],
+    [ "sophus.so2.So2", "classsophus_1_1so2_1_1_so2.html", null ],
     [ "sophus::So2< Scalar >", "classsophus_1_1_so2.html", null ],
-    [ "sophus::So2Base< TDerived >", "classsophus_1_1_so2_base.html", null ],
-    [ "sophus::So2Base< Map< sophus::So2< TScalar > > >", "classsophus_1_1_so2_base.html", [
+    [ "sophus::So2Base< TDerived >", "classsophus_1_1_so2_base.html", [
       [ "Eigen::Map< sophus::So2< TScalar > >", "class_eigen_1_1_map_3_01sophus_1_1_so2_3_01_t_scalar_01_4_01_4.html", null ]
     ] ],
+    [ "sophus::So2Base< Map< sophus::So2< TScalar > > >", "classsophus_1_1_so2_base.html", null ],
     [ "sophus::So2Base< Map< sophus::So2< TScalar > const > >", "classsophus_1_1_so2_base.html", [
       [ "Eigen::Map< sophus::So2< TScalar > const >", "class_eigen_1_1_map_3_01sophus_1_1_so2_3_01_t_scalar_01_4_01const_01_4.html", null ]
     ] ],
-    [ "sophus::So3< TScalar >", "classsophus_1_1_so3.html", null ],
     [ "sophus.so3.So3", "classsophus_1_1so3_1_1_so3.html", null ],
+    [ "sophus::So3< TScalar >", "classsophus_1_1_so3.html", null ],
     [ "sophus::So3< Scalar >", "classsophus_1_1_so3.html", null ],
     [ "sophus::So3< TScalar >::So3AndTheta", "structsophus_1_1_so3_1_1_so3_and_theta.html", null ],
     [ "sophus::So3Base< TDerived >", "classsophus_1_1_so3_base.html", null ],
@@ -215,7 +215,6 @@ var hierarchy =
     [ "farm_ng::Success", "structfarm__ng_1_1_success.html", null ],
     [ "sophus::RxSo3Base< TDerived >::TangentAndTheta", "structsophus_1_1_rx_so3_base_1_1_tangent_and_theta.html", null ],
     [ "sophus::So3Base< TDerived >::TangentAndTheta", "structsophus_1_1_so3_base_1_1_tangent_and_theta.html", null ],
-    [ "tests.test_canbus.TestCanbusClient", "classtests_1_1test__canbus_1_1_test_canbus_client.html", null ],
     [ "TestCase", null, [
       [ "sophus.affine_camera.TestPinhole", "classsophus_1_1affine__camera_1_1_test_pinhole.html", null ],
       [ "sophus.brown_conrady_camera.TestBrownConrady", "classsophus_1_1brown__conrady__camera_1_1_test_brown_conrady.html", null ],
@@ -229,11 +228,8 @@ var hierarchy =
       [ "sophus.so2.TestSo2", "classsophus_1_1so2_1_1_test_so2.html", null ],
       [ "sophus.so3.TestSo3", "classsophus_1_1so3_1_1_test_so3.html", null ]
     ] ],
-    [ "tests.test_core.TestEventsReader", "classtests_1_1test__core_1_1_test_events_reader.html", null ],
-    [ "tests.test_core.TestEventsWriter", "classtests_1_1test__core_1_1_test_events_writer.html", null ],
     [ "sophus::LieGroupCeresTests< TLieGroup >::TestGraphFunctor", "structsophus_1_1_lie_group_ceres_tests_1_1_test_graph_functor.html", null ],
     [ "sophus::LieGroupCeresTests< TLieGroup >::TestLieGroupCostFunctor", "structsophus_1_1_lie_group_ceres_tests_1_1_test_lie_group_cost_functor.html", null ],
-    [ "tests.test_oak.TestOakClient", "classtests_1_1test__oak_1_1_test_oak_client.html", null ],
     [ "sophus::LieGroupCeresTests< TLieGroup >::TestPointCostFunctor", "structsophus_1_1_lie_group_ceres_tests_1_1_test_point_cost_functor.html", null ],
     [ "sophus::Tests< TScalar >", "classsophus_1_1_tests.html", null ],
     [ "true_type", null, [
@@ -250,11 +246,6 @@ var hierarchy =
     [ "sophus::detail::VisitImpl< TUserFunc, TDynImage, std::variant< TPixelFormat > >", "structsophus_1_1detail_1_1_visit_impl_3_01_t_user_func_00_01_t_dyn_image_00_01std_1_1variant_3_01_t_pixel_format_01_4_01_4.html", null ],
     [ "sophus::detail::VisitImpl< TUserFunc, TDynImage, std::variant< TPixelFormat, TRest... > >", "structsophus_1_1detail_1_1_visit_impl_3_01_t_user_func_00_01_t_dyn_image_00_01std_1_1variant_3_0d99d88b250f274dea348c380a7d77c77.html", null ],
     [ "farm_ng::Void", "structfarm__ng_1_1_void.html", null ],
-    [ "Component", null, [
-      [ "camera_pipeline.main.AmigaCamera", "classcamera__pipeline_1_1main_1_1_amiga_camera.html", null ],
-      [ "camera_pipeline.main.KorniaProcess", "classcamera__pipeline_1_1main_1_1_kornia_process.html", null ],
-      [ "camera_pipeline.main.OpencvWindow", "classcamera__pipeline_1_1main_1_1_opencv_window.html", null ]
-    ] ],
     [ "IntEnum", null, [
       [ "canbus.packet.AmigaControlState", "classcanbus_1_1packet_1_1_amiga_control_state.html", null ]
     ] ],

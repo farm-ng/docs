@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "_abcdefghijklmnopqrstuvwxz~",
   1: "abcdefghijklmopqrstuv",
-  2: "cefmost",
+  2: "cefos",
   3: "_abcdefijklmnopqrstuv",
   4: "_abcdefghijlmnopqrstuvwxz~",
   5: "abcdefghiklmnopqrstuvwxz",
@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "fln",
   9: "dimors",
   10: "_efs",
-  11: "aef"
+  11: "f"
 };
 
 var indexSectionNames =
