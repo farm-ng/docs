@@ -1,0 +1,30 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "farm-ng, Sophus & friends"
+INPUT                  = projects/farm-ng-core/cpp/farm_ng \ 
+                         projects/farm-ng-core/py/farm_ng \
+                         projects/Sophus/cpp/sophus \
+                         projects/Sophus/py/sympy/sophus \
+                         projects/farm-ng-amiga/py/farm_ng
+RECURSIVE              = YES
+#EXTRACT_ALL           = NO
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+WARN_AS_ERROR          = NO
+EXPAND_ONLY_PREDEF     = NO
+SKIP_FUNCTION_MACROS   = NO
+AUTOLINK_SUPPORT       = YES
+MULTILINE_CPP_IS_BRIEF = YES
+MARKDOWN_SUPPORT       = YES
+INLINE_INHERITED_MEMB  = NO
+EXCLUDE_SYMBOLS        = Eigen::internal sophus::details sophus::interp_details
+GENERATE_LATEX         = NO
+STRIP_CODE_COMMENTS    = NO
+GENERATE_TREEVIEW      = YES # required!
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = projects/doxygen-awesome-css/doxygen-awesome.css \
+                         projects/doxygen-awesome-css/doxygen-awesome-sidebar-only.css
+CASE_SENSE_NAMES = NO
+HIDE_UNDOC_RELATIONS = YES
+EXTRACT_ALL = YES
+HAVE_DOT = YES
