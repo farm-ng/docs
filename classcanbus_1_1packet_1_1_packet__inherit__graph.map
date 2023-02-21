@@ -1,0 +1,5 @@
+<map id="canbus.packet.Packet" name="canbus.packet.Packet">
+<area shape="rect" id="node1" title=" " alt="" coords="139,5,301,32"/>
+<area shape="rect" id="node2" href="$classcanbus_1_1packet_1_1_amiga_rpdo1.html" title=" " alt="" coords="5,80,208,107"/>
+<area shape="rect" id="node3" href="$classcanbus_1_1packet_1_1_amiga_tpdo1.html" title=" " alt="" coords="233,80,434,107"/>
+</map>
