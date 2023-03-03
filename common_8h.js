@@ -2,7 +2,6 @@ var common_8h =
 [
     [ "UninitTag", "structsophus_1_1_uninit_tag.html", null ],
     [ "IsUniformRandomBitGenerator", "structsophus_1_1_is_uniform_random_bit_generator.html", null ],
-    [ "EIGEN_DEVICE_FUNC", "common_8h.html#a9efec3cfd22b9a33bead9c6718d128da", null ],
     [ "SOPHUS_ASSERT", "common_8h.html#a8f58b46a5623974748668dc8c53ad686", null ],
     [ "SOPHUS_ASSERT_EQ", "common_8h.html#a92297bdb86ae55e64e7dc3b48d3190b5", null ],
     [ "SOPHUS_ASSERT_GE", "common_8h.html#a4458283091058e430ff56b37e5d90182", null ],
@@ -12,8 +11,8 @@ var common_8h =
     [ "SOPHUS_ASSERT_NE", "common_8h.html#abc35935bbde1d290087671ff93cea3c0", null ],
     [ "SOPHUS_ASSERT_NEAR", "common_8h.html#a72a75eb7f9bba13d95af868b8667a0a0", null ],
     [ "SOPHUS_ASSERT_OR_ERROR", "common_8h.html#ac90e2b9dceea8b4969c81290d7b69c3f", null ],
+    [ "SOPHUS_AT", "common_8h.html#afe31aaddbd8eb9a777a61c0a87f30016", null ],
     [ "SOPHUS_FORMAT", "common_8h.html#a50fadb13da7af3ebb54f13fcf2d90455", null ],
-    [ "SOPHUS_FUNC", "common_8h.html#a719070c34a48abcdf2f623e4160b4c28", null ],
     [ "SOPHUS_FUNCTION", "common_8h.html#adc97d3e69cc46d5aff5132e1fa2d9688", null ],
     [ "SOPHUS_INFO", "common_8h.html#a7e1e64911421a663cac1ca5fe4e66339", null ],
     [ "SOPHUS_PANIC", "common_8h.html#af28e1f1a48df52cee7fb2775a054d921", null ],
@@ -23,14 +22,11 @@ var common_8h =
     [ "SOPHUS_UNWRAP", "common_8h.html#a0f6f659ed8dc626650e01e987fcaf2e7", null ],
     [ "kEpsilon", "common_8h.html#ac80343cf6309ea68329bcbd315d97ecb", null ],
     [ "kEpsilon< float >", "common_8h.html#aaee3ddfe81208e5b57344b8d464f147d", null ],
-    [ "kEpsilonF32", "common_8h.html#a7c532b5c5c174fdec729b68b1cbbd9d7", null ],
-    [ "kEpsilonF64", "common_8h.html#a42c86b5f575bb27ee7f0912586d56822", null ],
     [ "kEpsilonPlus", "common_8h.html#a34f6ced1afdacf74c5a606c477bcb8d2", null ],
     [ "kEpsilonSqrt", "common_8h.html#a237e1d72ea4622c23b1a754c68fd123c", null ],
-    [ "kEpsilonSqrtF32", "common_8h.html#a1aa171d12500bc1fc28983cca95fd1aa", null ],
-    [ "kEpsilonSqrtF64", "common_8h.html#a72e80177b42f2effa6d2a6bee107a409", null ],
+    [ "kEpsilonSqrt< float >", "common_8h.html#a2737fdcd69088eea67944494c47fa048", null ],
     [ "kIsUniformRandomBitGeneratorV", "common_8h.html#affb4f38053f01177da7d18aa6083d0c2", null ],
-    [ "kPi", "common_8h.html#ae9eaaf6634c7dea54ab593a8e284fe36", null ],
-    [ "kPiF32", "common_8h.html#ab8af599e81b9431b5c6a8751b732cf86", null ],
-    [ "kPiF64", "common_8h.html#a62d013b045b966870dcfb3d64227873e", null ]
+    [ "kPi", "common_8h.html#ac3a6fbf67c3f121649d254414bc60292", null ],
+    [ "kPiF32", "common_8h.html#abba3ce65d86a5f2e112bdf937f2b8969", null ],
+    [ "kPiF64", "common_8h.html#a564748ef9bc894b109f197a36373f185", null ]
 ];

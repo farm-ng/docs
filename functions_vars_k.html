@@ -86,8 +86,17 @@ $(document).ready(function(){initNavTree('functions_vars_k.html',''); initResiza
 &#160;
 
 <h3><a id="index_k"></a>- k -</h3><ul>
-<li>k_pi
-: <a class="el" href="classsophus_1_1_tests.html#a468cb3509778beb2f688bb166e3b571f">sophus::Tests&lt; TScalar &gt;</a>
+<li>kAmbientDim
+: <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#ac7305f64fafc2defc1951fe9d18d13d6">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a94a119187f4700d07043de531d5c1597">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a5620f873100513b2216b8a97436cc678">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#a956d5c96eee2cd522159f5eec91d1e6b">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a39569a1174b70a517ec1ec973aa7722b">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a0ea81fd6a3053dde8f90f405c79964b0">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#a8647466d50c247360dc7773aa7eb6583">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a70fc556a9a2356a53bacc266df08a7a7">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
 </li>
 <li>kargs
 : <a class="el" href="classoak_1_1camera__client_1_1_rate_limiter.html#a5be0921a97164442de37a7d8eef7000a">oak.camera_client.RateLimiter</a>
@@ -102,28 +111,22 @@ $(document).ready(function(){initNavTree('functions_vars_k.html',''); initResiza
 <li>kDim
 : <a class="el" href="classsophus_1_1_region.html#a203364ebcace7fe64adb6565f588c47d">sophus::Region&lt; TPoint &gt;</a>
 </li>
-<li>kDoF
-: <a class="el" href="classsophus_1_1_cartesian.html#a2e8864ed1027ab259bb793de748ecac6">sophus::Cartesian&lt; TScalar, kM &gt;</a>
-, <a class="el" href="classsophus_1_1_cartesian_base.html#a305d69a1a1d398f1bd18c165e2814b59">sophus::CartesianBase&lt; TDerived, kM &gt;</a>
-, <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#a353b8c42785b8eab4e61ad1ca955d55a">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_lie_group_tests.html#a59e17d546a97a12e02a211d8fb194ed1">sophus::LieGroupTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_manifold.html#a8832a6ad80d5f62660c7af08873a8324">sophus::Manifold&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so2.html#a6fa83feb749d2611c1bcbfc91054b666">sophus::RxSo2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so2_base.html#a96ef5537aade76b8ccc3539b150ef5f4">sophus::RxSo2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so3.html#aa81aed1487efe11a8cb8ed22d756e36a">sophus::RxSo3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so3_base.html#ad9b391d0f172d90fbbe33bb1fcfafb2c">sophus::RxSo3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se2.html#a3c515f8f89bb9fb82e8449c5ea42d0ea">sophus::Se2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se2_base.html#a8c7fc2e8e31609d2fa0ba59745792f06">sophus::Se2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se3.html#acb7b6334bdfd1355ada3ee1a5a5c08d7">sophus::Se3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se3_base.html#a56ec3f368db257be78e6ca9fa5ba1b8d">sophus::Se3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2.html#a800ca1ccdbd567445c09a192716a3718">sophus::Sim2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2_base.html#ad0e57733a0a18909bd1892e8aa8a4386">sophus::Sim2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3.html#a266d8aa1208456eac60db0fe354273a6">sophus::Sim3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3_base.html#a8f09fe2c31495ede2f84434b03f252ed">sophus::Sim3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so2.html#ac448078b9afa275fe5cd0b7dd87a521a">sophus::So2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_so2_base.html#a54e1d1ee13387e0d840917b99ab02b50">sophus::So2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so3.html#afd1c7bd820d668b15fba3724772dff39">sophus::So3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_so3_base.html#afd9969a7dab85529d25616eb665f51b3">sophus::So3Base&lt; TDerived &gt;</a>
+<li>kDof
+: <a class="el" href="classsophus_1_1ceres_1_1_manifold.html#a3ebc16b0a47feca65156448c455bfc0a">sophus::ceres::Manifold&lt; TLieGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a41a710b0df2110b0347cae88e88bdd5e">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#acfbd711bbc73773d5d54637b6caff0c3">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#aa0f0b70ea2090cd30659f2bbe5882d0f">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#ad1973ddcaa6e1a8802f27b1fbe1691c3">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#aebb7a2139015a726d26e7e31527fff57">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a80ab4aa497f7fff60cd79bc0a638a6b1">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1linalg_1_1_unit_vector_impl.html#a49686f30c96f99b4c237ecfcaae66c70">sophus::linalg::UnitVectorImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#aafa20b4a1b929267d55890b0f591fd59">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests.html#a02596b832e429f3853af78a09c9944c1">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#ac9cf810044ee6f1b34641f6587e123ae">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_manifold_prop_test_suite.html#a2d4b46a2caceee60fac5a0fec2df5a03">sophus::test::ManifoldPropTestSuite&lt; TManifold &gt;</a>
+, <a class="el" href="classsophus_1_1_unit_vector.html#a5a6f92dbe132439764499cba47ee8263">sophus::UnitVector&lt; TScalar, kN &gt;</a>
 </li>
 <li>kHasInfinity
 : <a class="el" href="structsophus_1_1_point_traits_3_01_t_point_01_4.html#a52cc3374da725ff70aa4c5927ed6ab65">sophus::PointTraits&lt; TPoint &gt;</a>
@@ -134,6 +137,45 @@ $(document).ready(function(){initNavTree('functions_vars_k.html',''); initResiza
 <li>kHasSignalingNan
 : <a class="el" href="structsophus_1_1_point_traits_3_01_t_point_01_4.html#a6b65cc01e2a85e0d142f7759439d46a2">sophus::PointTraits&lt; TPoint &gt;</a>
 </li>
+<li>kIisParallelLinePreserving
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a47c6ef227f067e3421d26e3c5e71bc75">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#ac62c796dae30022495612c84dd10732f">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a6d76eba6335b8c43c92a3c720b412edb">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a60593b4e86fa40c60285e80a6fe01bda">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#ac8fda85fd7b895a08e4af52c3b8cf2e2">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a307055172a5f943d9752109789c7173b">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a44a19dd3b7b856c4028fd6d3d1304b9b">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
+<li>kIisSizePreserving
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aed870c1a40642f48d692ce734e4cfdc2">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a3ad7004e85a5f282e7c66dd3ccc32bf3">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a979f7486f5a5e57314d587c34124cc90">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#af8dbd35b18281a60242446e19dc64188">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#abfab2366472d404de988e6c7757e8514">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#af4fe20635269bb51094d82910f6a1b72">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
+<li>kIsAxisDirectionPreserving
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a0ad22258720def33e7c51988c722a37d">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a527c64ad7bf97321f1213617c69ec1cd">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a59094f9a2fa32b1a0d59a10cc27654b9">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a511a75ac4486f3740dc7f9320e82f13a">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#a04850ea0cf37e14b46a4a8a9a06c8a16">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a9e54315aeb2bc0350e82ba949ed7cae1">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a2d490a58713e5ac342c0782c65f1e0bf">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
+<li>kIsCommutative
+: <a class="el" href="classsophus_1_1_complex_impl.html#a66a27ba8be74eb76d786666d6712d29a">sophus::ComplexImpl&lt; TScalar &gt;</a>
+, <a class="el" href="classsophus_1_1_quaternion_impl.html#a1d0e2e10676440d1b24f04d3473aedbc">sophus::QuaternionImpl&lt; TScalar &gt;</a>
+</li>
+<li>kIsDirectionVectorPreserving
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a6c4d7601f8b237ce6067e4daff3a94b7">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a17882538b76d98792b577a85a186cb14">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#ae4ad8cd597b6a05a1555aba1031158c6">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a5cbf3361cece6bbce23da4601e84e108">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#ad57f2ab1aa24bf4ffd0426415a24c1e0">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a3f5ce544842253a12c41095178c0f7bd">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a6428c6470ec74a473ea3da4d9179800c">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
 <li>kIsFloatingPoint
 : <a class="el" href="structsophus_1_1_point_traits_3_01_t_point_01_4.html#aaa9a75b8d324366ed75ffbb17d997f45">sophus::PointTraits&lt; TPoint &gt;</a>
 </li>
@@ -141,19 +183,26 @@ $(document).ready(function(){initNavTree('functions_vars_k.html',''); initResiza
 : <a class="el" href="structsophus_1_1_point_traits_3_01_t_point_01_4.html#ae88ea507dc3b453434149f109d3f54d5">sophus::PointTraits&lt; TPoint &gt;</a>
 , <a class="el" href="classsophus_1_1_region.html#a9c5792075b797631975bdf6520b750c5">sophus::Region&lt; TPoint &gt;</a>
 </li>
-<li>kMatrixDim
-: <a class="el" href="classsophus_1_1_cartesian.html#a73004def80185f95c9d692b3be6a10a9">sophus::Cartesian&lt; TScalar, kM &gt;</a>
-, <a class="el" href="classsophus_1_1_cartesian_base.html#a562a0407b23f41f7c6b117ed46907d07">sophus::CartesianBase&lt; TDerived, kM &gt;</a>
-, <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#a61df77e90899c449e854c2452ef5bd99">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_lie_group_tests.html#a8fe84654850f8d36266b06d5d236ebfe">sophus::LieGroupTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so2_base.html#ad7231f2ff45af51acb2691093cdc5942">sophus::RxSo2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so3_base.html#a9f542f29c26ee29b795b6c3366a235c2">sophus::RxSo3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se2_base.html#a0094868fd139d63db937487ce11c3a11">sophus::Se2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se3_base.html#a4d4d73a78a31e85d030598dc6c807e3d">sophus::Se3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2_base.html#acf1c969e30d7a03625ec36555137be34">sophus::Sim2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3_base.html#ab9536176824fca1046683ebb37ff6a4f">sophus::Sim3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so2_base.html#aee3fc2389ca7d0f656315c08718af083">sophus::So2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so3_base.html#afb7025aa64a4c0bdc069b475c124a13c">sophus::So3Base&lt; TDerived &gt;</a>
+<li>kIsOriginPreserving
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a1f46c6a57d6444e1b7424fe61c888f9e">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#adf2cdf41df28722771ca160913e51708">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a9fce101691d73cec128f9bf2183269eb">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a3e419c32f9a375b2261257cbc5bc8d48">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#a793b7c4638f343261af85b917956be22">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a0bd88d6381d79879b5abed7dd71f3cd3">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#aa53b112660f1a75de7825c2f20697166">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
+<li>kIsShapePreserving
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac6e7418dee104cb42d3409066bbcdbe2">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a176265736b80e438ece45ac34688a341">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a591bc22dd2bf8b54e9d4f03a2982e760">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#ab14cf06110530eaf0a5f5de5f02bd6aa">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#a9479531429b6d95537db9cce4dd80343">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a42a6ca4068887a97db6e3f9283cb296b">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#adbcfb02b1f60ca7a1729df46234e799c">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
+<li>kIsSizePreserving
+: <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#a2f2b365accf396727b61e25540271b3f">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
 </li>
 <li>kNumChannels
 : <a class="el" href="structsophus_1_1_image_traits.html#ad01f8fb11c71f658978ba15833694bf2">sophus::ImageTraits&lt; TT &gt;</a>
@@ -165,47 +214,53 @@ $(document).ready(function(){initNavTree('functions_vars_k.html',''); initResiza
 , <a class="el" href="classsophus_1_1_camera_model_t.html#acd16954c3dfa0818e851d7ddf7b5a413">sophus::CameraModelT&lt; TScalar, TDistortion, TProj &gt;</a>
 , <a class="el" href="classsophus_1_1_kannala_brandt_k3_transform.html#aae645566dfee136dcbb89c0cf77706e7">sophus::KannalaBrandtK3Transform</a>
 </li>
-<li>kNumParameters
-: <a class="el" href="classsophus_1_1_cartesian.html#a023ef9acc733438b2921c229019ff63e">sophus::Cartesian&lt; TScalar, kM &gt;</a>
-, <a class="el" href="classsophus_1_1_cartesian_base.html#ac1ee96a520741eb32edc0c1794dd3c58">sophus::CartesianBase&lt; TDerived, kM &gt;</a>
-, <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#afccb0cc2666d34910d3d144581dff133">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_lie_group_tests.html#ab5e9ce99f331a099b06f07e4ad87c9d2">sophus::LieGroupTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_manifold.html#af7e7c7974211852ad69f75dc10ece2b4">sophus::Manifold&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so2.html#a895459e386a86fbc30befc4a3ebbd181">sophus::RxSo2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so2_base.html#a76f9a2fdb63e47c39d11b2e5fdf8369d">sophus::RxSo2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so3.html#ac5f7b3fa38698ff8faf3118013e87414">sophus::RxSo3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so3_base.html#a712e36e47af342ec8da09a7ac7bf2ca4">sophus::RxSo3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se2.html#ad1ad13aa1b27a880ba743a8fc2043d03">sophus::Se2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se2_base.html#a39e9c7755c13166605ac999c9c311340">sophus::Se2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se3.html#a936e1d9b4787c8d643e464e50a7f866c">sophus::Se3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se3_base.html#a3d89b3db466895a754ad2cd435336b27">sophus::Se3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2.html#a5e88bac412bc4c497f2ca6f5998b4ed8">sophus::Sim2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2_base.html#ae442d63d8ce409aa3937a83042379278">sophus::Sim2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3.html#af919ef923cbceade305f035ed9e2fec1">sophus::Sim3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3_base.html#a3a180dc88288e0444680e0fe3b77400f">sophus::Sim3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so2.html#ade52a085457cd30a608335f009104ff2">sophus::So2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_so2_base.html#ae0cea05e8cdce294818c5b5101d29e41">sophus::So2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so3.html#a89e169d0987ee9be56fe519d1a7578d0">sophus::So3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_so3_base.html#aac03f9b1e605bdbe75213bdb9b309ffb">sophus::So3Base&lt; TDerived &gt;</a>
-</li>
 <li>kNumParams
 : <a class="el" href="classsophus_1_1_affine_transform.html#a32c58289696c5b3f1a5c34a8d1e81008">sophus::AffineTransform</a>
 , <a class="el" href="classsophus_1_1_brown_conrady_transform.html#acaece271f72351292da71c6c60542d80">sophus::BrownConradyTransform</a>
 , <a class="el" href="classsophus_1_1_camera_model_t.html#ac91eb5a8b381924b0dc314e3adef1be7">sophus::CameraModelT&lt; TScalar, TDistortion, TProj &gt;</a>
+, <a class="el" href="classsophus_1_1ceres_1_1_manifold.html#a3fdb2982ec4744f19c11bf36b6bdbe83">sophus::ceres::Manifold&lt; TLieGroup &gt;</a>
+, <a class="el" href="classsophus_1_1_complex.html#a90d62c042a41a15fe124450d2a09abbd">sophus::Complex&lt; TScalar &gt;</a>
+, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">sophus::ComplexImpl&lt; TScalar &gt;</a>
 , <a class="el" href="classsophus_1_1_kannala_brandt_k3_transform.html#a81da47c046f5d8997f1ec83d157f9b81">sophus::KannalaBrandtK3Transform</a>
+, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#acdc889a4d6907548a70a42f6edf25c76">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a1a84a5e3120451623be14c056f321596">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a771e61cc0c0e7cff1a06775389c99e8f">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#af6293d4a9aefc6a6271ad3bbd6b75f5b">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a073cd8405904013fae0261be61c718aa">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a8ad7b6a0c8306b16af8e3b257a1b3f0d">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1linalg_1_1_unit_vector_impl.html#ae6dff3914104dcfcc1661223ae5b3e9f">sophus::linalg::UnitVectorImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1_quaternion.html#af7a880aedbea1e3081c0db6d450b693a">sophus::Quaternion&lt; TScalar &gt;</a>
+, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">sophus::QuaternionImpl&lt; TScalar &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_division_ring_test_suite.html#aca61bd5eb28662469010af2d8b7da45f">sophus::test::DivisionRingTestSuite&lt; TRing &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#a4fe332fcb81a17c5211a4675b54921c2">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests.html#ad9c8129e542619aee7617d70c6000e0e">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a1592fa7c784d1f4710bac7f6847a4fc4">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_manifold_prop_test_suite.html#a10b39ec9502cbde7a701684730e4147b">sophus::test::ManifoldPropTestSuite&lt; TManifold &gt;</a>
+, <a class="el" href="classsophus_1_1_unit_vector.html#a9813c0551eca474547b313ac9a0386b4">sophus::UnitVector&lt; TScalar, kN &gt;</a>
+</li>
+<li>kParamsExamples
+: <a class="el" href="structsophus_1_1test_1_1_division_ring_test_suite.html#a8b6e55690c917907c0745a7a92925d30">sophus::test::DivisionRingTestSuite&lt; TRing &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#abd1924566fa69f7d91946485982f576d">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a4d2ac5d6cf0f163c2e01554c9fde5789">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
 </li>
 <li>kPointDim
-: <a class="el" href="classsophus_1_1_cartesian.html#a0c76cfe75b81f39c01dbee8af7c9eda2">sophus::Cartesian&lt; TScalar, kM &gt;</a>
-, <a class="el" href="classsophus_1_1_cartesian_base.html#ac8c64c1e117ef655ca458f0bc51a765a">sophus::CartesianBase&lt; TDerived, kM &gt;</a>
-, <a class="el" href="classsophus_1_1_lie_group_tests.html#a634da78451e248eb0269c392a68a7d8d">sophus::LieGroupTests&lt; TLieGroup &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so2_base.html#a44ff3f3d38b97e064cdb843ee5bff359">sophus::RxSo2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_rx_so3_base.html#ac8588ec57aae80defa892ae94519805a">sophus::RxSo3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se2_base.html#ad5b3ec7ea617a0ccd5f7956066875927">sophus::Se2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se3_base.html#acb13861e81108b274c3865286c9ba99a">sophus::Se3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2_base.html#acb084a3b1ec6b5f03b607dc8ac8722d4">sophus::Sim2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3_base.html#a85ffeb55cde51c5629a3a5c971a1761c">sophus::Sim3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so2_base.html#a9dd61e96747422e408ddbe5fe49934d5">sophus::So2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_so3_base.html#a1ac5b49a9e9826c5d62b45dd63eaf38a">sophus::So3Base&lt; TDerived &gt;</a>
+: <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a1ca774702be2397290e21902617452bf">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#ab7c422330424a4aaa7d2d2a91c57e018">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#aa2530e45209821243567eb16bf480518">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#af95782ca5aaf0611a7aee947dfbe6930">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#ac162b00270bdcb1dc679375a0e41837d">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a6e57251f44312638dbf512064ae789a8">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#a46ee37f0c96de339ffd249892803044b">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests.html#a20f6dfa5d40910632699ddb78e14b0e9">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#afd8977e19227d26ca210423807eb2585">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
+</li>
+<li>kPointExamples
+: <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#ab1490e862be530e047938fd16334b973">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#ac044b74387dd7dcf024ea67e73d85917">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
 </li>
 <li>kProjectionModel
 : <a class="el" href="classsophus_1_1_affine_transform.html#abf83a0cfe0949dd436541c30e3b4f955">sophus::AffineTransform</a>
@@ -217,10 +272,12 @@ $(document).ready(function(){initNavTree('functions_vars_k.html',''); initResiza
 : <a class="el" href="structsophus_1_1_point_traits_3_01_t_point_01_4.html#aeaa1fde568917193543702ef05eeb3ba">sophus::PointTraits&lt; TPoint &gt;</a>
 , <a class="el" href="classsophus_1_1_region.html#a326371487fdbf98275874fd6e359efef">sophus::Region&lt; TPoint &gt;</a>
 </li>
+<li>kTangentExamples
+: <a class="el" href="structsophus_1_1test_1_1_interpolate_prop_test_suite.html#a50231548ab3e2557f2260a37c90de1aa">sophus::test::InterpolatePropTestSuite&lt; TGroup &gt;</a>
+, <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#ac0c1624541759923a49cd9b1af9702d4">sophus::test::LieGroupPropTestSuite&lt; TGroup &gt;</a>
+</li>
 <li>kValue
-: <a class="el" href="structsophus_1_1_is_floating_point.html#a93ae3631b5735a0ada9565b4c79aa9ca">sophus::IsFloatingPoint&lt; TScalar &gt;</a>
-, <a class="el" href="structsophus_1_1_is_floating_point_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_m_00_01k_matrix_dim_01_4_01_4.html#aac2939524969d71188ad5bcb699ece8b">sophus::IsFloatingPoint&lt; Eigen::Matrix&lt; TScalar, kM, kMatrixDim &gt; &gt;</a>
-, <a class="el" href="structsophus_1_1_is_uniform_random_bit_generator.html#a4daf45111652659c2cd6c36505b78ff8">sophus::IsUniformRandomBitGenerator&lt; TGenerator &gt;</a>
+: <a class="el" href="structsophus_1_1_is_uniform_random_bit_generator.html#a4daf45111652659c2cd6c36505b78ff8">sophus::IsUniformRandomBitGenerator&lt; TGenerator &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

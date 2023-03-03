@@ -92,22 +92,63 @@ $(document).ready(function(){initNavTree('_sophus_2cpp_2sophus_2lie_2_c_make_lis
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43a42fe4ec8c164e59d63671266e14e2"><td class="memItemLeft" align="right" valign="top">sophus_lie&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#a43a42fe4ec8c164e59d63671266e14e2">farm_ng_add_library</a> (sophus_lie NAMESPACE Sophus INCLUDE_DIR ../../HEADERS cartesian.h rxso2.h rxso3.h se2.h se3.h sim2.h sim3.h so2.h so3.h details/sim_impl.h) target_link_libraries(sophus_lie INTERFACE sophus_linalg) <a class="el" href="_sophus_2cpp_2sophus_2ceres_2_c_make_lists_8txt.html#a403c14501c8692b9a676627fe34ebfbb">if</a>($</td></tr>
-<tr class="separator:a43a42fe4ec8c164e59d63671266e14e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d462f20eac9e012a799360c0e1707eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#a6d462f20eac9e012a799360c0e1707eb">foreach</a> (test_basename cartesian2 cartesian3 common rxso2 rxso3 se2 se3 sim2 sim3 so2 so3) farm_ng_add_test($</td></tr>
-<tr class="separator:a6d462f20eac9e012a799360c0e1707eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56039db8beccf5521157e630319a30f"><td class="memItemLeft" align="right" valign="top">sophus_lie&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#ac56039db8beccf5521157e630319a30f">set</a> (sophus_lie_src_prefixes identity isometry2 isometry3 lie_group rotation2 rotation3 scaling_translation scaling similarity2 similarity3 spiral_similarity2 spiral_similarity3 translation) set(sophus_lie_h) <a class="el" href="_sophus_2cpp_2sophus_2linalg_2_c_make_lists_8txt.html#aef2fdf90946bf6fd2aa16a09d677cd0b">foreach</a>(x $</td></tr>
+<tr class="separator:ac56039db8beccf5521157e630319a30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10bc74bce4a9c11a7aeb129155bb40d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#a10bc74bce4a9c11a7aeb129155bb40d4">list</a> (APPEND sophus_lie_h ${x}.h) <a class="el" href="_sophus_2cpp_2sophus_2sensor_2_c_make_lists_8txt.html#a8575e2808389477d7784a967fa2082df">endforeach</a>() <a class="el" href="_sophus_2cpp_2sophus_2geometry_2_c_make_lists_8txt.html#a5a4f4ba1dff118500d6203372f4104a0">farm_ng_add_library</a>(sophus_lie NAMESPACE Sophus INCLUDE_DIR ../../HEADERS $</td></tr>
+<tr class="separator:a10bc74bce4a9c11a7aeb129155bb40d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c44f078c96775799d0341d1a77795ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#a9c44f078c96775799d0341d1a77795ea">target_link_libraries</a> (sophus_lie INTERFACE sophus_linalg) <a class="el" href="_sophus_2cpp_2sophus_2ceres_2_c_make_lists_8txt.html#aef80bff7dad71a6ffa2f66282f04b9b6">if</a>($</td></tr>
+<tr class="separator:a9c44f078c96775799d0341d1a77795ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df4d5156a7eacc0ba70a32817c0f7be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#a3df4d5156a7eacc0ba70a32817c0f7be">foreach</a> (test_basename ${sophus_lie_src_prefixes}) farm_ng_add_test($</td></tr>
+<tr class="separator:a3df4d5156a7eacc0ba70a32817c0f7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fbaf90149175ec38fb38372bea2796"><td class="memItemLeft" align="right" valign="top">PARENT_LIBRARY sophus_lie LINK_LIBRARIES sophus_lie LABELS small&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sophus_2cpp_2sophus_2lie_2_c_make_lists_8txt.html#af2fbaf90149175ec38fb38372bea2796">endforeach</a> () endif() <a class="el" href="_sophus_2cpp_2sophus_2ceres_2_c_make_lists_8txt.html#aef80bff7dad71a6ffa2f66282f04b9b6">if</a>($</td></tr>
+<tr class="separator:af2fbaf90149175ec38fb38372bea2796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a43a42fe4ec8c164e59d63671266e14e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43a42fe4ec8c164e59d63671266e14e2">&#9670;&nbsp;</a></span>farm_ng_add_library()</h2>
+<a id="af2fbaf90149175ec38fb38372bea2796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fbaf90149175ec38fb38372bea2796">&#9670;&nbsp;</a></span>endforeach()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">sophus_lie farm_ng_add_library </td>
+          <td class="memname">PARENT_LIBRARY sophus_lie LINK_LIBRARIES sophus_lie LABELS small endforeach </td>
           <td>(</td>
-          <td class="paramtype">sophus_lie NAMESPACE Sophus INCLUDE_DIR ../../HEADERS cartesian.h rxso2.h rxso3.h se2.h se3.h sim2.h sim3.h so2.h so3.h details/sim_impl.&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3df4d5156a7eacc0ba70a32817c0f7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df4d5156a7eacc0ba70a32817c0f7be">&#9670;&nbsp;</a></span>foreach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">foreach </td>
+          <td>(</td>
+          <td class="paramtype">test_basename ${sophus_lie_src_prefixes}&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10bc74bce4a9c11a7aeb129155bb40d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bc74bce4a9c11a7aeb129155bb40d4">&#9670;&nbsp;</a></span>list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list </td>
+          <td>(</td>
+          <td class="paramtype">APPEND sophus_lie_h ${x}.&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
           <td></td>
         </tr>
@@ -116,17 +157,35 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d462f20eac9e012a799360c0e1707eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d462f20eac9e012a799360c0e1707eb">&#9670;&nbsp;</a></span>foreach()</h2>
+<a id="ac56039db8beccf5521157e630319a30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac56039db8beccf5521157e630319a30f">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">foreach </td>
+          <td class="memname">sophus_lie set </td>
           <td>(</td>
-          <td class="paramtype">test_basename cartesian2 cartesian3 common rxso2 rxso3 se2 se3 sim2 sim3 so2&#160;</td>
-          <td class="paramname"><em>so3</em></td><td>)</td>
+          <td class="paramtype">sophus_lie_src_prefixes identity isometry2 isometry3 lie_group rotation2 rotation3 scaling_translation scaling similarity2 similarity3 spiral_similarity2 spiral_similarity3&#160;</td>
+          <td class="paramname"><em>translation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c44f078c96775799d0341d1a77795ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c44f078c96775799d0341d1a77795ea">&#9670;&nbsp;</a></span>target_link_libraries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">target_link_libraries </td>
+          <td>(</td>
+          <td class="paramtype">sophus_lie INTERFACE&#160;</td>
+          <td class="paramname"><em>sophus_linalg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

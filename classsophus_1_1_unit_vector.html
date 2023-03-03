@@ -84,34 +84,97 @@ $(document).ready(function(){initNavTree('classsophus_1_1_unit_vector.html','');
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classsophus_1_1_unit_vector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sophus::UnitVector&lt; TScalar, kN &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="unit__vector_8h_source.html">unit_vector.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="concepts_2lie__group_8h_source.html">lie_group.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5ead6654b801640b6b2fa037815bdb8b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a> = TScalar</td></tr>
+<tr class="separator:a5ead6654b801640b6b2fa037815bdb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedaf7f612784aa65d6de8b4e88fa0df5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#aedaf7f612784aa65d6de8b4e88fa0df5">Impl</a> = <a class="el" href="classsophus_1_1linalg_1_1_unit_vector_impl.html">linalg::UnitVectorImpl</a>&lt; <a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a>, kN &gt;</td></tr>
+<tr class="separator:aedaf7f612784aa65d6de8b4e88fa0df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a54264762ad3b689f57c95998173fbe26"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a54264762ad3b689f57c95998173fbe26">vector</a> () const</td></tr>
-<tr class="separator:a54264762ad3b689f57c95998173fbe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567a84210e9248d2d340620d80215860"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a567a84210e9248d2d340620d80215860">oplus</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a>, <a class="el" href="classsophus_1_1_unit_vector.html#a5a6f92dbe132439764499cba47ee8263">kDof</a> &gt; const &amp;delta) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a></td></tr>
+<tr class="separator:a567a84210e9248d2d340620d80215860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46de36e73dcb7612308687455e554f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#ad46de36e73dcb7612308687455e554f1">ominus</a> (<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> const &amp;rhs_params) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a>, <a class="el" href="classsophus_1_1_unit_vector.html#a5a6f92dbe132439764499cba47ee8263">kDof</a> &gt;</td></tr>
+<tr class="separator:ad46de36e73dcb7612308687455e554f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386e39013b94fcf84c7dd5ac577f56c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a386e39013b94fcf84c7dd5ac577f56c2">setParams</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v) const</td></tr>
+<tr class="separator:a386e39013b94fcf84c7dd5ac577f56c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ece080df5532e86508fe57799cd9d47"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a2ece080df5532e86508fe57799cd9d47">params</a> () const -&gt; Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;</td></tr>
+<tr class="separator:a2ece080df5532e86508fe57799cd9d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881b98b995222980de1624c56cd4fc0d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a881b98b995222980de1624c56cd4fc0d">unsafeMutPtr</a> ()</td></tr>
+<tr class="separator:a881b98b995222980de1624c56cd4fc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ec40d511731e83a7567ed2ba649220"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a44ec40d511731e83a7567ed2ba649220">ptr</a> () const</td></tr>
+<tr class="separator:a44ec40d511731e83a7567ed2ba649220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d81bf1641277c8d1de09097a91bbb58"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a3d81bf1641277c8d1de09097a91bbb58">vector</a> () const -&gt; Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;</td></tr>
+<tr class="separator:a3d81bf1641277c8d1de09097a91bbb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6fd07b828c1719c402018198a43b74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a4a6fd07b828c1719c402018198a43b74">UnitVector</a> (<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> const &amp;)=default</td></tr>
 <tr class="separator:a4a6fd07b828c1719c402018198a43b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8afa9fd05f3b62ea5936ecc5591c8c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#ad8afa9fd05f3b62ea5936ecc5591c8c3">operator=</a> (<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> const &amp;)=default</td></tr>
-<tr class="separator:ad8afa9fd05f3b62ea5936ecc5591c8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5577eb7d933ad2335f20da508bcd778d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a5577eb7d933ad2335f20da508bcd778d">operator=</a> (<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> const &amp;) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> &amp;=default</td></tr>
+<tr class="separator:a5577eb7d933ad2335f20da508bcd778d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a659620add3374b03d09a10e311b4073a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a659620add3374b03d09a10e311b4073a">fromUnitVector</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v)</td></tr>
-<tr class="separator:a659620add3374b03d09a10e311b4073a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f18649b338e5703cff9d26e22672b20"><td class="memItemLeft" align="right" valign="top">static Expected&lt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a6f18649b338e5703cff9d26e22672b20">tryFromUnitVector</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v)</td></tr>
-<tr class="separator:a6f18649b338e5703cff9d26e22672b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff3dd59b3aab23fe7777b8b88494c08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#abff3dd59b3aab23fe7777b8b88494c08">fromVectorAndNormalize</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v)</td></tr>
-<tr class="separator:abff3dd59b3aab23fe7777b8b88494c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92238c80668a1fe2a4786c2f6793620"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#ab92238c80668a1fe2a4786c2f6793620">tryFromUnitVector</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v) -&gt; Expected&lt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> &gt;</td></tr>
+<tr class="separator:ab92238c80668a1fe2a4786c2f6793620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5110183860b466131dfd4463cfcb86f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#ae5110183860b466131dfd4463cfcb86f">fromParams</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a></td></tr>
+<tr class="separator:ae5110183860b466131dfd4463cfcb86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e02c840f8e3f128d751a357d28c2778"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a2e02c840f8e3f128d751a357d28c2778">fromUnitVector</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a></td></tr>
+<tr class="separator:a2e02c840f8e3f128d751a357d28c2778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25bfe06a0541c41d5fc380358c227f5a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a25bfe06a0541c41d5fc380358c227f5a">fromVectorAndNormalize</a> (Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;v) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a></td></tr>
+<tr class="separator:a25bfe06a0541c41d5fc380358c227f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5a6f92dbe132439764499cba47ee8263"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a5a6f92dbe132439764499cba47ee8263">kDof</a> = kN - 1</td></tr>
+<tr class="separator:a5a6f92dbe132439764499cba47ee8263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9813c0551eca474547b313ac9a0386b4"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_unit_vector.html#a9813c0551eca474547b313ac9a0386b4">kNumParams</a> = kN</td></tr>
+<tr class="separator:a9813c0551eca474547b313ac9a0386b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aedaf7f612784aa65d6de8b4e88fa0df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedaf7f612784aa65d6de8b4e88fa0df5">&#9670;&nbsp;</a></span>Impl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::<a class="el" href="classsophus_1_1_unit_vector.html#aedaf7f612784aa65d6de8b4e88fa0df5">Impl</a> =  <a class="el" href="classsophus_1_1linalg_1_1_unit_vector_impl.html">linalg::UnitVectorImpl</a>&lt;<a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a>, kN&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ead6654b801640b6b2fa037815bdb8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ead6654b801640b6b2fa037815bdb8b">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::<a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a> =  TScalar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4a6fd07b828c1719c402018198a43b74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a6fd07b828c1719c402018198a43b74">&#9670;&nbsp;</a></span>UnitVector()</h2>
@@ -142,8 +205,8 @@ template&lt;class TScalar , int kN&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a659620add3374b03d09a10e311b4073a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a659620add3374b03d09a10e311b4073a">&#9670;&nbsp;</a></span>fromUnitVector()</h2>
+<a id="ae5110183860b466131dfd4463cfcb86f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5110183860b466131dfd4463cfcb86f">&#9670;&nbsp;</a></span>fromParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,11 +217,11 @@ template&lt;class TScalar , int kN&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::fromUnitVector </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::fromParams </td>
           <td>(</td>
           <td class="paramtype">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> </td>
         </tr>
       </table>
   </td>
@@ -170,8 +233,8 @@ template&lt;class TScalar , int kN&gt; </div>
 
 </div>
 </div>
-<a id="abff3dd59b3aab23fe7777b8b88494c08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abff3dd59b3aab23fe7777b8b88494c08">&#9670;&nbsp;</a></span>fromVectorAndNormalize()</h2>
+<a id="a2e02c840f8e3f128d751a357d28c2778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e02c840f8e3f128d751a357d28c2778">&#9670;&nbsp;</a></span>fromUnitVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,11 +245,11 @@ template&lt;class TScalar , int kN&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::fromVectorAndNormalize </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::fromUnitVector </td>
           <td>(</td>
           <td class="paramtype">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> </td>
         </tr>
       </table>
   </td>
@@ -198,8 +261,8 @@ template&lt;class TScalar , int kN&gt; </div>
 
 </div>
 </div>
-<a id="ad8afa9fd05f3b62ea5936ecc5591c8c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8afa9fd05f3b62ea5936ecc5591c8c3">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a25bfe06a0541c41d5fc380358c227f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25bfe06a0541c41d5fc380358c227f5a">&#9670;&nbsp;</a></span>fromVectorAndNormalize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,11 +273,67 @@ template&lt;class TScalar , int kN&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&amp; <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::operator= </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::fromVectorAndNormalize </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad46de36e73dcb7612308687455e554f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46de36e73dcb7612308687455e554f1">&#9670;&nbsp;</a></span>ominus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::ominus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; TScalar, kN &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>rhs_params</em></td><td>)</td>
+          <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a>, <a class="el" href="classsophus_1_1_unit_vector.html#a5a6f92dbe132439764499cba47ee8263">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5577eb7d933ad2335f20da508bcd778d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5577eb7d933ad2335f20da508bcd778d">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; TScalar, kN &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> -&gt;  <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> &amp;=default</td>
         </tr>
       </table>
   </td>
@@ -226,8 +345,8 @@ template&lt;class TScalar , int kN&gt; </div>
 
 </div>
 </div>
-<a id="a6f18649b338e5703cff9d26e22672b20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f18649b338e5703cff9d26e22672b20">&#9670;&nbsp;</a></span>tryFromUnitVector()</h2>
+<a id="a567a84210e9248d2d340620d80215860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567a84210e9248d2d340620d80215860">&#9670;&nbsp;</a></span>oplus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,24 +357,24 @@ template&lt;class TScalar , int kN&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Expected&lt;<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&gt; <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::tryFromUnitVector </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::oplus </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_unit_vector.html#a5ead6654b801640b6b2fa037815bdb8b">Scalar</a>, <a class="el" href="classsophus_1_1_unit_vector.html#a5a6f92dbe132439764499cba47ee8263">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a> </td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a54264762ad3b689f57c95998173fbe26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54264762ad3b689f57c95998173fbe26">&#9670;&nbsp;</a></span>vector()</h2>
+<a id="a2ece080df5532e86508fe57799cd9d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ece080df5532e86508fe57799cd9d47">&#9670;&nbsp;</a></span>params()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +385,34 @@ template&lt;class TScalar , int kN&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt;TScalar, kN, 1&gt; const&amp; <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::vector </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::params </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;TScalar, kN, 1&gt; const&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44ec40d511731e83a7567ed2ba649220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ec40d511731e83a7567ed2ba649220">&#9670;&nbsp;</a></span>ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::ptr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -281,8 +427,168 @@ template&lt;class TScalar , int kN&gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/geometry/<a class="el" href="unit__vector_8h_source.html">unit_vector.h</a></li>
+<a id="a386e39013b94fcf84c7dd5ac577f56c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386e39013b94fcf84c7dd5ac577f56c2">&#9670;&nbsp;</a></span>setParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::setParams </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab92238c80668a1fe2a4786c2f6793620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92238c80668a1fe2a4786c2f6793620">&#9670;&nbsp;</a></span>tryFromUnitVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::tryFromUnitVector </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::Matrix&lt; TScalar, kN, 1 &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> -&gt; Expected&lt;<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a881b98b995222980de1624c56cd4fc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881b98b995222980de1624c56cd4fc0d">&#9670;&nbsp;</a></span>unsafeMutPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::unsafeMutPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d81bf1641277c8d1de09097a91bbb58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d81bf1641277c8d1de09097a91bbb58">&#9670;&nbsp;</a></span>vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;TScalar, kN, 1&gt; const&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5a6f92dbe132439764499cba47ee8263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6f92dbe132439764499cba47ee8263">&#9670;&nbsp;</a></span>kDof</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::kDof = kN - 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9813c0551eca474547b313ac9a0386b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9813c0551eca474547b313ac9a0386b4">&#9670;&nbsp;</a></span>kNumParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kN&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="classsophus_1_1_unit_vector.html">sophus::UnitVector</a>&lt; TScalar, kN &gt;::kNumParams = kN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>projects/Sophus/cpp/sophus/concepts/<a class="el" href="concepts_2lie__group_8h_source.html">lie_group.h</a></li>
+<li>projects/Sophus/cpp/sophus/linalg/<a class="el" href="unit__vector_8h_source.html">unit_vector.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('fit__plane_8h_source.html',''); initRe
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesophus.html">sophus</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">   16</a></span>&#160;<span class="keyword">inline</span> Eigen::Hyperplane&lt;double, 3&gt; <a class="code" href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">fitPlaneToPoints</a>(</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Eigen::Matrix3Xd <span class="keyword">const</span>&amp; points) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">   16</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">fitPlaneToPoints</a>(Eigen::Matrix3Xd <span class="keyword">const</span>&amp; points)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    -&gt; Eigen::Hyperplane&lt;double, 3&gt; {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  Eigen::Vector3d mean = points.rowwise().mean();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  Eigen::Matrix3Xd points_centered = points.colwise() - mean;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  Eigen::JacobiSVD&lt;Eigen::Matrix3Xd&gt; svd(</div>
@@ -113,18 +113,18 @@ $(document).ready(function(){initNavTree('fit__plane_8h_source.html',''); initRe
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// convenience overloads</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacesophus.html#a0ead6b322fb1275f7c58fff7ce2fe879">   27</a></span>&#160;Eigen::Hyperplane&lt;double, 3&gt; <a class="code" href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">fitPlaneToPoints</a>(</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;Eigen::Vector3d&gt; <span class="keyword">const</span>&amp; points) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacesophus.html#a2db55d72bf4de33bf31a5ad7acdca3ee">   27</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">fitPlaneToPoints</a>(std::vector&lt;Eigen::Vector3d&gt; <span class="keyword">const</span>&amp; points)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    -&gt; Eigen::Hyperplane&lt;double, 3&gt; {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Eigen::Map&lt;const Eigen::Matrix3Xd&gt; map(</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      points.data()-&gt;data(), 3, points.size());</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">fitPlaneToPoints</a>(map.eval());</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">fitPlaneToPoints</a>(map.eval());</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespacesophus.html#adf35fdbbe57b74bc403b72de297a92bd">   34</a></span>&#160;Eigen::Hyperplane&lt;double, 3&gt; <a class="code" href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">fitPlaneToPoints</a>(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;Eigen::Vector3f&gt; <span class="keyword">const</span>&amp; points) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespacesophus.html#a40be97493f11796f5466897d51cbd05b">   34</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">fitPlaneToPoints</a>(std::vector&lt;Eigen::Vector3f&gt; <span class="keyword">const</span>&amp; points)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    -&gt; Eigen::Hyperplane&lt;double, 3&gt; {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Eigen::Map&lt;const Eigen::Matrix3Xf&gt; map(</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      points.data()-&gt;data(), 3, points.size());</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">fitPlaneToPoints</a>(map.cast&lt;<span class="keywordtype">double</span>&gt;().eval());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">fitPlaneToPoints</a>(map.cast&lt;<span class="keywordtype">double</span>&gt;().eval());</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace sophus</span></div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('fit__plane_8h_source.html',''); initRe
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
 <div class="ttc" id="anamespacesophus_html_afd307b8cdfbe9c85d3a252b5860aefafafea087517c26fadd409bd4b9dc642555"><div class="ttname"><a href="namespacesophus.html#afd307b8cdfbe9c85d3a252b5860aefafafea087517c26fadd409bd4b9dc642555">sophus::SegmentCase::normal</a></div><div class="ttdeci">@ normal</div></div>
-<div class="ttc" id="anamespacesophus_html_a50acfda87624aea195f462f29d55e968"><div class="ttname"><a href="namespacesophus.html#a50acfda87624aea195f462f29d55e968">sophus::fitPlaneToPoints</a></div><div class="ttdeci">Eigen::Hyperplane&lt; double, 3 &gt; fitPlaneToPoints(Eigen::Matrix3Xd const &amp;points)</div><div class="ttdef"><b>Definition:</b> fit_plane.h:16</div></div>
+<div class="ttc" id="anamespacesophus_html_ad84196fdbb6529a6bbe08708c761ef16"><div class="ttname"><a href="namespacesophus.html#ad84196fdbb6529a6bbe08708c761ef16">sophus::fitPlaneToPoints</a></div><div class="ttdeci">auto fitPlaneToPoints(Eigen::Matrix3Xd const &amp;points) -&gt; Eigen::Hyperplane&lt; double, 3 &gt;</div><div class="ttdef"><b>Definition:</b> fit_plane.h:16</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

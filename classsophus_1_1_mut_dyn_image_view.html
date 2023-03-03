@@ -120,24 +120,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97b5717464b46a653316297d4dd3bff5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a97b5717464b46a653316297d4dd3bff5">MutDynImageView</a> (<a class="el" href="classsophus_1_1_mut_image_view.html">MutImageView</a>&lt; TPixel &gt; const &amp;image)</td></tr>
 <tr class="memdesc:a97b5717464b46a653316297d4dd3bff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create type-erased image view from <a class="el" href="structsophus_1_1_image_view.html" title="A view of an (immutable) image, which does not own the data.">ImageView</a>.  <a href="classsophus_1_1_mut_dyn_image_view.html#a97b5717464b46a653316297d4dd3bff5">More...</a><br /></td></tr>
 <tr class="separator:a97b5717464b46a653316297d4dd3bff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616f2ce5774d7fdc3a97b88925c19364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a616f2ce5774d7fdc3a97b88925c19364">MutDynImageView</a> (<a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;<a class="el" href="classsophus_1_1_dyn_image_view.html#ad161fb43fe6a2277907edebd8cf55705">layout</a>, <a class="el" href="structsophus_1_1_pixel_format.html">PixelFormat</a> const &amp;pixel_type, void const *ptr)</td></tr>
+<tr class="memitem:a616f2ce5774d7fdc3a97b88925c19364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a616f2ce5774d7fdc3a97b88925c19364">MutDynImageView</a> (<a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;<a class="el" href="classsophus_1_1_dyn_image_view.html#a26422a0ce514a69036545da6c216e5d0">layout</a>, <a class="el" href="structsophus_1_1_pixel_format.html">PixelFormat</a> const &amp;pixel_type, void const *ptr)</td></tr>
 <tr class="separator:a616f2ce5774d7fdc3a97b88925c19364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b49d1c586968b36b26d9ce508f60f3e"><td class="memTemplParams" colspan="2">template&lt;class TPixel &gt; </td></tr>
-<tr class="memitem:a7b49d1c586968b36b26d9ce508f60f3e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a7b49d1c586968b36b26d9ce508f60f3e">has</a> () const noexcept</td></tr>
-<tr class="memdesc:a7b49d1c586968b36b26d9ce508f60f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true is this contains data of type TPixel.  <a href="classsophus_1_1_mut_dyn_image_view.html#a7b49d1c586968b36b26d9ce508f60f3e">More...</a><br /></td></tr>
-<tr class="separator:a7b49d1c586968b36b26d9ce508f60f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab60f161140277b6336e02ba692b9aaab"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#ab60f161140277b6336e02ba692b9aaab">rawMutRowPtr</a> (int v) const</td></tr>
-<tr class="memdesc:ab60f161140277b6336e02ba692b9aaab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns v-th row pointer.  <a href="classsophus_1_1_mut_dyn_image_view.html#ab60f161140277b6336e02ba692b9aaab">More...</a><br /></td></tr>
-<tr class="separator:ab60f161140277b6336e02ba692b9aaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f5ba7c7e3460d6e37637fcc49091bd"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a16f5ba7c7e3460d6e37637fcc49091bd">rawMutPtr</a> () const</td></tr>
-<tr class="separator:a16f5ba7c7e3460d6e37637fcc49091bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa77a98a792cc287986a4b0ef7c466cdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html">MutDynImageView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#aa77a98a792cc287986a4b0ef7c466cdd">mutSubview</a> (Eigen::Vector2i uv, <a class="el" href="structsophus_1_1_image_size.html">sophus::ImageSize</a> size) const</td></tr>
-<tr class="memdesc:aa77a98a792cc287986a4b0ef7c466cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns subview with shared ownership semantics of whole image.  <a href="classsophus_1_1_mut_dyn_image_view.html#aa77a98a792cc287986a4b0ef7c466cdd">More...</a><br /></td></tr>
-<tr class="separator:aa77a98a792cc287986a4b0ef7c466cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae137b41028f752a812168bd980f74b63"><td class="memTemplParams" colspan="2">template&lt;class TPixel &gt; </td></tr>
-<tr class="memitem:ae137b41028f752a812168bd980f74b63"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1_mut_image_view.html">MutImageView</a>&lt; TPixel &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#ae137b41028f752a812168bd980f74b63">mutImageView</a> () const noexcept</td></tr>
-<tr class="memdesc:ae137b41028f752a812168bd980f74b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns typed image view.  <a href="classsophus_1_1_mut_dyn_image_view.html#ae137b41028f752a812168bd980f74b63">More...</a><br /></td></tr>
-<tr class="separator:ae137b41028f752a812168bd980f74b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de186f498c20348d8d2a8e0344956d2"><td class="memTemplParams" colspan="2">template&lt;class TPixel &gt; </td></tr>
+<tr class="memitem:a5de186f498c20348d8d2a8e0344956d2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a5de186f498c20348d8d2a8e0344956d2">has</a> () const noexcept -&gt; bool</td></tr>
+<tr class="memdesc:a5de186f498c20348d8d2a8e0344956d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true is this contains data of type TPixel.  <a href="classsophus_1_1_mut_dyn_image_view.html#a5de186f498c20348d8d2a8e0344956d2">More...</a><br /></td></tr>
+<tr class="separator:a5de186f498c20348d8d2a8e0344956d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59e1e333bb1299a8095e75bc3349188"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#ae59e1e333bb1299a8095e75bc3349188">rawMutRowPtr</a> (int v) const -&gt; uint8_t *</td></tr>
+<tr class="memdesc:ae59e1e333bb1299a8095e75bc3349188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns v-th row pointer.  <a href="classsophus_1_1_mut_dyn_image_view.html#ae59e1e333bb1299a8095e75bc3349188">More...</a><br /></td></tr>
+<tr class="separator:ae59e1e333bb1299a8095e75bc3349188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1ab24024475341a4e7f7d4fbf6c862"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a5e1ab24024475341a4e7f7d4fbf6c862">rawMutPtr</a> () const -&gt; uint8_t *</td></tr>
+<tr class="separator:a5e1ab24024475341a4e7f7d4fbf6c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4272371f4d5b461238d4a72f89bec42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#ab4272371f4d5b461238d4a72f89bec42">mutSubview</a> (Eigen::Vector2i uv, <a class="el" href="structsophus_1_1_image_size.html">sophus::ImageSize</a> size) const -&gt; <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">MutDynImageView</a></td></tr>
+<tr class="memdesc:ab4272371f4d5b461238d4a72f89bec42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns subview with shared ownership semantics of whole image.  <a href="classsophus_1_1_mut_dyn_image_view.html#ab4272371f4d5b461238d4a72f89bec42">More...</a><br /></td></tr>
+<tr class="separator:ab4272371f4d5b461238d4a72f89bec42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eee2286e23429c7653008c31828ebd"><td class="memTemplParams" colspan="2">template&lt;class TPixel &gt; </td></tr>
+<tr class="memitem:a72eee2286e23429c7653008c31828ebd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a72eee2286e23429c7653008c31828ebd">mutImageView</a> () const noexcept -&gt; <a class="el" href="classsophus_1_1_mut_image_view.html">MutImageView</a>&lt; TPixel &gt;</td></tr>
+<tr class="memdesc:a72eee2286e23429c7653008c31828ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns typed image view.  <a href="classsophus_1_1_mut_dyn_image_view.html#a72eee2286e23429c7653008c31828ebd">More...</a><br /></td></tr>
+<tr class="separator:a72eee2286e23429c7653008c31828ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54c154c75769e1a597fd6f9aa301c982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html#a54c154c75769e1a597fd6f9aa301c982">copyDataFrom</a> (<a class="el" href="classsophus_1_1_dyn_image_view.html">DynImageView</a>&lt; TPredicate &gt; view) const</td></tr>
 <tr class="memdesc:a54c154c75769e1a597fd6f9aa301c982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from view into this.  <a href="classsophus_1_1_mut_dyn_image_view.html#a54c154c75769e1a597fd6f9aa301c982">More...</a><br /></td></tr>
 <tr class="separator:a54c154c75769e1a597fd6f9aa301c982"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,45 +145,45 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1eee61c3bf6cfb7e098fec7aa0b07eb2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a1eee61c3bf6cfb7e098fec7aa0b07eb2">DynImageView</a> (<a class="el" href="structsophus_1_1_image_view.html">ImageView</a>&lt; TPixel &gt; const &amp;image)</td></tr>
 <tr class="memdesc:a1eee61c3bf6cfb7e098fec7aa0b07eb2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create type-erased image view from ImageView.  <a href="classsophus_1_1_dyn_image_view.html#a1eee61c3bf6cfb7e098fec7aa0b07eb2">More...</a><br /></td></tr>
 <tr class="separator:a1eee61c3bf6cfb7e098fec7aa0b07eb2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eb7f5ce386382abd4c93bb0ce1b33f2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a9eb7f5ce386382abd4c93bb0ce1b33f2">DynImageView</a> (<a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;<a class="el" href="classsophus_1_1_dyn_image_view.html#ad161fb43fe6a2277907edebd8cf55705">layout</a>, <a class="el" href="structsophus_1_1_pixel_format.html">PixelFormat</a> const &amp;pixel_type, void const *ptr)</td></tr>
+<tr class="memitem:a9eb7f5ce386382abd4c93bb0ce1b33f2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a9eb7f5ce386382abd4c93bb0ce1b33f2">DynImageView</a> (<a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;<a class="el" href="classsophus_1_1_dyn_image_view.html#a26422a0ce514a69036545da6c216e5d0">layout</a>, <a class="el" href="structsophus_1_1_pixel_format.html">PixelFormat</a> const &amp;pixel_type, void const *ptr)</td></tr>
 <tr class="separator:a9eb7f5ce386382abd4c93bb0ce1b33f2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8104b388458696a8c304ceb74c2b9ceb inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a8104b388458696a8c304ceb74c2b9ceb">has</a> () const noexcept</td></tr>
-<tr class="memdesc:a8104b388458696a8c304ceb74c2b9ceb inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true is this contains data of type TPixel.  <a href="classsophus_1_1_dyn_image_view.html#a8104b388458696a8c304ceb74c2b9ceb">More...</a><br /></td></tr>
-<tr class="separator:a8104b388458696a8c304ceb74c2b9ceb inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4d827fb3b70ec89726703b5d813be4 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">uint8_t const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#aeb4d827fb3b70ec89726703b5d813be4">rawRowPtr</a> (int v) const</td></tr>
-<tr class="memdesc:aeb4d827fb3b70ec89726703b5d813be4 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns v-th row pointer.  <a href="classsophus_1_1_dyn_image_view.html#aeb4d827fb3b70ec89726703b5d813be4">More...</a><br /></td></tr>
-<tr class="separator:aeb4d827fb3b70ec89726703b5d813be4 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d57040f577f41793286c0165e85297 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">uint8_t const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a42d57040f577f41793286c0165e85297">rawPtr</a> () const</td></tr>
-<tr class="separator:a42d57040f577f41793286c0165e85297 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be9183520687d6e1be40b9d870368b1 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a3be9183520687d6e1be40b9d870368b1">numBytesPerPixelChannel</a> () const</td></tr>
-<tr class="memdesc:a3be9183520687d6e1be40b9d870368b1 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes per channel of a single pixel.  <a href="classsophus_1_1_dyn_image_view.html#a3be9183520687d6e1be40b9d870368b1">More...</a><br /></td></tr>
-<tr class="separator:a3be9183520687d6e1be40b9d870368b1 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86a44814d0a9b676506c4181e70a46c inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">NumberType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#ae86a44814d0a9b676506c4181e70a46c">numberType</a> () const</td></tr>
-<tr class="separator:ae86a44814d0a9b676506c4181e70a46c inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad161fb43fe6a2277907edebd8cf55705 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#ad161fb43fe6a2277907edebd8cf55705">layout</a> () const</td></tr>
-<tr class="separator:ad161fb43fe6a2277907edebd8cf55705 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c889b2f823106186f96793876df73c5 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_image_size.html">ImageSize</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a2c889b2f823106186f96793876df73c5">imageSize</a> () const</td></tr>
-<tr class="separator:a2c889b2f823106186f96793876df73c5 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c9208cddf651646a0a7cc55a7019845 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a6c9208cddf651646a0a7cc55a7019845">width</a> () const</td></tr>
-<tr class="separator:a6c9208cddf651646a0a7cc55a7019845 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d081354fb9106275a875bc979a4f9ce inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a6d081354fb9106275a875bc979a4f9ce">height</a> () const</td></tr>
-<tr class="separator:a6d081354fb9106275a875bc979a4f9ce inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d237bdc470bca15886d18aa6a7adfa2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a9d237bdc470bca15886d18aa6a7adfa2">pitchBytes</a> () const</td></tr>
-<tr class="separator:a9d237bdc470bca15886d18aa6a7adfa2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9c20926784269440382ea92c8cfc6d inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a1d9c20926784269440382ea92c8cfc6d">sizeBytes</a> () const</td></tr>
-<tr class="separator:a1d9c20926784269440382ea92c8cfc6d inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26920d2cfd05fc36514e031d96e5aa7 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#af26920d2cfd05fc36514e031d96e5aa7">isEmpty</a> () const</td></tr>
-<tr class="separator:af26920d2cfd05fc36514e031d96e5aa7 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0117bd6ec1822c5f5c03164fdbd12e9 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_pixel_format.html">PixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#ae0117bd6ec1822c5f5c03164fdbd12e9">pixelFormat</a> () const</td></tr>
-<tr class="separator:ae0117bd6ec1822c5f5c03164fdbd12e9 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee6ab731954663838f4a8c60b0e6877 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#abee6ab731954663838f4a8c60b0e6877">numChannels</a> () const</td></tr>
-<tr class="separator:abee6ab731954663838f4a8c60b0e6877 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff525dfd27cb4fd651522dce89caadb inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1_dyn_image_view.html">DynImageView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a1ff525dfd27cb4fd651522dce89caadb">subview</a> (Eigen::Vector2i uv, <a class="el" href="structsophus_1_1_image_size.html">sophus::ImageSize</a> size) const</td></tr>
-<tr class="memdesc:a1ff525dfd27cb4fd651522dce89caadb inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns subview with shared ownership semantics of whole image.  <a href="classsophus_1_1_dyn_image_view.html#a1ff525dfd27cb4fd651522dce89caadb">More...</a><br /></td></tr>
-<tr class="separator:a1ff525dfd27cb4fd651522dce89caadb inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf809c3d4a8591b02e364f1a750937c9 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_image_view.html">ImageView</a>&lt; TPixel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#acf809c3d4a8591b02e364f1a750937c9">imageView</a> () const noexcept</td></tr>
-<tr class="memdesc:acf809c3d4a8591b02e364f1a750937c9 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns typed image.  <a href="classsophus_1_1_dyn_image_view.html#acf809c3d4a8591b02e364f1a750937c9">More...</a><br /></td></tr>
-<tr class="separator:acf809c3d4a8591b02e364f1a750937c9 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b27e6603d913f08b3e464b972235751 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a4b27e6603d913f08b3e464b972235751">has</a> () const noexcept -&gt; bool</td></tr>
+<tr class="memdesc:a4b27e6603d913f08b3e464b972235751 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true is this contains data of type TPixel.  <a href="classsophus_1_1_dyn_image_view.html#a4b27e6603d913f08b3e464b972235751">More...</a><br /></td></tr>
+<tr class="separator:a4b27e6603d913f08b3e464b972235751 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33122f8b61a00d1ff97e2529dd7538f2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a33122f8b61a00d1ff97e2529dd7538f2">rawRowPtr</a> (int v) const -&gt; uint8_t const *</td></tr>
+<tr class="memdesc:a33122f8b61a00d1ff97e2529dd7538f2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns v-th row pointer.  <a href="classsophus_1_1_dyn_image_view.html#a33122f8b61a00d1ff97e2529dd7538f2">More...</a><br /></td></tr>
+<tr class="separator:a33122f8b61a00d1ff97e2529dd7538f2 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb6e8593394f826fea4d878cb47332a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a6fb6e8593394f826fea4d878cb47332a">rawPtr</a> () const -&gt; uint8_t const *</td></tr>
+<tr class="separator:a6fb6e8593394f826fea4d878cb47332a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d95c97d15d16dbb7d4d6c8c5d45adc inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#ae9d95c97d15d16dbb7d4d6c8c5d45adc">numBytesPerPixelChannel</a> () const -&gt; int</td></tr>
+<tr class="memdesc:ae9d95c97d15d16dbb7d4d6c8c5d45adc inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes per channel of a single pixel.  <a href="classsophus_1_1_dyn_image_view.html#ae9d95c97d15d16dbb7d4d6c8c5d45adc">More...</a><br /></td></tr>
+<tr class="separator:ae9d95c97d15d16dbb7d4d6c8c5d45adc inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228d8bd3acbdceaace107997dc1768ad inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a228d8bd3acbdceaace107997dc1768ad">numberType</a> () const -&gt; NumberType</td></tr>
+<tr class="separator:a228d8bd3acbdceaace107997dc1768ad inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26422a0ce514a69036545da6c216e5d0 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a26422a0ce514a69036545da6c216e5d0">layout</a> () const -&gt; <a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;</td></tr>
+<tr class="separator:a26422a0ce514a69036545da6c216e5d0 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc627447bc73ff7e5238af23b7f2f0b inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a8dc627447bc73ff7e5238af23b7f2f0b">imageSize</a> () const -&gt; <a class="el" href="structsophus_1_1_image_size.html">ImageSize</a> const &amp;</td></tr>
+<tr class="separator:a8dc627447bc73ff7e5238af23b7f2f0b inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dda234e913289e7af06018af09d2c45 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a3dda234e913289e7af06018af09d2c45">width</a> () const -&gt; int</td></tr>
+<tr class="separator:a3dda234e913289e7af06018af09d2c45 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921c536cfc5c1191b0fbb16260a8f17b inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a921c536cfc5c1191b0fbb16260a8f17b">height</a> () const -&gt; int</td></tr>
+<tr class="separator:a921c536cfc5c1191b0fbb16260a8f17b inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6531214174c34ed16f0279c426d96505 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a6531214174c34ed16f0279c426d96505">pitchBytes</a> () const -&gt; size_t</td></tr>
+<tr class="separator:a6531214174c34ed16f0279c426d96505 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07110ab915472ad0aa5994539d9219a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#ae07110ab915472ad0aa5994539d9219a">sizeBytes</a> () const -&gt; size_t</td></tr>
+<tr class="separator:ae07110ab915472ad0aa5994539d9219a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e851ff451c9fb3cd7004c3959b549f inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#aa8e851ff451c9fb3cd7004c3959b549f">isEmpty</a> () const -&gt; bool</td></tr>
+<tr class="separator:aa8e851ff451c9fb3cd7004c3959b549f inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a052b04252dfd30a4c28dbb7a82128dd0 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a052b04252dfd30a4c28dbb7a82128dd0">pixelFormat</a> () const -&gt; <a class="el" href="structsophus_1_1_pixel_format.html">PixelFormat</a></td></tr>
+<tr class="separator:a052b04252dfd30a4c28dbb7a82128dd0 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73f584fc949643636dc4fdffcbed8d0 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#ad73f584fc949643636dc4fdffcbed8d0">numChannels</a> () const -&gt; int</td></tr>
+<tr class="separator:ad73f584fc949643636dc4fdffcbed8d0 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c273c96ad72d67764c2292ee0b807ae inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a4c273c96ad72d67764c2292ee0b807ae">subview</a> (Eigen::Vector2i uv, <a class="el" href="structsophus_1_1_image_size.html">sophus::ImageSize</a> size) const -&gt; <a class="el" href="classsophus_1_1_dyn_image_view.html">DynImageView</a></td></tr>
+<tr class="memdesc:a4c273c96ad72d67764c2292ee0b807ae inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns subview with shared ownership semantics of whole image.  <a href="classsophus_1_1_dyn_image_view.html#a4c273c96ad72d67764c2292ee0b807ae">More...</a><br /></td></tr>
+<tr class="separator:a4c273c96ad72d67764c2292ee0b807ae inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30be5c39afb0162a680197ba7a74923a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#a30be5c39afb0162a680197ba7a74923a">imageView</a> () const noexcept -&gt; <a class="el" href="structsophus_1_1_image_view.html">ImageView</a>&lt; TPixel &gt;</td></tr>
+<tr class="memdesc:a30be5c39afb0162a680197ba7a74923a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns typed image.  <a href="classsophus_1_1_dyn_image_view.html#a30be5c39afb0162a680197ba7a74923a">More...</a><br /></td></tr>
+<tr class="separator:a30be5c39afb0162a680197ba7a74923a inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acccbfed87360878e8c2f625a092434e4 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_dyn_image_view.html#acccbfed87360878e8c2f625a092434e4">setViewToEmpty</a> ()</td></tr>
 <tr class="separator:acccbfed87360878e8c2f625a092434e4 inherit pub_methods_classsophus_1_1_dyn_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -339,15 +339,15 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
 
 <p>Copies data from view into this. </p>
 <p>Preconditions:</p><ul>
-<li>this-&gt;<a class="el" href="classsophus_1_1_dyn_image_view.html#af26920d2cfd05fc36514e031d96e5aa7">isEmpty()</a> == view.isEmpty()</li>
+<li>this-&gt;<a class="el" href="classsophus_1_1_dyn_image_view.html#aa8e851ff451c9fb3cd7004c3959b549f">isEmpty()</a> == view.isEmpty()</li>
 <li>this-&gt;size() == view.size()</li>
 </ul>
 <p>No-op if view is empty. </p>
 
 </div>
 </div>
-<a id="a7b49d1c586968b36b26d9ce508f60f3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b49d1c586968b36b26d9ce508f60f3e">&#9670;&nbsp;</a></span>has()</h2>
+<a id="a5de186f498c20348d8d2a8e0344956d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de186f498c20348d8d2a8e0344956d2">&#9670;&nbsp;</a></span>has()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,10 +360,10 @@ template&lt;class TPixel &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::has </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::has </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; bool </td>
         </tr>
       </table>
   </td>
@@ -377,8 +377,8 @@ template&lt;class TPixel &gt; </div>
 
 </div>
 </div>
-<a id="ae137b41028f752a812168bd980f74b63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae137b41028f752a812168bd980f74b63">&#9670;&nbsp;</a></span>mutImageView()</h2>
+<a id="a72eee2286e23429c7653008c31828ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72eee2286e23429c7653008c31828ebd">&#9670;&nbsp;</a></span>mutImageView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,10 +391,10 @@ template&lt;class TPixel &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsophus_1_1_mut_image_view.html">MutImageView</a>&lt;TPixel&gt; <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::mutImageView </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::mutImageView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1_mut_image_view.html">MutImageView</a>&lt;TPixel&gt; </td>
         </tr>
       </table>
   </td>
@@ -405,12 +405,12 @@ template&lt;class TPixel &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns typed image view. </p>
-<p>Precondition: this-&gt;<a class="el" href="classsophus_1_1_dyn_image_view.html#a8104b388458696a8c304ceb74c2b9ceb" title="Return true is this contains data of type TPixel.">has&lt;TPixel&gt;()</a> </p>
+<p>Precondition: this-&gt;<a class="el" href="classsophus_1_1_dyn_image_view.html#a4b27e6603d913f08b3e464b972235751" title="Return true is this contains data of type TPixel.">has&lt;TPixel&gt;()</a> </p>
 
 </div>
 </div>
-<a id="aa77a98a792cc287986a4b0ef7c466cdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa77a98a792cc287986a4b0ef7c466cdd">&#9670;&nbsp;</a></span>mutSubview()</h2>
+<a id="ab4272371f4d5b461238d4a72f89bec42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4272371f4d5b461238d4a72f89bec42">&#9670;&nbsp;</a></span>mutSubview()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +421,7 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsophus_1_1_mut_dyn_image_view.html">MutDynImageView</a> <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::mutSubview </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::mutSubview </td>
           <td>(</td>
           <td class="paramtype">Eigen::Vector2i&#160;</td>
           <td class="paramname"><em>uv</em>, </td>
@@ -435,7 +435,7 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td> const -&gt; <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">MutDynImageView</a> </td>
         </tr>
       </table>
   </td>
@@ -449,8 +449,8 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
 
 </div>
 </div>
-<a id="a16f5ba7c7e3460d6e37637fcc49091bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16f5ba7c7e3460d6e37637fcc49091bd">&#9670;&nbsp;</a></span>rawMutPtr()</h2>
+<a id="a5e1ab24024475341a4e7f7d4fbf6c862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1ab24024475341a4e7f7d4fbf6c862">&#9670;&nbsp;</a></span>rawMutPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -461,10 +461,10 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::rawMutPtr </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::rawMutPtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; uint8_t* </td>
         </tr>
       </table>
   </td>
@@ -476,8 +476,8 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
 
 </div>
 </div>
-<a id="ab60f161140277b6336e02ba692b9aaab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab60f161140277b6336e02ba692b9aaab">&#9670;&nbsp;</a></span>rawMutRowPtr()</h2>
+<a id="ae59e1e333bb1299a8095e75bc3349188"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59e1e333bb1299a8095e75bc3349188">&#9670;&nbsp;</a></span>rawMutRowPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,11 +488,11 @@ template&lt;class TPredicate  = AnyImagePredicate&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::rawMutRowPtr </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_mut_dyn_image_view.html">sophus::MutDynImageView</a>&lt; TPredicate &gt;::rawMutRowPtr </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
-          <td> const</td>
+          <td> const -&gt; uint8_t* </td>
         </tr>
       </table>
   </td>

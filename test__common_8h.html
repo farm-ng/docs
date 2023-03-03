@@ -132,9 +132,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1a357e7cb5be1620e706254d8b55ab55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__common_8h.html#a1a357e7cb5be1620e706254d8b55ab55">EXPECT_CONTAINS</a>(str,  regex)&#160;&#160;&#160;EXPECT_TRUE(std::regex_search((str), (regex))) &lt;&lt; str</td></tr>
+<tr class="memitem:a1a357e7cb5be1620e706254d8b55ab55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__common_8h.html#a1a357e7cb5be1620e706254d8b55ab55">EXPECT_CONTAINS</a>(str,  regex)</td></tr>
 <tr class="separator:a1a357e7cb5be1620e706254d8b55ab55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7eddd10e3535750572a84924c1d9e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__common_8h.html#ade7eddd10e3535750572a84924c1d9e0">EXPECT_NOT_CONTAINS</a>(str,  regex)&#160;&#160;&#160;EXPECT_FALSE(std::regex_search((str), (regex))) &lt;&lt; str</td></tr>
+<tr class="memitem:ade7eddd10e3535750572a84924c1d9e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__common_8h.html#ade7eddd10e3535750572a84924c1d9e0">EXPECT_NOT_CONTAINS</a>(str,  regex)</td></tr>
 <tr class="separator:ade7eddd10e3535750572a84924c1d9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -159,11 +159,13 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EXPECT_TRUE(std::regex_search((str), (regex))) &lt;&lt; str</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  EXPECT_TRUE(std::regex_search((str), (regex))) \</div>
+<div class="line">      &lt;&lt; <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(<span class="stringliteral">&quot;str = `{}`&quot;</span>, str)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ade7eddd10e3535750572a84924c1d9e0"></a>
@@ -187,15 +189,18 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EXPECT_FALSE(std::regex_search((str), (regex))) &lt;&lt; str</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  EXPECT_FALSE(std::regex_search((str), (regex))) \</div>
+<div class="line">      &lt;&lt; <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(<span class="stringliteral">&quot;str = `{}`&quot;</span>, str)</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aformat_8h_html_a433412d321d236f0533bf9f9011fe0c0"><div class="ttname"><a href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a></div><div class="ttdeci">#define FARM_FORMAT(...)</div><div class="ttdoc">Formats the cstr using the libfmt library.</div><div class="ttdef"><b>Definition:</b> format.h:125</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

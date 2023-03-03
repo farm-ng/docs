@@ -97,134 +97,151 @@ $(document).ready(function(){initNavTree('interpolate__impl_8h_source.html','');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cartesian_8h.html">sophus/lie/cartesian.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rxso2_8h.html">sophus/lie/rxso2.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rxso3_8h.html">sophus/lie/rxso3.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="se2_8h.html">sophus/lie/se2.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="se3_8h.html">sophus/lie/se3.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sim2_8h.html">sophus/lie/sim2.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sim3_8h.html">sophus/lie/sim3.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="so2_8h.html">sophus/lie/so2.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="so3_8h.html">sophus/lie/so3.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesophus.html">sophus</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>interp_details {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TGroup&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">struct </span>Traits;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keywordtype">int</span> kPo<span class="keywordtype">int</span>Dim&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">struct </span>Traits&lt;Cartesian&lt;TScalar, kPointDim&gt;&gt; {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      Cartesian&lt;TScalar, kPointDim&gt; <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span>Traits&lt;So2&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(So2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">using</span> std::abs;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    TScalar angle = abs(foo_transform_bar.log());</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    TScalar <span class="keyword">const</span> k_pi = kPi&lt;TScalar&gt;;  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> abs(angle - k_pi) / (angle + k_pi) &lt; kEpsilon&lt;TScalar&gt;;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">struct </span>Traits&lt;RxSo2&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      RxSo2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> Traits&lt;So2&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        foo_transform_bar.so2());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span>Traits&lt;So3&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(So3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> std::abs;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    TScalar angle = abs(foo_transform_bar.logAndTheta().theta);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    TScalar <span class="keyword">const</span> k_pi = kPi&lt;TScalar&gt;;  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> abs(angle - k_pi) / (angle + k_pi) &lt; kEpsilon&lt;TScalar&gt;;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">struct </span>Traits&lt;RxSo3&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      RxSo3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> Traits&lt;So3&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        foo_transform_bar.so3());</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">struct </span>Traits&lt;Se2&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(Se2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> Traits&lt;So2&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        foo_transform_bar.so2());</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">struct </span>Traits&lt;Se3&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="isometry2_8h.html">sophus/lie/isometry2.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="isometry3_8h.html">sophus/lie/isometry3.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotation2_8h.html">sophus/lie/rotation2.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotation3_8h.html">sophus/lie/rotation3.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="scaling_8h.html">sophus/lie/scaling.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="similarity2_8h.html">sophus/lie/similarity2.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="similarity3_8h.html">sophus/lie/similarity3.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spiral__similarity2_8h.html">sophus/lie/spiral_similarity2.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spiral__similarity3_8h.html">sophus/lie/spiral_similarity3.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="translation_8h.html">sophus/lie/translation.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesophus.html">sophus</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>interp_details {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TGroup&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">struct </span>Traits;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keywordtype">int</span> kPo<span class="keywordtype">int</span>Dim&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#adf67576b6fe4e14fb4687996b6153abe">Translation</a>&lt;TScalar, kPointDim&gt;&gt; {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      Translation&lt;TScalar, kPointDim&gt; <span class="keyword">const</span>&amp; <span class="comment">/*unused*/</span>) -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#a858c5459c91bb072381660ddff36811d">Rotation2</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(Rotation2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">using</span> std::abs;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    TScalar angle = abs(foo_from_bar.log()[0]);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    TScalar <span class="keyword">const</span> k_pi = kPi&lt;TScalar&gt;;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> abs(angle - k_pi) / (angle + k_pi) &lt; kEpsilon&lt;TScalar&gt;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#a962ec8de49cacd37939d064be8508a21">SpiralSimilarity2</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      SpiralSimilarity2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar) -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> Traits&lt;Rotation2&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        foo_from_bar.rotation());</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#a3e564df07028350b082057adb6457c5c">Rotation3</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(Rotation3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">using</span> std::abs;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    TScalar angle = abs(foo_from_bar.log().norm());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    TScalar <span class="keyword">const</span> k_pi = kPi&lt;TScalar&gt;;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> abs(angle - k_pi) / (angle + k_pi) &lt; kEpsilon&lt;TScalar&gt;;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#a9b457f245a701e2dd71367076ba6226f">SpiralSimilarity3</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      SpiralSimilarity3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar) -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> Traits&lt;Rotation3&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        foo_from_bar.rotation());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#a1c9ca23c69ee4a1c0866d1263c74f1ef">Isometry2</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(Isometry2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> Traits&lt;Rotation2&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        foo_from_bar.rotation());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(Se3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> Traits&lt;So3&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        foo_transform_bar.so3());</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">struct </span>Traits&lt;Sim2&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(Sim2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> Traits&lt;So2&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        foo_transform_bar.rxso2().so2());</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    ;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">struct </span>Traits&lt;Sim3&lt;TScalar&gt;&gt; {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> hasShortestPathAmbiguity(Sim3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_transform_bar) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> Traits&lt;So3&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        foo_transform_bar.rxso3().so3());</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    ;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}  <span class="comment">// namespace interp_details</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#a5fef40cc1802708582c29ea07524c647">Isometry3</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(Isometry3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> Traits&lt;Rotation3&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        foo_from_bar.so3());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#ab3a957ca2eb5bb12d59b20aae3785e0f">Similarity2</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(Similarity2&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> Traits&lt;Rotation2&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        foo_from_bar.spiralSimilarity().rotation());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    ;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">struct </span>Traits&lt;<a class="code" href="namespacesophus_1_1concepts_1_1accessors.html#af033895728b7ae62eb7cd2adb55a8468">Similarity3</a>&lt;TScalar&gt;&gt; {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> constexpr kSupported = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> hasShortestPathAmbiguity(Similarity3&lt;TScalar&gt; <span class="keyword">const</span>&amp; foo_from_bar)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> Traits&lt;Rotation3&lt;TScalar&gt;&gt;::hasShortestPathAmbiguity(</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        foo_from_bar.spiralSimilarity().rotation());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    ;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}  <span class="comment">// namespace interp_details</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="asimilarity3_8h_html"><div class="ttname"><a href="similarity3_8h.html">similarity3.h</a></div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
-<div class="ttc" id="asim2_8h_html"><div class="ttname"><a href="sim2_8h.html">sim2.h</a></div></div>
-<div class="ttc" id="asim3_8h_html"><div class="ttname"><a href="sim3_8h.html">sim3.h</a></div></div>
-<div class="ttc" id="ase2_8h_html"><div class="ttname"><a href="se2_8h.html">se2.h</a></div></div>
-<div class="ttc" id="acartesian_8h_html"><div class="ttname"><a href="cartesian_8h.html">cartesian.h</a></div></div>
-<div class="ttc" id="ase3_8h_html"><div class="ttname"><a href="se3_8h.html">se3.h</a></div></div>
-<div class="ttc" id="aso2_8h_html"><div class="ttname"><a href="so2_8h.html">so2.h</a></div></div>
-<div class="ttc" id="aso3_8h_html"><div class="ttname"><a href="so3_8h.html">so3.h</a></div></div>
-<div class="ttc" id="arxso3_8h_html"><div class="ttname"><a href="rxso3_8h.html">rxso3.h</a></div></div>
-<div class="ttc" id="arxso2_8h_html"><div class="ttname"><a href="rxso2_8h.html">rxso2.h</a></div></div>
+<div class="ttc" id="asimilarity2_8h_html"><div class="ttname"><a href="similarity2_8h.html">similarity2.h</a></div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_a962ec8de49cacd37939d064be8508a21"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#a962ec8de49cacd37939d064be8508a21">sophus::concepts::accessors::SpiralSimilarity2</a></div><div class="ttdeci">concept SpiralSimilarity2</div><div class="ttdef"><b>Definition:</b> group_accessors.h:134</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_a858c5459c91bb072381660ddff36811d"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#a858c5459c91bb072381660ddff36811d">sophus::concepts::accessors::Rotation2</a></div><div class="ttdeci">concept Rotation2</div><div class="ttdef"><b>Definition:</b> group_accessors.h:113</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_ab3a957ca2eb5bb12d59b20aae3785e0f"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#ab3a957ca2eb5bb12d59b20aae3785e0f">sophus::concepts::accessors::Similarity2</a></div><div class="ttdeci">concept Similarity2</div><div class="ttdef"><b>Definition:</b> group_accessors.h:150</div></div>
+<div class="ttc" id="aisometry3_8h_html"><div class="ttname"><a href="isometry3_8h.html">isometry3.h</a></div></div>
+<div class="ttc" id="aisometry2_8h_html"><div class="ttname"><a href="isometry2_8h.html">isometry2.h</a></div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_a1c9ca23c69ee4a1c0866d1263c74f1ef"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#a1c9ca23c69ee4a1c0866d1263c74f1ef">sophus::concepts::accessors::Isometry2</a></div><div class="ttdeci">concept Isometry2</div><div class="ttdef"><b>Definition:</b> group_accessors.h:128</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_af033895728b7ae62eb7cd2adb55a8468"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#af033895728b7ae62eb7cd2adb55a8468">sophus::concepts::accessors::Similarity3</a></div><div class="ttdeci">concept Similarity3</div><div class="ttdef"><b>Definition:</b> group_accessors.h:153</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_a3e564df07028350b082057adb6457c5c"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#a3e564df07028350b082057adb6457c5c">sophus::concepts::accessors::Rotation3</a></div><div class="ttdeci">concept Rotation3</div><div class="ttdef"><b>Definition:</b> group_accessors.h:120</div></div>
+<div class="ttc" id="arotation2_8h_html"><div class="ttname"><a href="rotation2_8h.html">rotation2.h</a></div></div>
+<div class="ttc" id="aspiral__similarity2_8h_html"><div class="ttname"><a href="spiral__similarity2_8h.html">spiral_similarity2.h</a></div></div>
+<div class="ttc" id="ascaling_8h_html"><div class="ttname"><a href="scaling_8h.html">scaling.h</a></div></div>
+<div class="ttc" id="atranslation_8h_html"><div class="ttname"><a href="translation_8h.html">translation.h</a></div></div>
+<div class="ttc" id="arotation3_8h_html"><div class="ttname"><a href="rotation3_8h.html">rotation3.h</a></div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_adf67576b6fe4e14fb4687996b6153abe"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#adf67576b6fe4e14fb4687996b6153abe">sophus::concepts::accessors::Translation</a></div><div class="ttdeci">concept Translation</div><div class="ttdef"><b>Definition:</b> group_accessors.h:25</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_a9b457f245a701e2dd71367076ba6226f"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#a9b457f245a701e2dd71367076ba6226f">sophus::concepts::accessors::SpiralSimilarity3</a></div><div class="ttdeci">concept SpiralSimilarity3</div><div class="ttdef"><b>Definition:</b> group_accessors.h:142</div></div>
+<div class="ttc" id="aspiral__similarity3_8h_html"><div class="ttname"><a href="spiral__similarity3_8h.html">spiral_similarity3.h</a></div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_1_1accessors_html_a5fef40cc1802708582c29ea07524c647"><div class="ttname"><a href="namespacesophus_1_1concepts_1_1accessors.html#a5fef40cc1802708582c29ea07524c647">sophus::concepts::accessors::Isometry3</a></div><div class="ttdeci">concept Isometry3</div><div class="ttdef"><b>Definition:</b> group_accessors.h:131</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

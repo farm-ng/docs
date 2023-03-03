@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['test_5fcommon_2eh_1918',['test_common.h',['../test__common_8h.html',1,'']]],
-  ['test_5fimpl_2eh_1919',['test_impl.h',['../ceres_2details_2test__impl_8h.html',1,'(Global Namespace)'],['../lie_2details_2test__impl_8h.html',1,'(Global Namespace)']]],
-  ['test_5fmacros_2eh_1920',['test_macros.h',['../test__macros_8h.html',1,'']]],
-  ['tokenize_2eh_1921',['tokenize.h',['../tokenize_8h.html',1,'']]],
-  ['tokenize_5ftest_2ecpp_1922',['tokenize_test.cpp',['../tokenize__test_8cpp.html',1,'']]],
-  ['trace_5fdebug_5flog_2eh_1923',['trace_debug_log.h',['../trace__debug__log_8h.html',1,'']]],
-  ['types_2eh_1924',['types.h',['../types_8h.html',1,'']]],
-  ['typetraits_2eh_1925',['typetraits.h',['../typetraits_8h.html',1,'']]]
+  ['ray_2eh_1868',['ray.h',['../ray_8h.html',1,'']]],
+  ['ray_5ftest_2ecpp_1869',['ray_test.cpp',['../ray__test_8cpp.html',1,'']]],
+  ['readme_2emd_1870',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['reduce_2eh_1871',['reduce.h',['../reduce_8h.html',1,'']]],
+  ['reduce_5ftest_2ecpp_1872',['reduce_test.cpp',['../reduce__test_8cpp.html',1,'']]],
+  ['region_2eh_1873',['region.h',['../region_8h.html',1,'']]],
+  ['region_5ftest_2ecpp_1874',['region_test.cpp',['../region__test_8cpp.html',1,'']]],
+  ['rotation2_2eh_1875',['rotation2.h',['../impl_2rotation2_8h.html',1,'(Global Namespace)'],['../rotation2_8h.html',1,'(Global Namespace)']]],
+  ['rotation2_5ftest_2ecpp_1876',['rotation2_test.cpp',['../rotation2__test_8cpp.html',1,'']]],
+  ['rotation3_2eh_1877',['rotation3.h',['../impl_2rotation3_8h.html',1,'(Global Namespace)'],['../rotation3_8h.html',1,'(Global Namespace)']]],
+  ['rotation3_5ftest_2ecpp_1878',['rotation3_test.cpp',['../rotation3__test_8cpp.html',1,'']]]
 ];

@@ -44,7 +44,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", "functions_type" ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -54,7 +54,6 @@ var NAVTREE =
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -63,20 +62,17 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_sophus_2cpp_2sophus_2common_2concept__utils_8h.html",
-"class_eigen_1_1_map_3_01sophus_1_1_rx_so2_3_01_t_scalar_01_4_01_4.html#a2a27d4efa7e9243ea4b81ddded475cfd",
-"class_eigen_1_1_map_3_01sophus_1_1_so3_3_01_t_scalar_01_4_01const_01_4.html#a0f3f5fc5efd5f97fe32f2e401c2ddaf9",
-"classsophus_1_1_camera_model.html#a42050e96c9f0c5284aee0cf19728ef76",
-"classsophus_1_1_mut_dyn_image.html#af50f0a8460d990cec4c845d3c9bfca02",
-"classsophus_1_1_se2.html#a913b85fdc285f1b54a48bfd01a05faf4",
-"classsophus_1_1_sim3_base.html#aad2c97baf3e896fe5693757039c1ae05",
-"classsophus_1_1complex_1_1_complex.html#a73cc28962d1d74c42de17d3ef426c0bf",
-"dir_a9ec1ef424966475f993eb98877e3088.html",
-"format__test_8cpp.html",
-"index.html",
-"namespacemembers_type.html",
-"sim2_8h.html#abaefd404cc4b3904c1a283dc410af9b3",
-"structsophus_1_1_random_3_01double_01_4.html#ac23bafe8cde842a5d77bd4cfa4c48319"
+"_sophus_2cpp_2sophus_2common_2enum_8h.html",
+"classfarm__ng_1_1_event_log_reader.html#a15a37da166cc9399f25fdc31469143d7",
+"classsophus_1_1_dyn_image.html#ae4da3de2361d16bdd8b9a7c76d017798",
+"classsophus_1_1_rotation2.html#a51496190abab45e220866864f99bf683",
+"classsophus_1_1kannala__brandt__camera_1_1_test_pinhole.html#abda391d4074d50ded74bdfb8a56ee292",
+"dir_d866e4c9d09af7d8a7d56f13813d21a0.html",
+"functions_a.html",
+"image__types_8h.html#ab78ffc2a17048a8085bec9c013bb696f",
+"namespacecore_1_1events__file__writer.html",
+"region_8h.html#a46559536888e732d42e6496049c685dc",
+"structsophus_1_1_mapper_3_01_t_scalar_00_01typename_01std_1_1enable__if_3_01k_is_mappable_v_3_01cd5529748b13d40e64d4c3ee260777da.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

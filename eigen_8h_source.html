@@ -107,31 +107,93 @@ $(document).ready(function(){initNavTree('eigen_8h_source.html',''); initResizab
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefarm__ng.html">farm_ng</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacefarm__ng_1_1details.html">   22</a></span>&#160;<span class="keyword">namespace </span>details {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keywordtype">int</span> kRows, <span class="keywordtype">int</span> kCols&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfarm__ng_1_1details_1_1_max_metric.html">MaxMetric</a>&lt;<a class="code" href="namespace_eigen.html">Eigen</a>::Matrix&lt;TScalar, kRows, kCols&gt;&gt; {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#aaf599668ce79947ac9992f9e18e6f606">   27</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#aaf599668ce79947ac9992f9e18e6f606">Scalar</a> = TScalar;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#a161acf8eafe913c8a5a6eb3b372bbec8">   29</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#aaf599668ce79947ac9992f9e18e6f606">Scalar</a> <a class="code" href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#a161acf8eafe913c8a5a6eb3b372bbec8">impl</a>(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      Eigen::Matrix&lt;Scalar, M, N&gt; <span class="keyword">const</span>&amp; p0,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      Eigen::Matrix&lt;Scalar, M, N&gt; <span class="keyword">const</span>&amp; p1) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> (p0 - p1).template lpNorm&lt;Eigen::Infinity&gt;();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}  <span class="comment">// namespace details</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}  <span class="comment">// namespace farm_ng</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// TODO: Move to Sophus.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefarm__ng.html">farm_ng</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacefarm__ng_1_1details.html">   23</a></span>&#160;<span class="keyword">namespace </span>details {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Scalar, <span class="keywordtype">int</span> M, <span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structfarm__ng_1_1details_1_1_check_near_3_01_eigen_1_1_matrix_3_01_scalar_00_01_m_00_01_n_01_4_01_4.html">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfarm__ng_1_1details_1_1_check_near.html">CheckNear</a>&lt;Eigen::Matrix&lt;Scalar, M, N&gt;&gt; {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structfarm__ng_1_1details_1_1_check_near_3_01_eigen_1_1_matrix_3_01_scalar_00_01_m_00_01_n_01_4_01_4.html#ab258a5430e85b25ddfb4ab9eeeec4696">   27</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structfarm__ng_1_1details_1_1_check_near_3_01_eigen_1_1_matrix_3_01_scalar_00_01_m_00_01_n_01_4_01_4.html#ab258a5430e85b25ddfb4ab9eeeec4696">impl</a>(</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      Eigen::Matrix&lt;Scalar, M, N&gt; <span class="keyword">const</span>&amp; lhs,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      Eigen::Matrix&lt;Scalar, M, N&gt; <span class="keyword">const</span>&amp; rhs,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      Scalar <span class="keyword">const</span>&amp; thr,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordtype">char</span> <span class="keyword">const</span>* lhs_cstr,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordtype">char</span> <span class="keyword">const</span>* rhs_cstr,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordtype">char</span> <span class="keyword">const</span>* thr_cstr,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      std::string <span class="keyword">const</span>&amp; file,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">int</span> line,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      std::string <span class="keyword">const</span>&amp; func,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      std::string <span class="keyword">const</span>&amp; str) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">using</span> std::abs;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacesophus.html#a83cdb3670cd3c86a8865752b33e0f188">std::min</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Scalar max_error = 0.0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> max_error_dim = -1;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> absolute = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; lhs.reshaped().rows(); ++i) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">auto</span> lhs_abs = abs(lhs.reshaped()[i]);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">auto</span> rhs_abs = abs(rhs.reshaped()[i]);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="namespacesophus.html#a83cdb3670cd3c86a8865752b33e0f188">min</a>(lhs_abs, rhs_abs) &lt; thr) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">/* close to zero, we are doing an absolute comparison*/</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        Scalar err = abs(lhs.reshaped()[i] - rhs.reshaped()[i]);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (err &gt; max_error) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          max_error = err;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          max_error_dim = i;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          absolute = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        Scalar err = abs((lhs.reshaped()[i] / rhs.reshaped()[i]) - 1.0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (err &gt; max_error) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          max_error = err;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          max_error_dim = i;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          absolute = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (max_error &lt; thr) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">// all errors below threshold</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        farm_ng::LogLevel::critical,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="stringliteral">&quot;ASSERT_NEAR({})]&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="stringliteral">&quot;Not true: {} near {}; has error of {} in {} (thr: &quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="stringliteral">&quot;{})\n{}\n{}\n{}\nvs.\n{}\n{}\n{}&quot;</span>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            absolute ? <span class="stringliteral">&quot;absolute&quot;</span> : <span class="stringliteral">&quot;relative&quot;</span>,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            lhs_cstr,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            rhs_cstr,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            max_error,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            max_error_dim,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            thr,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            lhs.reshaped()[max_error_dim],</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            lhs_cstr,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            lhs,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            rhs.reshaped()[max_error_dim],</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            rhs_cstr,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            rhs),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        file,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        line,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        func,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        str);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="format_8h.html#ab1a749dfd7206da5a259a7ff47e6dc78">FARM_IMPL_ABORT</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace details</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace farm_ng</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aformat_8h_html_a433412d321d236f0533bf9f9011fe0c0"><div class="ttname"><a href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a></div><div class="ttdeci">#define FARM_FORMAT(...)</div><div class="ttdoc">Formats the cstr using the libfmt library.</div><div class="ttdef"><b>Definition:</b> format.h:125</div></div>
 <div class="ttc" id="anamespacefarm__ng_html"><div class="ttname"><a href="namespacefarm__ng.html">farm_ng</a></div><div class="ttdef"><b>Definition:</b> backtrace.cpp:99</div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdef"><b>Definition:</b> cartesian.h:33</div></div>
 <div class="ttc" id="alogger_8h_html"><div class="ttname"><a href="logger_8h.html">logger.h</a></div></div>
-<div class="ttc" id="aclassfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4_html_a161acf8eafe913c8a5a6eb3b372bbec8"><div class="ttname"><a href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#a161acf8eafe913c8a5a6eb3b372bbec8">farm_ng::details::MaxMetric&lt; Eigen::Matrix&lt; TScalar, kRows, kCols &gt; &gt;::impl</a></div><div class="ttdeci">static Scalar impl(Eigen::Matrix&lt; Scalar, M, N &gt; const &amp;p0, Eigen::Matrix&lt; Scalar, M, N &gt; const &amp;p1)</div><div class="ttdef"><b>Definition:</b> eigen.h:29</div></div>
-<div class="ttc" id="aclassfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4_html_aaf599668ce79947ac9992f9e18e6f606"><div class="ttname"><a href="classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#aaf599668ce79947ac9992f9e18e6f606">farm_ng::details::MaxMetric&lt; Eigen::Matrix&lt; TScalar, kRows, kCols &gt; &gt;::Scalar</a></div><div class="ttdeci">TScalar Scalar</div><div class="ttdef"><b>Definition:</b> eigen.h:27</div></div>
-<div class="ttc" id="aclassfarm__ng_1_1details_1_1_max_metric_html"><div class="ttname"><a href="classfarm__ng_1_1details_1_1_max_metric.html">farm_ng::details::MaxMetric</a></div><div class="ttdef"><b>Definition:</b> logger.h:279</div></div>
+<div class="ttc" id="anamespacesophus_html_a83cdb3670cd3c86a8865752b33e0f188"><div class="ttname"><a href="namespacesophus.html#a83cdb3670cd3c86a8865752b33e0f188">sophus::min</a></div><div class="ttdeci">auto min(TPoint const &amp;a, TPoint const &amp;b) -&gt; TPoint</div><div class="ttdef"><b>Definition:</b> vector_space.h:104</div></div>
+<div class="ttc" id="astructfarm__ng_1_1details_1_1_check_near_html"><div class="ttname"><a href="structfarm__ng_1_1details_1_1_check_near.html">farm_ng::details::CheckNear</a></div><div class="ttdef"><b>Definition:</b> logger.h:301</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_ab1ba3ac58871ae436e4c3b4cc56bde05"><div class="ttname"><a href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a></div><div class="ttdeci">StreamLogger &amp; defaultLogger()</div><div class="ttdef"><b>Definition:</b> logger.h:114</div></div>
+<div class="ttc" id="aformat_8h_html_ab1a749dfd7206da5a259a7ff47e6dc78"><div class="ttname"><a href="format_8h.html#ab1a749dfd7206da5a259a7ff47e6dc78">FARM_IMPL_ABORT</a></div><div class="ttdeci">#define FARM_IMPL_ABORT()</div><div class="ttdef"><b>Definition:</b> format.h:62</div></div>
+<div class="ttc" id="astructfarm__ng_1_1details_1_1_check_near_3_01_eigen_1_1_matrix_3_01_scalar_00_01_m_00_01_n_01_4_01_4_html_ab258a5430e85b25ddfb4ab9eeeec4696"><div class="ttname"><a href="structfarm__ng_1_1details_1_1_check_near_3_01_eigen_1_1_matrix_3_01_scalar_00_01_m_00_01_n_01_4_01_4.html#ab258a5430e85b25ddfb4ab9eeeec4696">farm_ng::details::CheckNear&lt; Eigen::Matrix&lt; Scalar, M, N &gt; &gt;::impl</a></div><div class="ttdeci">static void impl(Eigen::Matrix&lt; Scalar, M, N &gt; const &amp;lhs, Eigen::Matrix&lt; Scalar, M, N &gt; const &amp;rhs, Scalar const &amp;thr, char const *lhs_cstr, char const *rhs_cstr, char const *thr_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str)</div><div class="ttdef"><b>Definition:</b> eigen.h:27</div></div>
+<div class="ttc" id="aclassfarm__ng_1_1_stream_logger_html_a255a182451b7c8e1cb2187b969498db1"><div class="ttname"><a href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">farm_ng::StreamLogger::log</a></div><div class="ttdeci">void log(LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function, std::string const &amp;message, T &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> logger.h:56</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

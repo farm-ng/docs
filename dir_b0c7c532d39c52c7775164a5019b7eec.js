@@ -26,19 +26,19 @@ var dir_b0c7c532d39c52c7775164a5019b7eec =
       [ "TestQuaternion", "classsophus_1_1quaternion_1_1_test_quaternion.html", "classsophus_1_1quaternion_1_1_test_quaternion" ]
     ] ],
     [ "se2.py", "se2_8py.html", [
-      [ "Se2", "classsophus_1_1se2_1_1_se2.html", "classsophus_1_1se2_1_1_se2" ],
+      [ "Isometry2", "classsophus_1_1se2_1_1_isometry2.html", "classsophus_1_1se2_1_1_isometry2" ],
       [ "TestSe2", "classsophus_1_1se2_1_1_test_se2.html", "classsophus_1_1se2_1_1_test_se2" ]
     ] ],
     [ "se3.py", "se3_8py.html", [
-      [ "Se3", "classsophus_1_1se3_1_1_se3.html", "classsophus_1_1se3_1_1_se3" ],
+      [ "Isometry3", "classsophus_1_1se3_1_1_isometry3.html", "classsophus_1_1se3_1_1_isometry3" ],
       [ "TestSe3", "classsophus_1_1se3_1_1_test_se3.html", "classsophus_1_1se3_1_1_test_se3" ]
     ] ],
     [ "so2.py", "so2_8py.html", [
-      [ "So2", "classsophus_1_1so2_1_1_so2.html", "classsophus_1_1so2_1_1_so2" ],
+      [ "Rotation2", "classsophus_1_1so2_1_1_rotation2.html", "classsophus_1_1so2_1_1_rotation2" ],
       [ "TestSo2", "classsophus_1_1so2_1_1_test_so2.html", "classsophus_1_1so2_1_1_test_so2" ]
     ] ],
     [ "so3.py", "so3_8py.html", [
-      [ "So3", "classsophus_1_1so3_1_1_so3.html", "classsophus_1_1so3_1_1_so3" ],
+      [ "Rotation3", "classsophus_1_1so3_1_1_rotation3.html", "classsophus_1_1so3_1_1_rotation3" ],
       [ "TestSo3", "classsophus_1_1so3_1_1_test_so3.html", "classsophus_1_1so3_1_1_test_so3" ]
     ] ]
 ];

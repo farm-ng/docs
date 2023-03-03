@@ -121,12 +121,12 @@ $(document).ready(function(){initNavTree('brown__conrady_8h_source.html',''); in
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">   32</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a> = Eigen::Matrix&lt;TScalar, kNumDistortionParams, 1&gt;;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TParamScalarT, <span class="keyword">class</span> TPo<span class="keywordtype">int</span>ScalarT&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;<span class="keyword">typename</span> Eigen::ScalarBinaryOpTraits&lt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      TParamScalarT,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      TPointScalarT&gt;::ReturnType&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#a22a2359e5dceca9a23b9052162107240">   38</a></span>&#160;  <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a22a2359e5dceca9a23b9052162107240">projImpl</a>(</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams&lt;TParamScalarT&gt;</a> <span class="keyword">const</span>&amp; distortion,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TPointScalarT&gt;</a> <span class="keyword">const</span>&amp; point_normalized) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#a8e4e1130ba46cc19e44dbed8dfab3147">   35</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a8e4e1130ba46cc19e44dbed8dfab3147">projImpl</a>(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams&lt;TParamScalarT&gt;</a> <span class="keyword">const</span>&amp; distortion,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TPointScalarT&gt;</a> <span class="keyword">const</span>&amp; point_normalized)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      -&gt; <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;<span class="keyword">typename</span> Eigen::ScalarBinaryOpTraits&lt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          TParamScalarT,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          TPointScalarT&gt;::ReturnType&gt; {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">using</span> ReturnScalar = <span class="keyword">typename</span> Eigen::</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        ScalarBinaryOpTraits&lt;TParamScalarT, TPointScalarT&gt;::ReturnType;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
@@ -153,9 +153,9 @@ $(document).ready(function(){initNavTree('brown__conrady_8h_source.html',''); in
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#af513db1924afa19e6345b6a20e2c6c8c">   67</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#af513db1924afa19e6345b6a20e2c6c8c">unprojImpl</a>(</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#a21de6c8e3f9ae307b3a65bf82fc1ead8">   67</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a21de6c8e3f9ae307b3a65bf82fc1ead8">unprojImpl</a>(</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; distortion,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; uv_normalized) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; uv_normalized) -&gt; <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// We had no luck with OpenCV&#39;s undistort. It seems not to be accurate if</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// &quot;icdist&quot; is close to 0.</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// https://github.com/opencv/opencv/blob/63bb2abadab875fc648a572faccafee134f06fc8/modules/calib3d/src/undistort.dispatch.cpp#L365</span></div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('brown__conrady_8h_source.html',''); in
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      TScalar y = xy[1];</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> f_xy =</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a22a2359e5dceca9a23b9052162107240">projImpl</a>(distortion, Eigen::Matrix&lt;TScalar, 2, 1&gt;(x, y)) -</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a8e4e1130ba46cc19e44dbed8dfab3147">projImpl</a>(distortion, Eigen::Matrix&lt;TScalar, 2, 1&gt;(x, y)) -</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          uv_normalized;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      TScalar du_dx;</div>
@@ -260,110 +260,113 @@ $(document).ready(function(){initNavTree('brown__conrady_8h_source.html',''); in
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TParamsTypeT, <span class="keyword">class</span> TPo<span class="keywordtype">int</span>TypeT&gt;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#ac139c8075a07a2211d6a4a61115ab525">  174</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;typename TPointTypeT::Scalar&gt;</a> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#ac139c8075a07a2211d6a4a61115ab525">distort</a>(</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#aa976c77645f24c878c0a80b2128373fe">  174</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#aa976c77645f24c878c0a80b2128373fe">distort</a>(</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      Eigen::MatrixBase&lt;TParamsTypeT&gt; <span class="keyword">const</span>&amp; params,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      Eigen::MatrixBase&lt;TPointTypeT&gt; <span class="keyword">const</span>&amp; proj_point_in_camera_z1_plane) {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">using</span> ParamScalar = <span class="keyword">typename</span> TParamsTypeT::Scalar;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        TParamsTypeT::ColsAtCompileTime == 1, <span class="stringliteral">&quot;params must be a column-vector&quot;</span>);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        TParamsTypeT::RowsAtCompileTime == <a class="code" href="classsophus_1_1_brown_conrady_transform.html#acaece271f72351292da71c6c60542d80">kNumParams</a>,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="stringliteral">&quot;params must have exactly kNumParams rows&quot;</span>);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        TPointTypeT::ColsAtCompileTime == 1,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="stringliteral">&quot;point_camera must be a column-vector&quot;</span>);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        TPointTypeT::RowsAtCompileTime == 2,</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="stringliteral">&quot;point_camera must have exactly 2 columns&quot;</span>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    Eigen::Matrix&lt;ParamScalar, kNumDistortionParams, 1&gt; distortion =</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        params.template tail&lt;kNumDistortionParams&gt;();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;typename TPointTypeT::Scalar&gt;</a></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        distorted_point_in_camera_z1_plane =</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a22a2359e5dceca9a23b9052162107240">projImpl</a>(distortion, proj_point_in_camera_z1_plane.eval());</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1_affine_transform.html#aa50cbc52087abcd518a379a79d827b06">AffineTransform::distort</a>(</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        params.template head&lt;4&gt;(), distorted_point_in_camera_z1_plane);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#a5a937211476ab891f99fc93efcf04b19">  203</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane&lt;TScalar&gt;</a> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5a937211476ab891f99fc93efcf04b19">undistort</a>(</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#af6688193ecd220aabc3402afecce386e">Params&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; params, <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; pixel_image) {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> proj_point_in_camera_z1_plane = <a class="code" href="classsophus_1_1_brown_conrady_transform.html#af513db1924afa19e6345b6a20e2c6c8c">unprojImpl</a>(</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        params.template tail&lt;kNumDistortionParams&gt;().eval(),</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="classsophus_1_1_affine_transform.html#a5df86bd2425a15e8f88218a02a2562b5">AffineTransform::undistort</a>(</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            params.template head&lt;4&gt;().eval(), pixel_image));</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane&lt;TScalar&gt;</a>(</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        proj_point_in_camera_z1_plane[0], proj_point_in_camera_z1_plane[1]);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TParamsTypeT, <span class="keyword">class</span> TPo<span class="keywordtype">int</span>TypeT&gt;</div>
-<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#a35da59798e750d39a60c33e3c9bf8db3">  215</a></span>&#160;  <span class="keyword">static</span> Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a35da59798e750d39a60c33e3c9bf8db3">dxDistort</a>(</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      Eigen::MatrixBase&lt;TParamsTypeT&gt; <span class="keyword">const</span>&amp; params,</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      Eigen::MatrixBase&lt;TPointTypeT&gt; <span class="keyword">const</span>&amp; proj_point_in_camera_z1_plane) {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        TParamsTypeT::ColsAtCompileTime == 1, <span class="stringliteral">&quot;params must be a column-vector&quot;</span>);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        TParamsTypeT::RowsAtCompileTime == <a class="code" href="classsophus_1_1_brown_conrady_transform.html#acaece271f72351292da71c6c60542d80">kNumParams</a>,</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="stringliteral">&quot;params must have exactly kNumParams rows&quot;</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      Eigen::MatrixBase&lt;TPointTypeT&gt; <span class="keyword">const</span>&amp; proj_point_in_camera_z1_plane)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      -&gt; <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;typename TPointTypeT::Scalar&gt;</a> {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">using</span> ParamScalar = <span class="keyword">typename</span> TParamsTypeT::Scalar;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        TParamsTypeT::ColsAtCompileTime == 1, <span class="stringliteral">&quot;params must be a column-vector&quot;</span>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        TParamsTypeT::RowsAtCompileTime == <a class="code" href="classsophus_1_1_brown_conrady_transform.html#acaece271f72351292da71c6c60542d80">kNumParams</a>,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="stringliteral">&quot;params must have exactly kNumParams rows&quot;</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        TPointTypeT::ColsAtCompileTime == 1,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="stringliteral">&quot;point_camera must be a column-vector&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        TPointTypeT::RowsAtCompileTime == 2,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="stringliteral">&quot;point_camera must have exactly 2 columns&quot;</span>);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    Eigen::Matrix&lt;ParamScalar, kNumDistortionParams, 1&gt; distortion =</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        params.template tail&lt;kNumDistortionParams&gt;();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;typename TPointTypeT::Scalar&gt;</a></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        distorted_point_in_camera_z1_plane =</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a8e4e1130ba46cc19e44dbed8dfab3147">projImpl</a>(distortion, proj_point_in_camera_z1_plane.eval());</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1_affine_transform.html#a204086c89c1d7e9830e504a7dcb46a31">AffineTransform::distort</a>(</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        params.template head&lt;4&gt;(), distorted_point_in_camera_z1_plane);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#aee85e2b4fd4b17cbde45195e90ae7dff">  204</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#aee85e2b4fd4b17cbde45195e90ae7dff">undistort</a>(</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <a class="code" href="classsophus_1_1_brown_conrady_transform.html#af6688193ecd220aabc3402afecce386e">Params&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; params, <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> <span class="keyword">const</span>&amp; pixel_image)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      -&gt; <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane&lt;TScalar&gt;</a> {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage&lt;TScalar&gt;</a> proj_point_in_camera_z1_plane = <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a21de6c8e3f9ae307b3a65bf82fc1ead8">unprojImpl</a>(</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        params.template tail&lt;kNumDistortionParams&gt;().eval(),</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="classsophus_1_1_affine_transform.html#afa8feddd6781dee7a82e97bd1852d14a">AffineTransform::undistort</a>(</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            params.template head&lt;4&gt;().eval(), pixel_image));</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane&lt;TScalar&gt;</a>(</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        proj_point_in_camera_z1_plane[0], proj_point_in_camera_z1_plane[1]);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TParamsTypeT, <span class="keyword">class</span> TPo<span class="keywordtype">int</span>TypeT&gt;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classsophus_1_1_brown_conrady_transform.html#a08ddd70983ecd821a1cb21f0d49a6987">  217</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_brown_conrady_transform.html#a08ddd70983ecd821a1cb21f0d49a6987">dxDistort</a>(</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      Eigen::MatrixBase&lt;TParamsTypeT&gt; <span class="keyword">const</span>&amp; params,</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      Eigen::MatrixBase&lt;TPointTypeT&gt; <span class="keyword">const</span>&amp; proj_point_in_camera_z1_plane)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      -&gt; Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        TParamsTypeT::ColsAtCompileTime == 1, <span class="stringliteral">&quot;params must be a column-vector&quot;</span>);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        TPointTypeT::ColsAtCompileTime == 1,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="stringliteral">&quot;point_camera must be a column-vector&quot;</span>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        TParamsTypeT::RowsAtCompileTime == <a class="code" href="classsophus_1_1_brown_conrady_transform.html#acaece271f72351292da71c6c60542d80">kNumParams</a>,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="stringliteral">&quot;params must have exactly kNumParams rows&quot;</span>);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        TPointTypeT::RowsAtCompileTime == 2,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="stringliteral">&quot;point_camera must have exactly 2 columns&quot;</span>);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">using</span> Scalar = <span class="keyword">typename</span> TPointTypeT::Scalar;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    Eigen::Matrix&lt;Scalar, kNumDistortionParams, 1&gt; d =</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        params.template tail&lt;kNumDistortionParams&gt;();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        TPointTypeT::ColsAtCompileTime == 1,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="stringliteral">&quot;point_camera must be a column-vector&quot;</span>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        TPointTypeT::RowsAtCompileTime == 2,</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="stringliteral">&quot;point_camera must have exactly 2 columns&quot;</span>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">using</span> Scalar = <span class="keyword">typename</span> TPointTypeT::Scalar;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    Scalar a = proj_point_in_camera_z1_plane[0];</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    Scalar b = proj_point_in_camera_z1_plane[1];</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    Eigen::Matrix&lt;Scalar, kNumDistortionParams, 1&gt; d =</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        params.template tail&lt;kNumDistortionParams&gt;();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; dx;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    Scalar <span class="keyword">const</span> fx = params[0];</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    Scalar <span class="keyword">const</span> fy = params[1];</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">// Generated by brown_conrady_camera.py</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    Scalar <span class="keyword">const</span> c0 = a * d[3];</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    Scalar <span class="keyword">const</span> c1 = 2.0 * d[2];</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    Scalar <span class="keyword">const</span> c2 = a * a;  <span class="comment">// pow(a, 2);</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    Scalar <span class="keyword">const</span> c3 = b * b;  <span class="comment">// pow(b, 2);</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    Scalar <span class="keyword">const</span> c4 = c2 + c3;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    Scalar <span class="keyword">const</span> c5 = c4 * c4;  <span class="comment">// pow(c4, 2);</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    Scalar <span class="keyword">const</span> c6 = c5 * c4;  <span class="comment">// pow(c4, 3);</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    Scalar <span class="keyword">const</span> c7 = c4 * d[5] + c5 * d[6] + c6 * d[7] + 1.0;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    Scalar <span class="keyword">const</span> c8 = c7 * c7;  <span class="comment">// pow(c7, 2);</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    Scalar <span class="keyword">const</span> c9 = 2 * c4;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    Scalar <span class="keyword">const</span> c10 = 3 * c5;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    Scalar <span class="keyword">const</span> c11 = c4 * d[0];</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    Scalar <span class="keyword">const</span> c12 = c5 * d[1];</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    Scalar <span class="keyword">const</span> c13 = c6 * d[4];</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    Scalar <span class="keyword">const</span> c14 =</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        2.0 * (c10 * d[7] + c9 * d[6] + d[5]) * (c11 + c12 + c13 + 1.0);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    Scalar <span class="keyword">const</span> c15 = 2.0 * c10 * d[4] + 2.0 * c9 * d[1] + 2.0 * d[0];</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    Scalar <span class="keyword">const</span> c16 = 1.0 * c11 + 1.0 * c12 + 1.0 * c13 + 1.0;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    Scalar <span class="keyword">const</span> c17 = 1.0 / c8;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    Scalar <span class="keyword">const</span> c18 = c17 * fx;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    Scalar <span class="keyword">const</span> c19 = b * d[3];</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    Scalar <span class="keyword">const</span> c20 = a * b;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    Scalar <span class="keyword">const</span> c21 = -c14 * c20 + c15 * c20 * c7;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    Scalar <span class="keyword">const</span> c22 = c17 * fy;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    dx(0, 0) =</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        c18 * (-c14 * c2 + c7 * (c15 * c2 + c16) + c8 * (b * c1 + 6.0 * c0));</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    dx(0, 1) = c22 * (c21 + c8 * (2 * a * d[2] + 2.0 * c19));</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    dx(1, 0) = c18 * (c21 + c8 * (a * c1 + 2 * c19));</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    dx(1, 1) = c22 * (-c14 * c3 + c7 * (c15 * c3 + c16) +</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                      c8 * (6.0 * b * d[2] + 2.0 * c0));</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> dx;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    Scalar a = proj_point_in_camera_z1_plane[0];</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    Scalar b = proj_point_in_camera_z1_plane[1];</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; dx;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    Scalar <span class="keyword">const</span> fx = params[0];</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    Scalar <span class="keyword">const</span> fy = params[1];</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// Generated by brown_conrady_camera.py</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    Scalar <span class="keyword">const</span> c0 = a * d[3];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    Scalar <span class="keyword">const</span> c1 = 2.0 * d[2];</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    Scalar <span class="keyword">const</span> c2 = a * a;  <span class="comment">// pow(a, 2);</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    Scalar <span class="keyword">const</span> c3 = b * b;  <span class="comment">// pow(b, 2);</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    Scalar <span class="keyword">const</span> c4 = c2 + c3;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    Scalar <span class="keyword">const</span> c5 = c4 * c4;  <span class="comment">// pow(c4, 2);</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    Scalar <span class="keyword">const</span> c6 = c5 * c4;  <span class="comment">// pow(c4, 3);</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    Scalar <span class="keyword">const</span> c7 = c4 * d[5] + c5 * d[6] + c6 * d[7] + 1.0;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    Scalar <span class="keyword">const</span> c8 = c7 * c7;  <span class="comment">// pow(c7, 2);</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    Scalar <span class="keyword">const</span> c9 = 2 * c4;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    Scalar <span class="keyword">const</span> c10 = 3 * c5;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    Scalar <span class="keyword">const</span> c11 = c4 * d[0];</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    Scalar <span class="keyword">const</span> c12 = c5 * d[1];</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    Scalar <span class="keyword">const</span> c13 = c6 * d[4];</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    Scalar <span class="keyword">const</span> c14 =</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        2.0 * (c10 * d[7] + c9 * d[6] + d[5]) * (c11 + c12 + c13 + 1.0);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    Scalar <span class="keyword">const</span> c15 = 2.0 * c10 * d[4] + 2.0 * c9 * d[1] + 2.0 * d[0];</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    Scalar <span class="keyword">const</span> c16 = 1.0 * c11 + 1.0 * c12 + 1.0 * c13 + 1.0;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    Scalar <span class="keyword">const</span> c17 = 1.0 / c8;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    Scalar <span class="keyword">const</span> c18 = c17 * fx;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    Scalar <span class="keyword">const</span> c19 = b * d[3];</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    Scalar <span class="keyword">const</span> c20 = a * b;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    Scalar <span class="keyword">const</span> c21 = -c14 * c20 + c15 * c20 * c7;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    Scalar <span class="keyword">const</span> c22 = c17 * fy;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    dx(0, 0) =</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        c18 * (-c14 * c2 + c7 * (c15 * c2 + c16) + c8 * (b * c1 + 6.0 * c0));</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    dx(0, 1) = c22 * (c21 + c8 * (2 * a * d[2] + 2.0 * c19));</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    dx(1, 0) = c18 * (c21 + c8 * (a * c1 + 2 * c19));</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    dx(1, 1) = c22 * (-c14 * c3 + c7 * (c15 * c3 + c16) +</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                      c8 * (6.0 * b * d[2] + 2.0 * c0));</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">return</span> dx;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;};</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_af6688193ecd220aabc3402afecce386e"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#af6688193ecd220aabc3402afecce386e">sophus::BrownConradyTransform::Params</a></div><div class="ttdeci">Eigen::Matrix&lt; TScalar, kNumParams, 1 &gt; Params</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:30</div></div>
@@ -372,20 +375,20 @@ $(document).ready(function(){initNavTree('brown__conrady_8h_source.html',''); in
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_ac85d2f870fd3965473ae92d4d8e98bef"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">sophus::BrownConradyTransform::DistorationParams</a></div><div class="ttdeci">Eigen::Matrix&lt; TScalar, kNumDistortionParams, 1 &gt; DistorationParams</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:32</div></div>
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a5fb41f5c028bf975acceac207a910311"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">sophus::BrownConradyTransform::PixelImage</a></div><div class="ttdeci">Eigen::Matrix&lt; TScalar, 2, 1 &gt; PixelImage</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:28</div></div>
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a594b41bb33060ad0db81b18766ff2c53"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a594b41bb33060ad0db81b18766ff2c53">sophus::BrownConradyTransform::kNumDistortionParams</a></div><div class="ttdeci">static constexpr int kNumDistortionParams</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:20</div></div>
-<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a35da59798e750d39a60c33e3c9bf8db3"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a35da59798e750d39a60c33e3c9bf8db3">sophus::BrownConradyTransform::dxDistort</a></div><div class="ttdeci">static Eigen::Matrix&lt; typename TPointTypeT::Scalar, 2, 2 &gt; dxDistort(Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane)</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:215</div></div>
+<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a21de6c8e3f9ae307b3a65bf82fc1ead8"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a21de6c8e3f9ae307b3a65bf82fc1ead8">sophus::BrownConradyTransform::unprojImpl</a></div><div class="ttdeci">static auto unprojImpl(DistorationParams&lt; TScalar &gt; const &amp;distortion, PixelImage&lt; TScalar &gt; const &amp;uv_normalized) -&gt; PixelImage&lt; TScalar &gt;</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:67</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
 <div class="ttc" id="astructsophus_1_1jet__helpers_1_1_get_value_html"><div class="ttname"><a href="structsophus_1_1jet__helpers_1_1_get_value.html">sophus::jet_helpers::GetValue</a></div><div class="ttdef"><b>Definition:</b> jet_helpers.h:23</div></div>
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_acaece271f72351292da71c6c60542d80"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#acaece271f72351292da71c6c60542d80">sophus::BrownConradyTransform::kNumParams</a></div><div class="ttdeci">static constexpr int kNumParams</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:21</div></div>
-<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a5a937211476ab891f99fc93efcf04b19"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a5a937211476ab891f99fc93efcf04b19">sophus::BrownConradyTransform::undistort</a></div><div class="ttdeci">static ProjInCameraZ1Plane&lt; TScalar &gt; undistort(Params&lt; TScalar &gt; const &amp;params, PixelImage&lt; TScalar &gt; const &amp;pixel_image)</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:203</div></div>
-<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a22a2359e5dceca9a23b9052162107240"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a22a2359e5dceca9a23b9052162107240">sophus::BrownConradyTransform::projImpl</a></div><div class="ttdeci">static PixelImage&lt; typename Eigen::ScalarBinaryOpTraits&lt; TParamScalarT, TPointScalarT &gt;::ReturnType &gt; projImpl(DistorationParams&lt; TParamScalarT &gt; const &amp;distortion, PixelImage&lt; TPointScalarT &gt; const &amp;point_normalized)</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:38</div></div>
+<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a8e4e1130ba46cc19e44dbed8dfab3147"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a8e4e1130ba46cc19e44dbed8dfab3147">sophus::BrownConradyTransform::projImpl</a></div><div class="ttdeci">static auto projImpl(DistorationParams&lt; TParamScalarT &gt; const &amp;distortion, PixelImage&lt; TPointScalarT &gt; const &amp;point_normalized) -&gt; PixelImage&lt; typename Eigen::ScalarBinaryOpTraits&lt; TParamScalarT, TPointScalarT &gt;::ReturnType &gt;</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:35</div></div>
+<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_aee85e2b4fd4b17cbde45195e90ae7dff"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#aee85e2b4fd4b17cbde45195e90ae7dff">sophus::BrownConradyTransform::undistort</a></div><div class="ttdeci">static auto undistort(Params&lt; TScalar &gt; const &amp;params, PixelImage&lt; TScalar &gt; const &amp;pixel_image) -&gt; ProjInCameraZ1Plane&lt; TScalar &gt;</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:204</div></div>
+<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_aa976c77645f24c878c0a80b2128373fe"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#aa976c77645f24c878c0a80b2128373fe">sophus::BrownConradyTransform::distort</a></div><div class="ttdeci">static auto distort(Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane) -&gt; PixelImage&lt; typename TPointTypeT::Scalar &gt;</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:174</div></div>
+<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_a08ddd70983ecd821a1cb21f0d49a6987"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#a08ddd70983ecd821a1cb21f0d49a6987">sophus::BrownConradyTransform::dxDistort</a></div><div class="ttdeci">static auto dxDistort(Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane) -&gt; Eigen::Matrix&lt; typename TPointTypeT::Scalar, 2, 2 &gt;</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:217</div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
-<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_af513db1924afa19e6345b6a20e2c6c8c"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#af513db1924afa19e6345b6a20e2c6c8c">sophus::BrownConradyTransform::unprojImpl</a></div><div class="ttdeci">static PixelImage&lt; TScalar &gt; unprojImpl(DistorationParams&lt; TScalar &gt; const &amp;distortion, PixelImage&lt; TScalar &gt; const &amp;uv_normalized)</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:67</div></div>
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html">sophus::BrownConradyTransform</a></div><div class="ttdef"><b>Definition:</b> brown_conrady.h:18</div></div>
 <div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_af201ee1547bd73c238a32c11b776aeab"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#af201ee1547bd73c238a32c11b776aeab">sophus::BrownConradyTransform::kProjectionModel</a></div><div class="ttdeci">static constexpr const std::string_view kProjectionModel</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:22</div></div>
-<div class="ttc" id="aclasssophus_1_1_affine_transform_html_aa50cbc52087abcd518a379a79d827b06"><div class="ttname"><a href="classsophus_1_1_affine_transform.html#aa50cbc52087abcd518a379a79d827b06">sophus::AffineTransform::distort</a></div><div class="ttdeci">static PixelImage&lt; typename TPointTypeT::Scalar &gt; distort(Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane)</div><div class="ttdef"><b>Definition:</b> affine.h:32</div></div>
-<div class="ttc" id="aclasssophus_1_1_brown_conrady_transform_html_ac139c8075a07a2211d6a4a61115ab525"><div class="ttname"><a href="classsophus_1_1_brown_conrady_transform.html#ac139c8075a07a2211d6a4a61115ab525">sophus::BrownConradyTransform::distort</a></div><div class="ttdeci">static PixelImage&lt; typename TPointTypeT::Scalar &gt; distort(Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane)</div><div class="ttdef"><b>Definition:</b> brown_conrady.h:174</div></div>
+<div class="ttc" id="aclasssophus_1_1_affine_transform_html_afa8feddd6781dee7a82e97bd1852d14a"><div class="ttname"><a href="classsophus_1_1_affine_transform.html#afa8feddd6781dee7a82e97bd1852d14a">sophus::AffineTransform::undistort</a></div><div class="ttdeci">static auto undistort(Params&lt; TScalar &gt; const &amp;params, PixelImage&lt; TScalar &gt; const &amp;pixel_image) -&gt; ProjInCameraZ1Plane&lt; TScalar &gt;</div><div class="ttdef"><b>Definition:</b> affine.h:54</div></div>
 <div class="ttc" id="ajet__helpers_8h_html"><div class="ttname"><a href="jet__helpers_8h.html">jet_helpers.h</a></div></div>
-<div class="ttc" id="aclasssophus_1_1_affine_transform_html_a5df86bd2425a15e8f88218a02a2562b5"><div class="ttname"><a href="classsophus_1_1_affine_transform.html#a5df86bd2425a15e8f88218a02a2562b5">sophus::AffineTransform::undistort</a></div><div class="ttdeci">static ProjInCameraZ1Plane&lt; TScalar &gt; undistort(Params&lt; TScalar &gt; const &amp;params, PixelImage&lt; TScalar &gt; const &amp;pixel_image)</div><div class="ttdef"><b>Definition:</b> affine.h:53</div></div>
+<div class="ttc" id="aclasssophus_1_1_affine_transform_html_a204086c89c1d7e9830e504a7dcb46a31"><div class="ttname"><a href="classsophus_1_1_affine_transform.html#a204086c89c1d7e9830e504a7dcb46a31">sophus::AffineTransform::distort</a></div><div class="ttdeci">static auto distort(Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane) -&gt; PixelImage&lt; typename TPointTypeT::Scalar &gt;</div><div class="ttdef"><b>Definition:</b> affine.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

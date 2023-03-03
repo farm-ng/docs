@@ -1,14 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,326,85,353"/>
-<area shape="rect" id="node2" href="$classsophus_1_1affine__camera_1_1_test_pinhole.html" title=" " alt="" coords="158,5,353,47"/>
-<area shape="rect" id="node3" href="$classsophus_1_1brown__conrady__camera_1_1_test_brown_conrady.html" title=" " alt="" coords="154,71,357,112"/>
-<area shape="rect" id="node4" href="$classsophus_1_1complex_1_1_test_complex.html" title=" " alt="" coords="147,137,363,163"/>
-<area shape="rect" id="node5" href="$classsophus_1_1dual__quaternion_1_1_test_dual_quaternion.html" title=" " alt="" coords="152,188,359,229"/>
-<area shape="rect" id="node6" href="$classsophus_1_1inverse__depth_1_1_test_inverse_depth.html" title=" " alt="" coords="158,253,353,295"/>
-<area shape="rect" id="node7" href="$classsophus_1_1kannala__brandt__camera_1_1_test_pinhole.html" title=" " alt="" coords="169,319,341,360"/>
-<area shape="rect" id="node8" href="$classsophus_1_1quaternion_1_1_test_quaternion.html" title=" " alt="" coords="133,385,377,411"/>
-<area shape="rect" id="node9" href="$classsophus_1_1se2_1_1_test_se2.html" title=" " alt="" coords="181,435,330,462"/>
-<area shape="rect" id="node10" href="$classsophus_1_1se3_1_1_test_se3.html" title=" " alt="" coords="181,486,330,513"/>
-<area shape="rect" id="node11" href="$classsophus_1_1so2_1_1_test_so2.html" title=" " alt="" coords="181,537,330,563"/>
-<area shape="rect" id="node12" href="$classsophus_1_1so3_1_1_test_so3.html" title=" " alt="" coords="181,587,330,614"/>
+<area shape="rect" id="node1" href="$classsophus_1_1se2_1_1_isometry2.html" title=" " alt="" coords="5,5,171,32"/>
 </map>

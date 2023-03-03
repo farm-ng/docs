@@ -102,16 +102,16 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a22f3e5b6d0efff4a8302de08ea6fbaac"><td class="memTemplParams" colspan="2">template&lt;class TDerived &gt; </td></tr>
-<tr class="memitem:a22f3e5b6d0efff4a8302de08ea6fbaac"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt; Eigen::MatrixBase&lt; TDerived &gt;, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_projection_z1.html#a22f3e5b6d0efff4a8302de08ea6fbaac">proj</a> (Eigen::MatrixBase&lt; TDerived &gt; const &amp;points_in_camera)</td></tr>
-<tr class="separator:a22f3e5b6d0efff4a8302de08ea6fbaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4baf2ded967a63eef83030920e1382"><td class="memTemplParams" colspan="2">template&lt;class TDerived &gt; </td></tr>
-<tr class="memitem:a0e4baf2ded967a63eef83030920e1382"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt; Eigen::MatrixBase&lt; TDerived &gt;, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_projection_z1.html#a0e4baf2ded967a63eef83030920e1382">unproj</a> (Eigen::MatrixBase&lt; TDerived &gt; const &amp;points_in_cam_canonical, typename TDerived::Scalar extension=static_cast&lt; typename TDerived::Scalar &gt;(1.0))</td></tr>
-<tr class="separator:a0e4baf2ded967a63eef83030920e1382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbceeef98bf9e4ef72d8df3df3b45da5"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
-<tr class="memitem:abbceeef98bf9e4ef72d8df3df3b45da5"><td class="memTemplItemLeft" align="right" valign="top">static Eigen::Matrix&lt; TScalar, 2, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_projection_z1.html#abbceeef98bf9e4ef72d8df3df3b45da5">dxProjX</a> (Eigen::Matrix&lt; TScalar, 3, 1 &gt; const &amp;p)</td></tr>
-<tr class="memdesc:abbceeef98bf9e4ef72d8df3df3b45da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns point derivative of inverse depth point projection:  <a href="structsophus_1_1_projection_z1.html#abbceeef98bf9e4ef72d8df3df3b45da5">More...</a><br /></td></tr>
-<tr class="separator:abbceeef98bf9e4ef72d8df3df3b45da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bff24cf32b5a986da6253d453ca1ae9"><td class="memTemplParams" colspan="2">template&lt;class TDerived &gt; </td></tr>
+<tr class="memitem:a2bff24cf32b5a986da6253d453ca1ae9"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_projection_z1.html#a2bff24cf32b5a986da6253d453ca1ae9">proj</a> (Eigen::MatrixBase&lt; TDerived &gt; const &amp;points_in_camera) -&gt; <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt; Eigen::MatrixBase&lt; TDerived &gt;, 2 &gt;</td></tr>
+<tr class="separator:a2bff24cf32b5a986da6253d453ca1ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973d6576c2c171eba6f5cf3533a11348"><td class="memTemplParams" colspan="2">template&lt;class TDerived &gt; </td></tr>
+<tr class="memitem:a973d6576c2c171eba6f5cf3533a11348"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_projection_z1.html#a973d6576c2c171eba6f5cf3533a11348">unproj</a> (Eigen::MatrixBase&lt; TDerived &gt; const &amp;points_in_cam_canonical, typename TDerived::Scalar extension=static_cast&lt; typename TDerived::Scalar &gt;(1.0)) -&gt; <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt; Eigen::MatrixBase&lt; TDerived &gt;, 3 &gt;</td></tr>
+<tr class="separator:a973d6576c2c171eba6f5cf3533a11348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eab3281306545cbc29977d8cb8e7726"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
+<tr class="memitem:a6eab3281306545cbc29977d8cb8e7726"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_projection_z1.html#a6eab3281306545cbc29977d8cb8e7726">dxProjX</a> (Eigen::Matrix&lt; TScalar, 3, 1 &gt; const &amp;p) -&gt; Eigen::Matrix&lt; TScalar, 2, 3 &gt;</td></tr>
+<tr class="memdesc:a6eab3281306545cbc29977d8cb8e7726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns point derivative of inverse depth point projection:  <a href="structsophus_1_1_projection_z1.html#a6eab3281306545cbc29977d8cb8e7726">More...</a><br /></td></tr>
+<tr class="separator:a6eab3281306545cbc29977d8cb8e7726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac1880905d5b66c2c0278cbd8e635a4fe"></a>
@@ -131,8 +131,8 @@ template&lt;class TPoints , int kRows&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abbceeef98bf9e4ef72d8df3df3b45da5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbceeef98bf9e4ef72d8df3df3b45da5">&#9670;&nbsp;</a></span>dxProjX()</h2>
+<a id="a6eab3281306545cbc29977d8cb8e7726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eab3281306545cbc29977d8cb8e7726">&#9670;&nbsp;</a></span>dxProjX()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,11 +143,11 @@ template&lt;class TScalar &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Eigen::Matrix&lt;TScalar, 2, 3&gt; sophus::ProjectionZ1::dxProjX </td>
+          <td class="memname">static auto sophus::ProjectionZ1::dxProjX </td>
           <td>(</td>
           <td class="paramtype">Eigen::Matrix&lt; TScalar, 3, 1 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; Eigen::Matrix&lt;TScalar, 2, 3&gt; </td>
         </tr>
       </table>
   </td>
@@ -162,8 +162,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="a22f3e5b6d0efff4a8302de08ea6fbaac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22f3e5b6d0efff4a8302de08ea6fbaac">&#9670;&nbsp;</a></span>proj()</h2>
+<a id="a2bff24cf32b5a986da6253d453ca1ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bff24cf32b5a986da6253d453ca1ae9">&#9670;&nbsp;</a></span>proj()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,11 +174,11 @@ template&lt;class TDerived &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt;Eigen::MatrixBase&lt;TDerived&gt;, 2&gt; sophus::ProjectionZ1::proj </td>
+          <td class="memname">static auto sophus::ProjectionZ1::proj </td>
           <td>(</td>
           <td class="paramtype">Eigen::MatrixBase&lt; TDerived &gt; const &amp;&#160;</td>
           <td class="paramname"><em>points_in_camera</em></td><td>)</td>
-          <td></td>
+          <td> -&gt; <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt;Eigen::MatrixBase&lt;TDerived&gt;, 2&gt; </td>
         </tr>
       </table>
   </td>
@@ -190,8 +190,8 @@ template&lt;class TDerived &gt; </div>
 
 </div>
 </div>
-<a id="a0e4baf2ded967a63eef83030920e1382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e4baf2ded967a63eef83030920e1382">&#9670;&nbsp;</a></span>unproj()</h2>
+<a id="a973d6576c2c171eba6f5cf3533a11348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973d6576c2c171eba6f5cf3533a11348">&#9670;&nbsp;</a></span>unproj()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +202,7 @@ template&lt;class TDerived &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt;Eigen::MatrixBase&lt;TDerived&gt;, 3&gt; sophus::ProjectionZ1::unproj </td>
+          <td class="memname">static auto sophus::ProjectionZ1::unproj </td>
           <td>(</td>
           <td class="paramtype">Eigen::MatrixBase&lt; TDerived &gt; const &amp;&#160;</td>
           <td class="paramname"><em>points_in_cam_canonical</em>, </td>
@@ -216,7 +216,7 @@ template&lt;class TDerived &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe">WithRows</a>&lt;Eigen::MatrixBase&lt;TDerived&gt;, 3&gt; </td>
         </tr>
       </table>
   </td>

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['uniquedataarea_2957',['UniqueDataArea',['../namespacesophus.html#ae355552b5618046883eddff78464d1ce',1,'sophus']]],
-  ['unitvector2_2958',['UnitVector2',['../namespacesophus.html#ac87b0322f2db7a79e3691d1b40d74a6c',1,'sophus']]],
-  ['unitvector2f64_2959',['UnitVector2F64',['../namespacesophus.html#a7844d6175a39ac3f234c689bce2465dc',1,'sophus']]],
-  ['unitvector3_2960',['UnitVector3',['../namespacesophus.html#a48f93ea85df4a00f0122fe2ef303b6b6',1,'sophus']]],
-  ['unitvector3f64_2961',['UnitVector3F64',['../namespacesophus.html#a591cded8e4d095b078dde6f676880ec1',1,'sophus']]]
+  ['withrows_2958',['WithRows',['../structsophus_1_1_projection_ortho.html#a511861da9e56405857f0bc38ecefc503',1,'sophus::ProjectionOrtho::WithRows()'],['../structsophus_1_1_projection_z1.html#ac1880905d5b66c2c0278cbd8e635a4fe',1,'sophus::ProjectionZ1::WithRows()']]]
 ];

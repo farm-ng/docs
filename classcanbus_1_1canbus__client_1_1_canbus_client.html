@@ -114,6 +114,10 @@ Collaboration diagram for canbus.canbus_client.CanbusClient:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a15dc08633fe89a3bb1966db7d759d42a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcanbus_1_1canbus__client_1_1_canbus_client.html#a15dc08633fe89a3bb1966db7d759d42a">__init__</a> (self, ClientConfig config)</td></tr>
 <tr class="separator:a15dc08633fe89a3bb1966db7d759d42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e5f89365fa8a886156b74034d63bfe"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcanbus_1_1canbus__client_1_1_canbus_client.html#ac4e5f89365fa8a886156b74034d63bfe">stream_raw</a> (self)</td></tr>
+<tr class="separator:ac4e5f89365fa8a886156b74034d63bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad8c5a266b1825f9c5dbd0699d14d25e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcanbus_1_1canbus__client_1_1_canbus_client.html#aad8c5a266b1825f9c5dbd0699d14d25e">stream_motors</a> (self)</td></tr>
+<tr class="separator:aad8c5a266b1825f9c5dbd0699d14d25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34a915359034b056eadec4073d4fa20"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcanbus_1_1canbus__client_1_1_canbus_client.html#ad34a915359034b056eadec4073d4fa20">stream</a> (self)</td></tr>
 <tr class="separator:ad34a915359034b056eadec4073d4fa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -175,7 +179,47 @@ Args:
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Return the async streaming object.</pre> 
+<pre class="fragment">DEPRECATED: Use `stream_raw` with v0.0.6+.
+This will be phased out in v0.1.0
+
+Return the async streaming object of raw canbus messages.
+</pre> 
+</div>
+</div>
+<a id="aad8c5a266b1825f9c5dbd0699d14d25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8c5a266b1825f9c5dbd0699d14d25e">&#9670;&nbsp;</a></span>stream_motors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def canbus.canbus_client.CanbusClient.stream_motors </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the async streaming object of motor states.</pre> 
+</div>
+</div>
+<a id="ac4e5f89365fa8a886156b74034d63bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e5f89365fa8a886156b74034d63bfe">&#9670;&nbsp;</a></span>stream_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def canbus.canbus_client.CanbusClient.stream_raw </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the async streaming object of raw canbus messages.</pre> 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>

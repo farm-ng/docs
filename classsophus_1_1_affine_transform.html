@@ -112,15 +112,15 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa50cbc52087abcd518a379a79d827b06"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
-<tr class="memitem:aa50cbc52087abcd518a379a79d827b06"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_affine_transform.html#a0ca84401f5e4affc2426e96a34209d7f">PixelImage</a>&lt; typename TPointTypeT::Scalar &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_affine_transform.html#aa50cbc52087abcd518a379a79d827b06">distort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane)</td></tr>
-<tr class="separator:aa50cbc52087abcd518a379a79d827b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df86bd2425a15e8f88218a02a2562b5"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
-<tr class="memitem:a5df86bd2425a15e8f88218a02a2562b5"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_affine_transform.html#a5d46688af2074eff307748f2a58014a7">ProjInCameraZ1Plane</a>&lt; TScalar &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_affine_transform.html#a5df86bd2425a15e8f88218a02a2562b5">undistort</a> (<a class="el" href="classsophus_1_1_affine_transform.html#a546ea4985d52865f8fff0568982cecf7">Params</a>&lt; TScalar &gt; const &amp;params, <a class="el" href="classsophus_1_1_affine_transform.html#a0ca84401f5e4affc2426e96a34209d7f">PixelImage</a>&lt; TScalar &gt; const &amp;pixel_image)</td></tr>
-<tr class="separator:a5df86bd2425a15e8f88218a02a2562b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018a622aae9792e14311352ad8d12b88"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
-<tr class="memitem:a018a622aae9792e14311352ad8d12b88"><td class="memTemplItemLeft" align="right" valign="top">static Eigen::Matrix&lt; typename TPointTypeT::Scalar, 2, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_affine_transform.html#a018a622aae9792e14311352ad8d12b88">dxDistort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;)</td></tr>
-<tr class="separator:a018a622aae9792e14311352ad8d12b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204086c89c1d7e9830e504a7dcb46a31"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
+<tr class="memitem:a204086c89c1d7e9830e504a7dcb46a31"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_affine_transform.html#a204086c89c1d7e9830e504a7dcb46a31">distort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane) -&gt; <a class="el" href="classsophus_1_1_affine_transform.html#a0ca84401f5e4affc2426e96a34209d7f">PixelImage</a>&lt; typename TPointTypeT::Scalar &gt;</td></tr>
+<tr class="separator:a204086c89c1d7e9830e504a7dcb46a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8feddd6781dee7a82e97bd1852d14a"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
+<tr class="memitem:afa8feddd6781dee7a82e97bd1852d14a"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_affine_transform.html#afa8feddd6781dee7a82e97bd1852d14a">undistort</a> (<a class="el" href="classsophus_1_1_affine_transform.html#a546ea4985d52865f8fff0568982cecf7">Params</a>&lt; TScalar &gt; const &amp;params, <a class="el" href="classsophus_1_1_affine_transform.html#a0ca84401f5e4affc2426e96a34209d7f">PixelImage</a>&lt; TScalar &gt; const &amp;pixel_image) -&gt; <a class="el" href="classsophus_1_1_affine_transform.html#a5d46688af2074eff307748f2a58014a7">ProjInCameraZ1Plane</a>&lt; TScalar &gt;</td></tr>
+<tr class="separator:afa8feddd6781dee7a82e97bd1852d14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907650e4cf05175a28b816bfd179cd2b"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
+<tr class="memitem:a907650e4cf05175a28b816bfd179cd2b"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_affine_transform.html#a907650e4cf05175a28b816bfd179cd2b">dxDistort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;) -&gt; Eigen::Matrix&lt; typename TPointTypeT::Scalar, 2, 2 &gt;</td></tr>
+<tr class="separator:a907650e4cf05175a28b816bfd179cd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -197,8 +197,8 @@ template&lt;class TScalar &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa50cbc52087abcd518a379a79d827b06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50cbc52087abcd518a379a79d827b06">&#9670;&nbsp;</a></span>distort()</h2>
+<a id="a204086c89c1d7e9830e504a7dcb46a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204086c89c1d7e9830e504a7dcb46a31">&#9670;&nbsp;</a></span>distort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +209,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_affine_transform.html#a0ca84401f5e4affc2426e96a34209d7f">PixelImage</a>&lt;typename TPointTypeT::Scalar&gt; sophus::AffineTransform::distort </td>
+          <td class="memname">static auto sophus::AffineTransform::distort </td>
           <td>(</td>
           <td class="paramtype">Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -223,7 +223,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_affine_transform.html#a0ca84401f5e4affc2426e96a34209d7f">PixelImage</a>&lt;typename TPointTypeT::Scalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -235,8 +235,8 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
 
 </div>
 </div>
-<a id="a018a622aae9792e14311352ad8d12b88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a018a622aae9792e14311352ad8d12b88">&#9670;&nbsp;</a></span>dxDistort()</h2>
+<a id="a907650e4cf05175a28b816bfd179cd2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907650e4cf05175a28b816bfd179cd2b">&#9670;&nbsp;</a></span>dxDistort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +247,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; sophus::AffineTransform::dxDistort </td>
+          <td class="memname">static auto sophus::AffineTransform::dxDistort </td>
           <td>(</td>
           <td class="paramtype">Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -261,7 +261,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; </td>
         </tr>
       </table>
   </td>
@@ -273,8 +273,8 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
 
 </div>
 </div>
-<a id="a5df86bd2425a15e8f88218a02a2562b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5df86bd2425a15e8f88218a02a2562b5">&#9670;&nbsp;</a></span>undistort()</h2>
+<a id="afa8feddd6781dee7a82e97bd1852d14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8feddd6781dee7a82e97bd1852d14a">&#9670;&nbsp;</a></span>undistort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +285,7 @@ template&lt;class TScalar &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_affine_transform.html#a5d46688af2074eff307748f2a58014a7">ProjInCameraZ1Plane</a>&lt;TScalar&gt; sophus::AffineTransform::undistort </td>
+          <td class="memname">static auto sophus::AffineTransform::undistort </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsophus_1_1_affine_transform.html#a546ea4985d52865f8fff0568982cecf7">Params</a>&lt; TScalar &gt; const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -299,7 +299,7 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_affine_transform.html#a5d46688af2074eff307748f2a58014a7">ProjInCameraZ1Plane</a>&lt;TScalar&gt; </td>
         </tr>
       </table>
   </td>

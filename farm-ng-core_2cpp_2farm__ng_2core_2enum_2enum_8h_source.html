@@ -112,31 +112,40 @@ $(document).ready(function(){initNavTree('farm-ng-core_2cpp_2farm__ng_2core_2enu
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="enum__without__ostream_8h.html">farm_ng/core/enum/enum_without_ostream.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="enum__without__iostream_8h.html">farm_ng/core/enum/enum_without_iostream.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html#acecaa3d9b8c151d5235d828e6f582c62">   30</a></span>&#160;<span class="preprocessor">#define FARM_ENUM_OSTREAM_OVERLOAD(EnumName)                                \</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">  namespace enum_wrapper_ {                                                 \</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">  inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, EnumName##Impl value) { \</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    os &lt;&lt; toPretty(value);                                                  \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    return os;                                                              \</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">  }                                                                         \</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">  }  // namespace enum_wrapper_</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Convenience marco which defines the enum plus alias and adds the ostream</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// overload.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html#a5268dfdcfb4a14db714de4e279928ddf">   40</a></span>&#160;<span class="preprocessor">#define FARM_ENUM(EnumName, ...)                    \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">  FARM_ENUM_WITHOUT_OSTREAM(EnumName, __VA_ARGS__); \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">  FARM_ENUM_OSTREAM_OVERLOAD(EnumName)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Convenience marco which defines the enum and adds the ostream overload.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html#a7c96c8b54291c96e3a4e1cca16d3ba2b">   45</a></span>&#160;<span class="preprocessor">#define FARM_ENUM_DEF(EnumName, ...)                    \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">  FARM_ENUM_WITHOUT_OSTREAM_DEF(EnumName, __VA_ARGS__); \</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  FARM_ENUM_OSTREAM_OVERLOAD(EnumName)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;istream&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html#a38bde29501eb42fa480234100a88da4d">   31</a></span>&#160;<span class="preprocessor">#define FARM_ENUM_IOSTREAM_OVERLOAD(EnumName)                                \</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">  namespace enum_wrapper_ {                                                  \</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">  inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, EnumName##Impl value) {  \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    os &lt;&lt; toPretty(value);                                                   \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    return os;                                                               \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">  }                                                                          \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">  inline std::istream &amp;operator&gt;&gt;(std::istream &amp;is, EnumName##Impl &amp;value) { \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    std::string str;                                                         \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    is &gt;&gt; str;                                                               \</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    if (!trySetFromString(value, str)) {                                     \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">      throw std::runtime_error(std::string(&quot;Bad Value: &quot;) + str);            \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    }                                                                        \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    return is;                                                               \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  }                                                                          \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  }  // namespace enum_wrapper_</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// Convenience marco which defines the enum plus alias and adds the ostream</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// overload.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html#a5268dfdcfb4a14db714de4e279928ddf">   49</a></span>&#160;<span class="preprocessor">#define FARM_ENUM(EnumName, ...)                     \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">  FARM_ENUM_WITHOUT_IOSTREAM(EnumName, __VA_ARGS__); \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">  FARM_ENUM_IOSTREAM_OVERLOAD(EnumName)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// Convenience marco which defines the enum and adds the ostream overload.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html#a7c96c8b54291c96e3a4e1cca16d3ba2b">   54</a></span>&#160;<span class="preprocessor">#define FARM_ENUM_DEF(EnumName, ...)                     \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">  FARM_ENUM_WITHOUT_IOSTREAM_DEF(EnumName, __VA_ARGS__); \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  FARM_ENUM_IOSTREAM_OVERLOAD(EnumName)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aenum__without__ostream_8h_html"><div class="ttname"><a href="enum__without__ostream_8h.html">enum_without_ostream.h</a></div></div>
+<div class="ttc" id="aenum__without__iostream_8h_html"><div class="ttname"><a href="enum__without__iostream_8h.html">enum_without_iostream.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

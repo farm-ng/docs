@@ -7,6 +7,6 @@ var dir_717fefcaa90174e574aaf7afb6eb436e =
     [ "enum_flags_without_ostream.h", "enum__flags__without__ostream_8h.html", "enum__flags__without__ostream_8h" ],
     [ "enum_flags_without_ostream_test.cpp", "enum__flags__without__ostream__test_8cpp.html", "enum__flags__without__ostream__test_8cpp" ],
     [ "enum_test.cpp", "enum__test_8cpp.html", "enum__test_8cpp" ],
-    [ "enum_without_ostream.h", "enum__without__ostream_8h.html", "enum__without__ostream_8h" ],
-    [ "enum_without_ostream_test.cpp", "enum__without__ostream__test_8cpp.html", "enum__without__ostream__test_8cpp" ]
+    [ "enum_without_iostream.h", "enum__without__iostream_8h.html", "enum__without__iostream_8h" ],
+    [ "enum_without_iostream_test.cpp", "enum__without__iostream__test_8cpp.html", "enum__without__iostream__test_8cpp" ]
 ];

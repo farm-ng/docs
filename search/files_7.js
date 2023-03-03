@@ -1,26 +1,6 @@
 var searchData=
 [
-  ['image_2ecpp_1811',['image.cpp',['../image_8cpp.html',1,'']]],
-  ['image_2eh_1812',['image.h',['../image_8h.html',1,'']]],
-  ['image_5fsize_2ecpp_1813',['image_size.cpp',['../image__size_8cpp.html',1,'']]],
-  ['image_5fsize_2eh_1814',['image_size.h',['../image__size_8h.html',1,'']]],
-  ['image_5fsize_5ftest_2ecpp_1815',['image_size_test.cpp',['../image__size__test_8cpp.html',1,'']]],
-  ['image_5ftest_2ecpp_1816',['image_test.cpp',['../image__test_8cpp.html',1,'']]],
-  ['image_5ftypes_2ecpp_1817',['image_types.cpp',['../image__types_8cpp.html',1,'']]],
-  ['image_5ftypes_2eh_1818',['image_types.h',['../image__types_8h.html',1,'']]],
-  ['image_5ftypes_5ftest_2ecpp_1819',['image_types_test.cpp',['../image__types__test_8cpp.html',1,'']]],
-  ['image_5fview_2ecpp_1820',['image_view.cpp',['../image__view_8cpp.html',1,'']]],
-  ['image_5fview_2eh_1821',['image_view.h',['../image__view_8h.html',1,'']]],
-  ['image_5fview_5ftest_2ecpp_1822',['image_view_test.cpp',['../image__view__test_8cpp.html',1,'']]],
-  ['imu_5fmodel_2ecpp_1823',['imu_model.cpp',['../imu__model_8cpp.html',1,'']]],
-  ['imu_5fmodel_2eh_1824',['imu_model.h',['../imu__model_8h.html',1,'']]],
-  ['imu_5fmodel_5ftest_2ecpp_1825',['imu_model_test.cpp',['../imu__model__test_8cpp.html',1,'']]],
-  ['interpolate_2eh_1826',['interpolate.h',['../interpolate_8h.html',1,'']]],
-  ['interpolate_5fimpl_2eh_1827',['interpolate_impl.h',['../interpolate__impl_8h.html',1,'']]],
-  ['interpolation_2ecpp_1828',['interpolation.cpp',['../interpolation_8cpp.html',1,'']]],
-  ['interpolation_2eh_1829',['interpolation.h',['../interpolation_8h.html',1,'']]],
-  ['interpolation_5ftest_2ecpp_1830',['interpolation_test.cpp',['../interpolation__test_8cpp.html',1,'']]],
-  ['inverse_5fdepth_2eh_1831',['inverse_depth.h',['../inverse__depth_8h.html',1,'']]],
-  ['inverse_5fdepth_2epy_1832',['inverse_depth.py',['../inverse__depth_8py.html',1,'']]],
-  ['inverse_5fdepth_5ftest_2ecpp_1833',['inverse_depth_test.cpp',['../inverse__depth__test_8cpp.html',1,'']]]
+  ['group_5faccessors_2eh_1774',['group_accessors.h',['../group__accessors_8h.html',1,'']]],
+  ['group_5faccessors_5ftest_2ecpp_1775',['group_accessors_test.cpp',['../group__accessors__test_8cpp.html',1,'']]],
+  ['group_5faccessors_5funit_5ftests_2eh_1776',['group_accessors_unit_tests.h',['../group__accessors__unit__tests_8h.html',1,'']]]
 ];

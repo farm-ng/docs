@@ -104,15 +104,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a50eaf9a1829d1530ed9896ce6f0925e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f35f1a4cfbaa003abb4123916a997a9"><td class="memItemLeft" align="right" valign="top">LogLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html#a7f35f1a4cfbaa003abb4123916a997a9">getLogLevel</a> ()</td></tr>
 <tr class="separator:a7f35f1a4cfbaa003abb4123916a997a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f48b6633a949e7f8bfa3dc708b41b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html#a25f48b6633a949e7f8bfa3dc708b41b0">log</a> (LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function)</td></tr>
-<tr class="separator:a25f48b6633a949e7f8bfa3dc708b41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255a182451b7c8e1cb2187b969498db1"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:a255a182451b7c8e1cb2187b969498db1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a> (LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function, std::string const &amp;message, T &amp;&amp;... args)</td></tr>
 <tr class="separator:a255a182451b7c8e1cb2187b969498db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f48b6633a949e7f8bfa3dc708b41b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html#a25f48b6633a949e7f8bfa3dc708b41b0">log</a> (LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function)</td></tr>
+<tr class="separator:a25f48b6633a949e7f8bfa3dc708b41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:abce4813deba2bbf0831d70f5e4b1ec98"><td class="memItemLeft" align="right" valign="top">static const LogLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html#abce4813deba2bbf0831d70f5e4b1ec98">kDefaultLogLevel</a> = LogLevel(LogLevel::warning)</td></tr>
+<tr class="memitem:abce4813deba2bbf0831d70f5e4b1ec98"><td class="memItemLeft" align="right" valign="top">static const LogLevel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html#abce4813deba2bbf0831d70f5e4b1ec98">kDefaultLogLevel</a> = LogLevel(LogLevel::info)</td></tr>
 <tr class="separator:abce4813deba2bbf0831d70f5e4b1ec98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -155,6 +155,9 @@ Static Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void farm_ng::StreamLogger::log </td>
@@ -192,6 +195,11 @@ Static Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -311,7 +319,7 @@ template&lt;typename... T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const LogLevel farm_ng::StreamLogger::kDefaultLogLevel = LogLevel(LogLevel::warning)</td>
+          <td class="memname">const LogLevel farm_ng::StreamLogger::kDefaultLogLevel = LogLevel(LogLevel::info)</td>
         </tr>
       </table>
   </td>

@@ -112,21 +112,21 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a22a2359e5dceca9a23b9052162107240"><td class="memTemplParams" colspan="2">template&lt;class TParamScalarT , class TPointScalarT &gt; </td></tr>
-<tr class="memitem:a22a2359e5dceca9a23b9052162107240"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; typename Eigen::ScalarBinaryOpTraits&lt; TParamScalarT, TPointScalarT &gt;::ReturnType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#a22a2359e5dceca9a23b9052162107240">projImpl</a> (<a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a>&lt; TParamScalarT &gt; const &amp;distortion, <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TPointScalarT &gt; const &amp;point_normalized)</td></tr>
-<tr class="separator:a22a2359e5dceca9a23b9052162107240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af513db1924afa19e6345b6a20e2c6c8c"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
-<tr class="memitem:af513db1924afa19e6345b6a20e2c6c8c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TScalar &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#af513db1924afa19e6345b6a20e2c6c8c">unprojImpl</a> (<a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a>&lt; TScalar &gt; const &amp;distortion, <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TScalar &gt; const &amp;uv_normalized)</td></tr>
-<tr class="separator:af513db1924afa19e6345b6a20e2c6c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac139c8075a07a2211d6a4a61115ab525"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
-<tr class="memitem:ac139c8075a07a2211d6a4a61115ab525"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; typename TPointTypeT::Scalar &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac139c8075a07a2211d6a4a61115ab525">distort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane)</td></tr>
-<tr class="separator:ac139c8075a07a2211d6a4a61115ab525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a937211476ab891f99fc93efcf04b19"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
-<tr class="memitem:a5a937211476ab891f99fc93efcf04b19"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane</a>&lt; TScalar &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5a937211476ab891f99fc93efcf04b19">undistort</a> (<a class="el" href="classsophus_1_1_brown_conrady_transform.html#af6688193ecd220aabc3402afecce386e">Params</a>&lt; TScalar &gt; const &amp;params, <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TScalar &gt; const &amp;pixel_image)</td></tr>
-<tr class="separator:a5a937211476ab891f99fc93efcf04b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35da59798e750d39a60c33e3c9bf8db3"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
-<tr class="memitem:a35da59798e750d39a60c33e3c9bf8db3"><td class="memTemplItemLeft" align="right" valign="top">static Eigen::Matrix&lt; typename TPointTypeT::Scalar, 2, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#a35da59798e750d39a60c33e3c9bf8db3">dxDistort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane)</td></tr>
-<tr class="separator:a35da59798e750d39a60c33e3c9bf8db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4e1130ba46cc19e44dbed8dfab3147"><td class="memTemplParams" colspan="2">template&lt;class TParamScalarT , class TPointScalarT &gt; </td></tr>
+<tr class="memitem:a8e4e1130ba46cc19e44dbed8dfab3147"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#a8e4e1130ba46cc19e44dbed8dfab3147">projImpl</a> (<a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a>&lt; TParamScalarT &gt; const &amp;distortion, <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TPointScalarT &gt; const &amp;point_normalized) -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; typename Eigen::ScalarBinaryOpTraits&lt; TParamScalarT, TPointScalarT &gt;::ReturnType &gt;</td></tr>
+<tr class="separator:a8e4e1130ba46cc19e44dbed8dfab3147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21de6c8e3f9ae307b3a65bf82fc1ead8"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
+<tr class="memitem:a21de6c8e3f9ae307b3a65bf82fc1ead8"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#a21de6c8e3f9ae307b3a65bf82fc1ead8">unprojImpl</a> (<a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a>&lt; TScalar &gt; const &amp;distortion, <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TScalar &gt; const &amp;uv_normalized) -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TScalar &gt;</td></tr>
+<tr class="separator:a21de6c8e3f9ae307b3a65bf82fc1ead8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa976c77645f24c878c0a80b2128373fe"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
+<tr class="memitem:aa976c77645f24c878c0a80b2128373fe"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#aa976c77645f24c878c0a80b2128373fe">distort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane) -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; typename TPointTypeT::Scalar &gt;</td></tr>
+<tr class="separator:aa976c77645f24c878c0a80b2128373fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee85e2b4fd4b17cbde45195e90ae7dff"><td class="memTemplParams" colspan="2">template&lt;class TScalar &gt; </td></tr>
+<tr class="memitem:aee85e2b4fd4b17cbde45195e90ae7dff"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#aee85e2b4fd4b17cbde45195e90ae7dff">undistort</a> (<a class="el" href="classsophus_1_1_brown_conrady_transform.html#af6688193ecd220aabc3402afecce386e">Params</a>&lt; TScalar &gt; const &amp;params, <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt; TScalar &gt; const &amp;pixel_image) -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane</a>&lt; TScalar &gt;</td></tr>
+<tr class="separator:aee85e2b4fd4b17cbde45195e90ae7dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ddd70983ecd821a1cb21f0d49a6987"><td class="memTemplParams" colspan="2">template&lt;class TParamsTypeT , class TPointTypeT &gt; </td></tr>
+<tr class="memitem:a08ddd70983ecd821a1cb21f0d49a6987"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#a08ddd70983ecd821a1cb21f0d49a6987">dxDistort</a> (Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;params, Eigen::MatrixBase&lt; TPointTypeT &gt; const &amp;proj_point_in_camera_z1_plane) -&gt; Eigen::Matrix&lt; typename TPointTypeT::Scalar, 2, 2 &gt;</td></tr>
+<tr class="separator:a08ddd70983ecd821a1cb21f0d49a6987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -203,8 +203,8 @@ template&lt;class TScalar &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac139c8075a07a2211d6a4a61115ab525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac139c8075a07a2211d6a4a61115ab525">&#9670;&nbsp;</a></span>distort()</h2>
+<a id="aa976c77645f24c878c0a80b2128373fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa976c77645f24c878c0a80b2128373fe">&#9670;&nbsp;</a></span>distort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +215,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;typename TPointTypeT::Scalar&gt; sophus::BrownConradyTransform::distort </td>
+          <td class="memname">static auto sophus::BrownConradyTransform::distort </td>
           <td>(</td>
           <td class="paramtype">Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -229,7 +229,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;typename TPointTypeT::Scalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -241,8 +241,8 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
 
 </div>
 </div>
-<a id="a35da59798e750d39a60c33e3c9bf8db3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35da59798e750d39a60c33e3c9bf8db3">&#9670;&nbsp;</a></span>dxDistort()</h2>
+<a id="a08ddd70983ecd821a1cb21f0d49a6987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ddd70983ecd821a1cb21f0d49a6987">&#9670;&nbsp;</a></span>dxDistort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +253,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; sophus::BrownConradyTransform::dxDistort </td>
+          <td class="memname">static auto sophus::BrownConradyTransform::dxDistort </td>
           <td>(</td>
           <td class="paramtype">Eigen::MatrixBase&lt; TParamsTypeT &gt; const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -267,7 +267,7 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; Eigen::Matrix&lt;typename TPointTypeT::Scalar, 2, 2&gt; </td>
         </tr>
       </table>
   </td>
@@ -279,8 +279,8 @@ template&lt;class TParamsTypeT , class TPointTypeT &gt; </div>
 
 </div>
 </div>
-<a id="a22a2359e5dceca9a23b9052162107240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22a2359e5dceca9a23b9052162107240">&#9670;&nbsp;</a></span>projImpl()</h2>
+<a id="a8e4e1130ba46cc19e44dbed8dfab3147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4e1130ba46cc19e44dbed8dfab3147">&#9670;&nbsp;</a></span>projImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +291,7 @@ template&lt;class TParamScalarT , class TPointScalarT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;typename Eigen::ScalarBinaryOpTraits&lt; TParamScalarT, TPointScalarT&gt;::ReturnType&gt; sophus::BrownConradyTransform::projImpl </td>
+          <td class="memname">static auto sophus::BrownConradyTransform::projImpl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a>&lt; TParamScalarT &gt; const &amp;&#160;</td>
           <td class="paramname"><em>distortion</em>, </td>
@@ -305,7 +305,9 @@ template&lt;class TParamScalarT , class TPointScalarT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;typename Eigen::ScalarBinaryOpTraits&lt;
+          TParamScalarT,
+          TPointScalarT&gt;::ReturnType&gt; </td>
         </tr>
       </table>
   </td>
@@ -317,8 +319,8 @@ template&lt;class TParamScalarT , class TPointScalarT &gt; </div>
 
 </div>
 </div>
-<a id="a5a937211476ab891f99fc93efcf04b19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a937211476ab891f99fc93efcf04b19">&#9670;&nbsp;</a></span>undistort()</h2>
+<a id="aee85e2b4fd4b17cbde45195e90ae7dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee85e2b4fd4b17cbde45195e90ae7dff">&#9670;&nbsp;</a></span>undistort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +331,7 @@ template&lt;class TScalar &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane</a>&lt;TScalar&gt; sophus::BrownConradyTransform::undistort </td>
+          <td class="memname">static auto sophus::BrownConradyTransform::undistort </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#af6688193ecd220aabc3402afecce386e">Params</a>&lt; TScalar &gt; const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
@@ -343,7 +345,7 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a00640c9d835bfb3ceba050deefd643bf">ProjInCameraZ1Plane</a>&lt;TScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -355,8 +357,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="af513db1924afa19e6345b6a20e2c6c8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af513db1924afa19e6345b6a20e2c6c8c">&#9670;&nbsp;</a></span>unprojImpl()</h2>
+<a id="a21de6c8e3f9ae307b3a65bf82fc1ead8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21de6c8e3f9ae307b3a65bf82fc1ead8">&#9670;&nbsp;</a></span>unprojImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,7 +369,7 @@ template&lt;class TScalar &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;TScalar&gt; sophus::BrownConradyTransform::unprojImpl </td>
+          <td class="memname">static auto sophus::BrownConradyTransform::unprojImpl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsophus_1_1_brown_conrady_transform.html#ac85d2f870fd3965473ae92d4d8e98bef">DistorationParams</a>&lt; TScalar &gt; const &amp;&#160;</td>
           <td class="paramname"><em>distortion</em>, </td>
@@ -381,7 +383,7 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_brown_conrady_transform.html#a5fb41f5c028bf975acceac207a910311">PixelImage</a>&lt;TScalar&gt; </td>
         </tr>
       </table>
   </td>

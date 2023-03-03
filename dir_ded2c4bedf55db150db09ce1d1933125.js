@@ -3,7 +3,7 @@ var dir_ded2c4bedf55db150db09ce1d1933125 =
     [ "backtrace.cpp", "backtrace_8cpp.html", "backtrace_8cpp" ],
     [ "backtrace.h", "backtrace_8h.html", "backtrace_8h" ],
     [ "eigen.h", "eigen_8h.html", [
-      [ "MaxMetric< Eigen::Matrix< TScalar, kRows, kCols > >", "classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html", "classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4" ]
+      [ "CheckNear< Eigen::Matrix< Scalar, M, N > >", "structfarm__ng_1_1details_1_1_check_near_3_01_eigen_1_1_matrix_3_01_scalar_00_01_m_00_01_n_01_4_01_4.html", null ]
     ] ],
     [ "expected.cpp", "expected_8cpp.html", "expected_8cpp" ],
     [ "expected.h", "expected_8h.html", "expected_8h" ],

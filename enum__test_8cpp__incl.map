@@ -1,10 +1,11 @@
 <map id="projects/farm&#45;ng&#45;core/cpp/farm_ng/core/enum/enum_test.cpp" name="projects/farm&#45;ng&#45;core/cpp/farm_ng/core/enum/enum_test.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="1461,5,1641,61"/>
-<area shape="rect" id="node2" href="$farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1272,109,1475,136"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1499,109,1603,136"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1627,109,1701,136"/>
-<area shape="rect" id="node3" href="$enum__without__ostream_8h.html" title=" " alt="" coords="1199,184,1390,225"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1414,191,1490,218"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1538,5,1718,61"/>
+<area shape="rect" id="node2" href="$farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1349,109,1552,136"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1576,109,1680,136"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1704,109,1779,136"/>
+<area shape="rect" id="node3" href="$enum__without__iostream_8h.html" title=" " alt="" coords="1199,184,1390,225"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1415,191,1487,218"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1511,191,1587,218"/>
 <area shape="rect" id="node4" href="$enum__details_8h.html" title=" " alt="" coords="1203,273,1386,315"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,363,176,404"/>
 <area shape="rect" id="node6" title=" " alt="" coords="201,363,365,404"/>

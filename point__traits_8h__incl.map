@@ -1,9 +1,9 @@
-<map id="projects/Sophus/cpp/sophus/common/point_traits.h" name="projects/Sophus/cpp/sophus/common/point_traits.h">
-<area shape="rect" id="node1" title=" " alt="" coords="201,5,371,61"/>
-<area shape="rect" id="node2" href="$point__concepts_8h.html" title=" " alt="" coords="81,109,248,151"/>
-<area shape="rect" id="node6" title=" " alt="" coords="240,206,332,233"/>
-<area shape="rect" id="node7" title=" " alt="" coords="323,117,382,143"/>
-<area shape="rect" id="node3" href="$_sophus_2cpp_2sophus_2common_2concept__utils_8h.html" title=" " alt="" coords="31,199,215,240"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,288,116,315"/>
-<area shape="rect" id="node5" title=" " alt="" coords="140,288,232,315"/>
+<map id="projects/Sophus/cpp/sophus/linalg/point_traits.h" name="projects/Sophus/cpp/sophus/linalg/point_traits.h">
+<area shape="rect" id="node1" title=" " alt="" coords="205,5,357,61"/>
+<area shape="rect" id="node2" href="$point_8h.html" title=" " alt="" coords="65,109,243,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="235,184,327,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="318,109,377,136"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="36,184,211,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,259,116,285"/>
+<area shape="rect" id="node5" title=" " alt="" coords="140,259,232,285"/>
 </map>

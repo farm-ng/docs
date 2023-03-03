@@ -89,11 +89,19 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 <li>t0()
 : <a class="el" href="classsophus_1_1_basis_spline.html#a4ab89e73dcb36051c28fb3ff4a9b6026">sophus::BasisSpline&lt; TLieGroup &gt;</a>
 </li>
-<li>TangentSize()
-: <a class="el" href="classsophus_1_1_manifold.html#adb205e38cbe940e72c9b3bad8cf1adf4">sophus::Manifold&lt; TLieGroup &gt;</a>
+<li>tangentExamples()
+: <a class="el" href="classsophus_1_1lie_1_1_group.html#a4c57f88a8e44f6d55d44e3ed35a0be17">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adc59fb9be8eaf2bc83b071fe1010cc1b">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a29072a35c629d6df35af1e2ed95b9adc">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#add5b712464182a265a5620c60ea22183">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#ae6204917ab84bfb8fa64dc759c45e9f4">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#af0efb7d27326da85d22f211c7d56469b">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#a5aea7287bcba7c966a0658e7e44c1e33">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a2ffc69237fb55550603e2a961e1211b1">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1linalg_1_1_unit_vector_impl.html#a034b1ccb8f69e12e5775774361f73083">sophus::linalg::UnitVectorImpl&lt; TScalar, kDim &gt;</a>
 </li>
-<li>test()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#a8c7fcd1517593938e95796e96b1464e0">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
+<li>TangentSize()
+: <a class="el" href="classsophus_1_1ceres_1_1_manifold.html#afaf819d58ebf21b1415ab03f2d9c563d">sophus::ceres::Manifold&lt; TLieGroup &gt;</a>
 </li>
 <li>test_codegen()
 : <a class="el" href="classsophus_1_1affine__camera_1_1_test_pinhole.html#a3bf9103cdc2cb023b54689ed9c56b2f2">sophus.affine_camera.TestPinhole</a>
@@ -142,91 +150,73 @@ $(document).ready(function(){initNavTree('functions_func_t.html',''); initResiza
 , <a class="el" href="classsophus_1_1quaternion_1_1_test_quaternion.html#a2bbbfc5d8f063d411cd201ce98dea4d1">sophus.quaternion.TestQuaternion</a>
 </li>
 <li>testAll()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#ab082753be6b69b196f50d5f5d49098c9">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
-</li>
-<li>testAveraging()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#a7c327921c6742147e76b44825ad3ecbe">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
-</li>
-<li>testFit()
-: <a class="el" href="classsophus_1_1_tests.html#a82ca2ad21b6a67840a722ab3859bf2ff">sophus::Tests&lt; TScalar &gt;</a>
+: <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests.html#a46f015138153e93f77979b3a3061f853">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;</a>
 </li>
 <li>TestGraphFunctor()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests_1_1_test_graph_functor.html#a5c5a4c3249529d10de672fd87fd69290">sophus::LieGroupCeresTests&lt; TLieGroup &gt;::TestGraphFunctor</a>
+: <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests_1_1_test_graph_functor.html#a796451863ded9490e11b87c70ced3ea8">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;::TestGraphFunctor</a>
 </li>
 <li>TestLieGroupCostFunctor()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests_1_1_test_lie_group_cost_functor.html#ac826abd792d89010709acae666ec6926">sophus::LieGroupCeresTests&lt; TLieGroup &gt;::TestLieGroupCostFunctor</a>
+: <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests_1_1_test_lie_group_cost_functor.html#a7f19232030e59cbce3fc064fe7dbbb9a">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;::TestLieGroupCostFunctor</a>
 </li>
 <li>testManifold()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests.html#af2453da828ca534f8374b08d003af7c5">sophus::LieGroupCeresTests&lt; TLieGroup &gt;</a>
+: <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests.html#a0436c622ff2678cee2245455aa637b9e">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;</a>
 </li>
 <li>TestPointCostFunctor()
-: <a class="el" href="structsophus_1_1_lie_group_ceres_tests_1_1_test_point_cost_functor.html#abccc4991c04d6d18b4d547c0191ebefd">sophus::LieGroupCeresTests&lt; TLieGroup &gt;::TestPointCostFunctor</a>
-</li>
-<li>testRandomSmoke()
-: <a class="el" href="classsophus_1_1_lie_group_tests.html#a099d332b69f515362fef71256c3f6c00">sophus::LieGroupTests&lt; TLieGroup &gt;</a>
-</li>
-<li>Tests()
-: <a class="el" href="classsophus_1_1_tests.html#af63a1720d54c1b6b194f18ed79104d8f">sophus::Tests&lt; TScalar &gt;</a>
-</li>
-<li>testSpline()
-: <a class="el" href="classsophus_1_1_lie_group_tests.html#abebc9445d05afe1c7f84787f868cea4b">sophus::LieGroupTests&lt; TLieGroup &gt;</a>
+: <a class="el" href="structsophus_1_1test_1_1_lie_group_ceres_tests_1_1_test_point_cost_functor.html#a32be32306630530040e7fdae7c335973">sophus::test::LieGroupCeresTests&lt; TLieGroup &gt;::TestPointCostFunctor</a>
 </li>
 <li>tmax()
 : <a class="el" href="classsophus_1_1_basis_spline.html#a79cce0d118dc27a2b25b552978b6d923">sophus::BasisSpline&lt; TLieGroup &gt;</a>
 </li>
-<li>toEuclideanPoint3()
-: <a class="el" href="classsophus_1_1_inverse_depth_point3.html#a5ff3ffa0503d843f56531f44c3c134af">sophus::InverseDepthPoint3&lt; TT &gt;</a>
+<li>to_proto()
+: <a class="el" href="classcanbus_1_1packet_1_1_motor_state.html#ad7c3aee49ca655e2c533f04d0e16e1d6">canbus.packet.MotorState</a>
 </li>
-<li>trans()
-: <a class="el" href="classsophus_1_1_se2.html#a465135e7e9d490202bc372ac01d84508">sophus::Se2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se3.html#a5eaa93c4d7921d5b1b8b48673e350c30">sophus::Se3&lt; TScalar &gt;</a>
+<li>toAmbient()
+: <a class="el" href="classsophus_1_1lie_1_1_group.html#a482a84365ae0b79380d70199600a64e2">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac1fc2a6a8471cfa714694785cf3a6052">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a2c22d1615084b01cbcb18858652ad8e1">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#a9fc5fd2c2988a07ca406e8b8ac6d7a9c">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#ad52cfbc24b1927c9aec03f23ff456426">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_semi_direct_product_with_translation.html#adf4f7ca58bedbae2131ecfe10cf35b66">sophus::lie::SemiDirectProductWithTranslation&lt; TScalar, kTranslationDim, TSubGroup &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#abd690f9b7aa09e8ad90346bec07a7058">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a4b11e5ef74c121bce3dc6d99f0c07f06">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
+</li>
+<li>toEuclideanPoint3()
+: <a class="el" href="classsophus_1_1_inverse_depth_point3.html#a6785a54bf22cf072305e876c8063936b">sophus::InverseDepthPoint3&lt; TT &gt;</a>
+</li>
+<li>topRightAdj()
+: <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac041035ca06a3c678bdbd27e5dd1f42e">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation2_impl.html#a2aa64885abdb6ed4a3b165c988234eba">sophus::lie::Rotation2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_rotation3_impl.html#aabe38004e07a0811a61a11eb0a87ef40">sophus::lie::Rotation3Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_scaling_impl.html#a8f8c6a2472ece6cc32dc67a99e4d5cbe">sophus::lie::ScalingImpl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity2_impl.html#ac0bee2e9d1759b3cec7a6d6cc8953922">sophus::lie::SpiralSimilarity2Impl&lt; TScalar, kDim &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_spiral_similarity3_impl.html#a8922931bd4d6528bbc5c0c2ec1fd5a18">sophus::lie::SpiralSimilarity3Impl&lt; TScalar, kDim &gt;</a>
 </li>
 <li>transform()
-: <a class="el" href="classsophus_1_1_point_transformer.html#ad0864938b0319eb29197e78cd28ecfef">sophus::PointTransformer&lt; TT &gt;</a>
+: <a class="el" href="classsophus_1_1_point_transformer.html#a2edcad57a6991e98c1a0d8066ed1226a">sophus::PointTransformer&lt; TT &gt;</a>
 </li>
 <li>transformFrom()
-: <a class="el" href="classsophus_1_1_mut_image_view.html#ab8dbbd6d64e13d32c29a3f5e644cabbb">sophus::MutImageView&lt; TPixel &gt;</a>
+: <a class="el" href="classsophus_1_1_mut_image_view.html#aa2157348c35c25ed131eebab9e800df8">sophus::MutImageView&lt; TPixel &gt;</a>
 </li>
 <li>transformRig()
-: <a class="el" href="structsophus_1_1_multi_camera_rig.html#aacbe221283d6bcac2a918ba64420feb8">sophus::MultiCameraRig</a>
+: <a class="el" href="structsophus_1_1_multi_camera_rig.html#a5b7ca1632f055aef2c00db8ee6be677b">sophus::MultiCameraRig</a>
 </li>
 <li>translated()
-: <a class="el" href="classsophus_1_1_region.html#a7ccefd3280e1befa5ccedffd03ffad72">sophus::Region&lt; TPoint &gt;</a>
+: <a class="el" href="classsophus_1_1_region.html#a7157ccd8c7fc386f498da00c7f48fe29">sophus::Region&lt; TPoint &gt;</a>
 </li>
 <li>translation()
-: <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_se2_3_01_t_scalar_01_4_01_4.html#a6a6d5ea1b588b585c1eb8684d25f9e5f">Eigen::Map&lt; sophus::Se2&lt; TScalar &gt; &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_se2_3_01_t_scalar_01_4_01const_01_4.html#aad01f320a35172c84598c2a10d49da1e">Eigen::Map&lt; sophus::Se2&lt; TScalar &gt; const &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_se3_3_01_t_scalar_01_4_01_4.html#a2f1043bb651deb19617e96695b8475d3">Eigen::Map&lt; sophus::Se3&lt; TScalar &gt; &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_se3_3_01_t_scalar_01_4_01const_01_4.html#a716992913b7ead004931e8c9bcf6fd69">Eigen::Map&lt; sophus::Se3&lt; TScalar &gt; const &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_sim2_3_01_t_scalar_01_4_01_4.html#ab7b5bbdf430b5291bfb6e7479d2564b3">Eigen::Map&lt; sophus::Sim2&lt; TScalar &gt; &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_sim2_3_01_t_scalar_01_4_01const_01_4.html#abdc222d86316ad0a1115034b1af4de6a">Eigen::Map&lt; sophus::Sim2&lt; TScalar &gt; const &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_sim3_3_01_t_scalar_01_4_01_4.html#ae81d411cfd7f8b8727f3bea44eb2a4e4">Eigen::Map&lt; sophus::Sim3&lt; TScalar &gt; &gt;</a>
-, <a class="el" href="class_eigen_1_1_map_3_01sophus_1_1_sim3_3_01_t_scalar_01_4_01const_01_4.html#a981c93f809237262cda7edc9d733897f">Eigen::Map&lt; sophus::Sim3&lt; TScalar &gt; const &gt;</a>
-, <a class="el" href="classsophus_1_1_se2.html#aa239eb8068ba10e6ab562a47f8990db9">sophus::Se2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se2_base.html#aab4d106cc810917aa6cf9b0aa392258d">sophus::Se2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_se3.html#a2940c62c6d820ab3b11a816223ea36fd">sophus::Se3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se3_base.html#a55d5abb6f3f24d04cddf10b1856db468">sophus::Se3Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2.html#adf9ba069ef2daa03041922d64dc81eb9">sophus::Sim2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_sim2_base.html#a17558d33d993a1ca8300b3d04e0eb688">sophus::Sim2Base&lt; TDerived &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3.html#a8a30518d92c750c3c15044020cbb3a89">sophus::Sim3&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_sim3_base.html#aad2c97baf3e896fe5693757039c1ae05">sophus::Sim3Base&lt; TDerived &gt;</a>
+: <a class="el" href="classsophus_1_1_isometry2.html#a7bfbe3845ef03dd7011dafddad3a7420">sophus::Isometry2&lt; TScalar &gt;</a>
+, <a class="el" href="classsophus_1_1_isometry3.html#a02372e0c9d0b76486315367671bb2c3c">sophus::Isometry3&lt; TScalar &gt;</a>
+, <a class="el" href="classsophus_1_1_similarity2.html#ad637a9f1a0af5e8c1bcd8bdd52be5fa9">sophus::Similarity2&lt; TScalar &gt;</a>
+, <a class="el" href="classsophus_1_1_similarity3.html#af1a9afaeaf21f874cf65691d8d2e7602">sophus::Similarity3&lt; TScalar &gt;</a>
 </li>
-<li>transX()
-: <a class="el" href="classsophus_1_1_se2.html#a479c6bfb11d0097e147901c026b551f1">sophus::Se2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se3.html#af4a30e11cd1c8a1e8613f52ede345632">sophus::Se3&lt; TScalar &gt;</a>
-</li>
-<li>transY()
-: <a class="el" href="classsophus_1_1_se2.html#a6c8851dfa1362f1cae183d50d79943da">sophus::Se2&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1_se3.html#ac702d835ccd9be4f6e338740df47ef9c">sophus::Se3&lt; TScalar &gt;</a>
-</li>
-<li>transZ()
-: <a class="el" href="classsophus_1_1_se3.html#a1bc8ee2bdc77168d53c188af7ca97014">sophus::Se3&lt; TScalar &gt;</a>
+<li>Translation()
+: <a class="el" href="classsophus_1_1_translation.html#ad16da24bd57f0b988fb2213071fab67e">sophus::Translation&lt; TScalar, kDim &gt;</a>
 </li>
 <li>tryFrom()
 : <a class="el" href="classfarm__ng_1_1_shared.html#ac7ac9708aca915e3744c61abb19c65fa">farm_ng::Shared&lt; T &gt;</a>
 </li>
 <li>tryFromUnitVector()
-: <a class="el" href="classsophus_1_1_unit_vector.html#a6f18649b338e5703cff9d26e22672b20">sophus::UnitVector&lt; TScalar, kN &gt;</a>
+: <a class="el" href="classsophus_1_1_unit_vector.html#ab92238c80668a1fe2a4786c2f6793620">sophus::UnitVector&lt; TScalar, kN &gt;</a>
 </li>
 <li>tryMake()
 : <a class="el" href="classfarm__ng_1_1_shared.html#aaa15448896f28921bb191009f30baaad">farm_ng::Shared&lt; T &gt;</a>

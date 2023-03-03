@@ -1,4 +1,0 @@
-var classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4 =
-[
-    [ "Scalar", "classfarm__ng_1_1details_1_1_max_metric_3_01_eigen_1_1_matrix_3_01_t_scalar_00_01k_rows_00_01k_cols_01_4_01_4.html#aaf599668ce79947ac9992f9e18e6f606", null ]
-];
