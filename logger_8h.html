@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/farm-ng-core/cpp/farm_ng/core/logging/logger.h File Reference</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/farm_ng/core/logging/logger.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -92,10 +92,11 @@ $(document).ready(function(){initNavTree('logger_8h.html',''); initResizable(); 
 <div class="title">logger.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h_source.html">farm_ng/core/enum/enum.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="farm__ng_2core_2enum_2enum_8h_source.html">farm_ng/core/enum/enum.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="format_8h_source.html">farm_ng/core/logging/format.h</a>&quot;</code><br />
 <code>#include &lt;farm_pp/preprocessor/comma.hpp&gt;</code><br />
 <code>#include &lt;farm_pp/preprocessor/empty.hpp&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;unordered_set&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -103,13 +104,14 @@ Include dependency graph for logger.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="logger_8h__incl.png" border="0" usemap="#projects_2farm-ng-core_2cpp_2farm__ng_2core_2logging_2logger_8h" alt=""/></div>
 <map name="projects_2farm-ng-core_2cpp_2farm__ng_2core_2logging_2logger_8h" id="projects_2farm-ng-core_2cpp_2farm__ng_2core_2logging_2logger_8h">
-<area shape="rect" title=" " alt="" coords="1642,5,1833,61"/>
-<area shape="rect" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1335,117,1537,143"/>
+<area shape="rect" title=" " alt="" coords="1737,5,1927,61"/>
+<area shape="rect" href="farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1335,117,1537,143"/>
 <area shape="rect" href="format_8h.html" title=" " alt="" coords="623,288,783,329"/>
 <area shape="rect" title=" " alt="" coords="1562,109,1726,151"/>
 <area shape="rect" title=" " alt="" coords="1750,109,1914,151"/>
-<area shape="rect" title=" " alt="" coords="1939,117,2029,143"/>
-<area shape="rect" title=" " alt="" coords="2053,117,2168,143"/>
+<area shape="rect" title=" " alt="" coords="1939,117,2005,143"/>
+<area shape="rect" title=" " alt="" coords="2029,117,2120,143"/>
+<area shape="rect" title=" " alt="" coords="2144,117,2259,143"/>
 <area shape="rect" href="enum__without__iostream_8h.html" title=" " alt="" coords="1301,199,1491,240"/>
 <area shape="rect" title=" " alt="" coords="1516,206,1588,233"/>
 <area shape="rect" title=" " alt="" coords="1613,206,1689,233"/>
@@ -141,56 +143,56 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="logger_8h__dep__incl.png" border="0" usemap="#projects_2farm-ng-core_2cpp_2farm__ng_2core_2logging_2logger_8hdep" alt=""/></div>
 <map name="projects_2farm-ng-core_2cpp_2farm__ng_2core_2logging_2logger_8hdep" id="projects_2farm-ng-core_2cpp_2farm__ng_2core_2logging_2logger_8hdep">
-<area shape="rect" title=" " alt="" coords="3244,5,3435,61"/>
-<area shape="rect" href="eigen_8h.html" title=" " alt="" coords="1637,109,1828,165"/>
-<area shape="rect" href="common_8h.html" title=" " alt="" coords="1532,228,1739,269"/>
-<area shape="rect" href="expected_8h.html" title=" " alt="" coords="2627,109,2817,165"/>
-<area shape="rect" href="expected__test_8cpp.html" title=" " alt="" coords="2213,221,2404,277"/>
-<area shape="rect" href="farm-ng-core_2cpp_2farm__ng_2core_2misc_2proto_2conv_8cpp.html" title=" " alt="" coords="2819,332,2993,388"/>
-<area shape="rect" href="farm-ng-core_2cpp_2farm__ng_2core_2misc_2proto_2conv__test_8cpp.html" title=" " alt="" coords="3017,332,3192,388"/>
-<area shape="rect" href="proto__reader__writer_8h.html" title=" " alt="" coords="3143,221,3352,277"/>
-<area shape="rect" href="proto__reader__writer__test_8cpp.html" title=" " alt="" coords="3450,332,3663,388"/>
-<area shape="rect" href="format__test_8cpp.html" title=" " alt="" coords="3244,109,3435,165"/>
-<area shape="rect" href="logger_8cpp.html" title=" " alt="" coords="3459,109,3649,165"/>
-<area shape="rect" href="logger__test_8cpp.html" title=" " alt="" coords="3673,109,3864,165"/>
-<area shape="rect" href="trace__debug__log_8h.html" title=" " alt="" coords="3888,109,4079,165"/>
-<area shape="rect" href="erase__test_8cpp.html" title=" " alt="" coords="4103,109,4277,165"/>
-<area shape="rect" href="stopwatch_8h.html" title=" " alt="" coords="4301,109,4476,165"/>
-<area shape="rect" href="event__log__reader_8cpp.html" title=" " alt="" coords="4500,109,4709,165"/>
-<area shape="rect" href="event__log__writer_8cpp.html" title=" " alt="" coords="4733,109,4943,165"/>
-<area shape="rect" href="event__log__writer__test_8cpp.html" title=" " alt="" coords="4967,109,5176,165"/>
-<area shape="rect" href="num__diff_8h.html" title=" " alt="" coords="1731,332,1894,388"/>
-<area shape="rect" href="region_8h.html" title=" " alt="" coords="1521,443,1707,485"/>
-<area shape="rect" href="image__size_8h.html" title=" " alt="" coords="1286,540,1449,596"/>
-<area shape="rect" href="layout_8h.html" title=" " alt="" coords="785,651,960,693"/>
-<area shape="rect" href="camera__model_8h.html" title=" " alt="" coords="1979,644,2151,700"/>
-<area shape="rect" href="ceres__test_8cpp.html" title=" " alt="" coords="913,436,1065,492"/>
-<area shape="rect" href="typetraits_8h.html" title=" " alt="" coords="2185,339,2376,381"/>
-<area shape="rect" href="common__test_8cpp.html" title=" " alt="" coords="2401,332,2595,388"/>
-<area shape="rect" href="_sophus_2cpp_2sophus_2common_2enum_8h.html" title=" " alt="" coords="2493,547,2679,589"/>
-<area shape="rect" href="params_8h.html" title=" " alt="" coords="5,339,204,381"/>
-<area shape="rect" href="fit__plane__test_8cpp.html" title=" " alt="" coords="228,332,384,388"/>
-<area shape="rect" href="plane__conv_8h.html" title=" " alt="" coords="409,332,587,388"/>
-<area shape="rect" href="ray_8h.html" title=" " alt="" coords="713,443,888,485"/>
-<area shape="rect" href="sim__mat__w_8h.html" title=" " alt="" coords="713,332,867,388"/>
-<area shape="rect" href="complex_8h.html" title=" " alt="" coords="1089,443,1273,485"/>
-<area shape="rect" href="homogeneous_8h.html" title=" " alt="" coords="1737,547,1957,589"/>
-<area shape="rect" href="orthogonal_8h.html" title=" " alt="" coords="891,339,1089,381"/>
-<area shape="rect" href="quaternion_8h.html" title=" " alt="" coords="1297,443,1496,485"/>
-<area shape="rect" href="unit__vector_8h.html" title=" " alt="" coords="1163,332,1315,388"/>
-<area shape="rect" href="vector__space_8h.html" title=" " alt="" coords="1441,332,1598,388"/>
-<area shape="rect" href="brown__conrady_8h.html" title=" " alt="" coords="2033,540,2237,596"/>
-<area shape="rect" href="kannala__brandt_8h.html" title=" " alt="" coords="2261,540,2468,596"/>
-<area shape="rect" href="group__accessors__unit__tests_8h.html" title=" " alt="" coords="1731,436,1907,492"/>
-<area shape="rect" href="expected_8cpp.html" title=" " alt="" coords="2627,221,2817,277"/>
-<area shape="rect" href="farm-ng-core_2cpp_2farm__ng_2core_2misc_2proto_2conv_8h.html" title=" " alt="" coords="2841,221,3016,277"/>
-<area shape="rect" href="shared_8h.html" title=" " alt="" coords="2428,221,2603,277"/>
-<area shape="rect" href="shared__test_8cpp.html" title=" " alt="" coords="2620,332,2795,388"/>
-<area shape="rect" href="proto__reader__writer_8cpp.html" title=" " alt="" coords="3216,332,3425,388"/>
-<area shape="rect" href="logger__define__debug__variant__test_8cpp.html" title=" " alt="" coords="3628,213,3843,284"/>
-<area shape="rect" href="logger__define__info__variant__test_8cpp.html" title=" " alt="" coords="3867,213,4065,284"/>
-<area shape="rect" href="logger__define__trace__variant__test_8cpp.html" title=" " alt="" coords="4089,213,4296,284"/>
-<area shape="rect" href="stopwatch__test_8cpp.html" title=" " alt="" coords="4320,221,4495,277"/>
+<area shape="rect" title=" " alt="" coords="3502,5,3693,61"/>
+<area shape="rect" href="eigen_8h.html" title=" " alt="" coords="2034,109,2225,165"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="1879,228,2113,269"/>
+<area shape="rect" href="expected_8h.html" title=" " alt="" coords="2823,109,3014,165"/>
+<area shape="rect" href="expected__test_8cpp.html" title=" " alt="" coords="2301,221,2491,277"/>
+<area shape="rect" href="misc_2proto_2conv_8cpp.html" title=" " alt="" coords="2725,436,2899,492"/>
+<area shape="rect" href="misc_2proto_2conv__test_8cpp.html" title=" " alt="" coords="3430,436,3605,492"/>
+<area shape="rect" href="proto__reader__writer_8h.html" title=" " alt="" coords="3683,221,3893,277"/>
+<area shape="rect" href="proto__reader__writer__test_8cpp.html" title=" " alt="" coords="3731,332,3944,388"/>
+<area shape="rect" href="format__test_8cpp.html" title=" " alt="" coords="3711,109,3902,165"/>
+<area shape="rect" href="logger_8cpp.html" title=" " alt="" coords="3926,109,4117,165"/>
+<area shape="rect" href="logger__test_8cpp.html" title=" " alt="" coords="4141,109,4331,165"/>
+<area shape="rect" href="trace__debug__log_8h.html" title=" " alt="" coords="4355,109,4546,165"/>
+<area shape="rect" href="conversions_8h.html" title=" " alt="" coords="3359,109,3534,165"/>
+<area shape="rect" href="erase__test_8cpp.html" title=" " alt="" coords="4570,109,4745,165"/>
+<area shape="rect" href="stopwatch_8h.html" title=" " alt="" coords="4769,109,4943,165"/>
+<area shape="rect" href="component_8h.html" title=" " alt="" coords="551,221,745,277"/>
+<area shape="rect" href="component__test_8cpp.html" title=" " alt="" coords="48,436,243,492"/>
+<area shape="rect" href="output_8cpp.html" title=" " alt="" coords="923,436,1117,492"/>
+<area shape="rect" href="input_8cpp.html" title=" " alt="" coords="888,221,1083,277"/>
+<area shape="rect" href="input_8h.html" title=" " alt="" coords="819,109,1013,165"/>
+<area shape="rect" href="thread__pool_8cpp.html" title=" " alt="" coords="4968,109,5163,165"/>
+<area shape="rect" href="event__log__reader_8cpp.html" title=" " alt="" coords="5187,109,5397,165"/>
+<area shape="rect" href="event__log__writer_8cpp.html" title=" " alt="" coords="5421,109,5630,165"/>
+<area shape="rect" href="event__log__writer__test_8cpp.html" title=" " alt="" coords="5654,109,5863,165"/>
+<area shape="rect" href="num__diff_8h.html" title=" " alt="" coords="1896,332,2059,388"/>
+<area shape="rect" href="region_8h.html" title=" " alt="" coords="2083,332,2245,388"/>
+<area shape="rect" href="ceres__test_8cpp.html" title=" " alt="" coords="974,332,1151,388"/>
+<area shape="rect" href="ceres_2manifold__test_8cpp.html" title=" " alt="" coords="2269,332,2469,388"/>
+<area shape="rect" href="typetraits_8h.html" title=" " alt="" coords="2494,339,2711,381"/>
+<area shape="rect" href="common__test_8cpp.html" title=" " alt="" coords="1227,332,1448,388"/>
+<area shape="rect" href="sophus_2common_2enum_8h.html" title=" " alt="" coords="1472,339,1685,381"/>
+<area shape="rect" href="params_8h.html" title=" " alt="" coords="1709,332,1872,388"/>
+<area shape="rect" href="expected_8cpp.html" title=" " alt="" coords="3218,221,3409,277"/>
+<area shape="rect" href="misc_2proto_2conv_8h.html" title=" " alt="" coords="2787,332,2962,388"/>
+<area shape="rect" href="shared_8h.html" title=" " alt="" coords="2567,221,2742,277"/>
+<area shape="rect" href="time__series_8h.html" title=" " alt="" coords="3019,221,3194,277"/>
+<area shape="rect" href="proto__conv_2linalg_2conv_8h.html" title=" " alt="" coords="2986,332,3163,388"/>
+<area shape="rect" href="proto__conv_8h.html" title=" " alt="" coords="2766,221,2943,277"/>
+<area shape="rect" href="time__series__test_8cpp.html" title=" " alt="" coords="3253,332,3427,388"/>
+<area shape="rect" href="proto__reader__writer_8cpp.html" title=" " alt="" coords="3497,332,3706,388"/>
+<area shape="rect" href="logger__define__debug__variant__test_8cpp.html" title=" " alt="" coords="4554,213,4769,284"/>
+<area shape="rect" href="logger__define__info__variant__test_8cpp.html" title=" " alt="" coords="4101,213,4299,284"/>
+<area shape="rect" href="logger__define__trace__variant__test_8cpp.html" title=" " alt="" coords="4323,213,4530,284"/>
+<area shape="rect" href="conversions__test_8cpp.html" title=" " alt="" coords="3485,221,3659,277"/>
+<area shape="rect" href="stopwatch__test_8cpp.html" title=" " alt="" coords="4793,221,4967,277"/>
+<area shape="rect" href="component_8cpp.html" title=" " alt="" coords="48,332,243,388"/>
+<area shape="rect" href="context_8cpp.html" title=" " alt="" coords="317,332,512,388"/>
+<area shape="rect" href="input__test_8cpp.html" title=" " alt="" coords="536,332,731,388"/>
+<area shape="rect" href="output_8h.html" title=" " alt="" coords="755,332,949,388"/>
 </map>
 </div>
 </div>
@@ -200,11 +202,11 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_stream_logger.html">farm_ng::StreamLogger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1details_1_1_check_near.html">farm_ng::details::CheckNear&lt; Point &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1_stream_logger_1_1_log_clock.html">farm_ng::StreamLogger::LogClock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1details_1_1_check_near_3_01double_01_4.html">farm_ng::details::CheckNear&lt; double &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1details_1_1_check_near.html">farm_ng::details::CheckNear&lt; TPoint, TEnabler &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1details_1_1_check_near_3_01float_01_4.html">farm_ng::details::CheckNear&lt; float &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1details_1_1_check_near_3_01_t_t_00_01std_1_1enable__if__t_3_01std_1_1is__arith017fa716e541913aaa43294e80fbce56.html">farm_ng::details::CheckNear&lt; TT, std::enable_if_t&lt; std::is_arithmetic_v&lt; TT &gt;, void &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfarm__ng_1_1_error_detail.html">farm_ng::ErrorDetail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,8 +310,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aabe92270562561657f2b24f670a56b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefarm__ng.html#aabe92270562561657f2b24f670a56b58">farm_ng::FARM_ENUM</a> (LogLevel, int,((trace, 0),(debug, 1),(info, 2),(warning, 3),(error, 4),(critical, 5)))</td></tr>
 <tr class="separator:aabe92270562561657f2b24f670a56b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d4877059522f6ccddff4e1970ded92"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefarm__ng.html#ad6d4877059522f6ccddff4e1970ded92">farm_ng::stringFromLogLevel</a> (LogLevel level)</td></tr>
-<tr class="separator:ad6d4877059522f6ccddff4e1970ded92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714150d965f30bede4f8bedbc6242287"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefarm__ng.html#a714150d965f30bede4f8bedbc6242287">farm_ng::stringFromLogLevel</a> (LogLevel level) -&gt; std::string</td></tr>
+<tr class="separator:a714150d965f30bede4f8bedbc6242287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ba3ac58871ae436e4c3b4cc56bde05"><td class="memItemLeft" align="right" valign="top">StreamLogger &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a> ()</td></tr>
 <tr class="separator:ab1ba3ac58871ae436e4c3b4cc56bde05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3880c4851ec9d41408e9f36841830c0b"><td class="memTemplParams" colspan="2">template&lt;class TContainer &gt; </td></tr>
@@ -353,7 +355,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
 <div class="line">    if (!(condition)) {                                                        <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                                            \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                                            \</div>
 <div class="line">          farm_ng::LogLevel::critical,                                         \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(<span class="stringliteral">&quot;PANIC: ASSERT failed\nbool({}) not true.&quot;</span>, #condition), \</div>
 <div class="line">          __FILE__,                                                            \</div>
@@ -432,7 +434,7 @@ Functions</h2></td></tr>
 <div class="line">    FARM_ASSERT_IS_FOLDER(path);                                               \</div>
 <div class="line">    bool is_empty = std::filesystem::is_empty(path);                           \</div>
 <div class="line">    if (!is_empty) {                                                           <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                                            \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                                            \</div>
 <div class="line">          farm_ng::LogLevel::critical,                                         \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(                                                         \</div>
 <div class="line">              <span class="stringliteral">&quot;PANIC: ASSERT_FOLDER_IS_EMPTY failed\nThe following folder is &quot;</span> \</div>
@@ -550,7 +552,7 @@ Functions</h2></td></tr>
 <div class="line">    FARM_ASSERT_PATH_EXIST(path);                                          \</div>
 <div class="line">    bool is_regular = std::filesystem::is_regular_file(path);              \</div>
 <div class="line">    if (!is_regular) {                                                     <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                                        \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                                        \</div>
 <div class="line">          farm_ng::LogLevel::critical,                                     \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(                                                     \</div>
 <div class="line">              <span class="stringliteral">&quot;PANIC: ASSERT_IS_FILE failed\nThe following path is not a &quot;</span> \</div>
@@ -596,7 +598,7 @@ Functions</h2></td></tr>
 <div class="line">    FARM_ASSERT_PATH_EXIST(path);                                            \</div>
 <div class="line">    bool is_folder = std::filesystem::is_directory(path);                    \</div>
 <div class="line">    if (!is_folder) {                                                        <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                                          \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                                          \</div>
 <div class="line">          farm_ng::LogLevel::critical,                                       \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(                                                       \</div>
 <div class="line">              <span class="stringliteral">&quot;PANIC: ASSERT_IS_FOLDER failed\nThe following path is not a &quot;</span> \</div>
@@ -803,7 +805,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                        \</div>
 <div class="line">    bool does_exist = std::filesystem::exists(path);                          \</div>
 <div class="line">    if (!does_exist) {                                                        <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                                           \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                                           \</div>
 <div class="line">          farm_ng::LogLevel::critical,                                        \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(                                                        \</div>
 <div class="line">              <span class="stringliteral">&quot;PANIC: ASSERT_PATH_EXIST failed\nThe following path does not &quot;</span> \</div>
@@ -880,7 +882,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(    \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(    \</div>
 <div class="line">      farm_ng::LogLevel::critical, \</div>
 <div class="line">      <span class="stringliteral">&quot;CRITICAL&quot;</span>,                  \</div>
 <div class="line">      __FILE__,                    \</div>
@@ -907,7 +909,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>( \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>( \</div>
 <div class="line">      farm_ng::LogLevel::error, \</div>
 <div class="line">      <span class="stringliteral">&quot;ERROR&quot;</span>,                  \</div>
 <div class="line">      __FILE__,                 \</div>
@@ -1009,7 +1011,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">    if (!((lhs)symbol(rhs))) {                                               <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                                          \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                                          \</div>
 <div class="line">          farm_ng::LogLevel::critical,                                       \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(                                                       \</div>
 <div class="line">              <span class="stringliteral">&quot;PANIC: ASSERT_{} failed\n Not true: {} {} {}\n{}\nvs.\n{}\n&quot;</span>, \</div>
@@ -1061,7 +1063,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>( \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>( \</div>
 <div class="line">      farm_ng::LogLevel::info,  \</div>
 <div class="line">      <span class="stringliteral">&quot;INFO&quot;</span>,                   \</div>
 <div class="line">      __FILE__,                 \</div>
@@ -1105,7 +1107,7 @@ Functions</h2></td></tr>
 <div class="line">      counter -= (N);                                           \</div>
 <div class="line">    }                                                           \</div>
 <div class="line">    if (counter == 1) {                                         <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">\</a></div>
-<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                             \</div>
+<div class="line"><a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">      farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                             \</div>
 <div class="line">          farm_ng::LogLevel::info,                              \</div>
 <div class="line">          <a class="code" href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a>(<span class="stringliteral">&quot;LOG INFO EVERY N( = {} )&quot;</span>, #N),          \</div>
 <div class="line">          __FILE__,                                             \</div>
@@ -1222,7 +1224,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                             \</div>
 <div class="line">      farm_ng::LogLevel::critical,                          \</div>
 <div class="line">      <span class="stringliteral">&quot;PANIC!&quot;</span>,                                             \</div>
 <div class="line">      __FILE__,                                             \</div>
@@ -1277,7 +1279,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(                             \</div>
 <div class="line">      farm_ng::LogLevel::critical,                          \</div>
 <div class="line">      <span class="stringliteral">&quot;PANIC: NOT IMPLEMENTED YET&quot;</span>,                         \</div>
 <div class="line">      __FILE__,                                             \</div>
@@ -1377,7 +1379,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">log</a>(   \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a>().<a class="code" href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">log</a>(   \</div>
 <div class="line">      farm_ng::LogLevel::warning, \</div>
 <div class="line">      <span class="stringliteral">&quot;WARN&quot;</span>,                     \</div>
 <div class="line">      __FILE__,                   \</div>
@@ -1392,18 +1394,18 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aformat_8h_html_a433412d321d236f0533bf9f9011fe0c0"><div class="ttname"><a href="format_8h.html#a433412d321d236f0533bf9f9011fe0c0">FARM_FORMAT</a></div><div class="ttdeci">#define FARM_FORMAT(...)</div><div class="ttdoc">Formats the cstr using the libfmt library.</div><div class="ttdef"><b>Definition:</b> format.h:125</div></div>
-<div class="ttc" id="alogger_8h_html_a4431ee42f6c90820a94f7a8ef7b305b8"><div class="ttname"><a href="logger_8h.html#a4431ee42f6c90820a94f7a8ef7b305b8">FARM_VARGS</a></div><div class="ttdeci">#define FARM_VARGS(...)</div><div class="ttdef"><b>Definition:</b> logger.h:122</div></div>
-<div class="ttc" id="astructfarm__ng_1_1_error_detail_html"><div class="ttname"><a href="structfarm__ng_1_1_error_detail.html">farm_ng::ErrorDetail</a></div><div class="ttdef"><b>Definition:</b> logger.h:408</div></div>
-<div class="ttc" id="alogger_8h_html_aef15d15c861f070099eaa30042585222"><div class="ttname"><a href="logger_8h.html#aef15d15c861f070099eaa30042585222">FARM_VARGS_NONE</a></div><div class="ttdeci">#define FARM_VARGS_NONE(...)</div><div class="ttdef"><b>Definition:</b> logger.h:124</div></div>
-<div class="ttc" id="astructfarm__ng_1_1details_1_1_check_near_html"><div class="ttname"><a href="structfarm__ng_1_1details_1_1_check_near.html">farm_ng::details::CheckNear</a></div><div class="ttdef"><b>Definition:</b> logger.h:301</div></div>
-<div class="ttc" id="alogger_8h_html_ac51a1f45e92fc222e670bbf6ff8d685a"><div class="ttname"><a href="logger_8h.html#ac51a1f45e92fc222e670bbf6ff8d685a">FARM_MAYBE_VARGS</a></div><div class="ttdeci">#define FARM_MAYBE_VARGS(...)</div><div class="ttdef"><b>Definition:</b> logger.h:126</div></div>
-<div class="ttc" id="anamespacefarm__ng_1_1details_html_ad39361767f6713f0709a35b810d7554d"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#ad39361767f6713f0709a35b810d7554d">farm_ng::details::checkedGetFromAssociativeContainer</a></div><div class="ttdeci">auto checkedGetFromAssociativeContainer(TContainer &amp;container, TKey const &amp;key, char const *container_cstr, char const *key_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str) -&gt; decltype(*(container.find(key)))</div><div class="ttdef"><b>Definition:</b> logger.h:446</div></div>
-<div class="ttc" id="astructfarm__ng_1_1_error_detail_html_a676f2059f25fb1fed395ea06565f9c3e"><div class="ttname"><a href="structfarm__ng_1_1_error_detail.html#a676f2059f25fb1fed395ea06565f9c3e">farm_ng::ErrorDetail::file</a></div><div class="ttdeci">std::string file</div><div class="ttdef"><b>Definition:</b> logger.h:409</div></div>
-<div class="ttc" id="anamespacefarm__ng_html_ab1ba3ac58871ae436e4c3b4cc56bde05"><div class="ttname"><a href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a></div><div class="ttdeci">StreamLogger &amp; defaultLogger()</div><div class="ttdef"><b>Definition:</b> logger.h:114</div></div>
-<div class="ttc" id="anamespacefarm__ng_1_1details_html_a994e10ebe5373b404f49877be02a571f"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#a994e10ebe5373b404f49877be02a571f">farm_ng::details::insertKeyValueInMap</a></div><div class="ttdeci">auto insertKeyValueInMap(TMapLike &amp;map, TKey const &amp;key, TValue const &amp;value, char const *container_cstr, char const *key_cstr, char const *value_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str)</div><div class="ttdef"><b>Definition:</b> logger.h:476</div></div>
-<div class="ttc" id="anamespacefarm__ng_1_1details_html_ac368ae2ef8278ead7959d082add4f962"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#ac368ae2ef8278ead7959d082add4f962">farm_ng::details::unwrapImpl</a></div><div class="ttdeci">auto unwrapImpl(TWrapper &amp;wrapper, char const *wrapper_cstr, ::farm_ng::ErrorDetail detail) -&gt; decltype(*wrapper)</div><div class="ttdef"><b>Definition:</b> logger.h:532</div></div>
-<div class="ttc" id="aclassfarm__ng_1_1_stream_logger_html_a255a182451b7c8e1cb2187b969498db1"><div class="ttname"><a href="classfarm__ng_1_1_stream_logger.html#a255a182451b7c8e1cb2187b969498db1">farm_ng::StreamLogger::log</a></div><div class="ttdeci">void log(LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function, std::string const &amp;message, T &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> logger.h:56</div></div>
-<div class="ttc" id="anamespacefarm__ng_1_1details_html_a3880c4851ec9d41408e9f36841830c0b"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#a3880c4851ec9d41408e9f36841830c0b">farm_ng::details::checkedAtContiguousContainer</a></div><div class="ttdeci">auto checkedAtContiguousContainer(TContainer &amp;container, size_t index, char const *container_cstr, char const *index_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str) -&gt; decltype(container[index])</div><div class="ttdef"><b>Definition:</b> logger.h:417</div></div>
+<div class="ttc" id="alogger_8h_html_a4431ee42f6c90820a94f7a8ef7b305b8"><div class="ttname"><a href="logger_8h.html#a4431ee42f6c90820a94f7a8ef7b305b8">FARM_VARGS</a></div><div class="ttdeci">#define FARM_VARGS(...)</div><div class="ttdef"><b>Definition:</b> logger.h:132</div></div>
+<div class="ttc" id="astructfarm__ng_1_1_error_detail_html"><div class="ttname"><a href="structfarm__ng_1_1_error_detail.html">farm_ng::ErrorDetail</a></div><div class="ttdef"><b>Definition:</b> logger.h:401</div></div>
+<div class="ttc" id="aclassfarm__ng_1_1_stream_logger_html_ab4db216a57b741cb3812ed1bba78fd14"><div class="ttname"><a href="classfarm__ng_1_1_stream_logger.html#ab4db216a57b741cb3812ed1bba78fd14">farm_ng::StreamLogger::log</a></div><div class="ttdeci">void log(LogLevel log_level, std::string const &amp;header_text, std::string const &amp;file, int line, std::string const &amp;function, std::string const &amp;message, TT &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> logger.h:61</div></div>
+<div class="ttc" id="alogger_8h_html_aef15d15c861f070099eaa30042585222"><div class="ttname"><a href="logger_8h.html#aef15d15c861f070099eaa30042585222">FARM_VARGS_NONE</a></div><div class="ttdeci">#define FARM_VARGS_NONE(...)</div><div class="ttdef"><b>Definition:</b> logger.h:134</div></div>
+<div class="ttc" id="astructfarm__ng_1_1details_1_1_check_near_html"><div class="ttname"><a href="structfarm__ng_1_1details_1_1_check_near.html">farm_ng::details::CheckNear</a></div><div class="ttdef"><b>Definition:</b> logger.h:311</div></div>
+<div class="ttc" id="alogger_8h_html_ac51a1f45e92fc222e670bbf6ff8d685a"><div class="ttname"><a href="logger_8h.html#ac51a1f45e92fc222e670bbf6ff8d685a">FARM_MAYBE_VARGS</a></div><div class="ttdeci">#define FARM_MAYBE_VARGS(...)</div><div class="ttdef"><b>Definition:</b> logger.h:136</div></div>
+<div class="ttc" id="anamespacefarm__ng_1_1details_html_ad39361767f6713f0709a35b810d7554d"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#ad39361767f6713f0709a35b810d7554d">farm_ng::details::checkedGetFromAssociativeContainer</a></div><div class="ttdeci">auto checkedGetFromAssociativeContainer(TContainer &amp;container, TKey const &amp;key, char const *container_cstr, char const *key_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str) -&gt; decltype(*(container.find(key)))</div><div class="ttdef"><b>Definition:</b> logger.h:439</div></div>
+<div class="ttc" id="astructfarm__ng_1_1_error_detail_html_a676f2059f25fb1fed395ea06565f9c3e"><div class="ttname"><a href="structfarm__ng_1_1_error_detail.html#a676f2059f25fb1fed395ea06565f9c3e">farm_ng::ErrorDetail::file</a></div><div class="ttdeci">std::string file</div><div class="ttdef"><b>Definition:</b> logger.h:402</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_ab1ba3ac58871ae436e4c3b4cc56bde05"><div class="ttname"><a href="namespacefarm__ng.html#ab1ba3ac58871ae436e4c3b4cc56bde05">farm_ng::defaultLogger</a></div><div class="ttdeci">StreamLogger &amp; defaultLogger()</div><div class="ttdef"><b>Definition:</b> logger.h:124</div></div>
+<div class="ttc" id="anamespacefarm__ng_1_1details_html_a994e10ebe5373b404f49877be02a571f"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#a994e10ebe5373b404f49877be02a571f">farm_ng::details::insertKeyValueInMap</a></div><div class="ttdeci">auto insertKeyValueInMap(TMapLike &amp;map, TKey const &amp;key, TValue const &amp;value, char const *container_cstr, char const *key_cstr, char const *value_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str)</div><div class="ttdef"><b>Definition:</b> logger.h:469</div></div>
+<div class="ttc" id="anamespacefarm__ng_1_1details_html_ac368ae2ef8278ead7959d082add4f962"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#ac368ae2ef8278ead7959d082add4f962">farm_ng::details::unwrapImpl</a></div><div class="ttdeci">auto unwrapImpl(TWrapper &amp;wrapper, char const *wrapper_cstr, ::farm_ng::ErrorDetail detail) -&gt; decltype(*wrapper)</div><div class="ttdef"><b>Definition:</b> logger.h:525</div></div>
+<div class="ttc" id="anamespacefarm__ng_1_1details_html_a3880c4851ec9d41408e9f36841830c0b"><div class="ttname"><a href="namespacefarm__ng_1_1details.html#a3880c4851ec9d41408e9f36841830c0b">farm_ng::details::checkedAtContiguousContainer</a></div><div class="ttdeci">auto checkedAtContiguousContainer(TContainer &amp;container, size_t index, char const *container_cstr, char const *index_cstr, std::string const &amp;file, int line, std::string const &amp;func, std::string const &amp;str) -&gt; decltype(container[index])</div><div class="ttdef"><b>Definition:</b> logger.h:410</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

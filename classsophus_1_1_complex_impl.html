@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::ComplexImpl&lt; TScalar &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::ComplexImpl&lt; TScalar &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -99,6 +99,11 @@ $(document).ready(function(){initNavTree('classsophus_1_1_complex_impl.html','')
 Public Types</h2></td></tr>
 <tr class="memitem:a8e52b72a5b3b0e371ed1c6efbba9f496"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a> = TScalar</td></tr>
 <tr class="separator:a8e52b72a5b3b0e371ed1c6efbba9f496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8c8e064a6a7f47006e71ad31511869"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a> &gt;</td></tr>
+<tr class="separator:adf8c8e064a6a7f47006e71ad31511869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b52fb1f7fd46d26e8db825e11d350b4"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a6b52fb1f7fd46d26e8db825e11d350b4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#a6b52fb1f7fd46d26e8db825e11d350b4">ParamsReturn</a> = Eigen::Vector&lt; typename Eigen::ScalarBinaryOpTraits&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, TCompatibleScalar &gt;::ReturnType, 2 &gt;</td></tr>
+<tr class="separator:a6b52fb1f7fd46d26e8db825e11d350b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -106,16 +111,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aafe35a683fc25f6b6d58ed2a9d0da95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5f3c1158c5cc67bfc6ebc2c0eee69b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#abe5f3c1158c5cc67bfc6ebc2c0eee69b">one</a> () -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt;</td></tr>
 <tr class="separator:abe5f3c1158c5cc67bfc6ebc2c0eee69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac888fd98a8401b2866ceaf356693264a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#ac888fd98a8401b2866ceaf356693264a">areParamsValid</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a> &gt; const &amp;) -&gt; sophus::Expected&lt; Success &gt;</td></tr>
-<tr class="separator:ac888fd98a8401b2866ceaf356693264a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea554d91685671b07a86cb315c02b66"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#aeea554d91685671b07a86cb315c02b66">paramsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:aeea554d91685671b07a86cb315c02b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bffbb23a4892072351b4b16a985313f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#a5bffbb23a4892072351b4b16a985313f">invalidParamsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:a5bffbb23a4892072351b4b16a985313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d5ca23d4e155ca0252d7e7035646070"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#a8d5ca23d4e155ca0252d7e7035646070">addition</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;lhs_real_imag, Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;rhs_real_imag) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt;</td></tr>
-<tr class="separator:a8d5ca23d4e155ca0252d7e7035646070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38fe716e518b7b88121853bceb773831"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#a38fe716e518b7b88121853bceb773831">multiplication</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;lhs_real_imag, Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;rhs_real_imag) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt;</td></tr>
-<tr class="separator:a38fe716e518b7b88121853bceb773831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcaa11128cb97b91331aabe1d5fd560a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#afcaa11128cb97b91331aabe1d5fd560a">areParamsValid</a> (<a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a> const &amp;) -&gt; sophus::Expected&lt; Success &gt;</td></tr>
+<tr class="separator:afcaa11128cb97b91331aabe1d5fd560a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b7f736f31913cfacdf2bfb1b236feb"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#aa4b7f736f31913cfacdf2bfb1b236feb">paramsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a> &gt;</td></tr>
+<tr class="separator:aa4b7f736f31913cfacdf2bfb1b236feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af678d8209e7a64780c56cbed067dd1ab"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#af678d8209e7a64780c56cbed067dd1ab">invalidParamsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a> &gt;</td></tr>
+<tr class="separator:af678d8209e7a64780c56cbed067dd1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d6fbf744fcc93384ae75aeea519826"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:ac0d6fbf744fcc93384ae75aeea519826"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#ac0d6fbf744fcc93384ae75aeea519826">addition</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;lhs_real_imag, Eigen::Vector&lt; TCompatibleScalar, 2 &gt; const &amp;rhs_real_imag) -&gt; <a class="el" href="classsophus_1_1_complex_impl.html#a6b52fb1f7fd46d26e8db825e11d350b4">ParamsReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:ac0d6fbf744fcc93384ae75aeea519826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e227219ee0937df601fac966812924"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a86e227219ee0937df601fac966812924"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#a86e227219ee0937df601fac966812924">multiplication</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;lhs_real_imag, Eigen::Vector&lt; TCompatibleScalar, 2 &gt; const &amp;rhs_real_imag) -&gt; <a class="el" href="classsophus_1_1_complex_impl.html#a6b52fb1f7fd46d26e8db825e11d350b4">ParamsReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:a86e227219ee0937df601fac966812924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded0ce1d13fff3bd8edfb65190acf978"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#aded0ce1d13fff3bd8edfb65190acf978">conjugate</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;a) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt;</td></tr>
 <tr class="separator:aded0ce1d13fff3bd8edfb65190acf978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae85281fc80f7cd51d88b7594fc5312fe"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_complex_impl.html#ae85281fc80f7cd51d88b7594fc5312fe">inverse</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;real_imag) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt;</td></tr>
@@ -133,6 +140,40 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a66a27ba8be74eb76d786666d6712d29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="adf8c8e064a6a7f47006e71ad31511869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8c8e064a6a7f47006e71ad31511869">&#9670;&nbsp;</a></span>Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_complex_impl.html">sophus::ComplexImpl</a>&lt; TScalar &gt;::<a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b52fb1f7fd46d26e8db825e11d350b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b52fb1f7fd46d26e8db825e11d350b4">&#9670;&nbsp;</a></span>ParamsReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar &gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_complex_impl.html">sophus::ComplexImpl</a>&lt; TScalar &gt;::<a class="el" href="classsophus_1_1_complex_impl.html#a6b52fb1f7fd46d26e8db825e11d350b4">ParamsReturn</a> =  Eigen::Vector&lt; typename Eigen::ScalarBinaryOpTraits&lt;<a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, TCompatibleScalar&gt;:: ReturnType, 2&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8e52b72a5b3b0e371ed1c6efbba9f496"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e52b72a5b3b0e371ed1c6efbba9f496">&#9670;&nbsp;</a></span>Scalar</h2>
 
@@ -150,13 +191,15 @@ template&lt;class TScalar &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8d5ca23d4e155ca0252d7e7035646070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d5ca23d4e155ca0252d7e7035646070">&#9670;&nbsp;</a></span>addition()</h2>
+<a id="ac0d6fbf744fcc93384ae75aeea519826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d6fbf744fcc93384ae75aeea519826">&#9670;&nbsp;</a></span>addition()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar &gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -170,13 +213,13 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Vector&lt; TCompatibleScalar, 2 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs_real_imag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_complex_impl.html#a6b52fb1f7fd46d26e8db825e11d350b4">ParamsReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -188,8 +231,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="ac888fd98a8401b2866ceaf356693264a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac888fd98a8401b2866ceaf356693264a">&#9670;&nbsp;</a></span>areParamsValid()</h2>
+<a id="afcaa11128cb97b91331aabe1d5fd560a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcaa11128cb97b91331aabe1d5fd560a">&#9670;&nbsp;</a></span>areParamsValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +245,7 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1_complex_impl.html">sophus::ComplexImpl</a>&lt; TScalar &gt;::areParamsValid </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a> const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt; sophus::Expected&lt;Success&gt; </td>
         </tr>
@@ -244,8 +287,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="a5bffbb23a4892072351b4b16a985313f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bffbb23a4892072351b4b16a985313f">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
+<a id="af678d8209e7a64780c56cbed067dd1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af678d8209e7a64780c56cbed067dd1ab">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +302,7 @@ template&lt;class TScalar &gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1_complex_impl.html">sophus::ComplexImpl</a>&lt; TScalar &gt;::invalidParamsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -299,13 +342,15 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="a38fe716e518b7b88121853bceb773831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38fe716e518b7b88121853bceb773831">&#9670;&nbsp;</a></span>multiplication()</h2>
+<a id="a86e227219ee0937df601fac966812924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e227219ee0937df601fac966812924">&#9670;&nbsp;</a></span>multiplication()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar &gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -319,13 +364,13 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2 &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Vector&lt; TCompatibleScalar, 2 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs_real_imag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, 2&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_complex_impl.html#a6b52fb1f7fd46d26e8db825e11d350b4">ParamsReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -392,8 +437,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="aeea554d91685671b07a86cb315c02b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeea554d91685671b07a86cb315c02b66">&#9670;&nbsp;</a></span>paramsExamples()</h2>
+<a id="aa4b7f736f31913cfacdf2bfb1b236feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b7f736f31913cfacdf2bfb1b236feb">&#9670;&nbsp;</a></span>paramsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +452,7 @@ template&lt;class TScalar &gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1_complex_impl.html">sophus::ComplexImpl</a>&lt; TScalar &gt;::paramsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#a8e52b72a5b3b0e371ed1c6efbba9f496">Scalar</a>, <a class="el" href="classsophus_1_1_complex_impl.html#a5aabdf5738c4368e2efed4ad1a22bbb9">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1_complex_impl.html#adf8c8e064a6a7f47006e71ad31511869">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -524,7 +569,7 @@ template&lt;class TScalar &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/linalg/<a class="el" href="complex_8h_source.html">complex.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/manifold/<a class="el" href="complex_8h_source.html">complex.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

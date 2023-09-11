@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/farm-ng-core/cpp/farm_ng/core/enum/enum_flags.h File Reference</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/farm_ng/core/enum/enum_flags.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -222,18 +222,19 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>enum_wrapper_ {                                             \</div>
-<div class="line">  inline std::ostream &amp;<a class="code" href="namespacefarm__ng.html#a04688737563a33ca47ccad9524215026">operator&lt;&lt;</a>(std::ostream &amp;os, NAME##Impl value) { \</div>
-<div class="line">    os &lt;&lt; toPretty(value);                                              \</div>
-<div class="line">    return os;                                                          \</div>
-<div class="line">  }                                                                     \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">namespace </span>enum_wrapper_ {                                  \</div>
+<div class="line">  inline <span class="keyword">auto</span> <a class="code" href="namespacefarm__ng.html#ae5da6e0f32befb1cecdd9bf5cc078585">operator&lt;&lt;</a>(std::ostream &amp;os, NAME##Impl value) \</div>
+<div class="line">      -&gt; std::ostream &amp; {                                    \</div>
+<div class="line">    os &lt;&lt; toPretty(value);                                   \</div>
+<div class="line">    return os;                                               \</div>
+<div class="line">  }                                                          \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefarm__ng_html_a04688737563a33ca47ccad9524215026"><div class="ttname"><a href="namespacefarm__ng.html#a04688737563a33ca47ccad9524215026">farm_ng::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, Error const &amp;error)</div><div class="ttdef"><b>Definition:</b> expected.cpp:19</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_ae5da6e0f32befb1cecdd9bf5cc078585"><div class="ttname"><a href="namespacefarm__ng.html#ae5da6e0f32befb1cecdd9bf5cc078585">farm_ng::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;os, Error const &amp;error) -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition:</b> expected.cpp:19</div></div>
 <div class="ttc" id="aenum__flags__without__ostream__test_8cpp_html_a36923dd570b7c1f5fc294a92500078ba"><div class="ttname"><a href="enum__flags__without__ostream__test_8cpp.html#a36923dd570b7c1f5fc294a92500078ba">FARM_ENUMFLAGS_WITHOUT_OSTREAM_DEF</a></div><div class="ttdeci">FARM_ENUMFLAGS_WITHOUT_OSTREAM_DEF(Bike, uint8_t,(frontWheel, backWheel))</div></div>
 <div class="ttc" id="aenum__flags__without__ostream_8h_html_a36400e595d739c65b0019a2cd8f0cbb7"><div class="ttname"><a href="enum__flags__without__ostream_8h.html#a36400e595d739c65b0019a2cd8f0cbb7">FARM_ENUMFLAGS_WITHOUT_OSTREAM</a></div><div class="ttdeci">#define FARM_ENUMFLAGS_WITHOUT_OSTREAM(NAME, UINT_TYPE,...)</div><div class="ttdef"><b>Definition:</b> enum_flags_without_ostream.h:150</div></div>
 <!-- start footer part -->

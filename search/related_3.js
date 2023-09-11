@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_2967',['operator&lt;',['../structfarm__ng_1_1_uri.html#a92fd867e997342e8d28b998d4f7fc8ab',1,'farm_ng::Uri']]]
+  ['image_3453',['Image',['../structsophus_1_1_image_view.html#aa23aef019ecf57e2829e8cca09a1e48a',1,'sophus::ImageView::Image()'],['../classsophus_1_1_mut_image.html#aa23aef019ecf57e2829e8cca09a1e48a',1,'sophus::MutImage::Image()']]]
 ];

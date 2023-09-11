@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/lie/impl/identity.h File Reference</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/lie/impl/identity.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -91,78 +91,81 @@ $(document).ready(function(){initNavTree('impl_2identity_8h.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="concepts_2lie__group_8h_source.html">sophus/concepts/lie_group.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="unit__vector_8h_source.html">sophus/linalg/unit_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="unit__vector_8h_source.html">sophus/manifold/unit_vector.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for identity.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="impl_2identity_8h__incl.png" border="0" usemap="#projects_2_sophus_2cpp_2sophus_2lie_2impl_2identity_8h" alt=""/></div>
-<map name="projects_2_sophus_2cpp_2sophus_2lie_2impl_2identity_8h" id="projects_2_sophus_2cpp_2sophus_2lie_2impl_2identity_8h">
-<area shape="rect" title=" " alt="" coords="679,5,869,47"/>
-<area shape="rect" href="concepts_2lie__group_8h.html" title=" " alt="" coords="615,95,765,136"/>
-<area shape="rect" href="unit__vector_8h.html" title=" " alt="" coords="813,95,951,136"/>
-<area shape="rect" href="params_8h.html" title=" " alt="" coords="543,259,738,285"/>
-<area shape="rect" href="common_8h.html" title=" " alt="" coords="979,333,1182,360"/>
-<area shape="rect" href="point_8h.html" title=" " alt="" coords="538,333,717,360"/>
-<area shape="rect" href="utils_8h.html" title=" " alt="" coords="413,415,588,442"/>
-<area shape="rect" title=" " alt="" coords="1013,505,1105,531"/>
-<area shape="rect" title=" " alt="" coords="1845,415,1972,442"/>
-<area shape="rect" href="eigen_8h.html" title=" " alt="" coords="1125,408,1285,449"/>
-<area shape="rect" href="logger_8h.html" title=" " alt="" coords="1130,497,1290,539"/>
-<area shape="rect" href="format_8h.html" title=" " alt="" coords="1475,587,1635,628"/>
-<area shape="rect" href="expected_8h.html" title=" " alt="" coords="1661,408,1821,449"/>
-<area shape="rect" href="variant__utils_8h.html" title=" " alt="" coords="1360,408,1553,449"/>
-<area shape="rect" title=" " alt="" coords="715,415,777,442"/>
-<area shape="rect" title=" " alt="" coords="802,415,863,442"/>
-<area shape="rect" title=" " alt="" coords="888,415,953,442"/>
-<area shape="rect" title=" " alt="" coords="978,415,1050,442"/>
-<area shape="rect" title=" " alt="" coords="605,505,697,531"/>
-<area shape="rect" href="farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="613,594,815,621"/>
-<area shape="rect" title=" " alt="" coords="1099,587,1263,628"/>
-<area shape="rect" title=" " alt="" coords="1287,587,1451,628"/>
-<area shape="rect" title=" " alt="" coords="845,594,935,621"/>
-<area shape="rect" title=" " alt="" coords="959,594,1074,621"/>
-<area shape="rect" href="enum__without__iostream_8h.html" title=" " alt="" coords="764,676,955,717"/>
-<area shape="rect" title=" " alt="" coords="567,683,639,710"/>
-<area shape="rect" title=" " alt="" coords="664,683,740,710"/>
-<area shape="rect" href="enum__details_8h.html" title=" " alt="" coords="768,765,951,807"/>
-<area shape="rect" title=" " alt="" coords="1018,855,1189,896"/>
-<area shape="rect" title=" " alt="" coords="1213,855,1377,896"/>
-<area shape="rect" title=" " alt="" coords="757,855,993,896"/>
-<area shape="rect" title=" " alt="" coords="5,855,169,896"/>
-<area shape="rect" title=" " alt="" coords="193,855,357,896"/>
-<area shape="rect" title=" " alt="" coords="381,855,545,896"/>
-<area shape="rect" title=" " alt="" coords="569,855,733,896"/>
-<area shape="rect" title=" " alt="" coords="1718,862,1777,889"/>
-<area shape="rect" href="backtrace_8h.html" title=" " alt="" coords="1191,676,1351,717"/>
-<area shape="rect" title=" " alt="" coords="1376,676,1540,717"/>
-<area shape="rect" title=" " alt="" coords="1564,683,1653,710"/>
-<area shape="rect" title=" " alt="" coords="1677,683,1783,710"/>
-<area shape="rect" title=" " alt="" coords="1807,683,1922,710"/>
-<area shape="rect" title=" " alt="" coords="979,683,1065,710"/>
-<area shape="rect" title=" " alt="" coords="1946,683,2026,710"/>
-<area shape="rect" title=" " alt="" coords="1710,505,1833,531"/>
-<area shape="rect" title=" " alt="" coords="1857,505,1931,531"/>
-<area shape="rect" title=" " alt="" coords="1956,505,2019,531"/>
-<area shape="rect" title=" " alt="" coords="1423,505,1491,531"/>
-<area shape="rect" title=" " alt="" coords="445,505,556,531"/>
-<area shape="rect" href="concepts_2manifold_8h.html" title=" " alt="" coords="805,184,1009,211"/>
-<area shape="rect" title=" " alt="" coords="679,184,781,211"/>
+<div class="center"><img src="impl_2identity_8h__incl.png" border="0" usemap="#projects_2farm-ng-core_2cpp_2sophus_2lie_2impl_2identity_8h" alt=""/></div>
+<map name="projects_2farm-ng-core_2cpp_2sophus_2lie_2impl_2identity_8h" id="projects_2farm-ng-core_2cpp_2sophus_2lie_2impl_2identity_8h">
+<area shape="rect" title=" " alt="" coords="578,5,741,61"/>
+<area shape="rect" href="concepts_2lie__group_8h.html" title=" " alt="" coords="495,109,645,151"/>
+<area shape="rect" href="unit__vector_8h.html" title=" " alt="" coords="691,109,849,151"/>
+<area shape="rect" href="params_8h.html" title=" " alt="" coords="429,273,623,300"/>
+<area shape="rect" href="common_8h.html" title=" " alt="" coords="865,348,1067,375"/>
+<area shape="rect" href="point_8h.html" title=" " alt="" coords="423,348,602,375"/>
+<area shape="rect" href="utils_8h.html" title=" " alt="" coords="299,430,473,457"/>
+<area shape="rect" title=" " alt="" coords="927,519,1019,546"/>
+<area shape="rect" title=" " alt="" coords="1715,430,1841,457"/>
+<area shape="rect" href="eigen_8h.html" title=" " alt="" coords="1010,423,1170,464"/>
+<area shape="rect" href="logger_8h.html" title=" " alt="" coords="1047,512,1207,553"/>
+<area shape="rect" href="format_8h.html" title=" " alt="" coords="1327,601,1487,643"/>
+<area shape="rect" href="expected_8h.html" title=" " alt="" coords="1530,423,1690,464"/>
+<area shape="rect" href="variant__utils_8h.html" title=" " alt="" coords="1245,423,1439,464"/>
+<area shape="rect" title=" " alt="" coords="600,430,663,457"/>
+<area shape="rect" title=" " alt="" coords="687,430,749,457"/>
+<area shape="rect" title=" " alt="" coords="773,430,839,457"/>
+<area shape="rect" title=" " alt="" coords="863,430,935,457"/>
+<area shape="rect" title=" " alt="" coords="491,519,583,546"/>
+<area shape="rect" href="farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="633,609,835,635"/>
+<area shape="rect" title=" " alt="" coords="860,601,1024,643"/>
+<area shape="rect" title=" " alt="" coords="1048,601,1212,643"/>
+<area shape="rect" title=" " alt="" coords="1237,609,1303,635"/>
+<area shape="rect" title=" " alt="" coords="379,609,470,635"/>
+<area shape="rect" title=" " alt="" coords="494,609,609,635"/>
+<area shape="rect" href="enum__without__iostream_8h.html" title=" " alt="" coords="449,691,640,732"/>
+<area shape="rect" title=" " alt="" coords="665,698,737,725"/>
+<area shape="rect" title=" " alt="" coords="761,698,837,725"/>
+<area shape="rect" href="enum__details_8h.html" title=" " alt="" coords="537,780,720,821"/>
+<area shape="rect" title=" " alt="" coords="830,869,1001,911"/>
+<area shape="rect" title=" " alt="" coords="1025,869,1189,911"/>
+<area shape="rect" title=" " alt="" coords="193,869,429,911"/>
+<area shape="rect" title=" " alt="" coords="453,869,617,911"/>
+<area shape="rect" title=" " alt="" coords="641,869,805,911"/>
+<area shape="rect" title=" " alt="" coords="5,869,169,911"/>
+<area shape="rect" title=" " alt="" coords="1566,877,1625,903"/>
+<area shape="rect" href="backtrace_8h.html" title=" " alt="" coords="1074,691,1234,732"/>
+<area shape="rect" title=" " alt="" coords="1259,691,1423,732"/>
+<area shape="rect" title=" " alt="" coords="1447,698,1536,725"/>
+<area shape="rect" title=" " alt="" coords="1560,698,1665,725"/>
+<area shape="rect" title=" " alt="" coords="1690,698,1805,725"/>
+<area shape="rect" title=" " alt="" coords="861,698,948,725"/>
+<area shape="rect" title=" " alt="" coords="1829,698,1909,725"/>
+<area shape="rect" title=" " alt="" coords="1565,519,1687,546"/>
+<area shape="rect" title=" " alt="" coords="1711,519,1786,546"/>
+<area shape="rect" title=" " alt="" coords="1811,519,1873,546"/>
+<area shape="rect" title=" " alt="" coords="1308,519,1376,546"/>
+<area shape="rect" title=" " alt="" coords="331,519,441,546"/>
+<area shape="rect" href="concepts_2manifold_8h.html" title=" " alt="" coords="691,199,895,225"/>
+<area shape="rect" title=" " alt="" coords="564,199,667,225"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="impl_2identity_8h__dep__incl.png" border="0" usemap="#projects_2_sophus_2cpp_2sophus_2lie_2impl_2identity_8hdep" alt=""/></div>
-<map name="projects_2_sophus_2cpp_2sophus_2lie_2impl_2identity_8hdep" id="projects_2_sophus_2cpp_2sophus_2lie_2impl_2identity_8hdep">
-<area shape="rect" title=" " alt="" coords="108,5,297,47"/>
-<area shape="rect" href="identity_8h.html" title=" " alt="" coords="29,95,185,136"/>
-<area shape="rect" href="translation_8h.html" title=" " alt="" coords="221,95,400,136"/>
-<area shape="rect" href="identity__test_8cpp.html" title=" " alt="" coords="5,184,157,240"/>
-<area shape="rect" href="average_8h.html" title=" " alt="" coords="40,288,243,329"/>
-<area shape="rect" href="interpolate__impl_8h.html" title=" " alt="" coords="233,184,415,240"/>
-<area shape="rect" href="translation__test_8cpp.html" title=" " alt="" coords="439,184,606,240"/>
-<area shape="rect" href="interpolate__test_8cpp.html" title=" " alt="" coords="154,377,363,433"/>
-<area shape="rect" href="interpolate_8h.html" title=" " alt="" coords="267,288,488,329"/>
+<div class="center"><img src="impl_2identity_8h__dep__incl.png" border="0" usemap="#projects_2farm-ng-core_2cpp_2sophus_2lie_2impl_2identity_8hdep" alt=""/></div>
+<map name="projects_2farm-ng-core_2cpp_2sophus_2lie_2impl_2identity_8hdep" id="projects_2farm-ng-core_2cpp_2sophus_2lie_2impl_2identity_8hdep">
+<area shape="rect" title=" " alt="" coords="320,5,483,61"/>
+<area shape="rect" href="identity_8h.html" title=" " alt="" coords="201,109,383,151"/>
+<area shape="rect" href="translation_8h.html" title=" " alt="" coords="508,109,713,151"/>
+<area shape="rect" href="ceres__test_8cpp.html" title=" " alt="" coords="203,199,381,255"/>
+<area shape="rect" href="identity__test_8cpp.html" title=" " alt="" coords="5,199,179,255"/>
+<area shape="rect" href="ceres_2manifold__test_8cpp.html" title=" " alt="" coords="405,199,605,255"/>
+<area shape="rect" href="average_8h.html" title=" " alt="" coords="629,199,792,255"/>
+<area shape="rect" href="spline__test_8cpp.html" title=" " alt="" coords="816,199,979,255"/>
+<area shape="rect" href="translation__test_8cpp.html" title=" " alt="" coords="1003,199,1197,255"/>
+<area shape="rect" href="group__manifold_8h.html" title=" " alt="" coords="536,303,699,359"/>
+<area shape="rect" href="interpolate__test_8cpp.html" title=" " alt="" coords="723,303,885,359"/>
+<area shape="rect" href="group__manifold__test_8cpp.html" title=" " alt="" coords="536,407,699,463"/>
 </map>
 </div>
 </div>
@@ -171,6 +174,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl&lt; TScalar, kDim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_identity.html">sophus::Identity&lt; TScalar, kDim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1lie_1_1_identity_with_dim.html">sophus::lie::IdentityWithDim&lt; kDim &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -186,7 +193,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_39ee8b67a15e0532c468a86d1fea7707.html">lie</a></li><li class="navelem"><a class="el" href="dir_ee45ea767a960ccb0ac3a6468bae3d54.html">impl</a></li><li class="navelem"><a class="el" href="impl_2identity_8h.html">identity.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_f2976b1aed94f4f9facd865c460fbab2.html">lie</a></li><li class="navelem"><a class="el" href="dir_492e73dedf73de889b7df5db0b5789fe.html">impl</a></li><li class="navelem"><a class="el" href="impl_2identity_8h.html">identity.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

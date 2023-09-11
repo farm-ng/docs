@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/farm-ng-core/py/farm_ng/core/uri.py File Reference</title>
+<title>farm-ng-core: projects/farm-ng-core/py/farm_ng/core/uri.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -111,12 +111,18 @@ Functions</h2></td></tr>
 <tr class="separator:a00c28032126447aec2fc9b11b0de1d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d256323eeacd4c8b91f82971fe47d3e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a1d256323eeacd4c8b91f82971fe47d3e">core.uri.get_authority</a> ()</td></tr>
 <tr class="separator:a1d256323eeacd4c8b91f82971fe47d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9de4e4ca6094bf6b9261ace1cadd382"><td class="memItemLeft" align="right" valign="top">uri_pb2.Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#af9de4e4ca6094bf6b9261ace1cadd382">core.uri.make_proto_uri</a> (path, Message message)</td></tr>
-<tr class="separator:af9de4e4ca6094bf6b9261ace1cadd382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9cb0e66d6b3649ddc87838a6574d9f"><td class="memItemLeft" align="right" valign="top">uri_pb2.Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a2c9cb0e66d6b3649ddc87838a6574d9f">core.uri.make_proto_uri</a> (str path, Message <a class="el" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, str|None service_name=None)</td></tr>
+<tr class="separator:a2c9cb0e66d6b3649ddc87838a6574d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd5d99873fdb21ab4a4cef26b2ebacf"><td class="memItemLeft" align="right" valign="top">str|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a6cd5d99873fdb21ab4a4cef26b2ebacf">core.uri.get_service_name</a> (uri_pb2.Uri uri)</td></tr>
+<tr class="separator:a6cd5d99873fdb21ab4a4cef26b2ebacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece0c46ed2d8ceb94be42a2149e0b046"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#aece0c46ed2d8ceb94be42a2149e0b046">core.uri.uri_to_string</a> (uri_pb2.Uri uri)</td></tr>
 <tr class="separator:aece0c46ed2d8ceb94be42a2149e0b046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e0071b88bd0a687310d4ceae552579"><td class="memItemLeft" align="right" valign="top">uri_pb2.Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#aa2e0071b88bd0a687310d4ceae552579">core.uri.string_to_uri</a> (str string)</td></tr>
 <tr class="separator:aa2e0071b88bd0a687310d4ceae552579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2fbb4b4ef351431a0663f0bc1b7723"><td class="memItemLeft" align="right" valign="top">dict[str, str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a9e2fbb4b4ef351431a0663f0bc1b7723">core.uri.uri_query_to_dict</a> (uri_pb2.Uri uri)</td></tr>
+<tr class="separator:a9e2fbb4b4ef351431a0663f0bc1b7723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45120f2ca1342fc2a2d7faab9042278d"><td class="memItemLeft" align="right" valign="top">type[Message]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a45120f2ca1342fc2a2d7faab9042278d">core.uri.uri_to_protobuf_type</a> (uri_pb2.Uri uri)</td></tr>
+<tr class="separator:a45120f2ca1342fc2a2d7faab9042278d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/concepts/point.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/concepts/point.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -128,71 +128,73 @@ $(document).ready(function(){initNavTree('point_8h_source.html',''); initResizab
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        TT1::ColsAtCompileTime == TT2::ColsAtCompileTime);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> kRows, <span class="keywordtype">int</span> kCols, <span class="keyword">typename</span> TT&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#af5e2690d88409e5fedb80ba9d4e1d214">   42</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#af5e2690d88409e5fedb80ba9d4e1d214">EigenWithDim</a> = requires(TT) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  EigenDenseType&lt;TT&gt;&amp;&amp; TT::RowsAtCompileTime == kRows&amp;&amp; TT::ColsAtCompileTime ==</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      kCols;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> kRows, <span class="keywordtype">int</span> kCols, <span class="keyword">typename</span> TT&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a6371edfaaac39eef8350dee026881113">   48</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a6371edfaaac39eef8350dee026881113">EigenWithDimOrDynamic</a> = requires(TT) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  EigenDenseType&lt;TT&gt; &amp;&amp;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      (TT::RowsAtCompileTime == Eigen::Dynamic ||</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;       TT::RowsAtCompileTime == kRows) &amp;&amp;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      (TT::ColsAtCompileTime == Eigen::Dynamic ||</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;       TT::ColsAtCompileTime == kCols);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a6dc3e6726726deac49dc983e197cd4cb">   57</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a6dc3e6726726deac49dc983e197cd4cb">RealScalarType</a> = std::is_floating_point_v&lt;TT&gt;;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a0440c70b4bc84ad149b428871317a670">   60</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a0440c70b4bc84ad149b428871317a670">IntegerScalarType</a> = std::is_integral_v&lt;TT&gt;;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#afd592033c1a5d2dbfef40847cac686f6">   63</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#afd592033c1a5d2dbfef40847cac686f6">ScalarType</a> = RealScalarType&lt;TT&gt; || IntegerScalarType&lt;TT&gt;;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#ae7a2bc625671488c09a9b1ea099ac2fe">   66</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#ae7a2bc625671488c09a9b1ea099ac2fe">RealEigenDenseType</a> =</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    EigenDenseType&lt;TT&gt; &amp;&amp; std::is_floating_point_v&lt;typename TT::Scalar&gt;;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#acada3829bb081cd893e26ee36f099ec7">   70</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#acada3829bb081cd893e26ee36f099ec7">IntegerEigenDenseType</a> =</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    EigenDenseType&lt;TT&gt; &amp;&amp; std::is_integral_v&lt;typename TT::Scalar&gt;;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#ab0cb9b8337c11c24a8a5b70170feb883">   74</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#ab0cb9b8337c11c24a8a5b70170feb883">RealPointType</a> = RealScalarType&lt;TT&gt; || RealEigenDenseType&lt;TT&gt;;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#af9a1c5c4b77a193bdb7cac831c57c24d">   77</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#af9a1c5c4b77a193bdb7cac831c57c24d">IntegerPointType</a> = IntegerScalarType&lt;TT&gt; || IntegerEigenDenseType&lt;TT&gt;;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a42015a20dd49500969f2b42859bc5cf4">   80</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a42015a20dd49500969f2b42859bc5cf4">PointType</a> = RealPointType&lt;TT&gt; || IntegerPointType&lt;TT&gt;;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace concepts</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#af5e2690d88409e5fedb80ba9d4e1d214">   42</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#af5e2690d88409e5fedb80ba9d4e1d214">EigenWithDim</a> = EigenDenseType&lt;TT&gt; &amp;&amp; TT::RowsAtCompileTime ==</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                       kRows&amp;&amp; TT::ColsAtCompileTime == kCols;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TT&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a86d6fc9e2c539f2de970ac6cd17d614a">   46</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a86d6fc9e2c539f2de970ac6cd17d614a">EigenVector3</a> = EigenDenseType&lt;TT&gt; &amp;&amp; TT::RowsAtCompileTime == 3 &amp;&amp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                       TT::ColsAtCompileTime == 1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> kRows, <span class="keywordtype">int</span> kCols, <span class="keyword">typename</span> TT&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a6371edfaaac39eef8350dee026881113">   50</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a6371edfaaac39eef8350dee026881113">EigenWithDimOrDynamic</a> = EigenDenseType&lt;TT&gt; &amp;&amp;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                (TT::RowsAtCompileTime == Eigen::Dynamic ||</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 TT::RowsAtCompileTime == kRows) &amp;&amp;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                (TT::ColsAtCompileTime == Eigen::Dynamic ||</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                 TT::ColsAtCompileTime == kCols);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a6dc3e6726726deac49dc983e197cd4cb">   58</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a6dc3e6726726deac49dc983e197cd4cb">RealScalarType</a> = std::is_floating_point_v&lt;TT&gt;;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a0440c70b4bc84ad149b428871317a670">   61</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a0440c70b4bc84ad149b428871317a670">IntegerScalarType</a> = std::is_integral_v&lt;TT&gt;;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#afd592033c1a5d2dbfef40847cac686f6">   64</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#afd592033c1a5d2dbfef40847cac686f6">ScalarType</a> = RealScalarType&lt;TT&gt; || IntegerScalarType&lt;TT&gt;;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#ae7a2bc625671488c09a9b1ea099ac2fe">   67</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#ae7a2bc625671488c09a9b1ea099ac2fe">RealEigenDenseType</a> =</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    EigenDenseType&lt;TT&gt; &amp;&amp; std::is_floating_point_v&lt;typename TT::Scalar&gt;;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#acada3829bb081cd893e26ee36f099ec7">   71</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#acada3829bb081cd893e26ee36f099ec7">IntegerEigenDenseType</a> =</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    EigenDenseType&lt;TT&gt; &amp;&amp; std::is_integral_v&lt;typename TT::Scalar&gt;;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#ab0cb9b8337c11c24a8a5b70170feb883">   75</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#ab0cb9b8337c11c24a8a5b70170feb883">RealPointType</a> = RealScalarType&lt;TT&gt; || RealEigenDenseType&lt;TT&gt;;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#af9a1c5c4b77a193bdb7cac831c57c24d">   78</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#af9a1c5c4b77a193bdb7cac831c57c24d">IntegerPointType</a> = IntegerScalarType&lt;TT&gt; || IntegerEigenDenseType&lt;TT&gt;;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a42015a20dd49500969f2b42859bc5cf4">   81</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a42015a20dd49500969f2b42859bc5cf4">PointType</a> = RealPointType&lt;TT&gt; || IntegerPointType&lt;TT&gt;;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace concepts</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacesophus_1_1concepts_html_a42015a20dd49500969f2b42859bc5cf4"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a42015a20dd49500969f2b42859bc5cf4">sophus::concepts::PointType</a></div><div class="ttdeci">concept PointType</div><div class="ttdef"><b>Definition:</b> point.h:80</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_afd592033c1a5d2dbfef40847cac686f6"><div class="ttname"><a href="namespacesophus_1_1concepts.html#afd592033c1a5d2dbfef40847cac686f6">sophus::concepts::ScalarType</a></div><div class="ttdeci">concept ScalarType</div><div class="ttdef"><b>Definition:</b> point.h:63</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_a86d6fc9e2c539f2de970ac6cd17d614a"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a86d6fc9e2c539f2de970ac6cd17d614a">sophus::concepts::EigenVector3</a></div><div class="ttdeci">concept EigenVector3</div><div class="ttdef"><b>Definition:</b> point.h:46</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_a42015a20dd49500969f2b42859bc5cf4"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a42015a20dd49500969f2b42859bc5cf4">sophus::concepts::PointType</a></div><div class="ttdeci">concept PointType</div><div class="ttdef"><b>Definition:</b> point.h:81</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_afd592033c1a5d2dbfef40847cac686f6"><div class="ttname"><a href="namespacesophus_1_1concepts.html#afd592033c1a5d2dbfef40847cac686f6">sophus::concepts::ScalarType</a></div><div class="ttdeci">concept ScalarType</div><div class="ttdef"><b>Definition:</b> point.h:64</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_a6371edfaaac39eef8350dee026881113"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a6371edfaaac39eef8350dee026881113">sophus::concepts::EigenWithDimOrDynamic</a></div><div class="ttdeci">concept EigenWithDimOrDynamic</div><div class="ttdef"><b>Definition:</b> point.h:48</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_a0440c70b4bc84ad149b428871317a670"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a0440c70b4bc84ad149b428871317a670">sophus::concepts::IntegerScalarType</a></div><div class="ttdeci">concept IntegerScalarType</div><div class="ttdef"><b>Definition:</b> point.h:60</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_ae7a2bc625671488c09a9b1ea099ac2fe"><div class="ttname"><a href="namespacesophus_1_1concepts.html#ae7a2bc625671488c09a9b1ea099ac2fe">sophus::concepts::RealEigenDenseType</a></div><div class="ttdeci">concept RealEigenDenseType</div><div class="ttdef"><b>Definition:</b> point.h:66</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_a6371edfaaac39eef8350dee026881113"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a6371edfaaac39eef8350dee026881113">sophus::concepts::EigenWithDimOrDynamic</a></div><div class="ttdeci">concept EigenWithDimOrDynamic</div><div class="ttdef"><b>Definition:</b> point.h:50</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_a0440c70b4bc84ad149b428871317a670"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a0440c70b4bc84ad149b428871317a670">sophus::concepts::IntegerScalarType</a></div><div class="ttdeci">concept IntegerScalarType</div><div class="ttdef"><b>Definition:</b> point.h:61</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_ae7a2bc625671488c09a9b1ea099ac2fe"><div class="ttname"><a href="namespacesophus_1_1concepts.html#ae7a2bc625671488c09a9b1ea099ac2fe">sophus::concepts::RealEigenDenseType</a></div><div class="ttdeci">concept RealEigenDenseType</div><div class="ttdef"><b>Definition:</b> point.h:67</div></div>
 <div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a041aeaa94d4101bf10f0f12c3399db4f"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a041aeaa94d4101bf10f0f12c3399db4f">sophus::concepts::EigenMatrixType</a></div><div class="ttdeci">concept EigenMatrixType</div><div class="ttdef"><b>Definition:</b> point.h:29</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_aa6e263c92974bf44b99cd12a016421b4"><div class="ttname"><a href="namespacesophus_1_1concepts.html#aa6e263c92974bf44b99cd12a016421b4">sophus::concepts::EigenType</a></div><div class="ttdeci">concept EigenType</div><div class="ttdef"><b>Definition:</b> point.h:23</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_acada3829bb081cd893e26ee36f099ec7"><div class="ttname"><a href="namespacesophus_1_1concepts.html#acada3829bb081cd893e26ee36f099ec7">sophus::concepts::IntegerEigenDenseType</a></div><div class="ttdeci">concept IntegerEigenDenseType</div><div class="ttdef"><b>Definition:</b> point.h:70</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_acada3829bb081cd893e26ee36f099ec7"><div class="ttname"><a href="namespacesophus_1_1concepts.html#acada3829bb081cd893e26ee36f099ec7">sophus::concepts::IntegerEigenDenseType</a></div><div class="ttdeci">concept IntegerEigenDenseType</div><div class="ttdef"><b>Definition:</b> point.h:71</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a5fadad44fd9c3861df1f0acccd99ce17"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a5fadad44fd9c3861df1f0acccd99ce17">sophus::concepts::EigenSameDim</a></div><div class="ttdeci">concept EigenSameDim</div><div class="ttdef"><b>Definition:</b> point.h:35</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_af5e2690d88409e5fedb80ba9d4e1d214"><div class="ttname"><a href="namespacesophus_1_1concepts.html#af5e2690d88409e5fedb80ba9d4e1d214">sophus::concepts::EigenWithDim</a></div><div class="ttdeci">concept EigenWithDim</div><div class="ttdef"><b>Definition:</b> point.h:42</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a1c9e7f6a8de81f98131df9efaf7b2953"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a1c9e7f6a8de81f98131df9efaf7b2953">sophus::concepts::EigenDenseType</a></div><div class="ttdeci">concept EigenDenseType</div><div class="ttdef"><b>Definition:</b> point.h:26</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_ab0cb9b8337c11c24a8a5b70170feb883"><div class="ttname"><a href="namespacesophus_1_1concepts.html#ab0cb9b8337c11c24a8a5b70170feb883">sophus::concepts::RealPointType</a></div><div class="ttdeci">concept RealPointType</div><div class="ttdef"><b>Definition:</b> point.h:74</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_af9a1c5c4b77a193bdb7cac831c57c24d"><div class="ttname"><a href="namespacesophus_1_1concepts.html#af9a1c5c4b77a193bdb7cac831c57c24d">sophus::concepts::IntegerPointType</a></div><div class="ttdeci">concept IntegerPointType</div><div class="ttdef"><b>Definition:</b> point.h:77</div></div>
-<div class="ttc" id="anamespacesophus_1_1concepts_html_a6dc3e6726726deac49dc983e197cd4cb"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a6dc3e6726726deac49dc983e197cd4cb">sophus::concepts::RealScalarType</a></div><div class="ttdeci">concept RealScalarType</div><div class="ttdef"><b>Definition:</b> point.h:57</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_ab0cb9b8337c11c24a8a5b70170feb883"><div class="ttname"><a href="namespacesophus_1_1concepts.html#ab0cb9b8337c11c24a8a5b70170feb883">sophus::concepts::RealPointType</a></div><div class="ttdeci">concept RealPointType</div><div class="ttdef"><b>Definition:</b> point.h:75</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_af9a1c5c4b77a193bdb7cac831c57c24d"><div class="ttname"><a href="namespacesophus_1_1concepts.html#af9a1c5c4b77a193bdb7cac831c57c24d">sophus::concepts::IntegerPointType</a></div><div class="ttdeci">concept IntegerPointType</div><div class="ttdef"><b>Definition:</b> point.h:78</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_a6dc3e6726726deac49dc983e197cd4cb"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a6dc3e6726726deac49dc983e197cd4cb">sophus::concepts::RealScalarType</a></div><div class="ttdeci">concept RealScalarType</div><div class="ttdef"><b>Definition:</b> point.h:58</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a575e7423abada46d92bd16cc3757f55a"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a575e7423abada46d92bd16cc3757f55a">sophus::concepts::EigenArrayType</a></div><div class="ttdeci">concept EigenArrayType</div><div class="ttdef"><b>Definition:</b> point.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_ebd4b11f127c051715e3dea2cf720135.html">concepts</a></li><li class="navelem"><a class="el" href="point_8h.html">point.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_b4ead6f24c7d26f98bd06ead78ad6012.html">concepts</a></li><li class="navelem"><a class="el" href="point_8h.html">point.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

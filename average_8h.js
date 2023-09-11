@@ -1,7 +1,8 @@
 var average_8h =
 [
-    [ "average", "average_8h.html#a7c5471547b9f16bb933966577e9c84d1", null ],
-    [ "average", "average_8h.html#a61a626435b406aa04502032917687abe", null ],
-    [ "average", "average_8h.html#ac91a8f23f1a152a30e09d82351034298", null ],
-    [ "iterativeMean", "average_8h.html#ad3fe91cba0c1754fa1da43e10fbed51c", null ]
+    [ "average", "average_8h.html#a55f68e15a2321fb8945a27579d9fa7fc", null ],
+    [ "average", "average_8h.html#ae8b45afda85b09978ad78e77cd442274", null ],
+    [ "average", "average_8h.html#a02f3591883d0c7f9de4885bb4ec3fbe6", null ],
+    [ "average", "average_8h.html#aa46bfd15e02fa50d5adb6f60ef5a82c1", null ],
+    [ "iterativeMean", "average_8h.html#a37dc98a953aee6515a775d7524382874", null ]
 ];

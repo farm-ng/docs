@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: core.uri Namespace Reference</title>
+<title>farm-ng-core: core.uri Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -105,12 +105,18 @@ Functions</h2></td></tr>
 <tr class="separator:a00c28032126447aec2fc9b11b0de1d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d256323eeacd4c8b91f82971fe47d3e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a1d256323eeacd4c8b91f82971fe47d3e">get_authority</a> ()</td></tr>
 <tr class="separator:a1d256323eeacd4c8b91f82971fe47d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9de4e4ca6094bf6b9261ace1cadd382"><td class="memItemLeft" align="right" valign="top">uri_pb2.Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#af9de4e4ca6094bf6b9261ace1cadd382">make_proto_uri</a> (path, Message message)</td></tr>
-<tr class="separator:af9de4e4ca6094bf6b9261ace1cadd382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9cb0e66d6b3649ddc87838a6574d9f"><td class="memItemLeft" align="right" valign="top">uri_pb2.Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a2c9cb0e66d6b3649ddc87838a6574d9f">make_proto_uri</a> (str path, Message <a class="el" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, str|None service_name=None)</td></tr>
+<tr class="separator:a2c9cb0e66d6b3649ddc87838a6574d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd5d99873fdb21ab4a4cef26b2ebacf"><td class="memItemLeft" align="right" valign="top">str|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a6cd5d99873fdb21ab4a4cef26b2ebacf">get_service_name</a> (uri_pb2.Uri uri)</td></tr>
+<tr class="separator:a6cd5d99873fdb21ab4a4cef26b2ebacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece0c46ed2d8ceb94be42a2149e0b046"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#aece0c46ed2d8ceb94be42a2149e0b046">uri_to_string</a> (uri_pb2.Uri uri)</td></tr>
 <tr class="separator:aece0c46ed2d8ceb94be42a2149e0b046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e0071b88bd0a687310d4ceae552579"><td class="memItemLeft" align="right" valign="top">uri_pb2.Uri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#aa2e0071b88bd0a687310d4ceae552579">string_to_uri</a> (str string)</td></tr>
 <tr class="separator:aa2e0071b88bd0a687310d4ceae552579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2fbb4b4ef351431a0663f0bc1b7723"><td class="memItemLeft" align="right" valign="top">dict[str, str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a9e2fbb4b4ef351431a0663f0bc1b7723">uri_query_to_dict</a> (uri_pb2.Uri uri)</td></tr>
+<tr class="separator:a9e2fbb4b4ef351431a0663f0bc1b7723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45120f2ca1342fc2a2d7faab9042278d"><td class="memItemLeft" align="right" valign="top">type[Message]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1uri.html#a45120f2ca1342fc2a2d7faab9042278d">uri_to_protobuf_type</a> (uri_pb2.Uri uri)</td></tr>
+<tr class="separator:a45120f2ca1342fc2a2d7faab9042278d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -132,7 +138,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Return the authority.
 
+Example:
+    &gt;&gt;&gt; get_authority()
+    'farm-ng-1'
+</pre> 
 </div>
 </div>
 <a id="a00c28032126447aec2fc9b11b0de1d8f"></a>
@@ -149,11 +160,47 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Return the host name.
 
+Example:
+    &gt;&gt;&gt; get_host_name()
+    'farm-ng-1'
+</pre> 
 </div>
 </div>
-<a id="af9de4e4ca6094bf6b9261ace1cadd382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9de4e4ca6094bf6b9261ace1cadd382">&#9670;&nbsp;</a></span>make_proto_uri()</h2>
+<a id="a6cd5d99873fdb21ab4a4cef26b2ebacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd5d99873fdb21ab4a4cef26b2ebacf">&#9670;&nbsp;</a></span>get_service_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str | None core.uri.get_service_name </td>
+          <td>(</td>
+          <td class="paramtype">uri_pb2.Uri&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the service name from a protobuf uri.
+
+Args:
+    uri: uri_pb2.Uri
+
+Returns:
+    str | None: the service name.
+
+Example:
+    &gt;&gt;&gt; uri = Uri()
+    &gt;&gt;&gt; uri.query = "type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto&amp;service_name=service"
+    &gt;&gt;&gt; get_service_name(uri)
+    'service'
+</pre> 
+</div>
+</div>
+<a id="a2c9cb0e66d6b3649ddc87838a6574d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9cb0e66d6b3649ddc87838a6574d9f">&#9670;&nbsp;</a></span>make_proto_uri()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,14 +208,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"> uri_pb2.Uri core.uri.make_proto_uri </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">str&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Message&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str | None &#160;</td>
+          <td class="paramname"><em>service_name</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,7 +230,28 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Return a protobuf uri from protobuf message.
 
+Args:
+    path: the semantic path.
+    message: the protobuf message.
+
+Returns:
+    uri_pb2.Uri: the protobuf uri.
+
+Example:
+    &gt;&gt;&gt; from farm_ng.core import timestamp_pb2
+    &gt;&gt;&gt; stamp = timestamp_pb2.Timestamp(
+    ...     stamp=1.2,
+    ...     clock_name="clock0",
+    ...     semantics="test/proto",
+    ... )
+    &gt;&gt;&gt; make_proto_uri("tik/tok", stamp)
+    scheme: "protobuf"
+    authority: "farm-ng-1"
+    path: "tik/tok"
+    query: "type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto"
+</pre> 
 </div>
 </div>
 <a id="a245b3d8adb4d4af02ad0268d6debce53"></a>
@@ -195,7 +269,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">Set the host name.</pre> 
 </div>
 </div>
 <a id="aa2e0071b88bd0a687310d4ceae552579"></a>
@@ -213,7 +287,84 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Return a protobuf uri from a string.
 
+Args:
+    string: the string representation of the uri.
+
+Returns:
+    uri_pb2.Uri: the protobuf uri.
+
+Example:
+    &gt;&gt;&gt; string = "protobuf://farm-ng-1//?type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto"
+    &gt;&gt;&gt; string_to_uri(string)
+    scheme: "protobuf"
+    authority: "farm-ng-1"
+    path: ""
+    query: "type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto"
+</pre> 
+</div>
+</div>
+<a id="a9e2fbb4b4ef351431a0663f0bc1b7723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2fbb4b4ef351431a0663f0bc1b7723">&#9670;&nbsp;</a></span>uri_query_to_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict[str, str] core.uri.uri_query_to_dict </td>
+          <td>(</td>
+          <td class="paramtype">uri_pb2.Uri&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return a dictionary from a uri query.
+
+Args:
+    uri: uri_pb2.Uri
+
+Returns:
+    dict[str, str]: the dictionary representation of the uri query.
+
+Example:
+    &gt;&gt;&gt; uri = Uri()
+    &gt;&gt;&gt; uri.query = "type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto"
+    &gt;&gt;&gt; uri_query_to_dict(uri)
+    {'type': 'farm_ng.core.proto.Timestamp', 'pb': 'farm_ng/core/timestamp.proto'}
+</pre> 
+</div>
+</div>
+<a id="a45120f2ca1342fc2a2d7faab9042278d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45120f2ca1342fc2a2d7faab9042278d">&#9670;&nbsp;</a></span>uri_to_protobuf_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> type[Message] core.uri.uri_to_protobuf_type </td>
+          <td>(</td>
+          <td class="paramtype">uri_pb2.Uri&#160;</td>
+          <td class="paramname"><em>uri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the protobuf type from an event.
+
+Args:
+    event: event_pb2.Event
+
+Returns:
+    Type[Message]: the protobuf type
+
+Example:
+    &gt;&gt;&gt; event = Event()
+    &gt;&gt;&gt; event.uri.query = "type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto"
+    &gt;&gt;&gt; event_to_protobuf_type(event)
+    &lt;class 'farm_ng.core.timestamp_pb2.Timestamp'&gt;
+</pre> 
 </div>
 </div>
 <a id="aece0c46ed2d8ceb94be42a2149e0b046"></a>
@@ -231,7 +382,22 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Return a string from a protobuf uri.
 
+Args:
+    uri: uri_pb2.Uri
+
+Returns:
+    str: the string representation of the uri.
+
+Example:
+    &gt;&gt;&gt; uri = Uri()
+    &gt;&gt;&gt; uri.scheme = "protobuf"
+    &gt;&gt;&gt; uri.authority = "farm-ng-1"
+    &gt;&gt;&gt; uri.query = "type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto"
+    &gt;&gt;&gt; uri_to_string(uri)
+    'protobuf://farm-ng-1//?type=farm_ng.core.proto.Timestamp&amp;pb=farm_ng/core/timestamp.proto'
+</pre> 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>

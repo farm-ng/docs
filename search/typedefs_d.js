@@ -1,28 +1,5 @@
 var searchData=
 [
-  ['ray2_2896',['Ray2',['../namespacesophus.html#ad0238fc1d52394af770bc07945716e2e',1,'sophus']]],
-  ['ray2f64_2897',['Ray2F64',['../namespacesophus.html#a41b987e6812cf9207ccf8dae8e09073c',1,'sophus']]],
-  ['ray3_2898',['Ray3',['../namespacesophus.html#a77cc440d81c66ecde95aa0027a5baf65',1,'sophus']]],
-  ['ray3f64_2899',['Ray3F64',['../namespacesophus.html#af9c40578db19bee7a7bba01294cb0c52',1,'sophus']]],
-  ['region2_2900',['Region2',['../namespacesophus.html#a22eefb5572e845cbf5ec8ddf98ca955b',1,'sophus']]],
-  ['region2f32_2901',['Region2F32',['../namespacesophus.html#ad224d06a4f0623afd14b62cf1b158f24',1,'sophus']]],
-  ['region2f64_2902',['Region2F64',['../namespacesophus.html#ad9a39a7b8b9322b73097a04f59eae2e8',1,'sophus']]],
-  ['region2i_2903',['Region2I',['../namespacesophus.html#a46559536888e732d42e6496049c685dc',1,'sophus']]],
-  ['region3_2904',['Region3',['../namespacesophus.html#abe2875429911952b0426241c0bb1ee3f',1,'sophus']]],
-  ['region3f32_2905',['Region3F32',['../namespacesophus.html#a383ae8b5417c55ebe13e28278b9460ab',1,'sophus']]],
-  ['region3f64_2906',['Region3F64',['../namespacesophus.html#ab91cbcf75c30b869251f508bdbf43f95',1,'sophus']]],
-  ['region3i_2907',['Region3I',['../namespacesophus.html#ad3d109128949b05aae1ae114bf971186',1,'sophus']]],
-  ['region4_2908',['Region4',['../namespacesophus.html#a76242425347856d68e136861b221e405',1,'sophus']]],
-  ['region4f32_2909',['Region4F32',['../namespacesophus.html#ab4a6c67851d37c7108966c932a9a86dd',1,'sophus']]],
-  ['region4f64_2910',['Region4F64',['../namespacesophus.html#ab67e8747d7313fdc047e08e1ae2a3120',1,'sophus']]],
-  ['region4i_2911',['Region4I',['../namespacesophus.html#a829d978154305c08bb8716e066e42f82',1,'sophus']]],
-  ['regionf32_2912',['RegionF32',['../namespacesophus.html#aeb352220cf951e391e06a5d27d2bbda7',1,'sophus']]],
-  ['regionf64_2913',['RegionF64',['../namespacesophus.html#a7e50b528367cd7b341d25ce225d736da',1,'sophus']]],
-  ['regioni_2914',['RegionI',['../namespacesophus.html#a895cf293072ffa8dc1b724fae1fc998d',1,'sophus']]],
-  ['ring_2915',['Ring',['../structsophus_1_1test_1_1_division_ring_test_suite.html#a092291cd4f695098a435aec5b1f46312',1,'sophus::test::DivisionRingTestSuite']]],
-  ['rotation_2916',['Rotation',['../classsophus_1_1_isometry2.html#a0066b1743b1ba39872d245db0ef5e16d',1,'sophus::Isometry2::Rotation()'],['../classsophus_1_1_isometry3.html#a3759c18ba46af9cbe28da2d0330d02d9',1,'sophus::Isometry3::Rotation()'],['../classsophus_1_1_similarity2.html#a60b5432eca775619dc101bbb0c6d0963',1,'sophus::Similarity2::Rotation()'],['../classsophus_1_1_similarity3.html#a28bd92e36f85336be1fd5a9b2ea6fed9',1,'sophus::Similarity3::Rotation()'],['../classsophus_1_1_spiral_similarity2.html#a151c4154f67d8569f178a2c1a6d761a2',1,'sophus::SpiralSimilarity2::Rotation()'],['../classsophus_1_1_spiral_similarity3.html#a9b7fa0fe903c13c4d4a46163a48cf7a7',1,'sophus::SpiralSimilarity3::Rotation()']]],
-  ['rotation2f32_2917',['Rotation2F32',['../namespacesophus.html#a9d670be00a7d2002bbe8ec63c5fa55e3',1,'sophus']]],
-  ['rotation2f64_2918',['Rotation2F64',['../namespacesophus.html#a961ed449d350e0efca49009e100d8f1d',1,'sophus']]],
-  ['rotation3f32_2919',['Rotation3F32',['../namespacesophus.html#abd8ec1cceda1732f86e53c0cbfa9796c',1,'sophus']]],
-  ['rotation3f64_2920',['Rotation3F64',['../namespacesophus.html#accc83a15092db847c2814b033e4251ab',1,'sophus']]]
+  ['nested_3329',['Nested',['../struct_eigen_1_1_num_traits_3_01sophus_1_1concepts_1_1_compat_scalar_ex_3_01_t_t_01_4_01_4.html#a4792d641d4af491ffd0467a7099532f8',1,'Eigen::NumTraits&lt; sophus::concepts::CompatScalarEx&lt; TT &gt; &gt;']]],
+  ['noninteger_3330',['NonInteger',['../struct_eigen_1_1_num_traits_3_01sophus_1_1concepts_1_1_compat_scalar_ex_3_01_t_t_01_4_01_4.html#ab155bb2cbd0c347bcfe9a567c1403a0c',1,'Eigen::NumTraits&lt; sophus::concepts::CompatScalarEx&lt; TT &gt; &gt;']]]
 ];

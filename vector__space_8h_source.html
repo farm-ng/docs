@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/linalg/vector_space.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/linalg/vector_space.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -210,8 +210,8 @@ $(document).ready(function(){initNavTree('vector__space_8h_source.html',''); ini
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">template</span> &lt;::sophus::concepts::Po<span class="keywordtype">int</span>Type TPo<span class="keywordtype">int</span>&gt;</div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespacesophus.html#aa66bd37faa348a4548506987e7f55c3f">  124</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#aa66bd37faa348a4548506987e7f55c3f">clamp</a>(TPoint <span class="keyword">const</span>&amp; val, TPoint <span class="keyword">const</span>&amp; a, TPoint <span class="keyword">const</span>&amp; b) -&gt; TPoint {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacesophus.html#a7101763b5d5f82650cd235708de14ada">sophus::max</a>(a, <a class="code" href="namespacesophus.html#a83cdb3670cd3c86a8865752b33e0f188">sophus::min</a>(val, b));</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespacesophus.html#a9d7b826fc152091bd5709a16e58a52c5">  124</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a9d7b826fc152091bd5709a16e58a52c5">clamp</a>(TPoint <span class="keyword">const</span>&amp; val, TPoint <span class="keyword">const</span>&amp; lo, TPoint <span class="keyword">const</span>&amp; hi) -&gt; TPoint {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacesophus.html#a7101763b5d5f82650cd235708de14ada">sophus::max</a>(lo, <a class="code" href="namespacesophus.html#a83cdb3670cd3c86a8865752b33e0f188">sophus::min</a>(val, hi));</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">template</span> &lt;::sophus::concepts::ScalarType TPo<span class="keywordtype">int</span>&gt;</div>
@@ -334,69 +334,80 @@ $(document).ready(function(){initNavTree('vector__space_8h_source.html',''); ini
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">struct </span>PointExamples;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 2&gt; {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 1&gt; {</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl() {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 2&gt;&gt; point_vec;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;(TScalar(1), TScalar(2)));</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;(TScalar(1), TScalar(-3)));</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::Zero());</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::Ones());</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::UnitX());</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::UnitY());</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;};</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 3&gt; {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl() {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 3&gt;&gt; point_vec;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    point_vec.push_back(</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        Eigen::Vector&lt;TScalar, 3&gt;(TScalar(1), TScalar(2), TScalar(0.1)));</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    point_vec.push_back(</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        Eigen::Vector&lt;TScalar, 3&gt;(TScalar(1), TScalar(-3), TScalar(-1)));</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::Zero());</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::Ones());</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::UnitX());</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::UnitZ());</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 4&gt; {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl() {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 4&gt;&gt; point_vec;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;(</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        TScalar(1), TScalar(2), TScalar(0.1), TScalar(0.1)));</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;(</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        TScalar(1), TScalar(-3), TScalar(-1), TScalar(0.1)));</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::Zero());</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::Ones());</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::UnitX());</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::UnitZ());</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;};</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}  <span class="comment">// namespace details</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keywordtype">int</span> kDim&gt;</div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">  296</a></span>&#160;[[nodiscard]] <span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">pointExamples</a>() {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">return</span> details::PointExamples&lt;TScalar, kDim&gt;::impl();</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 1&gt;&gt; point_vec;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 1&gt;(TScalar(1)));</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 1&gt;(TScalar(-3)));</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 1&gt;::Zero());</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;};</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 2&gt; {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl() {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 2&gt;&gt; point_vec;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;(TScalar(1), TScalar(2)));</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;(TScalar(1), TScalar(-3)));</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::Zero());</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::Ones());</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::UnitX());</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 2&gt;::UnitY());</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;};</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 3&gt; {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl() {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 3&gt;&gt; point_vec;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    point_vec.push_back(</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        Eigen::Vector&lt;TScalar, 3&gt;(TScalar(1), TScalar(2), TScalar(0.1)));</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    point_vec.push_back(</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        Eigen::Vector&lt;TScalar, 3&gt;(TScalar(1), TScalar(-3), TScalar(-1)));</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::Zero());</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::Ones());</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::UnitX());</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 3&gt;::UnitZ());</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;};</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar&gt;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword">struct </span>PointExamples&lt;TScalar, 4&gt; {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl() {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    std::vector&lt;Eigen::Vector&lt;TScalar, 4&gt;&gt; point_vec;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;(</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        TScalar(1), TScalar(2), TScalar(0.1), TScalar(0.1)));</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;(</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        TScalar(1), TScalar(-3), TScalar(-1), TScalar(0.1)));</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::Zero());</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::Ones());</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::UnitX());</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    point_vec.push_back(Eigen::Vector&lt;TScalar, 4&gt;::UnitZ());</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">return</span> point_vec;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;};</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}  <span class="comment">// namespace details</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keywordtype">int</span> kDim&gt;</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">  307</a></span>&#160;[[nodiscard]] <span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">pointExamples</a>() {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">return</span> details::PointExamples&lt;TScalar, kDim&gt;::impl();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;}</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacesophus_html_a0fec2c43fc2275a69c288429122febac"><div class="ttname"><a href="namespacesophus.html#a0fec2c43fc2275a69c288429122febac">sophus::round</a></div><div class="ttdeci">auto round(TPoint s)</div><div class="ttdef"><b>Definition:</b> vector_space.h:157</div></div>
 <div class="ttc" id="acast_8h_html"><div class="ttname"><a href="cast_8h.html">cast.h</a></div></div>
+<div class="ttc" id="anamespacesophus_html_a9d7b826fc152091bd5709a16e58a52c5"><div class="ttname"><a href="namespacesophus.html#a9d7b826fc152091bd5709a16e58a52c5">sophus::clamp</a></div><div class="ttdeci">auto clamp(TPoint const &amp;val, TPoint const &amp;lo, TPoint const &amp;hi) -&gt; TPoint</div><div class="ttdef"><b>Definition:</b> vector_space.h:124</div></div>
 <div class="ttc" id="areduce_8h_html"><div class="ttname"><a href="reduce_8h.html">reduce.h</a></div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
 <div class="ttc" id="anamespacesophus_html_a83cdb3670cd3c86a8865752b33e0f188"><div class="ttname"><a href="namespacesophus.html#a83cdb3670cd3c86a8865752b33e0f188">sophus::min</a></div><div class="ttdeci">auto min(TPoint const &amp;a, TPoint const &amp;b) -&gt; TPoint</div><div class="ttdef"><b>Definition:</b> vector_space.h:104</div></div>
 <div class="ttc" id="anamespacesophus_html_a5af820ef17c2356ca600fa850b05d33c"><div class="ttname"><a href="namespacesophus.html#a5af820ef17c2356ca600fa850b05d33c">sophus::allTrue</a></div><div class="ttdeci">auto allTrue(TPoint const &amp;p) -&gt; bool</div><div class="ttdef"><b>Definition:</b> vector_space.h:54</div></div>
-<div class="ttc" id="anamespacesophus_html_aa66bd37faa348a4548506987e7f55c3f"><div class="ttname"><a href="namespacesophus.html#aa66bd37faa348a4548506987e7f55c3f">sophus::clamp</a></div><div class="ttdeci">auto clamp(TPoint const &amp;val, TPoint const &amp;a, TPoint const &amp;b) -&gt; TPoint</div><div class="ttdef"><b>Definition:</b> vector_space.h:124</div></div>
-<div class="ttc" id="anamespacesophus_html_a26abf66ab765312cd8e1ba443c58ba54"><div class="ttname"><a href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">sophus::pointExamples</a></div><div class="ttdeci">auto pointExamples()</div><div class="ttdef"><b>Definition:</b> vector_space.h:296</div></div>
+<div class="ttc" id="anamespacesophus_html_a26abf66ab765312cd8e1ba443c58ba54"><div class="ttname"><a href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">sophus::pointExamples</a></div><div class="ttdeci">auto pointExamples()</div><div class="ttdef"><b>Definition:</b> vector_space.h:307</div></div>
 <div class="ttc" id="anamespacesophus_html_a8b596ad1ff2921a9a25f5e155447b473"><div class="ttname"><a href="namespacesophus.html#a8b596ad1ff2921a9a25f5e155447b473">sophus::isNan</a></div><div class="ttdeci">auto isNan(TPoint const &amp;p) -&gt; bool</div><div class="ttdef"><b>Definition:</b> vector_space.h:84</div></div>
 <div class="ttc" id="anamespacesophus_html_aa5839ec4c4657915795207f950a6b58b"><div class="ttname"><a href="namespacesophus.html#aa5839ec4c4657915795207f950a6b58b">sophus::anyTrue</a></div><div class="ttdeci">auto anyTrue(TPoint const &amp;p) -&gt; bool</div><div class="ttdef"><b>Definition:</b> vector_space.h:64</div></div>
 <div class="ttc" id="anamespacesophus_html_a978f9d1b80af80bf61e47a00c96cf56a"><div class="ttname"><a href="namespacesophus.html#a978f9d1b80af80bf61e47a00c96cf56a">sophus::isLessEqual</a></div><div class="ttdeci">auto isLessEqual(TPoint const &amp;lhs, TPoint const &amp;rhs) -&gt; bool</div><div class="ttdef"><b>Definition:</b> vector_space.h:183</div></div>
@@ -416,7 +427,7 @@ $(document).ready(function(){initNavTree('vector__space_8h_source.html',''); ini
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_14190a221035a199c1b3f43d25f038d0.html">linalg</a></li><li class="navelem"><a class="el" href="vector__space_8h.html">vector_space.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_bf05715ebcec5c79a263dc495975a1eb.html">linalg</a></li><li class="navelem"><a class="el" href="vector__space_8h.html">vector_space.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -1,8 +1,11 @@
 var classsophus_1_1_spiral_similarity2 =
 [
-    [ "Base", "classsophus_1_1_spiral_similarity2.html#a182cb4adde03c5340c17cd9bd332f794", null ],
+    [ "Base", "classsophus_1_1_spiral_similarity2.html#a40247ef1459e2f1f76b26c8f63c1cdef", null ],
+    [ "Params", "classsophus_1_1_spiral_similarity2.html#ad361ca82696d12c5c4a17c5b57ceaf9f", null ],
+    [ "Point", "classsophus_1_1_spiral_similarity2.html#a4fd1e5874e5d175b3c1b050521e059ba", null ],
     [ "Rotation", "classsophus_1_1_spiral_similarity2.html#a151c4154f67d8569f178a2c1a6d761a2", null ],
     [ "Scalar", "classsophus_1_1_spiral_similarity2.html#a30182d94aeca8abff870e53d4acf05fc", null ],
+    [ "Tangent", "classsophus_1_1_spiral_similarity2.html#aa96136cdcfb877e322e514f7d3ecf595", null ],
     [ "SpiralSimilarity2", "classsophus_1_1_spiral_similarity2.html#af931b69057069a7f90d42b4722571c77", null ],
     [ "SpiralSimilarity2", "classsophus_1_1_spiral_similarity2.html#a1c0e5e03c1a7973d3a34a89813f62c84", null ],
     [ "SpiralSimilarity2", "classsophus_1_1_spiral_similarity2.html#a093903f62e4bc8beaac728c1f8ff5432", null ],

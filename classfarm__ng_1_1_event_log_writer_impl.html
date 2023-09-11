@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: farm_ng::EventLogWriterImpl Class Reference</title>
+<title>farm-ng-core: farm_ng::EventLogWriterImpl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -110,8 +110,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad06db4d3799bbde1161e8fc3ec51f1db"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html#ad06db4d3799bbde1161e8fc3ec51f1db">~EventLogWriterImpl</a> ()</td></tr>
 <tr class="memdesc:ad06db4d3799bbde1161e8fc3ec51f1db"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-dtor">https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-dtor</a>  <a href="classfarm__ng_1_1_event_log_writer_impl.html#ad06db4d3799bbde1161e8fc3ec51f1db">More...</a><br /></td></tr>
 <tr class="separator:ad06db4d3799bbde1161e8fc3ec51f1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa053de67e7eaf374e37dfb5468a861e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html#aa053de67e7eaf374e37dfb5468a861e8">write</a> (std::string path, google::protobuf::Message const &amp;message, google::protobuf::RepeatedPtrField&lt; core::proto::Timestamp &gt; const &amp;timestamps)=0</td></tr>
+<tr class="memitem:aa053de67e7eaf374e37dfb5468a861e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html#aa053de67e7eaf374e37dfb5468a861e8">write</a> (std::string path, google::protobuf::Message const &amp;<a class="el" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, google::protobuf::RepeatedPtrField&lt; core::proto::Timestamp &gt; const &amp;timestamps)=0</td></tr>
 <tr class="separator:aa053de67e7eaf374e37dfb5468a861e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5330ed640c7743c7ae9dcc3ef5280fa3"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html#a5330ed640c7743c7ae9dcc3ef5280fa3">getBytesWritten</a> ()=0</td></tr>
+<tr class="memdesc:a5330ed640c7743c7ae9dcc3ef5280fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes written to the file so far.  <a href="classfarm__ng_1_1_event_log_writer_impl.html#a5330ed640c7743c7ae9dcc3ef5280fa3">More...</a><br /></td></tr>
+<tr class="separator:a5330ed640c7743c7ae9dcc3ef5280fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <code><a class="el" href="classfarm__ng_1_1_event_log_writer.html" title="Class that serializes incoming protobuf events to a file in disk.">EventLogWriter</a></code> class. </p>
@@ -144,6 +147,35 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5330ed640c7743c7ae9dcc3ef5280fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5330ed640c7743c7ae9dcc3ef5280fa3">&#9670;&nbsp;</a></span>getBytesWritten()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ssize_t farm_ng::EventLogWriterImpl::getBytesWritten </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of bytes written to the file so far. </p>
+
+<p>Implemented in <a class="el" href="classfarm__ng_1_1_event_log_writer_binary_impl.html#affb4e2b26cb45e5b2022f8c1dfd4df6b">farm_ng::EventLogWriterBinaryImpl</a>.</p>
+
+</div>
+</div>
 <a id="aa053de67e7eaf374e37dfb5468a861e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa053de67e7eaf374e37dfb5468a861e8">&#9670;&nbsp;</a></span>write()</h2>
 

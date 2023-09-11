@@ -1,16 +1,15 @@
 var classsophus_1_1_dyn_image_view =
 [
     [ "DynImageView", "classsophus_1_1_dyn_image_view.html#a1eee61c3bf6cfb7e098fec7aa0b07eb2", null ],
-    [ "DynImageView", "classsophus_1_1_dyn_image_view.html#a9eb7f5ce386382abd4c93bb0ce1b33f2", null ],
     [ "DynImageView", "classsophus_1_1_dyn_image_view.html#aa3a06ed0e3482566b9dc9ff557dd055e", null ],
+    [ "DynImageView", "classsophus_1_1_dyn_image_view.html#a6416e74047a31ac6b0867f2e7a94934b", null ],
+    [ "area", "classsophus_1_1_dyn_image_view.html#a3f485aede11d28c8bfd2b7faee10b7dc", null ],
     [ "has", "classsophus_1_1_dyn_image_view.html#a4b27e6603d913f08b3e464b972235751", null ],
     [ "height", "classsophus_1_1_dyn_image_view.html#a921c536cfc5c1191b0fbb16260a8f17b", null ],
     [ "imageSize", "classsophus_1_1_dyn_image_view.html#a8dc627447bc73ff7e5238af23b7f2f0b", null ],
     [ "imageView", "classsophus_1_1_dyn_image_view.html#a30be5c39afb0162a680197ba7a74923a", null ],
     [ "isEmpty", "classsophus_1_1_dyn_image_view.html#aa8e851ff451c9fb3cd7004c3959b549f", null ],
     [ "layout", "classsophus_1_1_dyn_image_view.html#a26422a0ce514a69036545da6c216e5d0", null ],
-    [ "numberType", "classsophus_1_1_dyn_image_view.html#a228d8bd3acbdceaace107997dc1768ad", null ],
-    [ "numBytesPerPixelChannel", "classsophus_1_1_dyn_image_view.html#ae9d95c97d15d16dbb7d4d6c8c5d45adc", null ],
     [ "numChannels", "classsophus_1_1_dyn_image_view.html#ad73f584fc949643636dc4fdffcbed8d0", null ],
     [ "pitchBytes", "classsophus_1_1_dyn_image_view.html#a6531214174c34ed16f0279c426d96505", null ],
     [ "pixelFormat", "classsophus_1_1_dyn_image_view.html#a052b04252dfd30a4c28dbb7a82128dd0", null ],

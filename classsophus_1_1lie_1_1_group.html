@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::lie::Group&lt; TDerived, TImpl &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::lie::Group&lt; TGenericDerived, TScalar, TGenericImpl &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -91,9 +91,10 @@ $(document).ready(function(){initNavTree('classsophus_1_1lie_1_1_group.html','')
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classsophus_1_1lie_1_1_group-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sophus::lie::Group&lt; TDerived, TImpl &gt; Class Template Reference</div>  </div>
+<div class="title">sophus::lie::Group&lt; TGenericDerived, TScalar, TGenericImpl &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -101,130 +102,325 @@ $(document).ready(function(){initNavTree('classsophus_1_1lie_1_1_group.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aec2a4285f89661e089bc018e30b886f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aec2a4285f89661e089bc018e30b886f0">Impl</a> = TImpl</td></tr>
-<tr class="separator:aec2a4285f89661e089bc018e30b886f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41dc2468c9bd50ecbee624f3bf3d04e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a> = typename Impl::Scalar</td></tr>
-<tr class="separator:a41dc2468c9bd50ecbee624f3bf3d04e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50abc7f42888f21f0cb0786fae9bd314"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a> = TScalar</td></tr>
+<tr class="separator:a50abc7f42888f21f0cb0786fae9bd314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6db46300994388f85ccd3190c4f2694"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae6db46300994388f85ccd3190c4f2694">Impl</a> = TGenericImpl&lt; TScalar &gt;</td></tr>
+<tr class="separator:ae6db46300994388f85ccd3190c4f2694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0785ef6f0b114f7cde5df0c4c17081b"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:aa0785ef6f0b114f7cde5df0c4c17081b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a> = typename Eigen::ScalarBinaryOpTraits&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, TCompatibleScalar &gt;::ReturnType</td></tr>
+<tr class="separator:aa0785ef6f0b114f7cde5df0c4c17081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1e378d0e79417a01637d6c70f7e1d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> = TGenericDerived&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a> &gt;</td></tr>
+<tr class="separator:a5f1e378d0e79417a01637d6c70f7e1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e83aae2d6e909bc619cd707e7599a9"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a70e83aae2d6e909bc619cd707e7599a9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a70e83aae2d6e909bc619cd707e7599a9">DerivedReturn</a> = TGenericDerived&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a>&lt; TCompatibleScalar &gt; &gt;</td></tr>
+<tr class="separator:a70e83aae2d6e909bc619cd707e7599a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae027307b649fc8dd14ba958ad297ecbd"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:ae027307b649fc8dd14ba958ad297ecbd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae027307b649fc8dd14ba958ad297ecbd">PointReturn</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a>&lt; TCompatibleScalar &gt;, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a> &gt;</td></tr>
+<tr class="separator:ae027307b649fc8dd14ba958ad297ecbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6505799dd683c4a910729f669e98d108"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a6505799dd683c4a910729f669e98d108"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a6505799dd683c4a910729f669e98d108">UnitVectorReturn</a> = <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a>&lt; TCompatibleScalar &gt;, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a> &gt;</td></tr>
+<tr class="separator:a6505799dd683c4a910729f669e98d108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7b7593b71b8d0e25de836ada6d7334"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> &gt;</td></tr>
+<tr class="separator:afd7b7593b71b8d0e25de836ada6d7334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5711cb27d87c1a88074f7bdb56d9c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a> &gt;</td></tr>
+<tr class="separator:a1a5711cb27d87c1a88074f7bdb56d9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca91501eb90c10b21ec1774663e28eb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Point</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a> &gt;</td></tr>
+<tr class="separator:abca91501eb90c10b21ec1774663e28eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae5ab3ce58a4a8027b0840a7f08549f3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae5ab3ce58a4a8027b0840a7f08549f3d">Group</a> ()</td></tr>
-<tr class="separator:ae5ab3ce58a4a8027b0840a7f08549f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067f070105e14f631e1f575fa8f80109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a067f070105e14f631e1f575fa8f80109">Group</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> const &amp;)=default</td></tr>
-<tr class="separator:a067f070105e14f631e1f575fa8f80109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5add2f66684cb60ecd092c4c4634d37"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aa5add2f66684cb60ecd092c4c4634d37">operator=</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> const &amp;) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> &amp;=default</td></tr>
-<tr class="separator:aa5add2f66684cb60ecd092c4c4634d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53a986125df41742e2cbf409115c063"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ac53a986125df41742e2cbf409115c063">log</a> () const -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;</td></tr>
-<tr class="separator:ac53a986125df41742e2cbf409115c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc19030aaefe81c63ecd063714e901a2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#adc19030aaefe81c63ecd063714e901a2">operator*</a> (TDerived const &amp;rhs) const -&gt; TDerived</td></tr>
-<tr class="separator:adc19030aaefe81c63ecd063714e901a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98d2eb71d976d9c9c958f21e49089f5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#af98d2eb71d976d9c9c958f21e49089f5">inverse</a> () const -&gt; TDerived</td></tr>
-<tr class="separator:af98d2eb71d976d9c9c958f21e49089f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120ee2521115c091416b297ac7c6d505"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a120ee2521115c091416b297ac7c6d505">operator*</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;point) const -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt;</td></tr>
-<tr class="separator:a120ee2521115c091416b297ac7c6d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32deef57bec55bf810003d31af923b32"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a32deef57bec55bf810003d31af923b32">operator*</a> (<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;direction_vector) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt;</td></tr>
-<tr class="separator:a32deef57bec55bf810003d31af923b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a0b9a3238e203e02fae404c4e0cf8e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a5a0b9a3238e203e02fae404c4e0cf8e4">compactMatrix</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:a5a0b9a3238e203e02fae404c4e0cf8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ccfdb396b2fe0e614132ef0319b3a37"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a2ccfdb396b2fe0e614132ef0319b3a37">matrix</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:a2ccfdb396b2fe0e614132ef0319b3a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0894e7ba6e91a4ecc272aaae1348600"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aa0894e7ba6e91a4ecc272aaae1348600">adj</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;</td></tr>
-<tr class="separator:aa0894e7ba6e91a4ecc272aaae1348600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6a9cf2894c48ac2b4aaec4a96c33442"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ad6a9cf2894c48ac2b4aaec4a96c33442">dxThisMulExpXAt0</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;</td></tr>
-<tr class="separator:ad6a9cf2894c48ac2b4aaec4a96c33442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597f77cd4577346f69388dec1531d769"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a597f77cd4577346f69388dec1531d769">dxLogThisInvTimesXAtThis</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt;</td></tr>
-<tr class="separator:a597f77cd4577346f69388dec1531d769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8926c1615b78374814e8b795a1560632"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a8926c1615b78374814e8b795a1560632">params</a> () const -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;</td></tr>
-<tr class="separator:a8926c1615b78374814e8b795a1560632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62cdebdc04e2e149b6bc0321ae65179b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a62cdebdc04e2e149b6bc0321ae65179b">ptr</a> () const</td></tr>
-<tr class="separator:a62cdebdc04e2e149b6bc0321ae65179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d0151703c040011595af2ec6e4b031"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a27d0151703c040011595af2ec6e4b031">unsafeMutPtr</a> ()</td></tr>
-<tr class="separator:a27d0151703c040011595af2ec6e4b031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812f342791b7f5cc87f9116f914ccab9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a812f342791b7f5cc87f9116f914ccab9">setParams</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a8926c1615b78374814e8b795a1560632">params</a>)</td></tr>
-<tr class="separator:a812f342791b7f5cc87f9116f914ccab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdb7e9a749aa099c9a3f96000dfeb5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aefdb7e9a749aa099c9a3f96000dfeb5b">Group</a> ()</td></tr>
+<tr class="separator:aefdb7e9a749aa099c9a3f96000dfeb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e3cb7a2c7c8f527eb0124b864932dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a05e3cb7a2c7c8f527eb0124b864932dc">Group</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> const &amp;)=default</td></tr>
+<tr class="separator:a05e3cb7a2c7c8f527eb0124b864932dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37198ae6e6efff5a03233824070b340"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#af37198ae6e6efff5a03233824070b340">operator=</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> const &amp;) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> &amp;=default</td></tr>
+<tr class="separator:af37198ae6e6efff5a03233824070b340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3de9a464b175c578dccfed5bcad7b47"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ab3de9a464b175c578dccfed5bcad7b47">log</a> () const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a></td></tr>
+<tr class="separator:ab3de9a464b175c578dccfed5bcad7b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0902beca5095948c8df6e4ece71a18a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae0902beca5095948c8df6e4ece71a18a">hasShortestPathAmbiguity</a> () -&gt; bool</td></tr>
+<tr class="separator:ae0902beca5095948c8df6e4ece71a18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9c284c3af3115605997d276ccb075d"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a8d9c284c3af3115605997d276ccb075d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a8d9c284c3af3115605997d276ccb075d">operator*</a> (TGenericDerived&lt; TCompatibleScalar &gt; const &amp;rhs) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a70e83aae2d6e909bc619cd707e7599a9">DerivedReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:a8d9c284c3af3115605997d276ccb075d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2da59fee532b8fa6a368197057c6c45"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#af2da59fee532b8fa6a368197057c6c45">operator*=</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;rhs) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> &amp;</td></tr>
+<tr class="separator:af2da59fee532b8fa6a368197057c6c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70c407d4462a6644721d494af1e1289"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae70c407d4462a6644721d494af1e1289">inverse</a> () const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:ae70c407d4462a6644721d494af1e1289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeec1d005ea773821258cf8310b2e844"><td class="memTemplParams" colspan="2">template&lt;class TMatrixDerived &gt; </td></tr>
+<tr class="memitem:adeec1d005ea773821258cf8310b2e844"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#adeec1d005ea773821258cf8310b2e844">operator*</a> (Eigen::MatrixBase&lt; TMatrixDerived &gt; const &amp;point) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#ae027307b649fc8dd14ba958ad297ecbd">PointReturn</a>&lt; typename TMatrixDerived::Scalar &gt;</td></tr>
+<tr class="separator:adeec1d005ea773821258cf8310b2e844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfb77e3e3dc1fa9d36eb838a831caa5"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a8bfb77e3e3dc1fa9d36eb838a831caa5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a8bfb77e3e3dc1fa9d36eb838a831caa5">operator*</a> (<a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a> &gt; const &amp;direction_vector) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a6505799dd683c4a910729f669e98d108">UnitVectorReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:a8bfb77e3e3dc1fa9d36eb838a831caa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e0274db7a06ea751bbc429388f1e4a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a74e0274db7a06ea751bbc429388f1e4a">adj</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> &gt;</td></tr>
+<tr class="separator:a74e0274db7a06ea751bbc429388f1e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7d3f135a047765b8efbe562b9f493c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a9f7d3f135a047765b8efbe562b9f493c">leftPlus</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;tangent) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:a9f7d3f135a047765b8efbe562b9f493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb1ae39fa46fd062e7dde8478635bbb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a8eb1ae39fa46fd062e7dde8478635bbb">rightPlus</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;tangent) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:a8eb1ae39fa46fd062e7dde8478635bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641d96eae5091fc6453d587f508bd7c8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a641d96eae5091fc6453d587f508bd7c8">leftMinus</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;other) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a></td></tr>
+<tr class="separator:a641d96eae5091fc6453d587f508bd7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e99aa124c7dc42a535200d1f233343"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a84e99aa124c7dc42a535200d1f233343">rightMinus</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;other) const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a></td></tr>
+<tr class="separator:a84e99aa124c7dc42a535200d1f233343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6779ab4ad87b70f13e3da1ab7a3c55"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aca6779ab4ad87b70f13e3da1ab7a3c55">compactMatrix</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:aca6779ab4ad87b70f13e3da1ab7a3c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb18199e56d4d850ec0ef6fed9ac7a4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1fb18199e56d4d850ec0ef6fed9ac7a4">matrix</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:a1fb18199e56d4d850ec0ef6fed9ac7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af1f8e0d2933f015857e8d280b5201c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a7af1f8e0d2933f015857e8d280b5201c">dxThisMulExpXAt0</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> &gt;</td></tr>
+<tr class="separator:a7af1f8e0d2933f015857e8d280b5201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d17bf07465725f8dd775055d63cb655"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1d17bf07465725f8dd775055d63cb655">dxLogThisInvTimesXAtThis</a> () const -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a> &gt;</td></tr>
+<tr class="separator:a1d17bf07465725f8dd775055d63cb655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd4190ded20b08c27ae897101557339"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a7dd4190ded20b08c27ae897101557339">params</a> () const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;</td></tr>
+<tr class="separator:a7dd4190ded20b08c27ae897101557339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e7ea32311b85a8ee378f373c6f45db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a14e7ea32311b85a8ee378f373c6f45db">ptr</a> () const</td></tr>
+<tr class="separator:a14e7ea32311b85a8ee378f373c6f45db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc80d89627cd567f6aeab50518fbae1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a6bc80d89627cd567f6aeab50518fbae1">unsafeMutPtr</a> ()</td></tr>
+<tr class="separator:a6bc80d89627cd567f6aeab50518fbae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b02978935256fde4b225dad05751919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a5b02978935256fde4b225dad05751919">setParams</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a7dd4190ded20b08c27ae897101557339">params</a>)</td></tr>
+<tr class="separator:a5b02978935256fde4b225dad05751919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e9976d1adfe13f499457526a197444a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a9e9976d1adfe13f499457526a197444a">fromParams</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a8926c1615b78374814e8b795a1560632">params</a>) -&gt; TDerived</td></tr>
-<tr class="separator:a9e9976d1adfe13f499457526a197444a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9526d6e20ad1bed13beed1b7e43c223"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ab9526d6e20ad1bed13beed1b7e43c223">identity</a> () -&gt; TDerived</td></tr>
-<tr class="separator:ab9526d6e20ad1bed13beed1b7e43c223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2795e141608ce8c63e0d2f6df526879"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ab2795e141608ce8c63e0d2f6df526879">exp</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt; const &amp;tangent) -&gt; TDerived</td></tr>
-<tr class="separator:ab2795e141608ce8c63e0d2f6df526879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a899c317b0f32328f8a23868e46acd7f7"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a899c317b0f32328f8a23868e46acd7f7">hat</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt; const &amp;tangent) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:a899c317b0f32328f8a23868e46acd7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdad6406217ee4e8916bea0804a582bd"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#acdad6406217ee4e8916bea0804a582bd">vee</a> (Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a> &gt; const &amp;mat) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;</td></tr>
-<tr class="separator:acdad6406217ee4e8916bea0804a582bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482a84365ae0b79380d70199600a64e2"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a482a84365ae0b79380d70199600a64e2">toAmbient</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;point)</td></tr>
-<tr class="separator:a482a84365ae0b79380d70199600a64e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ac1565044a421ad60676c5aaaed624"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ac4ac1565044a421ad60676c5aaaed624">dxExpXAt0</a> () -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;</td></tr>
-<tr class="separator:ac4ac1565044a421ad60676c5aaaed624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500181b8bcbb7ff3bd882f670306a2a1"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a500181b8bcbb7ff3bd882f670306a2a1">dxExpXTimesPointAt0</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;</td></tr>
-<tr class="separator:a500181b8bcbb7ff3bd882f670306a2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c57f88a8e44f6d55d44e3ed35a0be17"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a4c57f88a8e44f6d55d44e3ed35a0be17">tangentExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt;&gt;</td></tr>
-<tr class="separator:a4c57f88a8e44f6d55d44e3ed35a0be17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67290bc39726871d6ecc8a404ddffa26"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a67290bc39726871d6ecc8a404ddffa26">paramsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:a67290bc39726871d6ecc8a404ddffa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9baf44290824dc3fdbe58aa0fb34ec70"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a9baf44290824dc3fdbe58aa0fb34ec70">elementExamples</a> () -&gt; std::vector&lt; TDerived &gt;</td></tr>
-<tr class="separator:a9baf44290824dc3fdbe58aa0fb34ec70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9ef90a84c557b961b7599274ab5b95"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a7e9ef90a84c557b961b7599274ab5b95">invalidParamsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:a7e9ef90a84c557b961b7599274ab5b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94b6dfc9087ea289f5a2f3671713e8b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ac94b6dfc9087ea289f5a2f3671713e8b">fromParams</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a7dd4190ded20b08c27ae897101557339">params</a>) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:ac94b6dfc9087ea289f5a2f3671713e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d274aa7da967702ed33274a8c138cc"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a57d274aa7da967702ed33274a8c138cc">identity</a> () -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:a57d274aa7da967702ed33274a8c138cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20de1a3ff2580023d24b0c7cff45a4cd"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a20de1a3ff2580023d24b0c7cff45a4cd">exp</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;tangent) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:a20de1a3ff2580023d24b0c7cff45a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293d2e8d0a6e80f924628868c94ba41f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a293d2e8d0a6e80f924628868c94ba41f">hat</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;tangent) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:a293d2e8d0a6e80f924628868c94ba41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca003fd8bffe2db55bff5346a47fec56"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aca003fd8bffe2db55bff5346a47fec56">vee</a> (Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a> &gt; const &amp;mat) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a></td></tr>
+<tr class="separator:aca003fd8bffe2db55bff5346a47fec56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2049980fdd46cec4551fbe525916c790"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a2049980fdd46cec4551fbe525916c790">toAmbient</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Point</a> const &amp;point)</td></tr>
+<tr class="separator:a2049980fdd46cec4551fbe525916c790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494be5d7795f37adcb3ccafbaa9997e5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a494be5d7795f37adcb3ccafbaa9997e5">ad</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;tangent) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> &gt;</td></tr>
+<tr class="separator:a494be5d7795f37adcb3ccafbaa9997e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f15311da59f3a28b40d7e7a9e11825"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a51f15311da59f3a28b40d7e7a9e11825">dxExpXAt0</a> () -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> &gt;</td></tr>
+<tr class="separator:a51f15311da59f3a28b40d7e7a9e11825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0164604519e2b0ef6de1c1d99d2267"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a7a0164604519e2b0ef6de1c1d99d2267">dxExpXTimesPointAt0</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Point</a> const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> &gt;</td></tr>
+<tr class="separator:a7a0164604519e2b0ef6de1c1d99d2267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ca0f6a2a97eed3beba70b9d992d0eb"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a34ca0f6a2a97eed3beba70b9d992d0eb">tangentExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> &gt;</td></tr>
+<tr class="separator:a34ca0f6a2a97eed3beba70b9d992d0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc1dfdc1ef54ad86f83aa3b80d295da"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aecc1dfdc1ef54ad86f83aa3b80d295da">paramsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> &gt;</td></tr>
+<tr class="separator:aecc1dfdc1ef54ad86f83aa3b80d295da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf8541a850e04a05d3d46606358111e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aedf8541a850e04a05d3d46606358111e">elementExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> &gt;</td></tr>
+<tr class="separator:aedf8541a850e04a05d3d46606358111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa690abf8052b40af022bf002777d4191"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aa690abf8052b40af022bf002777d4191">invalidParamsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> &gt;</td></tr>
+<tr class="separator:aa690abf8052b40af022bf002777d4191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae183f22d85c2d30f75c1772879360562"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> = Impl::kDof</td></tr>
-<tr class="separator:ae183f22d85c2d30f75c1772879360562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c2b4f773c2f142772230d6b2ccd674"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> = Impl::kNumParams</td></tr>
-<tr class="separator:a66c2b4f773c2f142772230d6b2ccd674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63dc3a203fc098776a72ed07b5afad0"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> = Impl::kPointDim</td></tr>
-<tr class="separator:ab63dc3a203fc098776a72ed07b5afad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b338ae9d998bfce2658a2f12567fd3"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a> = Impl::kAmbientDim</td></tr>
-<tr class="separator:af7b338ae9d998bfce2658a2f12567fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd860671f45809b0beba9305859537c"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a9fd860671f45809b0beba9305859537c">kIsOriginPreserving</a> = Impl::kIsOriginPreserving</td></tr>
+<tr class="separator:a9fd860671f45809b0beba9305859537c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2e88a6591891b7ce7e77879583c56b"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a7e2e88a6591891b7ce7e77879583c56b">kIsAxisDirectionPreserving</a></td></tr>
+<tr class="separator:a7e2e88a6591891b7ce7e77879583c56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5d5e5923ac1b06dede4663d446bed3"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#afb5d5e5923ac1b06dede4663d446bed3">kIsDirectionVectorPreserving</a></td></tr>
+<tr class="separator:afb5d5e5923ac1b06dede4663d446bed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de803c4fa26b8ca6eb36ca518604508"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a8de803c4fa26b8ca6eb36ca518604508">kIsShapePreserving</a> = Impl::kIsShapePreserving</td></tr>
+<tr class="separator:a8de803c4fa26b8ca6eb36ca518604508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04464342d909e145d83b2cecf211205"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae04464342d909e145d83b2cecf211205">kIisSizePreserving</a> = Impl::kIisSizePreserving</td></tr>
+<tr class="separator:ae04464342d909e145d83b2cecf211205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc739926da738f9707140aef4c9e4a8"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a4cc739926da738f9707140aef4c9e4a8">kIisParallelLinePreserving</a></td></tr>
+<tr class="separator:a4cc739926da738f9707140aef4c9e4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ed3a92195487b495890410021baa39"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a> = Impl::kDof</td></tr>
+<tr class="separator:ae6ed3a92195487b495890410021baa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57517ebd35a12facf2ceb1721131858"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a> = Impl::kNumParams</td></tr>
+<tr class="separator:ad57517ebd35a12facf2ceb1721131858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e0a012f1406ba518a7e3b0b68dc02f"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a> = Impl::kPointDim</td></tr>
+<tr class="separator:a62e0a012f1406ba518a7e3b0b68dc02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323763fe9ed3cebf8bf85d5b43b1619a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a> = Impl::kAmbientDim</td></tr>
+<tr class="separator:a323763fe9ed3cebf8bf85d5b43b1619a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa823a3bdf5c3ea06199fb8ce86821b50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aa823a3bdf5c3ea06199fb8ce86821b50">Group</a> (<a class="el" href="structsophus_1_1_uninit_tag.html">UninitTag</a>)</td></tr>
-<tr class="separator:aa823a3bdf5c3ea06199fb8ce86821b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbe8417d0667af5e34b54cd52c4a870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#aafbe8417d0667af5e34b54cd52c4a870">setParamsUnchecked</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a8926c1615b78374814e8b795a1560632">params</a>)</td></tr>
-<tr class="separator:aafbe8417d0667af5e34b54cd52c4a870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c66592b4ade41121ae5708811639e75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a4c66592b4ade41121ae5708811639e75">Group</a> (<a class="el" href="structsophus_1_1_uninit_tag.html">UninitTag</a>)</td></tr>
+<tr class="separator:a4c66592b4ade41121ae5708811639e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8b7f23aa7f686ae6d9d3d83f9727c5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a9a8b7f23aa7f686ae6d9d3d83f9727c5">self</a> () -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> &amp;</td></tr>
+<tr class="separator:a9a8b7f23aa7f686ae6d9d3d83f9727c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d35b5afaf3df17c1a8129c56dd231d9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a2d35b5afaf3df17c1a8129c56dd231d9">self</a> () const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;</td></tr>
+<tr class="separator:a2d35b5afaf3df17c1a8129c56dd231d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4705ea6138321274a28a545fce808a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#af4705ea6138321274a28a545fce808a3">setParamsUnchecked</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a7dd4190ded20b08c27ae897101557339">params</a>)</td></tr>
+<tr class="separator:af4705ea6138321274a28a545fce808a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a52d96d4f0466a93715dec749fb370524"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a52d96d4f0466a93715dec749fb370524">fromParamsUnchecked</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a8926c1615b78374814e8b795a1560632">params</a>) -&gt; TDerived</td></tr>
-<tr class="separator:a52d96d4f0466a93715dec749fb370524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a754a9f8e9c473a853832ddfdc1a253"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a2a754a9f8e9c473a853832ddfdc1a253">fromParamsUnchecked</a> (<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;<a class="el" href="classsophus_1_1lie_1_1_group.html#a7dd4190ded20b08c27ae897101557339">params</a>) -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a></td></tr>
+<tr class="separator:a2a754a9f8e9c473a853832ddfdc1a253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a7d2870868ca80cd587ea2447b68f95f5"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a7d2870868ca80cd587ea2447b68f95f5">params_</a></td></tr>
-<tr class="separator:a7d2870868ca80cd587ea2447b68f95f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456a834c4701570847cadf106fd0fe10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#a456a834c4701570847cadf106fd0fe10">params_</a></td></tr>
+<tr class="separator:a456a834c4701570847cadf106fd0fe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ae537cf67f8c2412633eab0f56e3fbedf"><td class="memTemplParams" colspan="2">template&lt;template&lt; class &gt; class TOtherGenericDerived, class TOtherScalar , template&lt; class &gt; class TOtherGenericImpl&gt; </td></tr>
+<tr class="memitem:ae537cf67f8c2412633eab0f56e3fbedf"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_group.html#ae537cf67f8c2412633eab0f56e3fbedf">Group</a></td></tr>
+<tr class="separator:ae537cf67f8c2412633eab0f56e3fbedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aec2a4285f89661e089bc018e30b886f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec2a4285f89661e089bc018e30b886f0">&#9670;&nbsp;</a></span>Impl</h2>
+<a id="a5f1e378d0e79417a01637d6c70f7e1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1e378d0e79417a01637d6c70f7e1d9">&#9670;&nbsp;</a></span>Derived</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#aec2a4285f89661e089bc018e30b886f0">Impl</a> =  TImpl</td>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> =  TGenericDerived&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a41dc2468c9bd50ecbee624f3bf3d04e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41dc2468c9bd50ecbee624f3bf3d04e0">&#9670;&nbsp;</a></span>Scalar</h2>
+<a id="a70e83aae2d6e909bc619cd707e7599a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e83aae2d6e909bc619cd707e7599a9">&#9670;&nbsp;</a></span>DerivedReturn</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a> =  typename Impl::Scalar</td>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#a70e83aae2d6e909bc619cd707e7599a9">DerivedReturn</a> =  TGenericDerived&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a>&lt;TCompatibleScalar&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6db46300994388f85ccd3190c4f2694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6db46300994388f85ccd3190c4f2694">&#9670;&nbsp;</a></span>Impl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#ae6db46300994388f85ccd3190c4f2694">Impl</a> =  TGenericImpl&lt;TScalar&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a5711cb27d87c1a88074f7bdb56d9c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5711cb27d87c1a88074f7bdb56d9c1">&#9670;&nbsp;</a></span>Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abca91501eb90c10b21ec1774663e28eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca91501eb90c10b21ec1774663e28eb">&#9670;&nbsp;</a></span>Point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Point</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae027307b649fc8dd14ba958ad297ecbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae027307b649fc8dd14ba958ad297ecbd">&#9670;&nbsp;</a></span>PointReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#ae027307b649fc8dd14ba958ad297ecbd">PointReturn</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a>&lt;TCompatibleScalar&gt;, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50abc7f42888f21f0cb0786fae9bd314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50abc7f42888f21f0cb0786fae9bd314">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a> =  TScalar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0785ef6f0b114f7cde5df0c4c17081b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0785ef6f0b114f7cde5df0c4c17081b">&#9670;&nbsp;</a></span>ScalarReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a> =  typename Eigen:: ScalarBinaryOpTraits&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, TCompatibleScalar&gt;::ReturnType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd7b7593b71b8d0e25de836ada6d7334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7b7593b71b8d0e25de836ada6d7334">&#9670;&nbsp;</a></span>Tangent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6505799dd683c4a910729f669e98d108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6505799dd683c4a910729f669e98d108">&#9670;&nbsp;</a></span>UnitVectorReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html#a6505799dd683c4a910729f669e98d108">UnitVectorReturn</a> =  <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#aa0785ef6f0b114f7cde5df0c4c17081b">ScalarReturn</a>&lt;TCompatibleScalar&gt;, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,19 +428,19 @@ template&lt;class TDerived , class TImpl &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae5ab3ce58a4a8027b0840a7f08549f3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ab3ce58a4a8027b0840a7f08549f3d">&#9670;&nbsp;</a></span>Group() <span class="overload">[1/3]</span></h2>
+<a id="aefdb7e9a749aa099c9a3f96000dfeb5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefdb7e9a749aa099c9a3f96000dfeb5b">&#9670;&nbsp;</a></span>Group() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> </td>
+          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -259,21 +455,21 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a067f070105e14f631e1f575fa8f80109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a067f070105e14f631e1f575fa8f80109">&#9670;&nbsp;</a></span>Group() <span class="overload">[2/3]</span></h2>
+<a id="a05e3cb7a2c7c8f527eb0124b864932dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e3cb7a2c7c8f527eb0124b864932dc">&#9670;&nbsp;</a></span>Group() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> </td>
+          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a>&lt; TDerived, TImpl &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -287,19 +483,19 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="aa823a3bdf5c3ea06199fb8ce86821b50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa823a3bdf5c3ea06199fb8ce86821b50">&#9670;&nbsp;</a></span>Group() <span class="overload">[3/3]</span></h2>
+<a id="a4c66592b4ade41121ae5708811639e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c66592b4ade41121ae5708811639e75">&#9670;&nbsp;</a></span>Group() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> </td>
+          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::<a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsophus_1_1_uninit_tag.html">UninitTag</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -316,213 +512,23 @@ template&lt;class TDerived , class TImpl &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa0894e7ba6e91a4ecc272aaae1348600"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0894e7ba6e91a4ecc272aaae1348600">&#9670;&nbsp;</a></span>adj()</h2>
+<a id="a494be5d7795f37adcb3ccafbaa9997e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494be5d7795f37adcb3ccafbaa9997e5">&#9670;&nbsp;</a></span>ad()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::adj </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::ad </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5a0b9a3238e203e02fae404c4e0cf8e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a0b9a3238e203e02fae404c4e0cf8e4">&#9670;&nbsp;</a></span>compactMatrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::compactMatrix </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac4ac1565044a421ad60676c5aaaed624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4ac1565044a421ad60676c5aaaed624">&#9670;&nbsp;</a></span>dxExpXAt0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::dxExpXAt0 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a500181b8bcbb7ff3bd882f670306a2a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a500181b8bcbb7ff3bd882f670306a2a1">&#9670;&nbsp;</a></span>dxExpXTimesPointAt0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::dxExpXTimesPointAt0 </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a597f77cd4577346f69388dec1531d769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a597f77cd4577346f69388dec1531d769">&#9670;&nbsp;</a></span>dxLogThisInvTimesXAtThis()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::dxLogThisInvTimesXAtThis </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad6a9cf2894c48ac2b4aaec4a96c33442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6a9cf2894c48ac2b4aaec4a96c33442">&#9670;&nbsp;</a></span>dxThisMulExpXAt0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::dxThisMulExpXAt0 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9baf44290824dc3fdbe58aa0fb34ec70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9baf44290824dc3fdbe58aa0fb34ec70">&#9670;&nbsp;</a></span>elementExamples()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::elementExamples </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;TDerived&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab2795e141608ce8c63e0d2f6df526879"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2795e141608ce8c63e0d2f6df526879">&#9670;&nbsp;</a></span>exp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::exp </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;&#160;</td>
           <td class="paramname"><em>tangent</em></td><td>)</td>
-          <td> -&gt; TDerived </td>
+          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -534,23 +540,76 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a9e9976d1adfe13f499457526a197444a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e9976d1adfe13f499457526a197444a">&#9670;&nbsp;</a></span>fromParams()</h2>
+<a id="a74e0274db7a06ea751bbc429388f1e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e0274db7a06ea751bbc429388f1e4a">&#9670;&nbsp;</a></span>adj()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::fromParams </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::adj </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>params</em></td><td>)</td>
-          <td> -&gt; TDerived </td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca6779ab4ad87b70f13e3da1ab7a3c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6779ab4ad87b70f13e3da1ab7a3c55">&#9670;&nbsp;</a></span>compactMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::compactMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51f15311da59f3a28b40d7e7a9e11825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f15311da59f3a28b40d7e7a9e11825">&#9670;&nbsp;</a></span>dxExpXAt0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::dxExpXAt0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -562,23 +621,188 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a52d96d4f0466a93715dec749fb370524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52d96d4f0466a93715dec749fb370524">&#9670;&nbsp;</a></span>fromParamsUnchecked()</h2>
+<a id="a7a0164604519e2b0ef6de1c1d99d2267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0164604519e2b0ef6de1c1d99d2267">&#9670;&nbsp;</a></span>dxExpXTimesPointAt0()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::fromParamsUnchecked </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::dxExpXTimesPointAt0 </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Point</a> const &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d17bf07465725f8dd775055d63cb655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d17bf07465725f8dd775055d63cb655">&#9670;&nbsp;</a></span>dxLogThisInvTimesXAtThis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::dxLogThisInvTimesXAtThis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7af1f8e0d2933f015857e8d280b5201c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af1f8e0d2933f015857e8d280b5201c">&#9670;&nbsp;</a></span>dxThisMulExpXAt0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::dxThisMulExpXAt0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ad57517ebd35a12facf2ceb1721131858">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae6ed3a92195487b495890410021baa39">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedf8541a850e04a05d3d46606358111e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf8541a850e04a05d3d46606358111e">&#9670;&nbsp;</a></span>elementExamples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::elementExamples </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20de1a3ff2580023d24b0c7cff45a4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20de1a3ff2580023d24b0c7cff45a4cd">&#9670;&nbsp;</a></span>exp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::exp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;&#160;</td>
+          <td class="paramname"><em>tangent</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac94b6dfc9087ea289f5a2f3671713e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94b6dfc9087ea289f5a2f3671713e8b">&#9670;&nbsp;</a></span>fromParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::fromParams </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
-          <td> -&gt; TDerived </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a754a9f8e9c473a853832ddfdc1a253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a754a9f8e9c473a853832ddfdc1a253">&#9670;&nbsp;</a></span>fromParamsUnchecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::fromParamsUnchecked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
         </tr>
       </table>
   </td>
@@ -590,23 +814,50 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a899c317b0f32328f8a23868e46acd7f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a899c317b0f32328f8a23868e46acd7f7">&#9670;&nbsp;</a></span>hat()</h2>
+<a id="ae0902beca5095948c8df6e4ece71a18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0902beca5095948c8df6e4ece71a18a">&#9670;&nbsp;</a></span>hasShortestPathAmbiguity()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::hat </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::hasShortestPathAmbiguity </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a293d2e8d0a6e80f924628868c94ba41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293d2e8d0a6e80f924628868c94ba41f">&#9670;&nbsp;</a></span>hat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::hat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;&#160;</td>
           <td class="paramname"><em>tangent</em></td><td>)</td>
-          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>&gt; </td>
+          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -618,22 +869,22 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="ab9526d6e20ad1bed13beed1b7e43c223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9526d6e20ad1bed13beed1b7e43c223">&#9670;&nbsp;</a></span>identity()</h2>
+<a id="a57d274aa7da967702ed33274a8c138cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d274aa7da967702ed33274a8c138cc">&#9670;&nbsp;</a></span>identity()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::identity </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::identity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; TDerived </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
         </tr>
       </table>
   </td>
@@ -645,22 +896,22 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a7e9ef90a84c557b961b7599274ab5b95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e9ef90a84c557b961b7599274ab5b95">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
+<a id="aa690abf8052b40af022bf002777d4191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa690abf8052b40af022bf002777d4191">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::invalidParamsExamples </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::invalidParamsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -672,22 +923,22 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="af98d2eb71d976d9c9c958f21e49089f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98d2eb71d976d9c9c958f21e49089f5">&#9670;&nbsp;</a></span>inverse()</h2>
+<a id="ae70c407d4462a6644721d494af1e1289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70c407d4462a6644721d494af1e1289">&#9670;&nbsp;</a></span>inverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::inverse </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::inverse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; TDerived </td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
         </tr>
       </table>
   </td>
@@ -699,22 +950,23 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="ac53a986125df41742e2cbf409115c063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac53a986125df41742e2cbf409115c063">&#9670;&nbsp;</a></span>log()</h2>
+<a id="a641d96eae5091fc6453d587f508bd7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641d96eae5091fc6453d587f508bd7c8">&#9670;&nbsp;</a></span>leftMinus()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::log </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::leftMinus </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt; </td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> </td>
         </tr>
       </table>
   </td>
@@ -726,22 +978,23 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a2ccfdb396b2fe0e614132ef0319b3a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ccfdb396b2fe0e614132ef0319b3a37">&#9670;&nbsp;</a></span>matrix()</h2>
+<a id="a9f7d3f135a047765b8efbe562b9f493c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7d3f135a047765b8efbe562b9f493c">&#9670;&nbsp;</a></span>leftPlus()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::matrix </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::leftPlus </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>&gt; </td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;&#160;</td>
+          <td class="paramname"><em>tangent</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
         </tr>
       </table>
   </td>
@@ -753,23 +1006,79 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a120ee2521115c091416b297ac7c6d505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a120ee2521115c091416b297ac7c6d505">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+<a id="ab3de9a464b175c578dccfed5bcad7b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3de9a464b175c578dccfed5bcad7b47">&#9670;&nbsp;</a></span>log()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::operator* </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::log </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fb18199e56d4d850ec0ef6fed9ac7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb18199e56d4d850ec0ef6fed9ac7a4">&#9670;&nbsp;</a></span>matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::matrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeec1d005ea773821258cf8310b2e844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeec1d005ea773821258cf8310b2e844">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TMatrixDerived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">Eigen::MatrixBase&lt; TMatrixDerived &gt; const &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a>&gt; </td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#ae027307b649fc8dd14ba958ad297ecbd">PointReturn</a>&lt;typename TMatrixDerived::Scalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -781,23 +1090,25 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="adc19030aaefe81c63ecd063714e901a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc19030aaefe81c63ecd063714e901a2">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/3]</span></h2>
+<a id="a8d9c284c3af3115605997d276ccb075d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9c284c3af3115605997d276ccb075d">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::operator* </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::operator* </td>
           <td>(</td>
-          <td class="paramtype">TDerived const &amp;&#160;</td>
+          <td class="paramtype">TGenericDerived&lt; TCompatibleScalar &gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td> const -&gt; TDerived </td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a70e83aae2d6e909bc619cd707e7599a9">DerivedReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -809,23 +1120,25 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a32deef57bec55bf810003d31af923b32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32deef57bec55bf810003d31af923b32">&#9670;&nbsp;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+<a id="a8bfb77e3e3dc1fa9d36eb838a831caa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfb77e3e3dc1fa9d36eb838a831caa5">&#9670;&nbsp;</a></span>operator*() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::operator* </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::operator* </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_group.html#a62e0a012f1406ba518a7e3b0b68dc02f">kPointDim</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>direction_vector</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a>&gt; </td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a6505799dd683c4a910729f669e98d108">UnitVectorReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -837,21 +1150,49 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="aa5add2f66684cb60ecd092c4c4634d37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5add2f66684cb60ecd092c4c4634d37">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="af2da59fee532b8fa6a368197057c6c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2da59fee532b8fa6a368197057c6c45">&#9670;&nbsp;</a></span>operator*=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::operator= </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::operator*= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a>&lt; TDerived, TImpl &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a>&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af37198ae6e6efff5a03233824070b340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37198ae6e6efff5a03233824070b340">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt;  <a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a> &amp;=default</td>
         </tr>
@@ -865,22 +1206,22 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a8926c1615b78374814e8b795a1560632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8926c1615b78374814e8b795a1560632">&#9670;&nbsp;</a></span>params()</h2>
+<a id="a7dd4190ded20b08c27ae897101557339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd4190ded20b08c27ae897101557339">&#9670;&nbsp;</a></span>params()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::params </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::params </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>&gt; const&amp; </td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const&amp; </td>
         </tr>
       </table>
   </td>
@@ -892,22 +1233,22 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a67290bc39726871d6ecc8a404ddffa26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67290bc39726871d6ecc8a404ddffa26">&#9670;&nbsp;</a></span>paramsExamples()</h2>
+<a id="aecc1dfdc1ef54ad86f83aa3b80d295da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc1dfdc1ef54ad86f83aa3b80d295da">&#9670;&nbsp;</a></span>paramsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::paramsExamples </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::paramsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -919,19 +1260,19 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a62cdebdc04e2e149b6bc0321ae65179b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62cdebdc04e2e149b6bc0321ae65179b">&#9670;&nbsp;</a></span>ptr()</h2>
+<a id="a14e7ea32311b85a8ee378f373c6f45db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e7ea32311b85a8ee378f373c6f45db">&#9670;&nbsp;</a></span>ptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::ptr </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::ptr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -946,21 +1287,131 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a812f342791b7f5cc87f9116f914ccab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a812f342791b7f5cc87f9116f914ccab9">&#9670;&nbsp;</a></span>setParams()</h2>
+<a id="a84e99aa124c7dc42a535200d1f233343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e99aa124c7dc42a535200d1f233343">&#9670;&nbsp;</a></span>rightMinus()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::setParams </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::rightMinus </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eb1ae39fa46fd062e7dde8478635bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb1ae39fa46fd062e7dde8478635bbb">&#9670;&nbsp;</a></span>rightPlus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::rightPlus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> const &amp;&#160;</td>
+          <td class="paramname"><em>tangent</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a8b7f23aa7f686ae6d9d3d83f9727c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a8b7f23aa7f686ae6d9d3d83f9727c5">&#9670;&nbsp;</a></span>self() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a>&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d35b5afaf3df17c1a8129c56dd231d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d35b5afaf3df17c1a8129c56dd231d9">&#9670;&nbsp;</a></span>self() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a5f1e378d0e79417a01637d6c70f7e1d9">Derived</a> const&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b02978935256fde4b225dad05751919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b02978935256fde4b225dad05751919">&#9670;&nbsp;</a></span>setParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::setParams </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
           <td></td>
         </tr>
@@ -974,21 +1425,21 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="aafbe8417d0667af5e34b54cd52c4a870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafbe8417d0667af5e34b54cd52c4a870">&#9670;&nbsp;</a></span>setParamsUnchecked()</h2>
+<a id="af4705ea6138321274a28a545fce808a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4705ea6138321274a28a545fce808a3">&#9670;&nbsp;</a></span>setParamsUnchecked()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::setParamsUnchecked </td>
+          <td class="memname">void <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::setParamsUnchecked </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1002,22 +1453,22 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a4c57f88a8e44f6d55d44e3ed35a0be17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c57f88a8e44f6d55d44e3ed35a0be17">&#9670;&nbsp;</a></span>tangentExamples()</h2>
+<a id="a34ca0f6a2a97eed3beba70b9d992d0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ca0f6a2a97eed3beba70b9d992d0eb">&#9670;&nbsp;</a></span>tangentExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::tangentExamples </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::tangentExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -1029,21 +1480,21 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a482a84365ae0b79380d70199600a64e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a482a84365ae0b79380d70199600a64e2">&#9670;&nbsp;</a></span>toAmbient()</h2>
+<a id="a2049980fdd46cec4551fbe525916c790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2049980fdd46cec4551fbe525916c790">&#9670;&nbsp;</a></span>toAmbient()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::toAmbient </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::toAmbient </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ab63dc3a203fc098776a72ed07b5afad0">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Point</a> const &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1057,19 +1508,19 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a27d0151703c040011595af2ec6e4b031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27d0151703c040011595af2ec6e4b031">&#9670;&nbsp;</a></span>unsafeMutPtr()</h2>
+<a id="a6bc80d89627cd567f6aeab50518fbae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc80d89627cd567f6aeab50518fbae1">&#9670;&nbsp;</a></span>unsafeMutPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::unsafeMutPtr </td>
+          <td class="memname">auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::unsafeMutPtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1084,23 +1535,23 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="acdad6406217ee4e8916bea0804a582bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdad6406217ee4e8916bea0804a582bd">&#9670;&nbsp;</a></span>vee()</h2>
+<a id="aca003fd8bffe2db55bff5346a47fec56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca003fd8bffe2db55bff5346a47fec56">&#9670;&nbsp;</a></span>vee()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::vee </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::vee </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#af7b338ae9d998bfce2658a2f12567fd3">kAmbientDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_group.html#a50abc7f42888f21f0cb0786fae9bd314">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a323763fe9ed3cebf8bf85d5b43b1619a">kAmbientDim</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>mat</em></td><td>)</td>
-          <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#ae183f22d85c2d30f75c1772879360562">kDof</a>&gt; </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Tangent</a> </td>
         </tr>
       </table>
   </td>
@@ -1112,20 +1563,47 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ae537cf67f8c2412633eab0f56e3fbedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae537cf67f8c2412633eab0f56e3fbedf">&#9670;&nbsp;</a></span>Group</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TOtherGenericDerived, class TOtherScalar , template&lt; class &gt; class TOtherGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classsophus_1_1lie_1_1_group.html">Group</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af7b338ae9d998bfce2658a2f12567fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7b338ae9d998bfce2658a2f12567fd3">&#9670;&nbsp;</a></span>kAmbientDim</h2>
+<a id="a323763fe9ed3cebf8bf85d5b43b1619a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323763fe9ed3cebf8bf85d5b43b1619a">&#9670;&nbsp;</a></span>kAmbientDim</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::kAmbientDim = Impl::kAmbientDim</td>
+          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kAmbientDim = Impl::kAmbientDim</td>
         </tr>
       </table>
   </td>
@@ -1137,19 +1615,19 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="ae183f22d85c2d30f75c1772879360562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae183f22d85c2d30f75c1772879360562">&#9670;&nbsp;</a></span>kDof</h2>
+<a id="ae6ed3a92195487b495890410021baa39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ed3a92195487b495890410021baa39">&#9670;&nbsp;</a></span>kDof</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::kDof = Impl::kDof</td>
+          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kDof = Impl::kDof</td>
         </tr>
       </table>
   </td>
@@ -1161,19 +1639,45 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a66c2b4f773c2f142772230d6b2ccd674"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66c2b4f773c2f142772230d6b2ccd674">&#9670;&nbsp;</a></span>kNumParams</h2>
+<a id="a4cc739926da738f9707140aef4c9e4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc739926da738f9707140aef4c9e4a8">&#9670;&nbsp;</a></span>kIisParallelLinePreserving</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::kNumParams = Impl::kNumParams</td>
+          <td class="memname">constexpr bool <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kIisParallelLinePreserving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">      Impl::kIisParallelLinePreserving</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae04464342d909e145d83b2cecf211205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04464342d909e145d83b2cecf211205">&#9670;&nbsp;</a></span>kIisSizePreserving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kIisSizePreserving = Impl::kIisSizePreserving</td>
         </tr>
       </table>
   </td>
@@ -1185,19 +1689,71 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="ab63dc3a203fc098776a72ed07b5afad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63dc3a203fc098776a72ed07b5afad0">&#9670;&nbsp;</a></span>kPointDim</h2>
+<a id="a7e2e88a6591891b7ce7e77879583c56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2e88a6591891b7ce7e77879583c56b">&#9670;&nbsp;</a></span>kIsAxisDirectionPreserving</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::kPointDim = Impl::kPointDim</td>
+          <td class="memname">constexpr bool <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kIsAxisDirectionPreserving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">      Impl::kIsAxisDirectionPreserving</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afb5d5e5923ac1b06dede4663d446bed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5d5e5923ac1b06dede4663d446bed3">&#9670;&nbsp;</a></span>kIsDirectionVectorPreserving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kIsDirectionVectorPreserving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">      Impl::kIsDirectionVectorPreserving</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9fd860671f45809b0beba9305859537c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fd860671f45809b0beba9305859537c">&#9670;&nbsp;</a></span>kIsOriginPreserving</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kIsOriginPreserving = Impl::kIsOriginPreserving</td>
         </tr>
       </table>
   </td>
@@ -1209,19 +1765,91 @@ template&lt;class TDerived , class TImpl &gt; </div>
 
 </div>
 </div>
-<a id="a7d2870868ca80cd587ea2447b68f95f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d2870868ca80cd587ea2447b68f95f5">&#9670;&nbsp;</a></span>params_</h2>
+<a id="a8de803c4fa26b8ca6eb36ca518604508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de803c4fa26b8ca6eb36ca518604508">&#9670;&nbsp;</a></span>kIsShapePreserving</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TDerived , class TImpl &gt; </div>
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_group.html#a41dc2468c9bd50ecbee624f3bf3d04e0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_group.html#a66c2b4f773c2f142772230d6b2ccd674">kNumParams</a>&gt; <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TDerived, TImpl &gt;::params_</td>
+          <td class="memname">constexpr bool <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kIsShapePreserving = Impl::kIsShapePreserving</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad57517ebd35a12facf2ceb1721131858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57517ebd35a12facf2ceb1721131858">&#9670;&nbsp;</a></span>kNumParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kNumParams = Impl::kNumParams</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62e0a012f1406ba518a7e3b0b68dc02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e0a012f1406ba518a7e3b0b68dc02f">&#9670;&nbsp;</a></span>kPointDim</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::kPointDim = Impl::kPointDim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a456a834c4701570847cadf106fd0fe10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456a834c4701570847cadf106fd0fe10">&#9670;&nbsp;</a></span>params_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; class &gt; class TGenericDerived, class TScalar , template&lt; class &gt; class TGenericImpl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Params</a> <a class="el" href="classsophus_1_1lie_1_1_group.html">sophus::lie::Group</a>&lt; TGenericDerived, TScalar, TGenericImpl &gt;::params_</td>
         </tr>
       </table>
   </td>
@@ -1234,7 +1862,7 @@ template&lt;class TDerived , class TImpl &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/lie/<a class="el" href="lie_2lie__group_8h_source.html">lie_group.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/lie/<a class="el" href="lie_2lie__group_8h_source.html">lie_group.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

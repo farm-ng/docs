@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/farm-ng-core/cpp/farm_ng/core/prototools/proto_reader_writer.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/farm_ng/core/prototools/proto_reader_writer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -119,54 +119,55 @@ $(document).ready(function(){initNavTree('proto__reader__writer_8h_source.html',
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Expected&lt;Success&gt; <a class="code" href="namespacefarm__ng.html#a043cfeb3f6beaee1bf4be162a6b4da4b">writeProtobufToJsonFile</a>(</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::filesystem::path <span class="keyword">const</span>&amp; path, google::protobuf::Message <span class="keyword">const</span>&amp; proto);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;Expected&lt;Success&gt; <a class="code" href="namespacefarm__ng.html#a3439dc1e321cc8caf66764c2ebc38d75">writeProtobufToBinaryFile</a>(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;Expected&lt;Success&gt; <a class="code" href="namespacefarm__ng.html#ab507e00064c5935c80b93999d314b574">writeProtobufToBinaryFile</a>(</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::filesystem::path <span class="keyword">const</span>&amp; path, google::protobuf::Message <span class="keyword">const</span>&amp; proto);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Expected&lt;std::string&gt; <a class="code" href="namespacefarm__ng.html#aa36d715e802aa3da18a1fcb6f016134d">readJsonStringFromJsonFile</a>(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;Expected&lt;std::string&gt; <a class="code" href="namespacefarm__ng.html#a41f0fd25d199d184e97f45684ac6f388">readJsonStringFromJsonFile</a>(</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::filesystem::path <span class="keyword">const</span>&amp; path);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ProtobufT&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacefarm__ng.html#a8420276b238c50492ac84dec459a3a60">   40</a></span>&#160;<a class="code" href="namespacefarm__ng.html#a048d5e416c9003f203d6f76cc806dabb">Expected&lt;ProtobufT&gt;</a> <a class="code" href="namespacefarm__ng.html#a8420276b238c50492ac84dec459a3a60">readProtobufFromJsonFile</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TProtobufT&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacefarm__ng.html#a781444aaaef0adff2e69b9dcae1472a1">   40</a></span>&#160;<a class="code" href="namespacefarm__ng.html#a048d5e416c9003f203d6f76cc806dabb">Expected&lt;TProtobufT&gt;</a> <a class="code" href="namespacefarm__ng.html#a781444aaaef0adff2e69b9dcae1472a1">readProtobufFromJsonFile</a>(</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::filesystem::path <span class="keyword">const</span>&amp; path) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="expected_8h.html#a88b31487567475f37fff049489ea00a4">FARM_TRY</a>(std::string json_string, <a class="code" href="namespacefarm__ng.html#aa36d715e802aa3da18a1fcb6f016134d">readJsonStringFromJsonFile</a>(path));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ProtobufT message;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="expected_8h.html#a3de9c3c5140c76b3001ef79111f7944d">FARM_TRY</a>(std::string, json_string, <a class="code" href="namespacefarm__ng.html#a41f0fd25d199d184e97f45684ac6f388">readJsonStringFromJsonFile</a>(path));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  TProtobufT <a class="code" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  google::protobuf::util::JsonParseOptions parse_options;  <span class="comment">// default</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">auto</span> status = google::protobuf::util::JsonStringToMessage(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      json_string, &amp;message, parse_options);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      json_string, &amp;<a class="code" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, parse_options);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (!status.ok()) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="expected_8h.html#a6dee105e19978afe3959a85843ed9575">FARM_UNEXPECTED</a>(<span class="stringliteral">&quot;Failed to parse json string: {}&quot;</span>, status);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> message;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;Expected&lt;std::string&gt; <a class="code" href="namespacefarm__ng.html#ad83c25add45b3e8ec585a17685a41598">readBytesFromBinaryFile</a>(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;Expected&lt;std::string&gt; <a class="code" href="namespacefarm__ng.html#a27dbbb4bddd9b5f49232f1cb10c89b97">readBytesFromBinaryFile</a>(</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::filesystem::path <span class="keyword">const</span>&amp; path);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> ProtobufT&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacefarm__ng.html#ad507c88d93bfc8879295d728b6d9b632">   57</a></span>&#160;<a class="code" href="namespacefarm__ng.html#a048d5e416c9003f203d6f76cc806dabb">Expected&lt;ProtobufT&gt;</a> <a class="code" href="namespacefarm__ng.html#ad507c88d93bfc8879295d728b6d9b632">readProtobufFromBinaryFile</a>(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TProtobufT&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacefarm__ng.html#a8443bf34cdc601096af1502365f2dad1">   57</a></span>&#160;<a class="code" href="namespacefarm__ng.html#a048d5e416c9003f203d6f76cc806dabb">Expected&lt;TProtobufT&gt;</a> <a class="code" href="namespacefarm__ng.html#a8443bf34cdc601096af1502365f2dad1">readProtobufFromBinaryFile</a>(</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::filesystem::path <span class="keyword">const</span>&amp; path) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ProtobufT message;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="expected_8h.html#a88b31487567475f37fff049489ea00a4">FARM_TRY</a>(std::string bytes, <a class="code" href="namespacefarm__ng.html#ad83c25add45b3e8ec585a17685a41598">readBytesFromBinaryFile</a>(path));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (message.ParseFromString(bytes)) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  TProtobufT <a class="code" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="expected_8h.html#a3de9c3c5140c76b3001ef79111f7944d">FARM_TRY</a>(std::string, bytes, <a class="code" href="namespacefarm__ng.html#a27dbbb4bddd9b5f49232f1cb10c89b97">readBytesFromBinaryFile</a>(path));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>.ParseFromString(bytes)) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="expected_8h.html#a6dee105e19978afe3959a85843ed9575">FARM_UNEXPECTED</a>(<span class="stringliteral">&quot;Failed to parse {}&quot;</span>, path.string());</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> message;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace farm_ng</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefarm__ng_html_a043cfeb3f6beaee1bf4be162a6b4da4b"><div class="ttname"><a href="namespacefarm__ng.html#a043cfeb3f6beaee1bf4be162a6b4da4b">farm_ng::writeProtobufToJsonFile</a></div><div class="ttdeci">Expected&lt; farm_ng::Success &gt; writeProtobufToJsonFile(std::filesystem::path const &amp;path, google::protobuf::Message const &amp;proto)</div><div class="ttdoc">TODO: Add API docs.</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:19</div></div>
-<div class="ttc" id="anamespacefarm__ng_html"><div class="ttname"><a href="namespacefarm__ng.html">farm_ng</a></div><div class="ttdef"><b>Definition:</b> backtrace.cpp:99</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_a043cfeb3f6beaee1bf4be162a6b4da4b"><div class="ttname"><a href="namespacefarm__ng.html#a043cfeb3f6beaee1bf4be162a6b4da4b">farm_ng::writeProtobufToJsonFile</a></div><div class="ttdeci">auto writeProtobufToJsonFile(std::filesystem::path const &amp;path, google::protobuf::Message const &amp;proto) -&gt; Expected&lt; farm_ng::Success &gt;</div><div class="ttdoc">TODO: Add API docs.</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:19</div></div>
+<div class="ttc" id="anamespacefarm__ng_html"><div class="ttname"><a href="namespacefarm__ng.html">farm_ng</a></div><div class="ttdef"><b>Definition:</b> backtrace.cpp:102</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_a8443bf34cdc601096af1502365f2dad1"><div class="ttname"><a href="namespacefarm__ng.html#a8443bf34cdc601096af1502365f2dad1">farm_ng::readProtobufFromBinaryFile</a></div><div class="ttdeci">Expected&lt; TProtobufT &gt; readProtobufFromBinaryFile(std::filesystem::path const &amp;path)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.h:57</div></div>
+<div class="ttc" id="aexpected_8h_html_a3de9c3c5140c76b3001ef79111f7944d"><div class="ttname"><a href="expected_8h.html#a3de9c3c5140c76b3001ef79111f7944d">FARM_TRY</a></div><div class="ttdeci">#define FARM_TRY(Type, var, expression)</div><div class="ttdoc">Assigns *expression to var of Type, but returns error if there is one.</div><div class="ttdef"><b>Definition:</b> expected.h:91</div></div>
 <div class="ttc" id="alogger_8h_html"><div class="ttname"><a href="logger_8h.html">logger.h</a></div></div>
-<div class="ttc" id="anamespacefarm__ng_html_aa36d715e802aa3da18a1fcb6f016134d"><div class="ttname"><a href="namespacefarm__ng.html#aa36d715e802aa3da18a1fcb6f016134d">farm_ng::readJsonStringFromJsonFile</a></div><div class="ttdeci">Expected&lt; std::string &gt; readJsonStringFromJsonFile(std::filesystem::path const &amp;path)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:54</div></div>
-<div class="ttc" id="anamespacefarm__ng_html_a3439dc1e321cc8caf66764c2ebc38d75"><div class="ttname"><a href="namespacefarm__ng.html#a3439dc1e321cc8caf66764c2ebc38d75">farm_ng::writeProtobufToBinaryFile</a></div><div class="ttdeci">Expected&lt; Success &gt; writeProtobufToBinaryFile(std::filesystem::path const &amp;path, google::protobuf::Message const &amp;proto)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:38</div></div>
 <div class="ttc" id="aexpected_8h_html"><div class="ttname"><a href="expected_8h.html">expected.h</a></div></div>
-<div class="ttc" id="anamespacefarm__ng_html_ad507c88d93bfc8879295d728b6d9b632"><div class="ttname"><a href="namespacefarm__ng.html#ad507c88d93bfc8879295d728b6d9b632">farm_ng::readProtobufFromBinaryFile</a></div><div class="ttdeci">Expected&lt; ProtobufT &gt; readProtobufFromBinaryFile(std::filesystem::path const &amp;path)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.h:57</div></div>
-<div class="ttc" id="anamespacefarm__ng_html_ad83c25add45b3e8ec585a17685a41598"><div class="ttname"><a href="namespacefarm__ng.html#ad83c25add45b3e8ec585a17685a41598">farm_ng::readBytesFromBinaryFile</a></div><div class="ttdeci">Expected&lt; std::string &gt; readBytesFromBinaryFile(std::filesystem::path const &amp;path)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:71</div></div>
-<div class="ttc" id="aexpected_8h_html_a6dee105e19978afe3959a85843ed9575"><div class="ttname"><a href="expected_8h.html#a6dee105e19978afe3959a85843ed9575">FARM_UNEXPECTED</a></div><div class="ttdeci">#define FARM_UNEXPECTED(cstr,...)</div><div class="ttdef"><b>Definition:</b> expected.h:74</div></div>
-<div class="ttc" id="aexpected_8h_html_a88b31487567475f37fff049489ea00a4"><div class="ttname"><a href="expected_8h.html#a88b31487567475f37fff049489ea00a4">FARM_TRY</a></div><div class="ttdeci">#define FARM_TRY(Type_val, expected_val)</div><div class="ttdoc">Assigns *expected_val to Type_val, but returns error if there is one.</div><div class="ttdef"><b>Definition:</b> expected.h:78</div></div>
-<div class="ttc" id="anamespacefarm__ng_html_a8420276b238c50492ac84dec459a3a60"><div class="ttname"><a href="namespacefarm__ng.html#a8420276b238c50492ac84dec459a3a60">farm_ng::readProtobufFromJsonFile</a></div><div class="ttdeci">Expected&lt; ProtobufT &gt; readProtobufFromJsonFile(std::filesystem::path const &amp;path)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.h:40</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_a41f0fd25d199d184e97f45684ac6f388"><div class="ttname"><a href="namespacefarm__ng.html#a41f0fd25d199d184e97f45684ac6f388">farm_ng::readJsonStringFromJsonFile</a></div><div class="ttdeci">auto readJsonStringFromJsonFile(std::filesystem::path const &amp;path) -&gt; Expected&lt; std::string &gt;</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:56</div></div>
+<div class="ttc" id="asophus_2_c_make_lists_8txt_html_a0a336f4f09eebacd3c1416cb0015f58f"><div class="ttname"><a href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a></div><div class="ttdeci">cmake message(&quot;farm_ng_cmake_DIR&quot; ${farm_ng_cmake_DIR}) include($</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:8</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_a27dbbb4bddd9b5f49232f1cb10c89b97"><div class="ttname"><a href="namespacefarm__ng.html#a27dbbb4bddd9b5f49232f1cb10c89b97">farm_ng::readBytesFromBinaryFile</a></div><div class="ttdeci">auto readBytesFromBinaryFile(std::filesystem::path const &amp;path) -&gt; Expected&lt; std::string &gt;</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:73</div></div>
+<div class="ttc" id="aexpected_8h_html_a6dee105e19978afe3959a85843ed9575"><div class="ttname"><a href="expected_8h.html#a6dee105e19978afe3959a85843ed9575">FARM_UNEXPECTED</a></div><div class="ttdeci">#define FARM_UNEXPECTED(cstr,...)</div><div class="ttdef"><b>Definition:</b> expected.h:86</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_ab507e00064c5935c80b93999d314b574"><div class="ttname"><a href="namespacefarm__ng.html#ab507e00064c5935c80b93999d314b574">farm_ng::writeProtobufToBinaryFile</a></div><div class="ttdeci">auto writeProtobufToBinaryFile(std::filesystem::path const &amp;path, google::protobuf::Message const &amp;proto) -&gt; Expected&lt; Success &gt;</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.cpp:39</div></div>
+<div class="ttc" id="anamespacefarm__ng_html_a781444aaaef0adff2e69b9dcae1472a1"><div class="ttname"><a href="namespacefarm__ng.html#a781444aaaef0adff2e69b9dcae1472a1">farm_ng::readProtobufFromJsonFile</a></div><div class="ttdeci">Expected&lt; TProtobufT &gt; readProtobufFromJsonFile(std::filesystem::path const &amp;path)</div><div class="ttdef"><b>Definition:</b> proto_reader_writer.h:40</div></div>
 <div class="ttc" id="anamespacefarm__ng_html_a048d5e416c9003f203d6f76cc806dabb"><div class="ttname"><a href="namespacefarm__ng.html#a048d5e416c9003f203d6f76cc806dabb">farm_ng::Expected</a></div><div class="ttdeci">tl::expected&lt; TT, TE &gt; Expected</div><div class="ttdef"><b>Definition:</b> expected.h:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

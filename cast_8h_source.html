@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/linalg/cast.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/linalg/cast.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -136,79 +136,53 @@ $(document).ready(function(){initNavTree('cast_8h_source.html',''); initResizabl
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// template &lt;class TT&gt;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// class Cast&lt;sophus::Rotation3&lt;TT&gt;&gt; {</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//  public:</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//   template &lt;class TTo&gt;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//   static auto impl(sophus::Rotation3&lt;TT&gt; const&amp; v) {</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//     return v.template cast&lt;typename TTo::Scalar&gt;();</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//   }</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//   template &lt;class TTo&gt;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//   static auto implScalar(sophus::Rotation3&lt;TT&gt; const&amp; v) {</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//     return v.template cast&lt;TTo&gt;();</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//   }</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// };</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// template &lt;class TT&gt;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// class Cast&lt;sophus::Isometry3&lt;TT&gt;&gt; {</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//  public:</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//   template &lt;class TTo&gt;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//   static auto impl(sophus::Isometry3&lt;TT&gt; const&amp; v) {</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//     return v.template cast&lt;typename TTo::Scalar&gt;();</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//   }</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//   template &lt;class TTo&gt;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//   static auto implScalar(sophus::Isometry3&lt;TT&gt; const&amp; v) {</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//     return v.template cast&lt;TTo&gt;();</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//   }</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// };</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">class </span>Cast&lt;std::vector&lt;TT&gt;&gt; {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TTo&gt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl(std::vector&lt;TT&gt; <span class="keyword">const</span>&amp; v) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">using</span> ToEl = std::decay_t&lt;decltype(*std::declval&lt;TTo&gt;().data())&gt;;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::vector&lt;ToEl&gt; r;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    r.reserve(v.size());</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; el : v) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      r.push_back(Cast&lt;TT&gt;::template impl&lt;ToEl&gt;(el));</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> r;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TTo&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> implScalar(std::vector&lt;TT&gt; <span class="keyword">const</span>&amp; v) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">using</span> ToEl = decltype(Cast&lt;TT&gt;::template implScalar&lt;TTo&gt;(v[0]));</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;ToEl&gt; r;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    r.reserve(v.size());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; el : v) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      r.push_back(Cast&lt;TT&gt;::template impl&lt;ToEl&gt;(el));</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> r;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}  <span class="comment">// namespace details</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TTo, <span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">  104</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">cast</a>(<span class="keyword">const</span> TT&amp; p) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> details::Cast&lt;TT&gt;::template impl&lt;TTo&gt;(p);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span> &lt;::sophus::concepts::Arithmetic TTo, <span class="keyword">class</span> TT&gt;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">cast</a>(<span class="keyword">const</span> TT&amp; p) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">return</span> details::Cast&lt;TT&gt;::template implScalar&lt;TTo&gt;(p);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">class </span>Cast&lt;std::vector&lt;TT&gt;&gt; {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TTo&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> impl(std::vector&lt;TT&gt; <span class="keyword">const</span>&amp; v) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">using</span> ToEl = std::decay_t&lt;decltype(*std::declval&lt;TTo&gt;().data())&gt;;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::vector&lt;ToEl&gt; r;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    r.reserve(v.size());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; el : v) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      r.push_back(Cast&lt;TT&gt;::template impl&lt;ToEl&gt;(el));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TTo&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> implScalar(std::vector&lt;TT&gt; <span class="keyword">const</span>&amp; v) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> ToEl = decltype(Cast&lt;TT&gt;::template implScalar&lt;TTo&gt;(v[0]));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::vector&lt;ToEl&gt; r;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    r.reserve(v.size());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; el : v) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      r.push_back(Cast&lt;TT&gt;::template impl&lt;ToEl&gt;(el));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace details</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> TTo, <span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">   78</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">cast</a>(<span class="keyword">const</span> TT&amp; p) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> details::Cast&lt;TT&gt;::template impl&lt;TTo&gt;(p);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span> &lt;::sophus::concepts::Arithmetic TTo, <span class="keyword">class</span> TT&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">cast</a>(<span class="keyword">const</span> TT&amp; p) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> details::Cast&lt;TT&gt;::template implScalar&lt;TTo&gt;(p);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
-<div class="ttc" id="anamespacesophus_html_ad56eb612b134682ccceda45b5da03d52"><div class="ttname"><a href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">sophus::cast</a></div><div class="ttdeci">auto cast(const TT &amp;p)</div><div class="ttdef"><b>Definition:</b> cast.h:104</div></div>
+<div class="ttc" id="anamespacesophus_html_ad56eb612b134682ccceda45b5da03d52"><div class="ttname"><a href="namespacesophus.html#ad56eb612b134682ccceda45b5da03d52">sophus::cast</a></div><div class="ttdeci">auto cast(const TT &amp;p)</div><div class="ttdef"><b>Definition:</b> cast.h:78</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_14190a221035a199c1b3f43d25f038d0.html">linalg</a></li><li class="navelem"><a class="el" href="cast_8h.html">cast.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_bf05715ebcec5c79a263dc495975a1eb.html">linalg</a></li><li class="navelem"><a class="el" href="cast_8h.html">cast.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

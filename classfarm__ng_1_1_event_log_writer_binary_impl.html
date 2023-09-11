@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: farm_ng::EventLogWriterBinaryImpl Class Reference</title>
+<title>farm-ng-core: farm_ng::EventLogWriterBinaryImpl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -114,8 +114,11 @@ Collaboration diagram for farm_ng::EventLogWriterBinaryImpl:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d0ce1805affeed31bbe2b9137ae083e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_binary_impl.html#a3d0ce1805affeed31bbe2b9137ae083e">EventLogWriterBinaryImpl</a> (std::filesystem::path const &amp;<a class="el" href="classfarm__ng_1_1_event_log_writer_binary_impl.html#adafee27a279dbbce9cc59d226dcedef4">log_path</a>)</td></tr>
 <tr class="separator:a3d0ce1805affeed31bbe2b9137ae083e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3533ca1a2a3b12c33750ea8a526e5e19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_binary_impl.html#a3533ca1a2a3b12c33750ea8a526e5e19">write</a> (std::string path, google::protobuf::Message const &amp;message, google::protobuf::RepeatedPtrField&lt; core::proto::Timestamp &gt; const &amp;timestamps) override</td></tr>
+<tr class="memitem:a3533ca1a2a3b12c33750ea8a526e5e19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_binary_impl.html#a3533ca1a2a3b12c33750ea8a526e5e19">write</a> (std::string path, google::protobuf::Message const &amp;<a class="el" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, google::protobuf::RepeatedPtrField&lt; core::proto::Timestamp &gt; const &amp;timestamps) override</td></tr>
 <tr class="separator:a3533ca1a2a3b12c33750ea8a526e5e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb4e2b26cb45e5b2022f8c1dfd4df6b"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_binary_impl.html#affb4e2b26cb45e5b2022f8c1dfd4df6b">getBytesWritten</a> () override</td></tr>
+<tr class="memdesc:affb4e2b26cb45e5b2022f8c1dfd4df6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes written to the file so far.  <a href="classfarm__ng_1_1_event_log_writer_binary_impl.html#affb4e2b26cb45e5b2022f8c1dfd4df6b">More...</a><br /></td></tr>
+<tr class="separator:affb4e2b26cb45e5b2022f8c1dfd4df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfarm__ng_1_1_event_log_writer_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfarm__ng_1_1_event_log_writer_impl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html">farm_ng::EventLogWriterImpl</a></td></tr>
 <tr class="memitem:ad06db4d3799bbde1161e8fc3ec51f1db inherit pub_methods_classfarm__ng_1_1_event_log_writer_impl"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html#ad06db4d3799bbde1161e8fc3ec51f1db">~EventLogWriterImpl</a> ()</td></tr>
 <tr class="memdesc:ad06db4d3799bbde1161e8fc3ec51f1db inherit pub_methods_classfarm__ng_1_1_event_log_writer_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-dtor">https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rh-dtor</a>  <a href="classfarm__ng_1_1_event_log_writer_impl.html#ad06db4d3799bbde1161e8fc3ec51f1db">More...</a><br /></td></tr>
@@ -156,6 +159,35 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="affb4e2b26cb45e5b2022f8c1dfd4df6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb4e2b26cb45e5b2022f8c1dfd4df6b">&#9670;&nbsp;</a></span>getBytesWritten()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t farm_ng::EventLogWriterBinaryImpl::getBytesWritten </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of bytes written to the file so far. </p>
+
+<p>Implements <a class="el" href="classfarm__ng_1_1_event_log_writer_impl.html#a5330ed640c7743c7ae9dcc3ef5280fa3">farm_ng::EventLogWriterImpl</a>.</p>
+
+</div>
+</div>
 <a id="a3533ca1a2a3b12c33750ea8a526e5e19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3533ca1a2a3b12c33750ea8a526e5e19">&#9670;&nbsp;</a></span>write()</h2>
 

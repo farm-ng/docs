@@ -1,52 +1,52 @@
-<map id="projects/Sophus/cpp/sophus/lie/interp/average.h" name="projects/Sophus/cpp/sophus/lie/interp/average.h">
-<area shape="rect" id="node1" title=" " alt="" coords="1158,5,1360,47"/>
-<area shape="rect" id="node2" href="$isometry2_8h.html" title=" " alt="" coords="496,169,667,196"/>
-<area shape="rect" id="node32" href="$rotation2_8h.html" title=" " alt="" coords="454,244,616,271"/>
-<area shape="rect" id="node35" href="$isometry3_8h.html" title=" " alt="" coords="1211,169,1382,196"/>
-<area shape="rect" id="node38" href="$rotation3_8h.html" title=" " alt="" coords="1198,244,1360,271"/>
-<area shape="rect" id="node39" href="$scaling_8h.html" title=" " alt="" coords="1786,244,1937,271"/>
-<area shape="rect" id="node41" href="$similarity2_8h.html" title=" " alt="" coords="764,95,938,121"/>
-<area shape="rect" id="node44" href="$spiral__similarity2_8h.html" title=" " alt="" coords="742,169,960,196"/>
-<area shape="rect" id="node45" href="$similarity3_8h.html" title=" " alt="" coords="1297,95,1472,121"/>
-<area shape="rect" id="node47" href="$spiral__similarity3_8h.html" title=" " alt="" coords="1457,169,1674,196"/>
-<area shape="rect" id="node48" href="$translation_8h.html" title=" " alt="" coords="1588,244,1762,271"/>
-<area shape="rect" id="node50" title=" " alt="" coords="1884,95,1962,121"/>
-<area shape="rect" id="node3" href="$group__accessors_8h.html" title=" " alt="" coords="1194,319,1364,360"/>
-<area shape="rect" id="node18" href="$impl_2rotation2_8h.html" title=" " alt="" coords="626,415,822,442"/>
-<area shape="rect" id="node29" href="$semi__direct__product_8h.html" title=" " alt="" coords="444,408,602,449"/>
-<area shape="rect" id="node31" href="$lie_2lie__group_8h.html" title=" " alt="" coords="990,326,1154,353"/>
-<area shape="rect" id="node4" href="$concepts_2lie__group_8h.html" title=" " alt="" coords="1085,497,1236,539"/>
-<area shape="rect" id="node5" href="$params_8h.html" title=" " alt="" coords="1038,683,1232,710"/>
-<area shape="rect" id="node6" href="$common_8h.html" title=" " alt="" coords="887,765,1090,792"/>
-<area shape="rect" id="node7" title=" " alt="" coords="441,937,533,963"/>
-<area shape="rect" id="node8" title=" " alt="" coords="934,847,1061,874"/>
-<area shape="rect" id="node9" href="$eigen_8h.html" title=" " alt="" coords="1086,840,1246,881"/>
-<area shape="rect" id="node10" href="$logger_8h.html" title=" " alt="" coords="1111,929,1271,971"/>
-<area shape="rect" id="node11" href="$format_8h.html" title=" " alt="" coords="1195,1019,1355,1060"/>
-<area shape="rect" id="node12" href="$expected_8h.html" title=" " alt="" coords="575,840,735,881"/>
-<area shape="rect" id="node14" href="$variant__utils_8h.html" title=" " alt="" coords="1372,840,1565,881"/>
-<area shape="rect" id="node15" title=" " alt="" coords="1589,847,1652,874"/>
-<area shape="rect" id="node16" title=" " alt="" coords="759,847,820,874"/>
-<area shape="rect" id="node17" title=" " alt="" coords="845,847,910,874"/>
-<area shape="rect" id="node13" title=" " alt="" coords="206,937,269,963"/>
-<area shape="rect" id="node19" href="$complex_8h.html" title=" " alt="" coords="754,505,934,531"/>
-<area shape="rect" id="node26" href="$unit__vector_8h.html" title=" " alt="" coords="1292,497,1429,539"/>
-<area shape="rect" id="node20" href="$division__ring_8h.html" title=" " alt="" coords="1289,587,1474,628"/>
-<area shape="rect" id="node21" href="$vector__space_8h.html" title=" " alt="" coords="202,676,356,717"/>
-<area shape="rect" id="node22" href="$cast_8h.html" title=" " alt="" coords="32,765,182,792"/>
-<area shape="rect" id="node23" title=" " alt="" coords="178,847,263,874"/>
-<area shape="rect" id="node24" title=" " alt="" coords="288,847,348,874"/>
-<area shape="rect" id="node25" href="$reduce_8h.html" title=" " alt="" coords="308,765,476,792"/>
-<area shape="rect" id="node27" href="$concepts_2manifold_8h.html" title=" " alt="" coords="1061,594,1265,621"/>
-<area shape="rect" id="node28" title=" " alt="" coords="504,594,606,621"/>
-<area shape="rect" id="node30" href="$homogeneous_8h.html" title=" " alt="" coords="614,683,830,710"/>
-<area shape="rect" id="node33" href="$orthogonal_8h.html" title=" " alt="" coords="32,326,227,353"/>
-<area shape="rect" id="node34" title=" " alt="" coords="330,415,420,442"/>
-<area shape="rect" id="node36" href="$impl_2rotation3_8h.html" title=" " alt="" coords="1741,415,1937,442"/>
-<area shape="rect" id="node37" href="$quaternion_8h.html" title=" " alt="" coords="1516,505,1711,531"/>
-<area shape="rect" id="node40" href="$impl_2scaling_8h.html" title=" " alt="" coords="1534,415,1717,442"/>
-<area shape="rect" id="node42" href="$impl_2spiral__similarity2_8h.html" title=" " alt="" coords="805,319,966,360"/>
-<area shape="rect" id="node43" href="$sim__mat__w_8h.html" title=" " alt="" coords="898,408,1047,449"/>
-<area shape="rect" id="node46" href="$impl_2spiral__similarity3_8h.html" title=" " alt="" coords="1945,319,2106,360"/>
-<area shape="rect" id="node49" href="$impl_2identity_8h.html" title=" " alt="" coords="1325,415,1510,442"/>
+<map id="projects/farm&#45;ng&#45;core/cpp/sophus/lie/interp/average.h" name="projects/farm&#45;ng&#45;core/cpp/sophus/lie/interp/average.h">
+<area shape="rect" id="node1" title=" " alt="" coords="874,5,1036,61"/>
+<area shape="rect" id="node2" href="$isometry2_8h.html" title=" " alt="" coords="740,184,911,211"/>
+<area shape="rect" id="node31" href="$rotation2_8h.html" title=" " alt="" coords="628,266,791,293"/>
+<area shape="rect" id="node34" href="$isometry3_8h.html" title=" " alt="" coords="1399,184,1570,211"/>
+<area shape="rect" id="node37" href="$rotation3_8h.html" title=" " alt="" coords="1623,266,1786,293"/>
+<area shape="rect" id="node38" href="$scaling_8h.html" title=" " alt="" coords="250,266,401,293"/>
+<area shape="rect" id="node40" href="$scaling__translation_8h.html" title=" " alt="" coords="36,259,175,300"/>
+<area shape="rect" id="node41" href="$similarity2_8h.html" title=" " alt="" coords="490,109,665,136"/>
+<area shape="rect" id="node44" href="$spiral__similarity2_8h.html" title=" " alt="" coords="336,184,553,211"/>
+<area shape="rect" id="node45" href="$similarity3_8h.html" title=" " alt="" coords="1256,109,1430,136"/>
+<area shape="rect" id="node47" href="$spiral__similarity3_8h.html" title=" " alt="" coords="1088,184,1305,211"/>
+<area shape="rect" id="node48" href="$translation_8h.html" title=" " alt="" coords="1272,266,1446,293"/>
+<area shape="rect" id="node50" title=" " alt="" coords="1801,109,1880,136"/>
+<area shape="rect" id="node3" href="$group__accessors_8h.html" title=" " alt="" coords="612,348,783,389"/>
+<area shape="rect" id="node16" href="$impl_2rotation2_8h.html" title=" " alt="" coords="462,445,658,471"/>
+<area shape="rect" id="node27" href="$translation__factor__group__product_8h.html" title=" " alt="" coords="1096,437,1291,479"/>
+<area shape="rect" id="node29" href="$lie_2lie__group_8h.html" title=" " alt="" coords="808,355,972,382"/>
+<area shape="rect" id="node4" href="$concepts_2lie__group_8h.html" title=" " alt="" coords="686,527,837,568"/>
+<area shape="rect" id="node5" href="$params_8h.html" title=" " alt="" coords="735,713,930,739"/>
+<area shape="rect" id="node6" href="$common_8h.html" title=" " alt="" coords="919,795,1122,821"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1365,966,1457,993"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1012,877,1138,903"/>
+<area shape="rect" id="node9" href="$eigen_8h.html" title=" " alt="" coords="558,869,718,911"/>
+<area shape="rect" id="node10" href="$logger_8h.html" title=" " alt="" coords="558,959,718,1000"/>
+<area shape="rect" id="node12" href="$format_8h.html" title=" " alt="" coords="710,1048,870,1089"/>
+<area shape="rect" id="node13" href="$expected_8h.html" title=" " alt="" coords="1163,869,1323,911"/>
+<area shape="rect" id="node15" href="$variant__utils_8h.html" title=" " alt="" coords="742,869,936,911"/>
+<area shape="rect" id="node11" href="$farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="376,1055,579,1082"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1636,966,1698,993"/>
+<area shape="rect" id="node17" href="$complex_8h.html" title=" " alt="" coords="459,534,662,561"/>
+<area shape="rect" id="node24" href="$unit__vector_8h.html" title=" " alt="" coords="972,527,1130,568"/>
+<area shape="rect" id="node18" href="$division__ring_8h.html" title=" " alt="" coords="538,616,724,657"/>
+<area shape="rect" id="node19" href="$vector__space_8h.html" title=" " alt="" coords="1600,705,1753,747"/>
+<area shape="rect" id="node20" href="$cast_8h.html" title=" " alt="" coords="1338,795,1489,821"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1584,877,1670,903"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1500,877,1560,903"/>
+<area shape="rect" id="node23" href="$reduce_8h.html" title=" " alt="" coords="1615,795,1783,821"/>
+<area shape="rect" id="node25" href="$concepts_2manifold_8h.html" title=" " alt="" coords="800,623,1004,650"/>
+<area shape="rect" id="node26" title=" " alt="" coords="1130,623,1233,650"/>
+<area shape="rect" id="node28" href="$homogeneous_8h.html" title=" " alt="" coords="1258,623,1474,650"/>
+<area shape="rect" id="node30" href="$sophus_2common_2enum_8h.html" title=" " alt="" coords="201,713,384,739"/>
+<area shape="rect" id="node32" href="$orthogonal_8h.html" title=" " alt="" coords="1451,355,1646,382"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1316,445,1405,471"/>
+<area shape="rect" id="node35" href="$impl_2rotation3_8h.html" title=" " alt="" coords="1732,445,1928,471"/>
+<area shape="rect" id="node36" href="$quaternion_8h.html" title=" " alt="" coords="1632,534,1848,561"/>
+<area shape="rect" id="node39" href="$impl_2scaling_8h.html" title=" " alt="" coords="202,355,385,382"/>
+<area shape="rect" id="node42" href="$impl_2spiral__similarity2_8h.html" title=" " alt="" coords="17,348,178,389"/>
+<area shape="rect" id="node43" href="$sim__mat__w_8h.html" title=" " alt="" coords="238,437,387,479"/>
+<area shape="rect" id="node46" href="$impl_2spiral__similarity3_8h.html" title=" " alt="" coords="1670,348,1832,389"/>
+<area shape="rect" id="node49" href="$impl_2identity_8h.html" title=" " alt="" coords="836,445,1021,471"/>
 </map>

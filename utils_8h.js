@@ -6,5 +6,6 @@ var utils_8h =
     [ "DerivedFrom", "utils_8h.html#a85d9d9c13c5574d710bd9505cc4688f8", null ],
     [ "EnumType", "utils_8h.html#a61fd7e9ba5453903c1460060b6fd37dd", null ],
     [ "IsBaseOf", "utils_8h.html#ad1ce4a8367d5ed177613bdbbf26c70a0", null ],
+    [ "Range", "utils_8h.html#afad436533a1ee7ad7cf99d1182765e97", null ],
     [ "SameAs", "utils_8h.html#a9740680692b623441f4b04abb6a7d7e2", null ]
 ];

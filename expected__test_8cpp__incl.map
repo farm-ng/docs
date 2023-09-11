@@ -1,23 +1,24 @@
 <map id="projects/farm&#45;ng&#45;core/cpp/farm_ng/core/logging/expected_test.cpp" name="projects/farm&#45;ng&#45;core/cpp/farm_ng/core/logging/expected_test.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="2692,5,2883,61"/>
-<area shape="rect" id="node2" href="$expected_8h.html" title=" " alt="" coords="2649,109,2809,151"/>
-<area shape="rect" id="node3" href="$logger_8h.html" title=" " alt="" coords="2321,199,2481,240"/>
-<area shape="rect" id="node35" title=" " alt="" coords="2851,206,2926,233"/>
-<area shape="rect" id="node37" title=" " alt="" coords="2883,117,2987,143"/>
-<area shape="rect" id="node18" title=" " alt="" coords="2477,563,2535,590"/>
-<area shape="rect" id="node29" title=" " alt="" coords="2695,385,2775,411"/>
-<area shape="rect" id="node34" title=" " alt="" coords="2515,206,2638,233"/>
-<area shape="rect" id="node36" title=" " alt="" coords="2663,206,2725,233"/>
-<area shape="rect" id="node4" href="$farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1493,295,1695,322"/>
-<area shape="rect" id="node22" href="$format_8h.html" title=" " alt="" coords="1935,288,2095,329"/>
-<area shape="rect" id="node30" title=" " alt="" coords="2120,288,2284,329"/>
-<area shape="rect" id="node31" title=" " alt="" coords="2308,288,2472,329"/>
-<area shape="rect" id="node32" title=" " alt="" coords="2497,295,2587,322"/>
-<area shape="rect" id="node33" title=" " alt="" coords="2611,295,2726,322"/>
-<area shape="rect" id="node5" href="$enum__without__iostream_8h.html" title=" " alt="" coords="1255,377,1445,419"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2668,5,2859,61"/>
+<area shape="rect" id="node2" href="$expected_8h.html" title=" " alt="" coords="2625,109,2785,151"/>
+<area shape="rect" id="node3" href="$logger_8h.html" title=" " alt="" coords="2307,199,2467,240"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2827,206,2902,233"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2859,117,2963,143"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2465,563,2523,590"/>
+<area shape="rect" id="node29" title=" " alt="" coords="2673,385,2753,411"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2491,206,2614,233"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2639,206,2701,233"/>
+<area shape="rect" id="node4" href="$farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1542,295,1745,322"/>
+<area shape="rect" id="node22" href="$format_8h.html" title=" " alt="" coords="1946,288,2106,329"/>
+<area shape="rect" id="node30" title=" " alt="" coords="2131,288,2295,329"/>
+<area shape="rect" id="node31" title=" " alt="" coords="2319,288,2483,329"/>
+<area shape="rect" id="node32" title=" " alt="" coords="2507,295,2574,322"/>
+<area shape="rect" id="node33" title=" " alt="" coords="2598,295,2689,322"/>
+<area shape="rect" id="node34" title=" " alt="" coords="1403,295,1518,322"/>
+<area shape="rect" id="node5" href="$enum__without__iostream_8h.html" title=" " alt="" coords="1215,377,1405,419"/>
 <area shape="rect" id="node20" title=" " alt="" coords="1509,385,1581,411"/>
 <area shape="rect" id="node21" title=" " alt="" coords="1605,385,1681,411"/>
-<area shape="rect" id="node6" href="$enum__details_8h.html" title=" " alt="" coords="1101,467,1284,508"/>
+<area shape="rect" id="node6" href="$enum__details_8h.html" title=" " alt="" coords="1061,467,1244,508"/>
 <area shape="rect" id="node7" title=" " alt="" coords="1785,556,1955,597"/>
 <area shape="rect" id="node8" title=" " alt="" coords="1980,556,2144,597"/>
 <area shape="rect" id="node9" title=" " alt="" coords="396,556,632,597"/>
@@ -30,10 +31,10 @@
 <area shape="rect" id="node16" title=" " alt="" coords="5,556,169,597"/>
 <area shape="rect" id="node17" title=" " alt="" coords="194,563,250,590"/>
 <area shape="rect" id="node19" title=" " alt="" coords="275,563,372,590"/>
-<area shape="rect" id="node23" href="$backtrace_8h.html" title=" " alt="" coords="1938,377,2098,419"/>
-<area shape="rect" id="node24" title=" " alt="" coords="2123,377,2287,419"/>
-<area shape="rect" id="node25" title=" " alt="" coords="2311,385,2400,411"/>
-<area shape="rect" id="node26" title=" " alt="" coords="2424,385,2529,411"/>
-<area shape="rect" id="node27" title=" " alt="" coords="2554,385,2669,411"/>
-<area shape="rect" id="node28" title=" " alt="" coords="1725,385,1812,411"/>
+<area shape="rect" id="node23" href="$backtrace_8h.html" title=" " alt="" coords="1918,377,2078,419"/>
+<area shape="rect" id="node24" title=" " alt="" coords="2103,377,2267,419"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2291,385,2380,411"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2404,385,2509,411"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2534,385,2649,411"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1705,385,1792,411"/>
 </map>

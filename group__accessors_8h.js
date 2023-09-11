@@ -24,6 +24,7 @@ var group__accessors_8h =
     [ "SpiralSimilarity3", "group__accessors_8h.html#a9b457f245a701e2dd71367076ba6226f", null ],
     [ "SpiralSimilarity3", "group__accessors_8h.html#a33709b189cd1dbc331a72d52918dd863", null ],
     [ "Translation", "group__accessors_8h.html#adf67576b6fe4e14fb4687996b6153abe", null ],
+    [ "Translation", "group__accessors_8h.html#a1cec000bc42aa1f2b5a6fffc86bf51f2", null ],
     [ "TxTy", "group__accessors_8h.html#ad69c932a1f75db1532789476f7794ee9", null ],
     [ "TxTyTz", "group__accessors_8h.html#a4d9ff59f7afef4c7ce022eab4278cf39", null ],
     [ "UnitComplex", "group__accessors_8h.html#a1209f2d2e6367627cb73625cf886364f", null ],

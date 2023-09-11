@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::QuaternionImpl&lt; TScalar &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::QuaternionImpl&lt; TScalar &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -99,6 +99,11 @@ $(document).ready(function(){initNavTree('classsophus_1_1_quaternion_impl.html',
 Public Types</h2></td></tr>
 <tr class="memitem:a4ee6ce7755270e2565b29075f9e69d20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a> = TScalar</td></tr>
 <tr class="separator:a4ee6ce7755270e2565b29075f9e69d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af732ca22974c33de33295d40a847752e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a> &gt;</td></tr>
+<tr class="separator:af732ca22974c33de33295d40a847752e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078ae9903350cdae4b25c91cd8b649b1"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a078ae9903350cdae4b25c91cd8b649b1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a078ae9903350cdae4b25c91cd8b649b1">ParamsReturn</a> = Eigen::Vector&lt; typename Eigen::ScalarBinaryOpTraits&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, TCompatibleScalar &gt;::ReturnType, 4 &gt;</td></tr>
+<tr class="separator:a078ae9903350cdae4b25c91cd8b649b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -106,16 +111,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa4c1551337f515264c644495dd2ed41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d81f54a00aa4f3b420f60bbf890ec5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a87d81f54a00aa4f3b420f60bbf890ec5">one</a> () -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt;</td></tr>
 <tr class="separator:a87d81f54a00aa4f3b420f60bbf890ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff2724cd0139c50e2beb4a676e7d42a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a7ff2724cd0139c50e2beb4a676e7d42a">areParamsValid</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a> &gt; const &amp;) -&gt; sophus::Expected&lt; Success &gt;</td></tr>
-<tr class="separator:a7ff2724cd0139c50e2beb4a676e7d42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2dda09d05f3025f281fc4514ecc152c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#aa2dda09d05f3025f281fc4514ecc152c">paramsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:aa2dda09d05f3025f281fc4514ecc152c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7494df5a16d47b1cae841475502ff5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a2e7494df5a16d47b1cae841475502ff5">invalidParamsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:a2e7494df5a16d47b1cae841475502ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39baf80f68c594aae069690b4b5e69d"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#af39baf80f68c594aae069690b4b5e69d">multiplication</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;lhs, Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;rhs) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt;</td></tr>
-<tr class="separator:af39baf80f68c594aae069690b4b5e69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c841268361c9ca7b13745d5b99d76be"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a3c841268361c9ca7b13745d5b99d76be">addition</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;a, Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;b) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt;</td></tr>
-<tr class="separator:a3c841268361c9ca7b13745d5b99d76be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c5f701481f31dc63c0d2c6506681b0"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a66c5f701481f31dc63c0d2c6506681b0">areParamsValid</a> (<a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a> const &amp;) -&gt; sophus::Expected&lt; Success &gt;</td></tr>
+<tr class="separator:a66c5f701481f31dc63c0d2c6506681b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69461c1328da944ff2de74729ff18a22"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a69461c1328da944ff2de74729ff18a22">paramsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a> &gt;</td></tr>
+<tr class="separator:a69461c1328da944ff2de74729ff18a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af648e822a3173979fce33674f034c129"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#af648e822a3173979fce33674f034c129">invalidParamsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a> &gt;</td></tr>
+<tr class="separator:af648e822a3173979fce33674f034c129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed5da2448993620d83ebbe3ec408247"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:afed5da2448993620d83ebbe3ec408247"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#afed5da2448993620d83ebbe3ec408247">multiplication</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;lhs, Eigen::Vector&lt; TCompatibleScalar, 4 &gt; const &amp;rhs) -&gt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a078ae9903350cdae4b25c91cd8b649b1">ParamsReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:afed5da2448993620d83ebbe3ec408247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51bd8a463188868d1e53aef83af6bfd"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:ac51bd8a463188868d1e53aef83af6bfd"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#ac51bd8a463188868d1e53aef83af6bfd">addition</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;a, Eigen::Vector&lt; TCompatibleScalar, 4 &gt; const &amp;b) -&gt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a078ae9903350cdae4b25c91cd8b649b1">ParamsReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:ac51bd8a463188868d1e53aef83af6bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae19c1b2f15878d73141d84e19d4f04e2"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#ae19c1b2f15878d73141d84e19d4f04e2">conjugate</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;a) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt;</td></tr>
 <tr class="separator:ae19c1b2f15878d73141d84e19d4f04e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cc95e44451467b4b7641e8463e9948e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_quaternion_impl.html#a6cc95e44451467b4b7641e8463e9948e">inverse</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;q) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt;</td></tr>
@@ -133,6 +140,40 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a1d0e2e10676440d1b24f04d3473aedbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af732ca22974c33de33295d40a847752e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af732ca22974c33de33295d40a847752e">&#9670;&nbsp;</a></span>Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_quaternion_impl.html">sophus::QuaternionImpl</a>&lt; TScalar &gt;::<a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a078ae9903350cdae4b25c91cd8b649b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078ae9903350cdae4b25c91cd8b649b1">&#9670;&nbsp;</a></span>ParamsReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar &gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_quaternion_impl.html">sophus::QuaternionImpl</a>&lt; TScalar &gt;::<a class="el" href="classsophus_1_1_quaternion_impl.html#a078ae9903350cdae4b25c91cd8b649b1">ParamsReturn</a> =  Eigen::Vector&lt; typename Eigen::ScalarBinaryOpTraits&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, TCompatibleScalar&gt;:: ReturnType, 4&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4ee6ce7755270e2565b29075f9e69d20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ee6ce7755270e2565b29075f9e69d20">&#9670;&nbsp;</a></span>Scalar</h2>
 
@@ -150,13 +191,15 @@ template&lt;class TScalar &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3c841268361c9ca7b13745d5b99d76be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c841268361c9ca7b13745d5b99d76be">&#9670;&nbsp;</a></span>addition()</h2>
+<a id="ac51bd8a463188868d1e53aef83af6bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51bd8a463188868d1e53aef83af6bfd">&#9670;&nbsp;</a></span>addition()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar &gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -170,13 +213,13 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Vector&lt; TCompatibleScalar, 4 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a078ae9903350cdae4b25c91cd8b649b1">ParamsReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -188,8 +231,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="a7ff2724cd0139c50e2beb4a676e7d42a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ff2724cd0139c50e2beb4a676e7d42a">&#9670;&nbsp;</a></span>areParamsValid()</h2>
+<a id="a66c5f701481f31dc63c0d2c6506681b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c5f701481f31dc63c0d2c6506681b0">&#9670;&nbsp;</a></span>areParamsValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +245,7 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1_quaternion_impl.html">sophus::QuaternionImpl</a>&lt; TScalar &gt;::areParamsValid </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a> const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt; sophus::Expected&lt;Success&gt; </td>
         </tr>
@@ -244,8 +287,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="a2e7494df5a16d47b1cae841475502ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e7494df5a16d47b1cae841475502ff5">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
+<a id="af648e822a3173979fce33674f034c129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af648e822a3173979fce33674f034c129">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +302,7 @@ template&lt;class TScalar &gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1_quaternion_impl.html">sophus::QuaternionImpl</a>&lt; TScalar &gt;::invalidParamsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -299,13 +342,15 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="af39baf80f68c594aae069690b4b5e69d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af39baf80f68c594aae069690b4b5e69d">&#9670;&nbsp;</a></span>multiplication()</h2>
+<a id="afed5da2448993620d83ebbe3ec408247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed5da2448993620d83ebbe3ec408247">&#9670;&nbsp;</a></span>multiplication()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar &gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -319,13 +364,13 @@ template&lt;class TScalar &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4 &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Vector&lt; TCompatibleScalar, 4 &gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, 4&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_quaternion_impl.html#a078ae9903350cdae4b25c91cd8b649b1">ParamsReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -392,8 +437,8 @@ template&lt;class TScalar &gt; </div>
 
 </div>
 </div>
-<a id="aa2dda09d05f3025f281fc4514ecc152c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2dda09d05f3025f281fc4514ecc152c">&#9670;&nbsp;</a></span>paramsExamples()</h2>
+<a id="a69461c1328da944ff2de74729ff18a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69461c1328da944ff2de74729ff18a22">&#9670;&nbsp;</a></span>paramsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +452,7 @@ template&lt;class TScalar &gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1_quaternion_impl.html">sophus::QuaternionImpl</a>&lt; TScalar &gt;::paramsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#a4ee6ce7755270e2565b29075f9e69d20">Scalar</a>, <a class="el" href="classsophus_1_1_quaternion_impl.html#ad2d73b71f22f4650649d70e6145c80b2">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1_quaternion_impl.html#af732ca22974c33de33295d40a847752e">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -524,7 +569,7 @@ template&lt;class TScalar &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/linalg/<a class="el" href="quaternion_8h_source.html">quaternion.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/manifold/<a class="el" href="quaternion_8h_source.html">quaternion.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

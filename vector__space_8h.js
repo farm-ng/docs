@@ -3,7 +3,7 @@ var vector__space_8h =
     [ "allTrue", "vector__space_8h.html#a5af820ef17c2356ca600fa850b05d33c", null ],
     [ "anyTrue", "vector__space_8h.html#aa5839ec4c4657915795207f950a6b58b", null ],
     [ "ceil", "vector__space_8h.html#a336b6a949642a830fac2c2499df2066d", null ],
-    [ "clamp", "vector__space_8h.html#aa66bd37faa348a4548506987e7f55c3f", null ],
+    [ "clamp", "vector__space_8h.html#a9d7b826fc152091bd5709a16e58a52c5", null ],
     [ "eval", "vector__space_8h.html#a06e5f307fbc1934d81825d46b347e4c9", null ],
     [ "floor", "vector__space_8h.html#acb29ef188f99376d8a1589485e5fe588", null ],
     [ "isFinite", "vector__space_8h.html#a5458c3ba2f3745676211f5353eb55590", null ],

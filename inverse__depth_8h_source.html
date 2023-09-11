@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/geometry/inverse_depth.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/geometry/inverse_depth.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('inverse__depth_8h_source.html',''); in
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Returns the projection of the point (x,y,z) onto the plane z=1.</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// Hence (a, b) = (&quot;x / z&quot;, &quot;y / z&quot;).</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#a48b54a205bf93117e465d7d7dc547f3e">   85</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#a48b54a205bf93117e465d7d7dc547f3e">projInZ1Plane</a>() const -&gt; Eigen::Matrix&lt;TT, 2, 1&gt; {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#a48b54a205bf93117e465d7d7dc547f3e">   85</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#a48b54a205bf93117e465d7d7dc547f3e">projInZ1Plane</a>() const -&gt; <a class="code" href="namespace_eigen.html">Eigen</a>::Matrix&lt;TT, 2, 1&gt; {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> ab_and_psi_.template head&lt;2&gt;();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span> </div>
@@ -183,13 +183,13 @@ $(document).ready(function(){initNavTree('inverse__depth_8h_source.html',''); in
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#a078f87318404ba86f093ef604a59e601">   95</a></span>&#160;  <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#a078f87318404ba86f093ef604a59e601">data</a>() -&gt; TT* { <span class="keywordflow">return</span> ab_and_psi_.data(); }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#ac9617d555304379da29afcab26686326">   97</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#ac9617d555304379da29afcab26686326">params</a>() const -&gt; Eigen::Matrix&lt;TT, 3, 1&gt; const&amp; {</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#ac9617d555304379da29afcab26686326">   97</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#ac9617d555304379da29afcab26686326">params</a>() const -&gt; <a class="code" href="namespace_eigen.html">Eigen</a>::Matrix&lt;TT, 3, 1&gt; const&amp; {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> ab_and_psi_;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">  /// Precondition: psi must not be close to 0, hence z must not be near</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">  /// infinity.</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#a6785a54bf22cf072305e876c8063936b">  103</a></span>&#160;<span class="comment"></span>  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#a6785a54bf22cf072305e876c8063936b">toEuclideanPoint3</a>() const -&gt; Eigen::Matrix&lt;TT, 3, 1&gt; {</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classsophus_1_1_inverse_depth_point3.html#a6785a54bf22cf072305e876c8063936b">  103</a></span>&#160;<span class="comment"></span>  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_inverse_depth_point3.html#a6785a54bf22cf072305e876c8063936b">toEuclideanPoint3</a>() const -&gt; <a class="code" href="namespace_eigen.html">Eigen</a>::Matrix&lt;TT, 3, 1&gt; {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">using</span> std::abs;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="common_8h.html#a4458283091058e430ff56b37e5d90182">SOPHUS_ASSERT_GE</a>(abs(<a class="code" href="classsophus_1_1_inverse_depth_point3.html#af0df278c548b825c6c2a923de8d554d0">psi</a>()), sophus::kEpsilon&lt;TT&gt;);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
@@ -207,6 +207,7 @@ $(document).ready(function(){initNavTree('inverse__depth_8h_source.html',''); in
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="acommon_8h_html_a4458283091058e430ff56b37e5d90182"><div class="ttname"><a href="common_8h.html#a4458283091058e430ff56b37e5d90182">SOPHUS_ASSERT_GE</a></div><div class="ttdeci">#define SOPHUS_ASSERT_GE(...)</div><div class="ttdef"><b>Definition:</b> common.h:42</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdef"><b>Definition:</b> params.h:72</div></div>
 <div class="ttc" id="aclasssophus_1_1_inverse_depth_point3_html_a43d533de0e59922ca6a34d030020a3ff"><div class="ttname"><a href="classsophus_1_1_inverse_depth_point3.html#a43d533de0e59922ca6a34d030020a3ff">sophus::InverseDepthPoint3::InverseDepthPoint3</a></div><div class="ttdeci">InverseDepthPoint3()</div><div class="ttdef"><b>Definition:</b> inverse_depth.h:58</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
 <div class="ttc" id="aclasssophus_1_1_inverse_depth_point3_html_a6785a54bf22cf072305e876c8063936b"><div class="ttname"><a href="classsophus_1_1_inverse_depth_point3.html#a6785a54bf22cf072305e876c8063936b">sophus::InverseDepthPoint3::toEuclideanPoint3</a></div><div class="ttdeci">auto toEuclideanPoint3() const -&gt; Eigen::Matrix&lt; TT, 3, 1 &gt;</div><div class="ttdoc">Precondition: psi must not be close to 0, hence z must not be near infinity.</div><div class="ttdef"><b>Definition:</b> inverse_depth.h:103</div></div>
@@ -225,7 +226,7 @@ $(document).ready(function(){initNavTree('inverse__depth_8h_source.html',''); in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_8028503c7a289d5c13f61778d61a682d.html">geometry</a></li><li class="navelem"><a class="el" href="inverse__depth_8h.html">inverse_depth.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_adb47c116a75c666b79f314aa2e4eed3.html">geometry</a></li><li class="navelem"><a class="el" href="inverse__depth_8h.html">inverse_depth.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

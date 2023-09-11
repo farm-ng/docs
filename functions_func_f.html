@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: Class Members - Functions</title>
+<title>farm-ng-core: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -106,6 +106,15 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <li>fill()
 : <a class="el" href="classsophus_1_1_mut_image_view.html#a61d68c099905831da518a3c6eb02ead1">sophus::MutImageView&lt; TPixel &gt;</a>
 </li>
+<li>findBounds()
+: <a class="el" href="classfarm__ng_1_1_time_series.html#aea57948310b56a4a50cf3efb76ceb4be">farm_ng::TimeSeries&lt; TValueWithStamp &gt;</a>
+</li>
+<li>findNearest()
+: <a class="el" href="classfarm__ng_1_1_time_series.html#a991f9b1d812b9d8084da58b91125037a">farm_ng::TimeSeries&lt; TValueWithStamp &gt;</a>
+</li>
+<li>findNearestWithin()
+: <a class="el" href="classfarm__ng_1_1_time_series.html#afa31f6a66cab230137ddbfcfa19bde4c">farm_ng::TimeSeries&lt; TValueWithStamp &gt;</a>
+</li>
 <li>fitFromComplex()
 : <a class="el" href="classsophus_1_1_isometry2.html#a9641b95a5b6779596c4765e527dffa79">sophus::Isometry2&lt; TScalar &gt;</a>
 , <a class="el" href="classsophus_1_1_rotation2.html#a746798ba89bfc527c838439ff12e0eb4">sophus::Rotation2&lt; TScalar &gt;</a>
@@ -134,19 +143,16 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <li>fooRotationBar()
 : <a class="el" href="classsophus_1_1_point_transformer.html#a80998760e60ffc29eb9ad174d0479846">sophus::PointTransformer&lt; TT &gt;</a>
 </li>
-<li>fresh()
-: <a class="el" href="classcanbus_1_1packet_1_1_packet.html#a6c10f1868db27c7a3e8e24511729694a">canbus.packet.Packet</a>
+<li>frameA()
+: <a class="el" href="classsophus_1_1_pose3.html#a4d84b2f54040c0ec3f51b607728e9e52">sophus::Pose3&lt; TScalar &gt;</a>
+</li>
+<li>frameB()
+: <a class="el" href="classsophus_1_1_pose3.html#a32dc68d1a10e87e4f1e992684783d2c9">sophus::Pose3&lt; TScalar &gt;</a>
 </li>
 <li>from()
-: <a class="el" href="classfarm__ng_1_1_shared.html#adbf60c80c520773d886797f213f47f8b">farm_ng::Shared&lt; T &gt;</a>
+: <a class="el" href="classfarm__ng_1_1_shared.html#a251e503fe58aa110856d0d3c0190a54b">farm_ng::Shared&lt; TT &gt;</a>
 , <a class="el" href="structsophus_1_1_image_size.html#a5ed6515802fcafa2381ffbef0dc9d6cb">sophus::ImageSize</a>
 , <a class="el" href="classsophus_1_1_region.html#ac9717c35adb8aa6803c17b48f98f46b0">sophus::Region&lt; TPoint &gt;</a>
-</li>
-<li>from_can_data()
-: <a class="el" href="classcanbus_1_1packet_1_1_packet.html#ab7bdd564443e05b53f75e14984d68fad">canbus.packet.Packet</a>
-</li>
-<li>from_proto()
-: <a class="el" href="classcanbus_1_1packet_1_1_motor_state.html#ad9af788e3948a50560cc7c0db8acd94a">canbus.packet.MotorState</a>
 </li>
 <li>fromAbAndPsi()
 : <a class="el" href="classsophus_1_1_inverse_depth_point3.html#abf9c4d0f960b9b2da29af1e7a40d19ae">sophus::InverseDepthPoint3&lt; TT &gt;</a>
@@ -167,19 +173,25 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <li>fromEuclideanPoint3()
 : <a class="el" href="classsophus_1_1_inverse_depth_point3.html#adff392113a3962bd2b940f8f0ed9f2fe">sophus::InverseDepthPoint3&lt; TT &gt;</a>
 </li>
+<li>fromFormat()
+: <a class="el" href="classsophus_1_1_dyn_image.html#a60161b72ee678a0839eb557411c8b381">sophus::DynImage&lt; TPredicate, TAllocator &gt;</a>
+, <a class="el" href="classsophus_1_1_mut_dyn_image.html#af9d9ec8fb1f1fde55918c90106ecfb1e">sophus::MutDynImage&lt; TPredicate, TAllocator &gt;</a>
+</li>
 <li>fromMinMax()
 : <a class="el" href="classsophus_1_1_region.html#a8f7bf0c25b0ff1cef451deb0545e174d">sophus::Region&lt; TPoint &gt;</a>
 </li>
 <li>fromParams()
-: <a class="el" href="classsophus_1_1_complex.html#ac2f034b47f7141b688c9e8b6ee3ce81b">sophus::Complex&lt; TScalar &gt;</a>
-, <a class="el" href="classsophus_1_1lie_1_1_group.html#a9e9976d1adfe13f499457526a197444a">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
-, <a class="el" href="classsophus_1_1_quaternion.html#ae2c536439c93c9bf6785ec784c4ea8b7">sophus::Quaternion&lt; TScalar &gt;</a>
+: <a class="el" href="classsophus_1_1_complex.html#a24fc43f66bac4cb3127fcf803413fedf">sophus::Complex&lt; TScalar &gt;</a>
+, <a class="el" href="structsophus_1_1_group_manifold.html#a7af41ac3d3c00c48f0bcbe3891bcaef0">sophus::GroupManifold&lt; TGroup, kPlus &gt;</a>
+, <a class="el" href="classsophus_1_1lie_1_1_group.html#ac94b6dfc9087ea289f5a2f3671713e8b">sophus::lie::Group&lt; TGenericDerived, TScalar, TGenericImpl &gt;</a>
+, <a class="el" href="classsophus_1_1_quaternion.html#a4bafc70740081840a141d2b039f0291f">sophus::Quaternion&lt; TScalar &gt;</a>
 , <a class="el" href="structsophus_1_1_scaling_non_orthogonality_accelero_model.html#ae1f2c9d2d2251b07f31e0378f9ec6704">sophus::ScalingNonOrthogonalityAcceleroModel&lt; TT &gt;</a>
 , <a class="el" href="structsophus_1_1_scaling_non_orthogonality_gyro_model.html#a800d88c8790e0558dc99cf156a521cc5">sophus::ScalingNonOrthogonalityGyroModel&lt; TT &gt;</a>
 , <a class="el" href="classsophus_1_1_unit_vector.html#ae5110183860b466131dfd4463cfcb86f">sophus::UnitVector&lt; TScalar, kN &gt;</a>
+, <a class="el" href="structsophus_1_1_vector_manifold.html#a78cee601acaf0e524086567e180172fc">sophus::VectorManifold&lt; TScalar, kDim &gt;</a>
 </li>
 <li>fromParamsUnchecked()
-: <a class="el" href="classsophus_1_1lie_1_1_group.html#a52d96d4f0466a93715dec749fb370524">sophus::lie::Group&lt; TDerived, TImpl &gt;</a>
+: <a class="el" href="classsophus_1_1lie_1_1_group.html#a2a754a9f8e9c473a853832ddfdc1a253">sophus::lie::Group&lt; TGenericDerived, TScalar, TGenericImpl &gt;</a>
 </li>
 <li>fromQuaternion()
 : <a class="el" href="classsophus_1_1_similarity3.html#a5fd6297be8c7c35e5d8f53d54f7acf71">sophus::Similarity3&lt; TScalar &gt;</a>
@@ -257,6 +269,9 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 </li>
 <li>fromVectorAndNormalize()
 : <a class="el" href="classsophus_1_1_unit_vector.html#a25bfe06a0541c41d5fc380358c227f5a">sophus::UnitVector&lt; TScalar, kN &gt;</a>
+</li>
+<li>front()
+: <a class="el" href="classfarm__ng_1_1_time_series.html#a5679d32121ef36298e6185c2119841a6">farm_ng::TimeSeries&lt; TValueWithStamp &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

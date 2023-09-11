@@ -1,4 +1,0 @@
-var dir_a51ac47d967d9b95dfafef4d205c6f9d =
-[
-    [ "farm_ng", "dir_1ed10136f75261e9962940054255f299.html", "dir_1ed10136f75261e9962940054255f299" ]
-];

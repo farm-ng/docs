@@ -51,6 +51,10 @@ var image__types_8h =
     [ "MutImageViewF32", "image__types_8h.html#ab72649b1795b6f26ae37b75850119c21", null ],
     [ "MutImageViewU16", "image__types_8h.html#ad265685f31fa1cee7cf9b63c64ee31ac", null ],
     [ "MutImageViewU8", "image__types_8h.html#a5ba9e7b94412725b4060177ce5aae496", null ],
+    [ "Pixel2", "image__types_8h.html#abedcf643a8f00a4f561e550ccf36a7e8", null ],
+    [ "Pixel2F32", "image__types_8h.html#a11dd2462c5ae66f56f43dc4ae656e928", null ],
+    [ "Pixel2U16", "image__types_8h.html#a4326b92dd82271e0316a1f042813a706", null ],
+    [ "Pixel2U8", "image__types_8h.html#a6f2aa7dadbf2d231552a813b686964da", null ],
     [ "Pixel3", "image__types_8h.html#abe0d45a2eb034c6bd626198490ad244e", null ],
     [ "Pixel3F32", "image__types_8h.html#a39e5641390bdcccc7eb95bc2abb1bc3f", null ],
     [ "Pixel3U16", "image__types_8h.html#a80f7e3b6275b10d7ffd120c25b6aab02", null ],
@@ -71,6 +75,5 @@ var image__types_8h =
     [ "isGreaterMask", "image__types_8h.html#a1a8f187d8d57eea100bc971b03bb42de", null ],
     [ "isLessMask", "image__types_8h.html#a1ba0813a3c8709c09b93323fa0ce3f89", null ],
     [ "isNearMask", "image__types_8h.html#aeef402799aca902bc2e0c910ea5adcd8", null ],
-    [ "neg", "image__types_8h.html#acaf678642a74dd280745ba67027bfe4b", null ],
-    [ "SOPHUS_ENUM", "image__types_8h.html#a77fea79ddc32bf7913dca93c7c10d2d9", null ]
+    [ "neg", "image__types_8h.html#acaf678642a74dd280745ba67027bfe4b", null ]
 ];

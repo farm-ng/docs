@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::PixelFormat Struct Reference</title>
+<title>farm-ng-core: sophus::PixelFormat Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('structsophus_1_1_pixel_format.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ab584037f66b4682791382f47905e93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#a2ab584037f66b4682791382f47905e93">bytesPerPixel</a> () const -&gt; int</td></tr>
-<tr class="separator:a2ab584037f66b4682791382f47905e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfaab9fe01de210a3e4bb3f3b6019050"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#acfaab9fe01de210a3e4bb3f3b6019050">numBytesPerPixel</a> () const -&gt; size_t</td></tr>
+<tr class="separator:acfaab9fe01de210a3e4bb3f3b6019050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f1fd496bbc2c8140c0a9685df76f72"><td class="memTemplParams" colspan="2">template&lt;class TPixel &gt; </td></tr>
 <tr class="memitem:a66f1fd496bbc2c8140c0a9685df76f72"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#a66f1fd496bbc2c8140c0a9685df76f72">is</a> () -&gt; bool</td></tr>
 <tr class="separator:a66f1fd496bbc2c8140c0a9685df76f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,37 +113,12 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7a3cbc6bc2dd3c44ad02ddea61ceee0e"><td class="memItemLeft" align="right" valign="top">NumberType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#a7a3cbc6bc2dd3c44ad02ddea61ceee0e">number_type</a></td></tr>
 <tr class="separator:a7a3cbc6bc2dd3c44ad02ddea61ceee0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4824776c397622ab16deae8e8c8b0e01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#a4824776c397622ab16deae8e8c8b0e01">num_channels</a></td></tr>
-<tr class="separator:a4824776c397622ab16deae8e8c8b0e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a228fc66474d41849d0ffbfbe943baf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#a8a228fc66474d41849d0ffbfbe943baf">num_bytes_per_pixel_channel</a></td></tr>
-<tr class="separator:a8a228fc66474d41849d0ffbfbe943baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4316eec3aef0b3cf1a6fd3f99c5051a1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#a4316eec3aef0b3cf1a6fd3f99c5051a1">num_components</a></td></tr>
+<tr class="separator:a4316eec3aef0b3cf1a6fd3f99c5051a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6473703e1099900ebcadc71273fcd49"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_pixel_format.html#aa6473703e1099900ebcadc71273fcd49">num_bytes_per_component</a></td></tr>
+<tr class="separator:aa6473703e1099900ebcadc71273fcd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2ab584037f66b4682791382f47905e93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ab584037f66b4682791382f47905e93">&#9670;&nbsp;</a></span>bytesPerPixel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto sophus::PixelFormat::bytesPerPixel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; int </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a76489a232e6ca9f4413b9620a01533d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76489a232e6ca9f4413b9620a01533d2">&#9670;&nbsp;</a></span>fromTemplate()</h2>
 
@@ -198,29 +173,54 @@ template&lt;class TPixel &gt; </div>
 
 </div>
 </div>
+<a id="acfaab9fe01de210a3e4bb3f3b6019050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfaab9fe01de210a3e4bb3f3b6019050">&#9670;&nbsp;</a></span>numBytesPerPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto sophus::PixelFormat::numBytesPerPixel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; size_t </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8a228fc66474d41849d0ffbfbe943baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a228fc66474d41849d0ffbfbe943baf">&#9670;&nbsp;</a></span>num_bytes_per_pixel_channel</h2>
+<a id="aa6473703e1099900ebcadc71273fcd49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6473703e1099900ebcadc71273fcd49">&#9670;&nbsp;</a></span>num_bytes_per_component</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sophus::PixelFormat::num_bytes_per_pixel_channel</td>
+          <td class="memname">size_t sophus::PixelFormat::num_bytes_per_component</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4824776c397622ab16deae8e8c8b0e01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4824776c397622ab16deae8e8c8b0e01">&#9670;&nbsp;</a></span>num_channels</h2>
+<a id="a4316eec3aef0b3cf1a6fd3f99c5051a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4316eec3aef0b3cf1a6fd3f99c5051a1">&#9670;&nbsp;</a></span>num_components</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sophus::PixelFormat::num_channels</td>
+          <td class="memname">uint8_t sophus::PixelFormat::num_components</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -242,7 +242,7 @@ template&lt;class TPixel &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/image/<a class="el" href="pixel__format_8h_source.html">pixel_format.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/image/<a class="el" href="pixel__format_8h_source.html">pixel_format.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

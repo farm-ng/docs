@@ -14,5 +14,5 @@ var format_8h =
     [ "logLine", "format_8h.html#a6c6290936330c19aa6fb728c1bce89dc", null ],
     [ "runtimeFormatImpl", "format_8h.html#a592e6b40023d287f75f316f49cb9989e", null ],
     [ "setLogLineFunction", "format_8h.html#ab051a60bbb258b8e09e91a542bfc060c", null ],
-    [ "getLogLineFunction", "format_8h.html#a3e96f1695eaabbdb0846e9850fa42a5e", null ]
+    [ "getLogLineFunction", "format_8h.html#a773c0800694f999fb3c81925b2eac29a", null ]
 ];

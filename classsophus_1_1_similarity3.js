@@ -1,10 +1,13 @@
 var classsophus_1_1_similarity3 =
 [
-    [ "Base", "classsophus_1_1_similarity3.html#abe971c80fba8f68432e2a348f26736a6", null ],
+    [ "Base", "classsophus_1_1_similarity3.html#a709a42aac2d06bf9901469942143adc2", null ],
     [ "Isometry", "classsophus_1_1_similarity3.html#afa522df60d63593ff107502f238202d7", null ],
+    [ "Params", "classsophus_1_1_similarity3.html#a95bcfb6b1e9f06f7fb436396bf7e3c67", null ],
+    [ "Point", "classsophus_1_1_similarity3.html#ad2bd694505f5a93ae4e38d0d3524e761", null ],
     [ "Rotation", "classsophus_1_1_similarity3.html#a28bd92e36f85336be1fd5a9b2ea6fed9", null ],
     [ "Scalar", "classsophus_1_1_similarity3.html#adac5100bb7fce924529ce1ea89922298", null ],
     [ "SpiralSimilarity", "classsophus_1_1_similarity3.html#a253a61265b63764a66159fded63c5a63", null ],
+    [ "Tangent", "classsophus_1_1_similarity3.html#a98fb6f22748b6e3feea0dea39b31fb69", null ],
     [ "Similarity3", "classsophus_1_1_similarity3.html#adc8436f653dcce5a303b03af9407316f", null ],
     [ "Similarity3", "classsophus_1_1_similarity3.html#a6576e00879c47a2b22239e5a9f2db572", null ],
     [ "Similarity3", "classsophus_1_1_similarity3.html#a30ae5dfddd38e19db42c19d7ebb694e6", null ],
@@ -25,6 +28,6 @@ var classsophus_1_1_similarity3 =
     [ "setScale", "classsophus_1_1_similarity3.html#a8103883460316175e54537eb7320e15b", null ],
     [ "setSpiralSimilarity", "classsophus_1_1_similarity3.html#a4fec6d1774af4842cd43d2e03c42021e", null ],
     [ "spiralSimilarity", "classsophus_1_1_similarity3.html#a3b118f915a7e3e90f0ec005cdc083198", null ],
-    [ "translation", "classsophus_1_1_similarity3.html#af1a9afaeaf21f874cf65691d8d2e7602", null ],
-    [ "translation", "classsophus_1_1_similarity3.html#acf3fdb077a6dc0b8c9a0516c599e2453", null ]
+    [ "translation", "classsophus_1_1_similarity3.html#aac2581065f8ab44845072066b0d62789", null ],
+    [ "translation", "classsophus_1_1_similarity3.html#ac4385b3db3b3f894d733882a6eb04dc1", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/image/pixel_format.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/image/pixel_format.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -109,13 +109,13 @@ $(document).ready(function(){initNavTree('pixel__format_8h_source.html',''); ini
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            std::is_floating_point_v&lt;typename ImageTraits&lt;TPixel&gt;::ChannelT&gt;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                ? NumberType::floating_point</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                : NumberType::fixed_point,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        .num_channels = <a class="code" href="structsophus_1_1_image_traits.html">ImageTraits&lt;TPixel&gt;::kNumChannels</a>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        .num_bytes_per_pixel_channel =</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        .num_components = <a class="code" href="structsophus_1_1_image_traits.html">ImageTraits&lt;TPixel&gt;::kNumChannels</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        .num_bytes_per_component =</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">sizeof</span>(<span class="keyword">typename</span> <a class="code" href="structsophus_1_1_image_traits.html#a4f785692cf6427cf6971e1f1e858008e">ImageTraits&lt;TPixel&gt;::ChannelT</a>)};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#a2ab584037f66b4682791382f47905e93">   28</a></span>&#160;  [[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="structsophus_1_1_pixel_format.html#a2ab584037f66b4682791382f47905e93">bytesPerPixel</a>() const -&gt; <span class="keywordtype">int</span> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structsophus_1_1_pixel_format.html#a4824776c397622ab16deae8e8c8b0e01">num_channels</a> * <a class="code" href="structsophus_1_1_pixel_format.html#a8a228fc66474d41849d0ffbfbe943baf">num_bytes_per_pixel_channel</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#acfaab9fe01de210a3e4bb3f3b6019050">   28</a></span>&#160;  [[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="structsophus_1_1_pixel_format.html#acfaab9fe01de210a3e4bb3f3b6019050">numBytesPerPixel</a>() const -&gt; <span class="keywordtype">size_t</span> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structsophus_1_1_pixel_format.html#a4316eec3aef0b3cf1a6fd3f99c5051a1">num_components</a> * <a class="code" href="structsophus_1_1_pixel_format.html#aa6473703e1099900ebcadc71273fcd49">num_bytes_per_component</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TPixel&gt;</div>
@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('pixel__format_8h_source.html',''); ini
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#a7a3cbc6bc2dd3c44ad02ddea61ceee0e">   37</a></span>&#160;  NumberType <a class="code" href="structsophus_1_1_pixel_format.html#a7a3cbc6bc2dd3c44ad02ddea61ceee0e">number_type</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#a4824776c397622ab16deae8e8c8b0e01">   38</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structsophus_1_1_pixel_format.html#a4824776c397622ab16deae8e8c8b0e01">num_channels</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#a8a228fc66474d41849d0ffbfbe943baf">   39</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structsophus_1_1_pixel_format.html#a8a228fc66474d41849d0ffbfbe943baf">num_bytes_per_pixel_channel</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#a4316eec3aef0b3cf1a6fd3f99c5051a1">   38</a></span>&#160;  uint8_t <a class="code" href="structsophus_1_1_pixel_format.html#a4316eec3aef0b3cf1a6fd3f99c5051a1">num_components</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structsophus_1_1_pixel_format.html#aa6473703e1099900ebcadc71273fcd49">   39</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structsophus_1_1_pixel_format.html#aa6473703e1099900ebcadc71273fcd49">num_bytes_per_component</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a0a660c60e73f1a73f265ba3af4588350">operator==</a>(<a class="code" href="structsophus_1_1_pixel_format.html">PixelFormat</a> <span class="keyword">const</span>&amp; lhs, <a class="code" href="structsophus_1_1_pixel_format.html">PixelFormat</a> <span class="keyword">const</span>&amp; rhs) -&gt; bool;</div>
@@ -134,27 +134,28 @@ $(document).ready(function(){initNavTree('pixel__format_8h_source.html',''); ini
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/// PixelFormat::fromTemplate&lt;float&gt;() outputs: &quot;1F32&quot;;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/// PixelFormat::fromTemplate&lt;Eigen::Matrix&lt;uint8_t,4,1&gt;&gt;() outputs:</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/// &quot;4U8&quot;;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span><span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a02d13ddf593b3a5d19db91f40665dd31">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="structsophus_1_1_pixel_format.html">PixelFormat</a> <span class="keyword">const</span>&amp; type) -&gt; std::ostream&amp;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span><span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a02d13ddf593b3a5d19db91f40665dd31">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="structsophus_1_1_pixel_format.html">PixelFormat</a> <span class="keyword">const</span>&amp; <a class="code" href="namespacecore_1_1event__service.html#adf0b13b4cb11324bc782712e684a681d">type</a>) -&gt; std::ostream&amp;;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructsophus_1_1_pixel_format_html_a2ab584037f66b4682791382f47905e93"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a2ab584037f66b4682791382f47905e93">sophus::PixelFormat::bytesPerPixel</a></div><div class="ttdeci">auto bytesPerPixel() const -&gt; int</div><div class="ttdef"><b>Definition:</b> pixel_format.h:28</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
 <div class="ttc" id="aimage__types_8h_html"><div class="ttname"><a href="image__types_8h.html">image_types.h</a></div></div>
-<div class="ttc" id="astructsophus_1_1_pixel_format_html_a8a228fc66474d41849d0ffbfbe943baf"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a8a228fc66474d41849d0ffbfbe943baf">sophus::PixelFormat::num_bytes_per_pixel_channel</a></div><div class="ttdeci">int num_bytes_per_pixel_channel</div><div class="ttdef"><b>Definition:</b> pixel_format.h:39</div></div>
 <div class="ttc" id="astructsophus_1_1_pixel_format_html_a7a3cbc6bc2dd3c44ad02ddea61ceee0e"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a7a3cbc6bc2dd3c44ad02ddea61ceee0e">sophus::PixelFormat::number_type</a></div><div class="ttdeci">NumberType number_type</div><div class="ttdef"><b>Definition:</b> pixel_format.h:37</div></div>
-<div class="ttc" id="astructsophus_1_1_image_traits_html_a4f785692cf6427cf6971e1f1e858008e"><div class="ttname"><a href="structsophus_1_1_image_traits.html#a4f785692cf6427cf6971e1f1e858008e">sophus::ImageTraits::ChannelT</a></div><div class="ttdeci">TPixel ChannelT</div><div class="ttdef"><b>Definition:</b> image_types.h:108</div></div>
-<div class="ttc" id="astructsophus_1_1_image_traits_html"><div class="ttname"><a href="structsophus_1_1_image_traits.html">sophus::ImageTraits</a></div><div class="ttdef"><b>Definition:</b> image_types.h:105</div></div>
+<div class="ttc" id="astructsophus_1_1_image_traits_html_a4f785692cf6427cf6971e1f1e858008e"><div class="ttname"><a href="structsophus_1_1_image_traits.html#a4f785692cf6427cf6971e1f1e858008e">sophus::ImageTraits::ChannelT</a></div><div class="ttdeci">TPixel ChannelT</div><div class="ttdef"><b>Definition:</b> image_types.h:121</div></div>
+<div class="ttc" id="astructsophus_1_1_image_traits_html"><div class="ttname"><a href="structsophus_1_1_image_traits.html">sophus::ImageTraits</a></div><div class="ttdoc">Number type.</div><div class="ttdef"><b>Definition:</b> image_types.h:118</div></div>
+<div class="ttc" id="astructsophus_1_1_pixel_format_html_a4316eec3aef0b3cf1a6fd3f99c5051a1"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a4316eec3aef0b3cf1a6fd3f99c5051a1">sophus::PixelFormat::num_components</a></div><div class="ttdeci">uint8_t num_components</div><div class="ttdef"><b>Definition:</b> pixel_format.h:38</div></div>
+<div class="ttc" id="astructsophus_1_1_pixel_format_html_aa6473703e1099900ebcadc71273fcd49"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#aa6473703e1099900ebcadc71273fcd49">sophus::PixelFormat::num_bytes_per_component</a></div><div class="ttdeci">size_t num_bytes_per_component</div><div class="ttdef"><b>Definition:</b> pixel_format.h:39</div></div>
 <div class="ttc" id="astructsophus_1_1_pixel_format_html_a76489a232e6ca9f4413b9620a01533d2"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a76489a232e6ca9f4413b9620a01533d2">sophus::PixelFormat::fromTemplate</a></div><div class="ttdeci">static auto fromTemplate() -&gt; PixelFormat</div><div class="ttdef"><b>Definition:</b> pixel_format.h:17</div></div>
-<div class="ttc" id="anamespacesophus_html_a0a660c60e73f1a73f265ba3af4588350"><div class="ttname"><a href="namespacesophus.html#a0a660c60e73f1a73f265ba3af4588350">sophus::operator==</a></div><div class="ttdeci">auto operator==(Region&lt; TT &gt; const &amp;lhs, Region&lt; TT &gt; const &amp;rhs) -&gt; bool</div><div class="ttdef"><b>Definition:</b> region.h:314</div></div>
-<div class="ttc" id="astructsophus_1_1_pixel_format_html_a4824776c397622ab16deae8e8c8b0e01"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a4824776c397622ab16deae8e8c8b0e01">sophus::PixelFormat::num_channels</a></div><div class="ttdeci">int num_channels</div><div class="ttdef"><b>Definition:</b> pixel_format.h:38</div></div>
+<div class="ttc" id="anamespacesophus_html_a0a660c60e73f1a73f265ba3af4588350"><div class="ttname"><a href="namespacesophus.html#a0a660c60e73f1a73f265ba3af4588350">sophus::operator==</a></div><div class="ttdeci">auto operator==(Region&lt; TT &gt; const &amp;lhs, Region&lt; TT &gt; const &amp;rhs) -&gt; bool</div><div class="ttdef"><b>Definition:</b> region.h:367</div></div>
+<div class="ttc" id="astructsophus_1_1_pixel_format_html_acfaab9fe01de210a3e4bb3f3b6019050"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#acfaab9fe01de210a3e4bb3f3b6019050">sophus::PixelFormat::numBytesPerPixel</a></div><div class="ttdeci">auto numBytesPerPixel() const -&gt; size_t</div><div class="ttdef"><b>Definition:</b> pixel_format.h:28</div></div>
 <div class="ttc" id="anamespacesophus_html_a02d13ddf593b3a5d19db91f40665dd31"><div class="ttname"><a href="namespacesophus.html#a02d13ddf593b3a5d19db91f40665dd31">sophus::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;os, ImageSize const &amp;image_size) -&gt; std::ostream &amp;</div><div class="ttdoc">Ostream operator.</div><div class="ttdef"><b>Definition:</b> image_size.cpp:46</div></div>
 <div class="ttc" id="astructsophus_1_1_pixel_format_html_a66f1fd496bbc2c8140c0a9685df76f72"><div class="ttname"><a href="structsophus_1_1_pixel_format.html#a66f1fd496bbc2c8140c0a9685df76f72">sophus::PixelFormat::is</a></div><div class="ttdeci">auto is() -&gt; bool</div><div class="ttdef"><b>Definition:</b> pixel_format.h:33</div></div>
+<div class="ttc" id="anamespacecore_1_1event__service_html_adf0b13b4cb11324bc782712e684a681d"><div class="ttname"><a href="namespacecore_1_1event__service.html#adf0b13b4cb11324bc782712e684a681d">core.event_service.type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> event_service.py:547</div></div>
 <div class="ttc" id="astructsophus_1_1_pixel_format_html"><div class="ttname"><a href="structsophus_1_1_pixel_format.html">sophus::PixelFormat</a></div><div class="ttdef"><b>Definition:</b> pixel_format.h:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_75d5dc0af731eeb536b891ac5bed12ad.html">image</a></li><li class="navelem"><a class="el" href="pixel__format_8h.html">pixel_format.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_c4f8d798b133491f3a35254d41f8deea.html">image</a></li><li class="navelem"><a class="el" href="pixel__format_8h.html">pixel_format.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

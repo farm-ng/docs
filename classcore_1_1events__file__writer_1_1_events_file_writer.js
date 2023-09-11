@@ -1,8 +1,8 @@
 var classcore_1_1events__file__writer_1_1_events_file_writer =
 [
-    [ "__init__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a2dc31b35cb980b1579967a9edca6cdee", null ],
-    [ "__enter__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#abaab224de788d7c92f5559c554a12daa", null ],
-    [ "__exit__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a4a89ce385b9f452d35568bf139d6bd7c", null ],
+    [ "__init__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#aac9be9e555c462033bdabfa6dc4e13c4", null ],
+    [ "__enter__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a04498de273e97ce81470c121a36cbd15", null ],
+    [ "__exit__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a66fec3c6eca5fdda329a6032600f12ab", null ],
     [ "__repr__", "classcore_1_1events__file__writer_1_1_events_file_writer.html#aa8fb26a9e9533602319669af8da94f7b", null ],
     [ "close", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a9acc7138af0385e6540aaf520b43a1b4", null ],
     [ "file_idx", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a292c41b92127670023991634920e53a6", null ],
@@ -12,6 +12,6 @@ var classcore_1_1events__file__writer_1_1_events_file_writer =
     [ "is_open", "classcore_1_1events__file__writer_1_1_events_file_writer.html#ae0e28d9034988235646c604ee8512f96", null ],
     [ "max_file_length", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a686d8927d5cad77a00c499bdcca41cf6", null ],
     [ "open", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a571277906134c0f400bd1a36ccc170b8", null ],
-    [ "write", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a73953ac8e6e9abe96ea9d6e316046be9", null ],
-    [ "write_raw", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a97d51c0d9ae2db551b7f0ef0457212fc", null ]
+    [ "write", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a2d7b157fb832bfdf89062420e5cac32e", null ],
+    [ "write_event_payload", "classcore_1_1events__file__writer_1_1_events_file_writer.html#a2684143427c7d2ccada63194f73ecb6c", null ]
 ];

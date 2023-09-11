@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::CameraModelT&lt; TScalar, TDistortion, TProj &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::CameraModelT&lt; TScalar, TDistortion, TProj &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -190,6 +190,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8341da15d205a50fc8350529ac7a79e8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_camera_model_t.html#a8341da15d205a50fc8350529ac7a79e8">contains</a> (<a class="el" href="classsophus_1_1_camera_model_t.html#a2ff890a156617e0b83d8cc35c879a32f">PixelImage</a> const &amp;obs, TScalar border=TScalar(0)) const -&gt; bool</td></tr>
 <tr class="memdesc:a8341da15d205a50fc8350529ac7a79e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if obs is within image.  <a href="classsophus_1_1_camera_model_t.html#a8341da15d205a50fc8350529ac7a79e8">More...</a><br /></td></tr>
 <tr class="separator:a8341da15d205a50fc8350529ac7a79e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ae36588f006e0d3600988ead44ee6f"><td class="memTemplParams" colspan="2">template&lt;typename TScalar2 &gt; </td></tr>
+<tr class="memitem:a51ae36588f006e0d3600988ead44ee6f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_camera_model_t.html#a51ae36588f006e0d3600988ead44ee6f">cast</a> () const -&gt; <a class="el" href="classsophus_1_1_camera_model_t.html">CameraModelT</a>&lt; TScalar2, TDistortion, TProj &gt;</td></tr>
+<tr class="memdesc:a51ae36588f006e0d3600988ead44ee6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast to different scalar type.  <a href="classsophus_1_1_camera_model_t.html#a51ae36588f006e0d3600988ead44ee6f">More...</a><br /></td></tr>
+<tr class="separator:a51ae36588f006e0d3600988ead44ee6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -525,6 +529,37 @@ template&lt;class TScalar , class TDistortion , class TProj  = ProjectionZ1&gt; 
 
 </div>
 </div>
+<a id="a51ae36588f006e0d3600988ead44ee6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ae36588f006e0d3600988ead44ee6f">&#9670;&nbsp;</a></span>cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , class TDistortion , class TProj  = ProjectionZ1&gt; </div>
+<div class="memtemplate">
+template&lt;typename TScalar2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_camera_model_t.html">sophus::CameraModelT</a>&lt; TScalar, TDistortion, TProj &gt;::cast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1_camera_model_t.html">CameraModelT</a>&lt;TScalar2, TDistortion, TProj&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cast to different scalar type. </p>
+
+</div>
+</div>
 <a id="acd1152ef2b9b5627fdcb70b1462bbe7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd1152ef2b9b5627fdcb70b1462bbe7e">&#9670;&nbsp;</a></span>contains() <span class="overload">[1/2]</span></h2>
 
@@ -562,7 +597,7 @@ template&lt;class TScalar , class TDistortion , class TProj  = ProjectionZ1&gt; 
 </div><div class="memdoc">
 
 <p>Returns true if obs is within image. </p>
-<p>Note: Postiive border makes the image frame smaller. </p>
+<p>Note: Positive border makes the image frame smaller. </p>
 
 </div>
 </div>
@@ -603,7 +638,7 @@ template&lt;class TScalar , class TDistortion , class TProj  = ProjectionZ1&gt; 
 </div><div class="memdoc">
 
 <p>Returns true if obs is within image. </p>
-<p>Note: Postiive border makes the image frame smaller. </p>
+<p>Note: Positive border makes the image frame smaller. </p>
 
 </div>
 </div>
@@ -1246,7 +1281,7 @@ template&lt;class TScalar , class TDistortion , class TProj  = ProjectionZ1&gt; 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/sensor/<a class="el" href="camera__model_8h_source.html">camera_model.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/sensor/<a class="el" href="camera__model_8h_source.html">camera_model.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

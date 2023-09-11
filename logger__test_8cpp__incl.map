@@ -1,19 +1,20 @@
 <map id="projects/farm&#45;ng&#45;core/cpp/farm_ng/core/logging/logger_test.cpp" name="projects/farm&#45;ng&#45;core/cpp/farm_ng/core/logging/logger_test.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="2149,5,2339,61"/>
-<area shape="rect" id="node2" href="$logger_8h.html" title=" " alt="" coords="1752,109,1912,151"/>
-<area shape="rect" id="node33" href="$test__common_8h.html" title=" " alt="" coords="2164,109,2324,151"/>
-<area shape="rect" id="node34" title=" " alt="" coords="2192,206,2296,233"/>
-<area shape="rect" id="node35" title=" " alt="" coords="2327,206,2385,233"/>
-<area shape="rect" id="node36" title=" " alt="" coords="2399,117,2473,143"/>
-<area shape="rect" id="node3" href="$farm-ng-core_2cpp_2farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1335,206,1537,233"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2026,5,2217,61"/>
+<area shape="rect" id="node2" href="$logger_8h.html" title=" " alt="" coords="1584,109,1744,151"/>
+<area shape="rect" id="node34" href="$test__common_8h.html" title=" " alt="" coords="2041,109,2201,151"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2069,206,2173,233"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2204,206,2263,233"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2276,117,2351,143"/>
+<area shape="rect" id="node3" href="$farm__ng_2core_2enum_2enum_8h.html" title=" " alt="" coords="1260,206,1463,233"/>
 <area shape="rect" id="node21" href="$format_8h.html" title=" " alt="" coords="623,377,783,419"/>
-<area shape="rect" id="node29" title=" " alt="" coords="1562,199,1726,240"/>
-<area shape="rect" id="node30" title=" " alt="" coords="1750,199,1914,240"/>
-<area shape="rect" id="node31" title=" " alt="" coords="1939,206,2029,233"/>
-<area shape="rect" id="node32" title=" " alt="" coords="2053,206,2168,233"/>
-<area shape="rect" id="node4" href="$enum__without__iostream_8h.html" title=" " alt="" coords="1301,288,1491,329"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1516,295,1588,322"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1613,295,1689,322"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1487,199,1651,240"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1675,199,1839,240"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1864,206,1931,233"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1955,206,2045,233"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1071,206,1185,233"/>
+<area shape="rect" id="node4" href="$enum__without__iostream_8h.html" title=" " alt="" coords="1263,288,1454,329"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1479,295,1551,322"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1575,295,1651,322"/>
 <area shape="rect" id="node5" href="$enum__details_8h.html" title=" " alt="" coords="1901,377,2083,419"/>
 <area shape="rect" id="node6" title=" " alt="" coords="976,467,1147,508"/>
 <area shape="rect" id="node7" title=" " alt="" coords="1171,467,1335,508"/>

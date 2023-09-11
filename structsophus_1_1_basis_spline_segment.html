@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::BasisSplineSegment&lt; TLieGroup &gt; Struct Template Reference</title>
+<title>farm-ng-core: sophus::BasisSplineSegment&lt; TGroup &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('structsophus_1_1_basis_spline_segment.
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structsophus_1_1_basis_spline_segment-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sophus::BasisSplineSegment&lt; TLieGroup &gt; Struct Template Reference</div>  </div>
+<div class="title">sophus::BasisSplineSegment&lt; TGroup &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -96,57 +96,101 @@ $(document).ready(function(){initNavTree('structsophus_1_1_basis_spline_segment.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2ce9021daae709bebb922a08d72f8f6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> = typename TLieGroup::Scalar</td></tr>
-<tr class="separator:a2ce9021daae709bebb922a08d72f8f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e430dd674a4b66bfac354fcbb8cb1d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ab4e430dd674a4b66bfac354fcbb8cb1d">Transformation</a> = typename TLieGroup::Transformation</td></tr>
-<tr class="separator:ab4e430dd674a4b66bfac354fcbb8cb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6937e0a593f751f88d66f25a57681af2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a6937e0a593f751f88d66f25a57681af2">Scalar</a> = typename TGroup::Scalar</td></tr>
+<tr class="separator:a6937e0a593f751f88d66f25a57681af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd9ade9b47401004dcacf9b5b7cd2b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#adbd9ade9b47401004dcacf9b5b7cd2b9">T</a> = <a class="el" href="structsophus_1_1_basis_spline_segment.html#a6937e0a593f751f88d66f25a57681af2">Scalar</a></td></tr>
+<tr class="separator:adbd9ade9b47401004dcacf9b5b7cd2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d80251182411fd53682cfd9adf136f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a1d80251182411fd53682cfd9adf136f8">Transformation</a> = Eigen::Matrix&lt; <a class="el" href="structsophus_1_1_basis_spline_segment.html#a6937e0a593f751f88d66f25a57681af2">Scalar</a>, TGroup::kAmbientDim, TGroup::kAmbientDim &gt;</td></tr>
+<tr class="separator:a1d80251182411fd53682cfd9adf136f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34485f3ef0e5be7de7541d0deb1eccf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> = typename TGroup::Params</td></tr>
+<tr class="separator:aa34485f3ef0e5be7de7541d0deb1eccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeadd104a294ef63e358f6adcb3b513ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aeadd104a294ef63e358f6adcb3b513ae">BasisSplineSegment</a> (<a class="el" href="namespacesophus.html#afd307b8cdfbe9c85d3a252b5860aefaf">SegmentCase</a> segment_case, <a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const raw_ptr0, <a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const raw_ptr1, <a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const raw_ptr2, <a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const raw_ptr3)</td></tr>
-<tr class="separator:aeadd104a294ef63e358f6adcb3b513ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671c6f1d6e27c3ee1305e44366f043a0"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; TLieGroup const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a671c6f1d6e27c3ee1305e44366f043a0">worldFromFooPrev</a> () const</td></tr>
-<tr class="separator:a671c6f1d6e27c3ee1305e44366f043a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f793e920ab18fb69611f2ae42580980"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; TLieGroup const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2f793e920ab18fb69611f2ae42580980">worldFromFoo0</a> () const</td></tr>
-<tr class="separator:a2f793e920ab18fb69611f2ae42580980"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ea17cdda529b171d51be066f015146"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; TLieGroup const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aa9ea17cdda529b171d51be066f015146">worldFromFoo1</a> () const</td></tr>
-<tr class="separator:aa9ea17cdda529b171d51be066f015146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d80bb083181d4798b138f3bd2bb7fbc"><td class="memItemLeft" align="right" valign="top">Eigen::Map&lt; TLieGroup const  &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a3d80bb083181d4798b138f3bd2bb7fbc">worldFromFoo2</a> () const</td></tr>
-<tr class="separator:a3d80bb083181d4798b138f3bd2bb7fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace4fd29d67ce12e2a8ece33e30f09222"><td class="memItemLeft" align="right" valign="top">TLieGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ace4fd29d67ce12e2a8ece33e30f09222">parentFromSpline</a> (double u)</td></tr>
-<tr class="separator:ace4fd29d67ce12e2a8ece33e30f09222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d0e1125f821a05a25d4ca1110fb3240"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ab4e430dd674a4b66bfac354fcbb8cb1d">Transformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a8d0e1125f821a05a25d4ca1110fb3240">dtParentFromSpline</a> (double u, double delta_t)</td></tr>
-<tr class="separator:a8d0e1125f821a05a25d4ca1110fb3240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b138e6826354823d6fcf2aeafc9e43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ab4e430dd674a4b66bfac354fcbb8cb1d">Transformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ac1b138e6826354823d6fcf2aeafc9e43">dt2ParentFromSpline</a> (double u, double delta_t)</td></tr>
-<tr class="separator:ac1b138e6826354823d6fcf2aeafc9e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab0f8ccfccc82067a0b0521f4535e0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aaab0f8ccfccc82067a0b0521f4535e0c">BasisSplineSegment</a> (<a class="el" href="namespacesophus.html#afd307b8cdfbe9c85d3a252b5860aefaf">SegmentCase</a> segment_case, <a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;params0, <a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;params1, <a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;params2, <a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;params3)</td></tr>
+<tr class="separator:aaab0f8ccfccc82067a0b0521f4535e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdfbde53a6578d587f73a25e8470feb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2fdfbde53a6578d587f73a25e8470feb">BasisSplineSegment</a> (<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> const &amp;)=delete</td></tr>
+<tr class="separator:a2fdfbde53a6578d587f73a25e8470feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829cfa8b57f6da10cfb6eae05fd1ef6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a829cfa8b57f6da10cfb6eae05fd1ef6a">BasisSplineSegment</a> (<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a829cfa8b57f6da10cfb6eae05fd1ef6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac3fae90deab983bf2af4443cdacbdb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a4ac3fae90deab983bf2af4443cdacbdb">operator=</a> (<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> const &amp;) -&gt; <a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>=delete</td></tr>
+<tr class="separator:a4ac3fae90deab983bf2af4443cdacbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48240adee7eeebad7a02c2fab5bc6c0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ad48240adee7eeebad7a02c2fab5bc6c0">operator=</a> (<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> &amp;&amp;) -&gt; <a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>=delete</td></tr>
+<tr class="separator:ad48240adee7eeebad7a02c2fab5bc6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f28c94d4f1de2ec8130c58b14e0720c"><td class="memItemLeft" align="right" valign="top">TGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a0f28c94d4f1de2ec8130c58b14e0720c">worldFromFooPrev</a> () const</td></tr>
+<tr class="separator:a0f28c94d4f1de2ec8130c58b14e0720c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ac8d34cc45734594bd3f37b6bba3f2"><td class="memItemLeft" align="right" valign="top">TGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a81ac8d34cc45734594bd3f37b6bba3f2">worldFromFoo0</a> () const</td></tr>
+<tr class="separator:a81ac8d34cc45734594bd3f37b6bba3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cdb97dec3abe2a0dc3b751da6a0d66"><td class="memItemLeft" align="right" valign="top">TGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a61cdb97dec3abe2a0dc3b751da6a0d66">worldFromFoo1</a> () const</td></tr>
+<tr class="separator:a61cdb97dec3abe2a0dc3b751da6a0d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650cb205d17fb7a127cbcdb227e26a9d"><td class="memItemLeft" align="right" valign="top">TGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a650cb205d17fb7a127cbcdb227e26a9d">worldFromFoo2</a> () const</td></tr>
+<tr class="separator:a650cb205d17fb7a127cbcdb227e26a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddb239cb1777075b41ba2f17d4f9c94"><td class="memItemLeft" align="right" valign="top">TGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a8ddb239cb1777075b41ba2f17d4f9c94">parentFromSpline</a> (double u)</td></tr>
+<tr class="separator:a8ddb239cb1777075b41ba2f17d4f9c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4b14b7c65956fbc3cf14f4f0c8bdac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a1d80251182411fd53682cfd9adf136f8">Transformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a1c4b14b7c65956fbc3cf14f4f0c8bdac">dtParentFromSpline</a> (double u, double delta_t)</td></tr>
+<tr class="separator:a1c4b14b7c65956fbc3cf14f4f0c8bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1b9a8e8bc73e1e967342a87302ff5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a1d80251182411fd53682cfd9adf136f8">Transformation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_basis_spline_segment.html#abc1b9a8e8bc73e1e967342a87302ff5c">dt2ParentFromSpline</a> (double u, double delta_t)</td></tr>
+<tr class="separator:abc1b9a8e8bc73e1e967342a87302ff5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a2ce9021daae709bebb922a08d72f8f6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce9021daae709bebb922a08d72f8f6b">&#9670;&nbsp;</a></span>T</h2>
+<a id="aa34485f3ef0e5be7de7541d0deb1eccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34485f3ef0e5be7de7541d0deb1eccf">&#9670;&nbsp;</a></span>Params</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> =  typename TLieGroup::Scalar</td>
+          <td class="memname">using <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> =  typename TGroup::Params</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab4e430dd674a4b66bfac354fcbb8cb1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4e430dd674a4b66bfac354fcbb8cb1d">&#9670;&nbsp;</a></span>Transformation</h2>
+<a id="a6937e0a593f751f88d66f25a57681af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6937e0a593f751f88d66f25a57681af2">&#9670;&nbsp;</a></span>Scalar</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html#ab4e430dd674a4b66bfac354fcbb8cb1d">Transformation</a> =  typename TLieGroup::Transformation</td>
+          <td class="memname">using <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html#a6937e0a593f751f88d66f25a57681af2">Scalar</a> =  typename TGroup::Scalar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbd9ade9b47401004dcacf9b5b7cd2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd9ade9b47401004dcacf9b5b7cd2b9">&#9670;&nbsp;</a></span>T</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html#adbd9ade9b47401004dcacf9b5b7cd2b9">T</a> =  <a class="el" href="structsophus_1_1_basis_spline_segment.html#a6937e0a593f751f88d66f25a57681af2">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d80251182411fd53682cfd9adf136f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d80251182411fd53682cfd9adf136f8">&#9670;&nbsp;</a></span>Transformation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html#a1d80251182411fd53682cfd9adf136f8">Transformation</a> =  Eigen::Matrix&lt;<a class="el" href="structsophus_1_1_basis_spline_segment.html#a6937e0a593f751f88d66f25a57681af2">Scalar</a>, TGroup::kAmbientDim, TGroup::kAmbientDim&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -154,19 +198,19 @@ template&lt;class TLieGroup &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aeadd104a294ef63e358f6adcb3b513ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeadd104a294ef63e358f6adcb3b513ae">&#9670;&nbsp;</a></span>BasisSplineSegment()</h2>
+<a id="aaab0f8ccfccc82067a0b0521f4535e0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab0f8ccfccc82067a0b0521f4535e0c">&#9670;&nbsp;</a></span>BasisSplineSegment() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> </td>
+          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacesophus.html#afd307b8cdfbe9c85d3a252b5860aefaf">SegmentCase</a>&#160;</td>
           <td class="paramname"><em>segment_case</em>, </td>
@@ -174,26 +218,26 @@ template&lt;class TLieGroup &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const&#160;</td>
-          <td class="paramname"><em>raw_ptr0</em>, </td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const&#160;</td>
-          <td class="paramname"><em>raw_ptr1</em>, </td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const&#160;</td>
-          <td class="paramname"><em>raw_ptr2</em>, </td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a2ce9021daae709bebb922a08d72f8f6b">T</a> const *const&#160;</td>
-          <td class="paramname"><em>raw_ptr3</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html#aa34485f3ef0e5be7de7541d0deb1eccf">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params3</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -204,6 +248,62 @@ template&lt;class TLieGroup &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fdfbde53a6578d587f73a25e8470feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fdfbde53a6578d587f73a25e8470feb">&#9670;&nbsp;</a></span>BasisSplineSegment() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>&lt; TGroup &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a829cfa8b57f6da10cfb6eae05fd1ef6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829cfa8b57f6da10cfb6eae05fd1ef6a">&#9670;&nbsp;</a></span>BasisSplineSegment() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::<a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>&lt; TGroup &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -211,19 +311,19 @@ template&lt;class TLieGroup &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac1b138e6826354823d6fcf2aeafc9e43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1b138e6826354823d6fcf2aeafc9e43">&#9670;&nbsp;</a></span>dt2ParentFromSpline()</h2>
+<a id="abc1b9a8e8bc73e1e967342a87302ff5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1b9a8e8bc73e1e967342a87302ff5c">&#9670;&nbsp;</a></span>dt2ParentFromSpline()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ab4e430dd674a4b66bfac354fcbb8cb1d">Transformation</a> <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::dt2ParentFromSpline </td>
+          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a1d80251182411fd53682cfd9adf136f8">Transformation</a> <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::dt2ParentFromSpline </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>u</em>, </td>
@@ -249,19 +349,19 @@ template&lt;class TLieGroup &gt; </div>
 
 </div>
 </div>
-<a id="a8d0e1125f821a05a25d4ca1110fb3240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d0e1125f821a05a25d4ca1110fb3240">&#9670;&nbsp;</a></span>dtParentFromSpline()</h2>
+<a id="a1c4b14b7c65956fbc3cf14f4f0c8bdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4b14b7c65956fbc3cf14f4f0c8bdac">&#9670;&nbsp;</a></span>dtParentFromSpline()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html#ab4e430dd674a4b66bfac354fcbb8cb1d">Transformation</a> <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::dtParentFromSpline </td>
+          <td class="memname"><a class="el" href="structsophus_1_1_basis_spline_segment.html#a1d80251182411fd53682cfd9adf136f8">Transformation</a> <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::dtParentFromSpline </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>u</em>, </td>
@@ -287,19 +387,75 @@ template&lt;class TLieGroup &gt; </div>
 
 </div>
 </div>
-<a id="ace4fd29d67ce12e2a8ece33e30f09222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace4fd29d67ce12e2a8ece33e30f09222">&#9670;&nbsp;</a></span>parentFromSpline()</h2>
+<a id="ad48240adee7eeebad7a02c2fab5bc6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48240adee7eeebad7a02c2fab5bc6c0">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TLieGroup <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::parentFromSpline </td>
+          <td class="memname">auto <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>&lt; TGroup &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>=delete</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ac3fae90deab983bf2af4443cdacbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac3fae90deab983bf2af4443cdacbdb">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>&lt; TGroup &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="structsophus_1_1_basis_spline_segment.html">BasisSplineSegment</a>=delete</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ddb239cb1777075b41ba2f17d4f9c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ddb239cb1777075b41ba2f17d4f9c94">&#9670;&nbsp;</a></span>parentFromSpline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TGroup <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::parentFromSpline </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
@@ -315,19 +471,19 @@ template&lt;class TLieGroup &gt; </div>
 
 </div>
 </div>
-<a id="a2f793e920ab18fb69611f2ae42580980"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f793e920ab18fb69611f2ae42580980">&#9670;&nbsp;</a></span>worldFromFoo0()</h2>
+<a id="a81ac8d34cc45734594bd3f37b6bba3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ac8d34cc45734594bd3f37b6bba3f2">&#9670;&nbsp;</a></span>worldFromFoo0()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Map&lt;TLieGroup const&gt; <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::worldFromFoo0 </td>
+          <td class="memname">TGroup <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::worldFromFoo0 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -342,19 +498,19 @@ template&lt;class TLieGroup &gt; </div>
 
 </div>
 </div>
-<a id="aa9ea17cdda529b171d51be066f015146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9ea17cdda529b171d51be066f015146">&#9670;&nbsp;</a></span>worldFromFoo1()</h2>
+<a id="a61cdb97dec3abe2a0dc3b751da6a0d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cdb97dec3abe2a0dc3b751da6a0d66">&#9670;&nbsp;</a></span>worldFromFoo1()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Map&lt;TLieGroup const&gt; <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::worldFromFoo1 </td>
+          <td class="memname">TGroup <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::worldFromFoo1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -369,19 +525,19 @@ template&lt;class TLieGroup &gt; </div>
 
 </div>
 </div>
-<a id="a3d80bb083181d4798b138f3bd2bb7fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d80bb083181d4798b138f3bd2bb7fbc">&#9670;&nbsp;</a></span>worldFromFoo2()</h2>
+<a id="a650cb205d17fb7a127cbcdb227e26a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650cb205d17fb7a127cbcdb227e26a9d">&#9670;&nbsp;</a></span>worldFromFoo2()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Map&lt;TLieGroup const&gt; <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::worldFromFoo2 </td>
+          <td class="memname">TGroup <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::worldFromFoo2 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -396,19 +552,19 @@ template&lt;class TLieGroup &gt; </div>
 
 </div>
 </div>
-<a id="a671c6f1d6e27c3ee1305e44366f043a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671c6f1d6e27c3ee1305e44366f043a0">&#9670;&nbsp;</a></span>worldFromFooPrev()</h2>
+<a id="a0f28c94d4f1de2ec8130c58b14e0720c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f28c94d4f1de2ec8130c58b14e0720c">&#9670;&nbsp;</a></span>worldFromFooPrev()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TLieGroup &gt; </div>
+template&lt;concepts::LieGroup TGroup&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Map&lt;TLieGroup const&gt; <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TLieGroup &gt;::worldFromFooPrev </td>
+          <td class="memname">TGroup <a class="el" href="structsophus_1_1_basis_spline_segment.html">sophus::BasisSplineSegment</a>&lt; TGroup &gt;::worldFromFooPrev </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -424,7 +580,7 @@ template&lt;class TLieGroup &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/lie/interp/<a class="el" href="spline_8h_source.html">spline.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/lie/interp/<a class="el" href="spline_8h_source.html">spline.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

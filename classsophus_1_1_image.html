@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::Image&lt; TPixel, TAllocator &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::Image&lt; TPixel, TAllocator &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classsophus_1_1_image.html',''); initR
 <p><a class="el" href="classsophus_1_1_image.html" title="Image read-only access to pixels and shared ownership, hence cheap to copy. Type is nullable.">Image</a> read-only access to pixels and shared ownership, hence cheap to copy. Type is nullable.  
  <a href="classsophus_1_1_image.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="image_8h_source.html">image.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="image_2image_8h_source.html">image.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sophus::Image&lt; TPixel, TAllocator &gt;:</div>
 <div class="dyncontent">
@@ -152,12 +152,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2a811bbf72d11739a3f897f5f1747c6 inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#aa2a811bbf72d11739a3f897f5f1747c6">layout</a> () const -&gt; <a class="el" href="classsophus_1_1_image_layout.html">ImageLayout</a> const &amp;</td></tr>
 <tr class="memdesc:aa2a811bbf72d11739a3f897f5f1747c6 inherit pub_methods_structsophus_1_1_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classsophus_1_1_image_layout.html" title="Layout of the image: width, height and pitch in bytes.">ImageLayout</a>. It is {{0,0}, 0} is view is empty.  <a href="structsophus_1_1_image_view.html#aa2a811bbf72d11739a3f897f5f1747c6">More...</a><br /></td></tr>
 <tr class="separator:aa2a811bbf72d11739a3f897f5f1747c6 inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f393c5f7774cb7ec4a52e0e31366c9 inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#a00f393c5f7774cb7ec4a52e0e31366c9">area</a> () const -&gt; size_t</td></tr>
+<tr class="separator:a00f393c5f7774cb7ec4a52e0e31366c9 inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414713ad1b79d73984f26f13d375b81f inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#a414713ad1b79d73984f26f13d375b81f">width</a> () const -&gt; int</td></tr>
 <tr class="separator:a414713ad1b79d73984f26f13d375b81f inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a0da523ed97de1a8847b1ed707cdb1 inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#aa2a0da523ed97de1a8847b1ed707cdb1">height</a> () const -&gt; int</td></tr>
 <tr class="separator:aa2a0da523ed97de1a8847b1ed707cdb1 inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5aa1a1799adfea1f2f9dbb8ca1c267 inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#a3f5aa1a1799adfea1f2f9dbb8ca1c267">pitchBytes</a> () const -&gt; size_t</td></tr>
 <tr class="separator:a3f5aa1a1799adfea1f2f9dbb8ca1c267 inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ab9798baff2bcca2887086c68b3a2a inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#ac4ab9798baff2bcca2887086c68b3a2a">sizeBytes</a> () const -&gt; size_t</td></tr>
+<tr class="separator:ac4ab9798baff2bcca2887086c68b3a2a inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f3e552734a2b307fa5421b60a617178 inherit pub_methods_structsophus_1_1_image_view"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1_image_view.html#a4f3e552734a2b307fa5421b60a617178">colInBounds</a> (int u) const -&gt; bool</td></tr>
 <tr class="memdesc:a4f3e552734a2b307fa5421b60a617178 inherit pub_methods_structsophus_1_1_image_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if u is in [0, width).  <a href="structsophus_1_1_image_view.html#a4f3e552734a2b307fa5421b60a617178">More...</a><br /></td></tr>
 <tr class="separator:a4f3e552734a2b307fa5421b60a617178 inherit pub_methods_structsophus_1_1_image_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,7 +591,7 @@ template&lt;class TT , class TAllocator2T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/image/<a class="el" href="image_8h_source.html">image.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/image/<a class="el" href="image_2image_8h_source.html">image.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

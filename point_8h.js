@@ -5,6 +5,7 @@ var point_8h =
     [ "EigenMatrixType", "point_8h.html#a041aeaa94d4101bf10f0f12c3399db4f", null ],
     [ "EigenSameDim", "point_8h.html#a5fadad44fd9c3861df1f0acccd99ce17", null ],
     [ "EigenType", "point_8h.html#aa6e263c92974bf44b99cd12a016421b4", null ],
+    [ "EigenVector3", "point_8h.html#a86d6fc9e2c539f2de970ac6cd17d614a", null ],
     [ "EigenWithDim", "point_8h.html#af5e2690d88409e5fedb80ba9d4e1d214", null ],
     [ "EigenWithDimOrDynamic", "point_8h.html#a6371edfaaac39eef8350dee026881113", null ],
     [ "IntegerEigenDenseType", "point_8h.html#acada3829bb081cd893e26ee36f099ec7", null ],

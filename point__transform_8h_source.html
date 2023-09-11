@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/geometry/point_transform.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/geometry/point_transform.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('point__transform_8h_source.html',''); 
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#aa287fea6241969b6205563876d622cfc">  131</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classsophus_1_1_point_transformer.html#aa287fea6241969b6205563876d622cfc">PointTransformer</a>(<a class="code" href="classsophus_1_1_isometry3.html">sophus::Isometry3&lt;TT&gt;</a> <span class="keyword">const</span>&amp; foo_from_bar)</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      : foo_from_bar_(foo_from_bar),</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        foo_rotation_bar_(foo_from_bar.so3().matrix()),</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        bar_origin_in_foo_(foo_from_bar.<a class="code" href="namespacesophus_1_1inverse__depth.html#a12d2c31f83973db3481e3e2298d7fb30">translation</a>()) {}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        bar_origin_in_foo_(foo_from_bar.translation()) {}</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">  /// Transforms a 3-point from frame bar to frame foo.</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#a2edcad57a6991e98c1a0d8066ed1226a">  137</a></span>&#160;<span class="comment"></span>  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_point_transformer.html#a2edcad57a6991e98c1a0d8066ed1226a">transform</a>(Eigen::Matrix&lt;TT, 3, 1&gt; <span class="keyword">const</span>&amp; point_in_bar)</div>
@@ -295,10 +295,10 @@ $(document).ready(function(){initNavTree('point__transform_8h_source.html',''); 
 <div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#aefa8fa217d68df591443b90574774d9b">  206</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_point_transformer.html#aefa8fa217d68df591443b90574774d9b">fooFromBar</a>() const -&gt; <a class="code" href="namespacesophus.html">sophus</a>::<a class="code" href="classsophus_1_1_isometry3.html">Isometry3</a>&lt;TT&gt; const&amp; {</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> foo_from_bar_;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#a80998760e60ffc29eb9ad174d0479846">  209</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_point_transformer.html#a80998760e60ffc29eb9ad174d0479846">fooRotationBar</a>() const -&gt; Eigen::Matrix&lt;TT, 3, 3&gt; const&amp; {</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#a80998760e60ffc29eb9ad174d0479846">  209</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_point_transformer.html#a80998760e60ffc29eb9ad174d0479846">fooRotationBar</a>() const -&gt; <a class="code" href="namespace_eigen.html">Eigen</a>::Matrix&lt;TT, 3, 3&gt; const&amp; {</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> foo_rotation_bar_;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
-<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#abc6e2aed55122b1cae97beb914c82568">  212</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_point_transformer.html#abc6e2aed55122b1cae97beb914c82568">barOriginInFoo</a>() const -&gt; Eigen::Matrix&lt;TT, 3, 1&gt; const&amp; {</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="classsophus_1_1_point_transformer.html#abc6e2aed55122b1cae97beb914c82568">  212</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classsophus_1_1_point_transformer.html#abc6e2aed55122b1cae97beb914c82568">barOriginInFoo</a>() const -&gt; <a class="code" href="namespace_eigen.html">Eigen</a>::Matrix&lt;TT, 3, 1&gt; const&amp; {</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">return</span> bar_origin_in_foo_;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
@@ -311,6 +311,7 @@ $(document).ready(function(){initNavTree('point__transform_8h_source.html',''); 
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacesophus_html_a24a671b2a8a02980dea324acfd9557e0"><div class="ttname"><a href="namespacesophus.html#a24a671b2a8a02980dea324acfd9557e0">sophus::unproj</a></div><div class="ttdeci">auto unproj(Eigen::MatrixBase&lt; TPoint &gt; const &amp;p, const typename TPoint::Scalar &amp;z=1.0) -&gt; Eigen::Vector&lt; typename TPoint::Scalar, TPoint::RowsAtCompileTime+1 &gt;</div><div class="ttdoc">Maps point on the z=1 plane (a,b) to homogeneous representation of the same point: (z*a,...</div><div class="ttdef"><b>Definition:</b> homogeneous.h:31</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdef"><b>Definition:</b> params.h:72</div></div>
 <div class="ttc" id="aclasssophus_1_1_point_transformer_html"><div class="ttname"><a href="classsophus_1_1_point_transformer.html">sophus::PointTransformer</a></div><div class="ttdoc">Functor to efficiently transform a number of point given a Isometry3 pose.</div><div class="ttdef"><b>Definition:</b> point_transform.h:128</div></div>
 <div class="ttc" id="aclasssophus_1_1_point_transformer_html_a5c934e29ba79a2381a833a8dc2855482"><div class="ttname"><a href="classsophus_1_1_point_transformer.html#a5c934e29ba79a2381a833a8dc2855482">sophus::PointTransformer::PointTransformer</a></div><div class="ttdeci">PointTransformer()=default</div></div>
 <div class="ttc" id="aclasssophus_1_1_point_transformer_html_aefa8fa217d68df591443b90574774d9b"><div class="ttname"><a href="classsophus_1_1_point_transformer.html#aefa8fa217d68df591443b90574774d9b">sophus::PointTransformer::fooFromBar</a></div><div class="ttdeci">auto fooFromBar() const -&gt; sophus::Isometry3&lt; TT &gt; const &amp;</div><div class="ttdef"><b>Definition:</b> point_transform.h:206</div></div>
@@ -319,7 +320,6 @@ $(document).ready(function(){initNavTree('point__transform_8h_source.html',''); 
 <div class="ttc" id="astructsophus_1_1_projection_z1_html_a6eab3281306545cbc29977d8cb8e7726"><div class="ttname"><a href="structsophus_1_1_projection_z1.html#a6eab3281306545cbc29977d8cb8e7726">sophus::ProjectionZ1::dxProjX</a></div><div class="ttdeci">static auto dxProjX(Eigen::Matrix&lt; TScalar, 3, 1 &gt; const &amp;p) -&gt; Eigen::Matrix&lt; TScalar, 2, 3 &gt;</div><div class="ttdoc">Returns point derivative of inverse depth point projection:</div><div class="ttdef"><b>Definition:</b> projection_z1.h:52</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
 <div class="ttc" id="aclasssophus_1_1_inverse_depth_point3_html"><div class="ttname"><a href="classsophus_1_1_inverse_depth_point3.html">sophus::InverseDepthPoint3</a></div><div class="ttdoc">Inverse depth point representation.</div><div class="ttdef"><b>Definition:</b> inverse_depth.h:56</div></div>
-<div class="ttc" id="anamespacesophus_1_1inverse__depth_html_a12d2c31f83973db3481e3e2298d7fb30"><div class="ttname"><a href="namespacesophus_1_1inverse__depth.html#a12d2c31f83973db3481e3e2298d7fb30">sophus.inverse_depth.translation</a></div><div class="ttdeci">def translation()</div><div class="ttdef"><b>Definition:</b> inverse_depth.py:23</div></div>
 <div class="ttc" id="aclasssophus_1_1_point_transformer_html_a2edcad57a6991e98c1a0d8066ed1226a"><div class="ttname"><a href="classsophus_1_1_point_transformer.html#a2edcad57a6991e98c1a0d8066ed1226a">sophus::PointTransformer::transform</a></div><div class="ttdeci">auto transform(Eigen::Matrix&lt; TT, 3, 1 &gt; const &amp;point_in_bar) const -&gt; Eigen::Matrix&lt; TT, 3, 1 &gt;</div><div class="ttdoc">Transforms a 3-point from frame bar to frame foo.</div><div class="ttdef"><b>Definition:</b> point_transform.h:137</div></div>
 <div class="ttc" id="aclasssophus_1_1_point_transformer_html_ab8c1dc6d662f3db54df88ba20811cb44"><div class="ttname"><a href="classsophus_1_1_point_transformer.html#ab8c1dc6d662f3db54df88ba20811cb44">sophus::PointTransformer::dxProjTransformX</a></div><div class="ttdeci">auto dxProjTransformX(InverseDepthPoint3&lt; TT &gt; const &amp;inverse_depth_point_in_bar) const -&gt; Eigen::Matrix&lt; TT, 2, 3 &gt;</div><div class="ttdef"><b>Definition:</b> point_transform.h:192</div></div>
 <div class="ttc" id="aclasssophus_1_1_point_transformer_html_a5525e666697870aa6c6fe9d9fa9d4b8f"><div class="ttname"><a href="classsophus_1_1_point_transformer.html#a5525e666697870aa6c6fe9d9fa9d4b8f">sophus::PointTransformer::dxProjExpXTransformPointAt0</a></div><div class="ttdeci">auto dxProjExpXTransformPointAt0(InverseDepthPoint3&lt; TT &gt; const &amp;inverse_depth_point_in_bar) const -&gt; Eigen::Matrix&lt; TT, 2, 6 &gt;</div><div class="ttdoc">Returns pose derivative of inverse depth point projection at the identity:</div><div class="ttdef"><b>Definition:</b> point_transform.h:170</div></div>
@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('point__transform_8h_source.html',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_8028503c7a289d5c13f61778d61a682d.html">geometry</a></li><li class="navelem"><a class="el" href="point__transform_8h.html">point_transform.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_adb47c116a75c666b79f314aa2e4eed3.html">geometry</a></li><li class="navelem"><a class="el" href="point__transform_8h.html">point_transform.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

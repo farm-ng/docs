@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/calculus/num_diff.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/calculus/num_diff.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -138,59 +138,61 @@ $(document).ready(function(){initNavTree('num__diff_8h_source.html',''); initRes
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    h.setZero();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; kM; ++i) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      h[i] = eps;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      j.col(i) =</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          (vector_field(a + h) - vector_field(a - h)) / (TScalar(2) * eps);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      h[i] = TScalar(0);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> j;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace details</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/// Calculates the derivative of a curve at a point ``t``.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/// Here, a curve is a function from a Scalar to a Euclidean space. Thus, it</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/// returns either a Scalar, a vector or a matrix.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keyword">class</span> TFn&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespacesophus.html#afd074d27b49b9c7a5d2932f40c33e8c8">   69</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#afd074d27b49b9c7a5d2932f40c33e8c8">curveNumDiff</a>(TFn curve, TScalar t, TScalar h = kEpsilonSqrt&lt;TScalar&gt;)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    -&gt; decltype(details::Curve&lt;TScalar&gt;::numDiff(std::move(curve), t, h)) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> details::Curve&lt;TScalar&gt;::numDiff(std::move(curve), t, h);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/// Calculates the derivative of a vector field at a point ``a``.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/// Here, a vector field is a function from a vector space to another vector</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/// space.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">///</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">class </span>TScalar,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> kMatrixDim,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> kM,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">class </span>TScalarOrVector,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">class </span>TFn&gt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="namespacesophus.html#a8630842287247956935990a826683c6f">   85</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a8630842287247956935990a826683c6f">vectorFieldNumDiff</a>(</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    TFn vector_field,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    TScalarOrVector <span class="keyword">const</span>&amp; a,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    TScalar eps = kEpsilonSqrt&lt;TScalar&gt;)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    -&gt; Eigen::Matrix&lt;TScalar, kMatrixDim, kM&gt; {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> details::VectorField&lt;TScalar, kMatrixDim, kM&gt;::numDiff(</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      std::move(vector_field), a, eps);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      Eigen::Vector&lt;TScalar, kMatrixDim&gt; vfp = vector_field(a + h);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      Eigen::Vector&lt;TScalar, kMatrixDim&gt; vfm = vector_field(a - h);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      j.col(i) = (vfp - vfm) / (TScalar(2) * eps);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      h[i] = TScalar(0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> j;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace details</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/// Calculates the derivative of a curve at a point ``t``.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/// Here, a curve is a function from a Scalar to a Euclidean space. Thus, it</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/// returns either a Scalar, a vector or a matrix.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">class</span> TScalar, <span class="keyword">class</span> TFn&gt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacesophus.html#afd074d27b49b9c7a5d2932f40c33e8c8">   71</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#afd074d27b49b9c7a5d2932f40c33e8c8">curveNumDiff</a>(TFn curve, TScalar t, TScalar h = kEpsilonSqrt&lt;TScalar&gt;)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    -&gt; decltype(details::Curve&lt;TScalar&gt;::numDiff(std::move(curve), t, h)) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> details::Curve&lt;TScalar&gt;::numDiff(std::move(curve), t, h);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/// Calculates the derivative of a vector field at a point ``a``.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/// Here, a vector field is a function from a vector space to another vector</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/// space.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">///</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">class </span>TScalar,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> kMatrixDim,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> kM,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">class </span>TScalarOrVector,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">class </span>TFn&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="namespacesophus.html#a8630842287247956935990a826683c6f">   87</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacesophus.html#a8630842287247956935990a826683c6f">vectorFieldNumDiff</a>(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    TFn vector_field,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    TScalarOrVector <span class="keyword">const</span>&amp; a,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    TScalar eps = kEpsilonSqrt&lt;TScalar&gt;)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    -&gt; Eigen::Matrix&lt;TScalar, kMatrixDim, kM&gt; {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">return</span> details::VectorField&lt;TScalar, kMatrixDim, kM&gt;::numDiff(</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      vector_field, a, eps);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
-<div class="ttc" id="anamespacesophus_html_afd074d27b49b9c7a5d2932f40c33e8c8"><div class="ttname"><a href="namespacesophus.html#afd074d27b49b9c7a5d2932f40c33e8c8">sophus::curveNumDiff</a></div><div class="ttdeci">auto curveNumDiff(TFn curve, TScalar t, TScalar h=kEpsilonSqrt&lt; TScalar &gt;) -&gt; decltype(details::Curve&lt; TScalar &gt;::numDiff(std::move(curve), t, h))</div><div class="ttdoc">Calculates the derivative of a curve at a point t.</div><div class="ttdef"><b>Definition:</b> num_diff.h:69</div></div>
-<div class="ttc" id="anamespacesophus_html_a8630842287247956935990a826683c6f"><div class="ttname"><a href="namespacesophus.html#a8630842287247956935990a826683c6f">sophus::vectorFieldNumDiff</a></div><div class="ttdeci">auto vectorFieldNumDiff(TFn vector_field, TScalarOrVector const &amp;a, TScalar eps=kEpsilonSqrt&lt; TScalar &gt;) -&gt; Eigen::Matrix&lt; TScalar, kMatrixDim, kM &gt;</div><div class="ttdoc">Calculates the derivative of a vector field at a point a.</div><div class="ttdef"><b>Definition:</b> num_diff.h:85</div></div>
+<div class="ttc" id="anamespacesophus_html_afd074d27b49b9c7a5d2932f40c33e8c8"><div class="ttname"><a href="namespacesophus.html#afd074d27b49b9c7a5d2932f40c33e8c8">sophus::curveNumDiff</a></div><div class="ttdeci">auto curveNumDiff(TFn curve, TScalar t, TScalar h=kEpsilonSqrt&lt; TScalar &gt;) -&gt; decltype(details::Curve&lt; TScalar &gt;::numDiff(std::move(curve), t, h))</div><div class="ttdoc">Calculates the derivative of a curve at a point t.</div><div class="ttdef"><b>Definition:</b> num_diff.h:71</div></div>
+<div class="ttc" id="anamespacesophus_html_a8630842287247956935990a826683c6f"><div class="ttname"><a href="namespacesophus.html#a8630842287247956935990a826683c6f">sophus::vectorFieldNumDiff</a></div><div class="ttdeci">auto vectorFieldNumDiff(TFn vector_field, TScalarOrVector const &amp;a, TScalar eps=kEpsilonSqrt&lt; TScalar &gt;) -&gt; Eigen::Matrix&lt; TScalar, kMatrixDim, kM &gt;</div><div class="ttdoc">Calculates the derivative of a vector field at a point a.</div><div class="ttdef"><b>Definition:</b> num_diff.h:87</div></div>
 <div class="ttc" id="acommon_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_9dfb2e917fbe8ff431dd391a6c1c368a.html">calculus</a></li><li class="navelem"><a class="el" href="num__diff_8h.html">num_diff.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_b6750e209ce329f62bb9057785f99ef3.html">calculus</a></li><li class="navelem"><a class="el" href="num__diff_8h.html">num_diff.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

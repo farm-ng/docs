@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: core.events_file_writer Namespace Reference</title>
+<title>farm-ng-core: core.events_file_writer Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('namespacecore_1_1events__file__writer.
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">core.events_file_writer Namespace Reference</div>  </div>
 </div><!--header-->
@@ -94,7 +95,49 @@ $(document).ready(function(){initNavTree('namespacecore_1_1events__file__writer.
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcore_1_1events__file__writer_1_1_events_file_writer.html">EventsFileWriter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afce32bc9ff10befc0cb07e1614a1f057"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecore_1_1events__file__writer.html#afce32bc9ff10befc0cb07e1614a1f057">proto_to_json_file</a> (str|Path file_path, Message proto_message)</td></tr>
+<tr class="separator:afce32bc9ff10befc0cb07e1614a1f057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="afce32bc9ff10befc0cb07e1614a1f057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce32bc9ff10befc0cb07e1614a1f057">&#9670;&nbsp;</a></span>proto_to_json_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool core.events_file_writer.proto_to_json_file </td>
+          <td>(</td>
+          <td class="paramtype">str | Path&#160;</td>
+          <td class="paramname"><em>file_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Message&#160;</td>
+          <td class="paramname"><em>proto_message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Write a proto Message to a JSON file. The parent directory of the file must exist.
+
+Args:
+    file_path (str | Path): The path to the JSON file to create / overwrite.
+    proto_message (Message): The proto message to write to the JSON file.
+
+Returns:
+    True if the file was written successfully, False otherwise.
+</pre> 
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

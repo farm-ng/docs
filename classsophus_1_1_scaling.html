@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::Scaling&lt; TScalar, kDim &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::Scaling&lt; TScalar, kDim &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classsophus_1_1_scaling.html',''); ini
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classsophus_1_1_scaling-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -91,26 +92,21 @@ $(document).ready(function(){initNavTree('classsophus_1_1_scaling.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="scaling_8h_source.html">scaling.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for sophus::Scaling&lt; TScalar, kDim &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsophus_1_1_scaling__inherit__graph.png" border="0" usemap="#sophus_1_1_scaling_3_01_t_scalar_00_01k_dim_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="sophus_1_1_scaling_3_01_t_scalar_00_01k_dim_01_4_inherit__map" id="sophus_1_1_scaling_3_01_t_scalar_00_01k_dim_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="237,27,428,69"/>
-<area shape="rect" title=" " alt="" coords="5,5,189,91"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for sophus::Scaling&lt; TScalar, kDim &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsophus_1_1_scaling__coll__graph.png" border="0" usemap="#sophus_1_1_scaling_3_01_t_scalar_00_01k_dim_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="sophus_1_1_scaling_3_01_t_scalar_00_01k_dim_01_4_coll__map" id="sophus_1_1_scaling_3_01_t_scalar_00_01k_dim_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="237,27,428,69"/>
-<area shape="rect" title=" " alt="" coords="5,5,189,91"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<p><code>#include &lt;<a class="el" href="impl_2scaling_8h_source.html">scaling.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5ff1bc2a1ff399b42e117b74a0f37c28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#a5ff1bc2a1ff399b42e117b74a0f37c28">Scalar</a> = TScalar</td></tr>
+<tr class="separator:a5ff1bc2a1ff399b42e117b74a0f37c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d468a458dd449c36f96c94078f1bcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#a02d468a458dd449c36f96c94078f1bcf">Base</a> = <a class="el" href="classsophus_1_1lie_1_1_group.html">lie::Group</a>&lt; <a class="el" href="structsophus_1_1lie_1_1_scaling_with_dim.html">lie::ScalingWithDim</a>&lt; kDim &gt;::template Group, TScalar, <a class="el" href="structsophus_1_1lie_1_1_scaling_with_dim.html">lie::ScalingWithDim</a>&lt; kDim &gt;::template Impl &gt;</td></tr>
+<tr class="separator:a02d468a458dd449c36f96c94078f1bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa667811af81daeab8da3305639d5930e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#aa667811af81daeab8da3305639d5930e">Tangent</a> = typename <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Base::Tangent</a></td></tr>
+<tr class="separator:aa667811af81daeab8da3305639d5930e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b8b7ca49dbdfe9a10210f7edb1010d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#ab7b8b7ca49dbdfe9a10210f7edb1010d">Params</a> = typename <a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Base::Params</a></td></tr>
+<tr class="separator:ab7b8b7ca49dbdfe9a10210f7edb1010d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1b6faa846676a752b9920c7b398c6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#a1a1b6faa846676a752b9920c7b398c6d">Point</a> = typename <a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Base::Point</a></td></tr>
+<tr class="separator:a1a1b6faa846676a752b9920c7b398c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a36a170b69271d1c9178af4d0f07b0099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#a36a170b69271d1c9178af4d0f07b0099">Scaling</a> ()=default</td></tr>
@@ -120,7 +116,92 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85ab9d21ffcc687d86e459d802a0e65b"><td class="memTemplParams" colspan="2">template&lt;class TOtherScalar &gt; </td></tr>
 <tr class="memitem:a85ab9d21ffcc687d86e459d802a0e65b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#a85ab9d21ffcc687d86e459d802a0e65b">cast</a> () const -&gt; <a class="el" href="classsophus_1_1_scaling.html">Scaling</a>&lt; TOtherScalar, kDim &gt;</td></tr>
 <tr class="separator:a85ab9d21ffcc687d86e459d802a0e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3af144b8eb20ee7923b083e5d550fbe"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#ab3af144b8eb20ee7923b083e5d550fbe">scaleFactors</a> () const -&gt; <a class="el" href="classsophus_1_1_scaling.html#ab7b8b7ca49dbdfe9a10210f7edb1010d">Params</a> const &amp;</td></tr>
+<tr class="separator:ab3af144b8eb20ee7923b083e5d550fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69384028339973690e271dd4ef888103"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_scaling.html#a69384028339973690e271dd4ef888103">setScaleFactors</a> (<a class="el" href="classsophus_1_1_scaling.html#ab7b8b7ca49dbdfe9a10210f7edb1010d">Params</a> const &amp;scale_factors) -&gt; void</td></tr>
+<tr class="separator:a69384028339973690e271dd4ef888103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a02d468a458dd449c36f96c94078f1bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d468a458dd449c36f96c94078f1bcf">&#9670;&nbsp;</a></span>Base</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1_scaling.html#a02d468a458dd449c36f96c94078f1bcf">Base</a> =  <a class="el" href="classsophus_1_1lie_1_1_group.html">lie::Group</a>&lt; <a class="el" href="structsophus_1_1lie_1_1_scaling_with_dim.html">lie::ScalingWithDim</a>&lt;kDim&gt;::template Group, TScalar, <a class="el" href="structsophus_1_1lie_1_1_scaling_with_dim.html">lie::ScalingWithDim</a>&lt;kDim&gt;::template Impl&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7b8b7ca49dbdfe9a10210f7edb1010d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b8b7ca49dbdfe9a10210f7edb1010d">&#9670;&nbsp;</a></span>Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1_scaling.html#ab7b8b7ca49dbdfe9a10210f7edb1010d">Params</a> =  typename <a class="el" href="classsophus_1_1lie_1_1_group.html#a1a5711cb27d87c1a88074f7bdb56d9c1">Base::Params</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a1b6faa846676a752b9920c7b398c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1b6faa846676a752b9920c7b398c6d">&#9670;&nbsp;</a></span>Point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1_scaling.html#a1a1b6faa846676a752b9920c7b398c6d">Point</a> =  typename <a class="el" href="classsophus_1_1lie_1_1_group.html#abca91501eb90c10b21ec1774663e28eb">Base::Point</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ff1bc2a1ff399b42e117b74a0f37c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff1bc2a1ff399b42e117b74a0f37c28">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1_scaling.html#a5ff1bc2a1ff399b42e117b74a0f37c28">Scalar</a> =  TScalar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa667811af81daeab8da3305639d5930e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa667811af81daeab8da3305639d5930e">&#9670;&nbsp;</a></span>Tangent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1_scaling.html#aa667811af81daeab8da3305639d5930e">Tangent</a> =  typename <a class="el" href="classsophus_1_1lie_1_1_group.html#afd7b7593b71b8d0e25de836ada6d7334">Base::Tangent</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a36a170b69271d1c9178af4d0f07b0099"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36a170b69271d1c9178af4d0f07b0099">&#9670;&nbsp;</a></span>Scaling() <span class="overload">[1/2]</span></h2>
@@ -207,8 +288,63 @@ template&lt;class TOtherScalar &gt; </div>
 
 </div>
 </div>
+<a id="ab3af144b8eb20ee7923b083e5d550fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3af144b8eb20ee7923b083e5d550fbe">&#9670;&nbsp;</a></span>scaleFactors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::scaleFactors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classsophus_1_1_scaling.html#ab7b8b7ca49dbdfe9a10210f7edb1010d">Params</a> const&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69384028339973690e271dd4ef888103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69384028339973690e271dd4ef888103">&#9670;&nbsp;</a></span>setScaleFactors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_scaling.html">sophus::Scaling</a>&lt; TScalar, kDim &gt;::setScaleFactors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1_scaling.html#ab7b8b7ca49dbdfe9a10210f7edb1010d">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>scale_factors</em></td><td>)</td>
+          <td> -&gt; void </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/lie/<a class="el" href="scaling_8h_source.html">scaling.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/lie/impl/<a class="el" href="impl_2scaling_8h_source.html">scaling.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

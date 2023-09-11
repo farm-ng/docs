@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['uniquedataarea_2953',['UniqueDataArea',['../namespacesophus.html#ae355552b5618046883eddff78464d1ce',1,'sophus']]],
-  ['unitvector2_2954',['UnitVector2',['../namespacesophus.html#ac87b0322f2db7a79e3691d1b40d74a6c',1,'sophus']]],
-  ['unitvector2f64_2955',['UnitVector2F64',['../namespacesophus.html#a7844d6175a39ac3f234c689bce2465dc',1,'sophus']]],
-  ['unitvector3_2956',['UnitVector3',['../namespacesophus.html#a48f93ea85df4a00f0122fe2ef303b6b6',1,'sophus']]],
-  ['unitvector3f64_2957',['UnitVector3F64',['../namespacesophus.html#a591cded8e4d095b078dde6f676880ec1',1,'sophus']]]
+  ['quaternion_3364',['Quaternion',['../classsophus_1_1lie_1_1_rotation3_impl.html#a35d2bd7507cf75666cd1e83351cbb548',1,'sophus::lie::Rotation3Impl::Quaternion()'],['../classsophus_1_1lie_1_1_spiral_similarity3_impl.html#aae3fc0cad49594cecdf86c58f8d93bf2',1,'sophus::lie::SpiralSimilarity3Impl::Quaternion()']]],
+  ['quaternionf64_3365',['QuaternionF64',['../namespacesophus.html#a1e26befd232a7c71a01a009514b3bf4c',1,'sophus']]],
+  ['quaternionreturn_3366',['QuaternionReturn',['../classsophus_1_1_quaternion.html#a454f4ab8ac9756d77deaf8e5ca73fe15',1,'sophus::Quaternion']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: farm_ng::EventLogWriter Class Reference</title>
+<title>farm-ng-core: farm_ng::EventLogWriter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -104,14 +104,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab73f8492ac274a8fda9b19db4c44c534"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#ab73f8492ac274a8fda9b19db4c44c534">~EventLogWriter</a> () noexcept</td></tr>
 <tr class="memdesc:ab73f8492ac274a8fda9b19db4c44c534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main destructor.  <a href="classfarm__ng_1_1_event_log_writer.html#ab73f8492ac274a8fda9b19db4c44c534">More...</a><br /></td></tr>
 <tr class="separator:ab73f8492ac274a8fda9b19db4c44c534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1656f5af91b828eccbe365bd49fc07be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#a1656f5af91b828eccbe365bd49fc07be">write</a> (std::string const &amp;path, google::protobuf::Message const &amp;message, std::vector&lt; core::proto::Timestamp &gt; const &amp;timestamps=std::vector&lt; core::proto::Timestamp &gt;())</td></tr>
+<tr class="memitem:a1656f5af91b828eccbe365bd49fc07be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#a1656f5af91b828eccbe365bd49fc07be">write</a> (std::string const &amp;path, google::protobuf::Message const &amp;<a class="el" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, std::vector&lt; core::proto::Timestamp &gt; const &amp;timestamps=std::vector&lt; core::proto::Timestamp &gt;())</td></tr>
 <tr class="memdesc:a1656f5af91b828eccbe365bd49fc07be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an incoming protobuf in the log file.  <a href="classfarm__ng_1_1_event_log_writer.html#a1656f5af91b828eccbe365bd49fc07be">More...</a><br /></td></tr>
 <tr class="separator:a1656f5af91b828eccbe365bd49fc07be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6041037685fc5b12913ad312491bdc6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#a6041037685fc5b12913ad312491bdc6c">write</a> (std::string const &amp;path, google::protobuf::Message const &amp;message, google::protobuf::RepeatedPtrField&lt; core::proto::Timestamp &gt; const &amp;timestamps)</td></tr>
+<tr class="memitem:a6041037685fc5b12913ad312491bdc6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#a6041037685fc5b12913ad312491bdc6c">write</a> (std::string const &amp;path, google::protobuf::Message const &amp;<a class="el" href="sophus_2_c_make_lists_8txt.html#a0a336f4f09eebacd3c1416cb0015f58f">message</a>, google::protobuf::RepeatedPtrField&lt; core::proto::Timestamp &gt; const &amp;timestamps)</td></tr>
 <tr class="separator:a6041037685fc5b12913ad312491bdc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8d8d97efdcd22b04a2892df2137bb2"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#afe8d8d97efdcd22b04a2892df2137bb2">getPath</a> () const</td></tr>
 <tr class="memdesc:afe8d8d97efdcd22b04a2892df2137bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path including the fileaname.  <a href="classfarm__ng_1_1_event_log_writer.html#afe8d8d97efdcd22b04a2892df2137bb2">More...</a><br /></td></tr>
 <tr class="separator:afe8d8d97efdcd22b04a2892df2137bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d1b24857f550f873e8eedd07506cbb"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfarm__ng_1_1_event_log_writer.html#af3d1b24857f550f873e8eedd07506cbb">getBytesWritten</a> ()</td></tr>
+<tr class="memdesc:af3d1b24857f550f873e8eedd07506cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes written to the file so far.  <a href="classfarm__ng_1_1_event_log_writer.html#af3d1b24857f550f873e8eedd07506cbb">More...</a><br /></td></tr>
+<tr class="separator:af3d1b24857f550f873e8eedd07506cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that serializes incoming protobuf events to a file in disk. </p>
@@ -165,6 +168,25 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af3d1b24857f550f873e8eedd07506cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d1b24857f550f873e8eedd07506cbb">&#9670;&nbsp;</a></span>getBytesWritten()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t farm_ng::EventLogWriter::getBytesWritten </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of bytes written to the file so far. </p>
+
+</div>
+</div>
 <a id="afe8d8d97efdcd22b04a2892df2137bb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe8d8d97efdcd22b04a2892df2137bb2">&#9670;&nbsp;</a></span>getPath()</h2>
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::lie::IdentityImpl&lt; TScalar, kDim &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::lie::IdentityImpl&lt; TScalar, kDim &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -99,59 +99,86 @@ $(document).ready(function(){initNavTree('classsophus_1_1lie_1_1_identity_impl.h
 Public Types</h2></td></tr>
 <tr class="memitem:aaad9906eb7e44a14e1db1fe201997bd0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a> = TScalar</td></tr>
 <tr class="separator:aaad9906eb7e44a14e1db1fe201997bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c32bfc684d2736662579e472b9acba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:a57c32bfc684d2736662579e472b9acba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c6613da2cb143c6b6a0f56293792fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
+<tr class="separator:a64c6613da2cb143c6b6a0f56293792fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860614eb04d1ac03d5c3f87d617621d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
+<tr class="separator:a860614eb04d1ac03d5c3f87d617621d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a49b9cd43b999576ab0cc3afeccdae5"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a4a49b9cd43b999576ab0cc3afeccdae5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a> = typename Eigen::ScalarBinaryOpTraits&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, TCompatibleScalar &gt;::ReturnType</td></tr>
+<tr class="separator:a4a49b9cd43b999576ab0cc3afeccdae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99529b913f48c3937ff6e9fb52782d6"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:af99529b913f48c3937ff6e9fb52782d6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#af99529b913f48c3937ff6e9fb52782d6">ParamsReturn</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a>&lt; TCompatibleScalar &gt;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
+<tr class="separator:af99529b913f48c3937ff6e9fb52782d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c35058b069df351344f9b05bd6ac89"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:aa5c35058b069df351344f9b05bd6ac89"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa5c35058b069df351344f9b05bd6ac89">PointReturn</a> = Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a>&lt; TCompatibleScalar &gt;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
+<tr class="separator:aa5c35058b069df351344f9b05bd6ac89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1aeebfd646abc2955000dce90b9772a"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:ab1aeebfd646abc2955000dce90b9772a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ab1aeebfd646abc2955000dce90b9772a">UnitVectorReturn</a> = <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a>&lt; TCompatibleScalar &gt;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
+<tr class="separator:ab1aeebfd646abc2955000dce90b9772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b325ff82361abd5a8b0a092fa87cd4d"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a1b325ff82361abd5a8b0a092fa87cd4d">identityParams</a> () -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
-<tr class="separator:a1b325ff82361abd5a8b0a092fa87cd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e95ad32e65c1071f5b3e079532e5055"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a7e95ad32e65c1071f5b3e079532e5055">areParamsValid</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;scale_factors) -&gt; sophus::Expected&lt; Success &gt;</td></tr>
-<tr class="separator:a7e95ad32e65c1071f5b3e079532e5055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3549f0c52923ecf8d014612311242e01"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a3549f0c52923ecf8d014612311242e01">exp</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;tangent) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
-<tr class="separator:a3549f0c52923ecf8d014612311242e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad33681fbbb3056e9eab03fbcfb2e1d8c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ad33681fbbb3056e9eab03fbcfb2e1d8c">log</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
-<tr class="separator:ad33681fbbb3056e9eab03fbcfb2e1d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91bc748be32c4b2972660e80249e616c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a91bc748be32c4b2972660e80249e616c">hat</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;tangent) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:a91bc748be32c4b2972660e80249e616c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644705c965b10bbf53098721180a122f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a644705c965b10bbf53098721180a122f">identityParams</a> () -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a></td></tr>
+<tr class="separator:a644705c965b10bbf53098721180a122f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40e68240033461aee6c81b3eff87fc6"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ae40e68240033461aee6c81b3eff87fc6">areParamsValid</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;scale_factors) -&gt; sophus::Expected&lt; Success &gt;</td></tr>
+<tr class="separator:ae40e68240033461aee6c81b3eff87fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100eaa7cc4ca34ab471f0178a511bfad"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a100eaa7cc4ca34ab471f0178a511bfad">adj</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:a100eaa7cc4ca34ab471f0178a511bfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1933da0e9244f6d314e552b10fd7e0"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#afd1933da0e9244f6d314e552b10fd7e0">hasShortestPathAmbiguity</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;) -&gt; bool</td></tr>
+<tr class="separator:afd1933da0e9244f6d314e552b10fd7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ffbe5b5a952c2214f2fe4c11e15de4"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#af0ffbe5b5a952c2214f2fe4c11e15de4">exp</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;tangent) -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a></td></tr>
+<tr class="separator:af0ffbe5b5a952c2214f2fe4c11e15de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d587ba4e6a0c7a17826187344f7bea1"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a9d587ba4e6a0c7a17826187344f7bea1">log</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params) -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a></td></tr>
+<tr class="separator:a9d587ba4e6a0c7a17826187344f7bea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0191408b7a2c6b0bd33709ae99003950"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a0191408b7a2c6b0bd33709ae99003950">hat</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;tangent) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:a0191408b7a2c6b0bd33709ae99003950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a14f0264d36d9cc1cfcb218d088771f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a9a14f0264d36d9cc1cfcb218d088771f">vee</a> (Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt; const &amp;mat) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, 1 &gt;</td></tr>
 <tr class="separator:a9a14f0264d36d9cc1cfcb218d088771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8931981f2200c1420505292ab121bce"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa8931981f2200c1420505292ab121bce">adj</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
-<tr class="separator:aa8931981f2200c1420505292ab121bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b156b6e172d119804245d2960e31e6c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a1b156b6e172d119804245d2960e31e6c">inverse</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
-<tr class="separator:a1b156b6e172d119804245d2960e31e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a571dd0c463202fd2a57932d3a0b2f2d5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a571dd0c463202fd2a57932d3a0b2f2d5">multiplication</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;lhs_params, Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;rhs_params) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
-<tr class="separator:a571dd0c463202fd2a57932d3a0b2f2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9784838f862a2e10056330a68b1472f8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a9784838f862a2e10056330a68b1472f8">action</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params, Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;point) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
-<tr class="separator:a9784838f862a2e10056330a68b1472f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1fc2a6a8471cfa714694785cf3a6052"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac1fc2a6a8471cfa714694785cf3a6052">toAmbient</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;point) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:ac1fc2a6a8471cfa714694785cf3a6052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075f32052041058c4742de3929add814"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a075f32052041058c4742de3929add814">action</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params, <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;point) -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
-<tr class="separator:a075f32052041058c4742de3929add814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8dd461ca97a450f938cf30ca6bbf6bf"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ae8dd461ca97a450f938cf30ca6bbf6bf">compactMatrix</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:ae8dd461ca97a450f938cf30ca6bbf6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8e7f92a45527a19b2e6a8bdf7f26cca"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ab8e7f92a45527a19b2e6a8bdf7f26cca">matrix</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
-<tr class="separator:ab8e7f92a45527a19b2e6a8bdf7f26cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6388b7adbd7fe4226f7cfd02a42cbff"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ae6388b7adbd7fe4226f7cfd02a42cbff">matV</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;, Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
-<tr class="separator:ae6388b7adbd7fe4226f7cfd02a42cbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8861f2830bbabd3a786a7119f984faa7"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a8861f2830bbabd3a786a7119f984faa7">matVInverse</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;, Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
-<tr class="separator:a8861f2830bbabd3a786a7119f984faa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac041035ca06a3c678bdbd27e5dd1f42e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac041035ca06a3c678bdbd27e5dd1f42e">topRightAdj</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;params, Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
-<tr class="separator:ac041035ca06a3c678bdbd27e5dd1f42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc661e60f12dcaed8d7c8d2c45d9870"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a3cc661e60f12dcaed8d7c8d2c45d9870">dxExpX</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
-<tr class="separator:a3cc661e60f12dcaed8d7c8d2c45d9870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ffbaaecacdd88f9cec6d573ec81104"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a58ffbaaecacdd88f9cec6d573ec81104">inverse</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params) -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a></td></tr>
+<tr class="separator:a58ffbaaecacdd88f9cec6d573ec81104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b13fa081f2a5bdf3cece53eeed592e2"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a6b13fa081f2a5bdf3cece53eeed592e2"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a6b13fa081f2a5bdf3cece53eeed592e2">multiplication</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;lhs_params, Eigen::Vector&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;rhs_params) -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#af99529b913f48c3937ff6e9fb52782d6">ParamsReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:a6b13fa081f2a5bdf3cece53eeed592e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476fa66d0ef076d994a7faf380cc3011"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:a476fa66d0ef076d994a7faf380cc3011"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a476fa66d0ef076d994a7faf380cc3011">action</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params, Eigen::Vector&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;point) -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa5c35058b069df351344f9b05bd6ac89">PointReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:a476fa66d0ef076d994a7faf380cc3011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bd39c6639324d4af43f5dc34850357"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ad9bd39c6639324d4af43f5dc34850357">toAmbient</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;point) -&gt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:ad9bd39c6639324d4af43f5dc34850357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c8cac3bdad1bda7ac1f9032aab25b2"><td class="memTemplParams" colspan="2">template&lt;class TCompatibleScalar &gt; </td></tr>
+<tr class="memitem:ad4c8cac3bdad1bda7ac1f9032aab25b2"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ad4c8cac3bdad1bda7ac1f9032aab25b2">action</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params, <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;dir) -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ab1aeebfd646abc2955000dce90b9772a">UnitVectorReturn</a>&lt; TCompatibleScalar &gt;</td></tr>
+<tr class="separator:ad4c8cac3bdad1bda7ac1f9032aab25b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeeecf703a578abefd7eb81bf453d89f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaeeecf703a578abefd7eb81bf453d89f">compactMatrix</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:aaeeecf703a578abefd7eb81bf453d89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb126cc3b7565d0ad00651b72cc1c1e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a1eb126cc3b7565d0ad00651b72cc1c1e">matrix</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a> &gt;</td></tr>
+<tr class="separator:a1eb126cc3b7565d0ad00651b72cc1c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8efb2409dfcaab038aa9b184d5f4432"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa8efb2409dfcaab038aa9b184d5f4432">matV</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
+<tr class="separator:aa8efb2409dfcaab038aa9b184d5f4432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b19056c2be99c5d608485a6d8041372"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a8b19056c2be99c5d608485a6d8041372">matVInverse</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt;</td></tr>
+<tr class="separator:a8b19056c2be99c5d608485a6d8041372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc57ea41258bfcafde1099794b1bc6af"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#afc57ea41258bfcafde1099794b1bc6af">adjOfTranslation</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;params, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:afc57ea41258bfcafde1099794b1bc6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aea0caf19c6225dc55e1d235e878643"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a8aea0caf19c6225dc55e1d235e878643">adOfTranslation</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:a8aea0caf19c6225dc55e1d235e878643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6d007a4c5ff5a6fe25ab7bffac66e0"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aeb6d007a4c5ff5a6fe25ab7bffac66e0">ad</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:aeb6d007a4c5ff5a6fe25ab7bffac66e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ba6ebff6fe690dff0630a41acdd2e6"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a69ba6ebff6fe690dff0630a41acdd2e6">dxExpX</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:a69ba6ebff6fe690dff0630a41acdd2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2433de65112351716d50a048519ed5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a5f2433de65112351716d50a048519ed5">dxExpXAt0</a> () -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
 <tr class="separator:a5f2433de65112351716d50a048519ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad0fd1c0fe440492a9961284a6ea8d3a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aad0fd1c0fe440492a9961284a6ea8d3a">dxExpXTimesPointAt0</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
-<tr class="separator:aad0fd1c0fe440492a9961284a6ea8d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa482bfe387f90e649c9387361ac07f7f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa482bfe387f90e649c9387361ac07f7f">dxThisMulExpXAt0</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;unit_complex) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
-<tr class="separator:aa482bfe387f90e649c9387361ac07f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bc4dc4a2466bbcad1ea4395585e554c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a9bc4dc4a2466bbcad1ea4395585e554c">dxLogThisInvTimesXAtThis</a> (Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;unit_quat) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
-<tr class="separator:a9bc4dc4a2466bbcad1ea4395585e554c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc59fb9be8eaf2bc83b071fe1010cc1b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adc59fb9be8eaf2bc83b071fe1010cc1b">tangentExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;&gt;</td></tr>
-<tr class="separator:adc59fb9be8eaf2bc83b071fe1010cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57e24d680fc18c2d88002cd5942a87c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac57e24d680fc18c2d88002cd5942a87c">paramsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:ac57e24d680fc18c2d88002cd5942a87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3efe1247afec30c97a1a253faba5e167"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a3efe1247afec30c97a1a253faba5e167">invalidParamsExamples</a> () -&gt; std::vector&lt; Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;&gt;</td></tr>
-<tr class="separator:a3efe1247afec30c97a1a253faba5e167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b10c3500b2ab6859d99b30abc58bb3"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa2b10c3500b2ab6859d99b30abc58bb3">dxExpXTimesPointAt0</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;point) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:aa2b10c3500b2ab6859d99b30abc58bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cd3805e471a421087f34be2737bfce"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#af2cd3805e471a421087f34be2737bfce">dxThisMulExpXAt0</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;unit_complex) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt;</td></tr>
+<tr class="separator:af2cd3805e471a421087f34be2737bfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c60cc58f2b7f52f6de5c06fe5c800da"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a0c60cc58f2b7f52f6de5c06fe5c800da">dxLogThisInvTimesXAtThis</a> (<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;unit_quat) -&gt; Eigen::Matrix&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt;</td></tr>
+<tr class="separator:a0c60cc58f2b7f52f6de5c06fe5c800da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bab0a32f91d59cb6d7db485754d9361"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a2bab0a32f91d59cb6d7db485754d9361">tangentExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> &gt;</td></tr>
+<tr class="separator:a2bab0a32f91d59cb6d7db485754d9361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe7d6ff33932eb8198acc0450073aa2"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#acfe7d6ff33932eb8198acc0450073aa2">paramsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> &gt;</td></tr>
+<tr class="separator:acfe7d6ff33932eb8198acc0450073aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5dca66906a0598a094bef44428ae0f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#abc5dca66906a0598a094bef44428ae0f">invalidParamsExamples</a> () -&gt; std::vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> &gt;</td></tr>
+<tr class="separator:abc5dca66906a0598a094bef44428ae0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -177,6 +204,74 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:aa820a5bb8fe558bb922deaab03be7d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a64c6613da2cb143c6b6a0f56293792fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c6613da2cb143c6b6a0f56293792fe">&#9670;&nbsp;</a></span>Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af99529b913f48c3937ff6e9fb52782d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99529b913f48c3937ff6e9fb52782d6">&#9670;&nbsp;</a></span>ParamsReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#af99529b913f48c3937ff6e9fb52782d6">ParamsReturn</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a>&lt;TCompatibleScalar&gt;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a860614eb04d1ac03d5c3f87d617621d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860614eb04d1ac03d5c3f87d617621d8">&#9670;&nbsp;</a></span>Point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5c35058b069df351344f9b05bd6ac89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c35058b069df351344f9b05bd6ac89">&#9670;&nbsp;</a></span>PointReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa5c35058b069df351344f9b05bd6ac89">PointReturn</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a>&lt;TCompatibleScalar&gt;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaad9906eb7e44a14e1db1fe201997bd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaad9906eb7e44a14e1db1fe201997bd0">&#9670;&nbsp;</a></span>Scalar</h2>
 
@@ -193,14 +288,68 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
+<a id="a4a49b9cd43b999576ab0cc3afeccdae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a49b9cd43b999576ab0cc3afeccdae5">&#9670;&nbsp;</a></span>ScalarReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a> =  typename Eigen:: ScalarBinaryOpTraits&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, TCompatibleScalar&gt;::ReturnType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57c32bfc684d2736662579e472b9acba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c32bfc684d2736662579e472b9acba">&#9670;&nbsp;</a></span>Tangent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> =  Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1aeebfd646abc2955000dce90b9772a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1aeebfd646abc2955000dce90b9772a">&#9670;&nbsp;</a></span>UnitVectorReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ab1aeebfd646abc2955000dce90b9772a">UnitVectorReturn</a> =  <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a4a49b9cd43b999576ab0cc3afeccdae5">ScalarReturn</a>&lt;TCompatibleScalar&gt;, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9784838f862a2e10056330a68b1472f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9784838f862a2e10056330a68b1472f8">&#9670;&nbsp;</a></span>action() <span class="overload">[1/2]</span></h2>
+<a id="a476fa66d0ef076d994a7faf380cc3011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476fa66d0ef076d994a7faf380cc3011">&#9670;&nbsp;</a></span>action() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -208,19 +357,19 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::action </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Vector&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>point</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa5c35058b069df351344f9b05bd6ac89">PointReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -232,13 +381,15 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a075f32052041058c4742de3929add814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a075f32052041058c4742de3929add814">&#9670;&nbsp;</a></span>action() <span class="overload">[2/2]</span></h2>
+<a id="ad4c8cac3bdad1bda7ac1f9032aab25b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c8cac3bdad1bda7ac1f9032aab25b2">&#9670;&nbsp;</a></span>action() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -246,19 +397,19 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::action </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>point</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; <a class="el" href="classsophus_1_1_unit_vector.html">UnitVector</a>&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ab1aeebfd646abc2955000dce90b9772a">UnitVectorReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -270,8 +421,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="aa8931981f2200c1420505292ab121bce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8931981f2200c1420505292ab121bce">&#9670;&nbsp;</a></span>adj()</h2>
+<a id="aeb6d007a4c5ff5a6fe25ab7bffac66e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6d007a4c5ff5a6fe25ab7bffac66e0">&#9670;&nbsp;</a></span>ad()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,9 +433,9 @@ template&lt;class TScalar , int kDim&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::adj </td>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::ad </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
         </tr>
@@ -298,8 +449,102 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a7e95ad32e65c1071f5b3e079532e5055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e95ad32e65c1071f5b3e079532e5055">&#9670;&nbsp;</a></span>areParamsValid()</h2>
+<a id="a100eaa7cc4ca34ab471f0178a511bfad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100eaa7cc4ca34ab471f0178a511bfad">&#9670;&nbsp;</a></span>adj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::adj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc57ea41258bfcafde1099794b1bc6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc57ea41258bfcafde1099794b1bc6af">&#9670;&nbsp;</a></span>adjOfTranslation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::adjOfTranslation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aea0caf19c6225dc55e1d235e878643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aea0caf19c6225dc55e1d235e878643">&#9670;&nbsp;</a></span>adOfTranslation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::adOfTranslation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae40e68240033461aee6c81b3eff87fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40e68240033461aee6c81b3eff87fc6">&#9670;&nbsp;</a></span>areParamsValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +557,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::areParamsValid </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>scale_factors</em></td><td>)</td>
           <td> -&gt; sophus::Expected&lt;Success&gt; </td>
         </tr>
@@ -326,8 +571,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="ae8dd461ca97a450f938cf30ca6bbf6bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8dd461ca97a450f938cf30ca6bbf6bf">&#9670;&nbsp;</a></span>compactMatrix()</h2>
+<a id="aaeeecf703a578abefd7eb81bf453d89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeeecf703a578abefd7eb81bf453d89f">&#9670;&nbsp;</a></span>compactMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +585,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::compactMatrix </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>&gt; </td>
         </tr>
@@ -354,8 +599,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a3cc661e60f12dcaed8d7c8d2c45d9870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cc661e60f12dcaed8d7c8d2c45d9870">&#9670;&nbsp;</a></span>dxExpX()</h2>
+<a id="a69ba6ebff6fe690dff0630a41acdd2e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ba6ebff6fe690dff0630a41acdd2e6">&#9670;&nbsp;</a></span>dxExpX()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +613,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::dxExpX </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
         </tr>
@@ -409,8 +654,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="aad0fd1c0fe440492a9961284a6ea8d3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad0fd1c0fe440492a9961284a6ea8d3a">&#9670;&nbsp;</a></span>dxExpXTimesPointAt0()</h2>
+<a id="aa2b10c3500b2ab6859d99b30abc58bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b10c3500b2ab6859d99b30abc58bb3">&#9670;&nbsp;</a></span>dxExpXTimesPointAt0()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +668,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::dxExpXTimesPointAt0 </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
         </tr>
@@ -437,8 +682,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a9bc4dc4a2466bbcad1ea4395585e554c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bc4dc4a2466bbcad1ea4395585e554c">&#9670;&nbsp;</a></span>dxLogThisInvTimesXAtThis()</h2>
+<a id="a0c60cc58f2b7f52f6de5c06fe5c800da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c60cc58f2b7f52f6de5c06fe5c800da">&#9670;&nbsp;</a></span>dxLogThisInvTimesXAtThis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +696,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::dxLogThisInvTimesXAtThis </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>unit_quat</em></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt; </td>
         </tr>
@@ -465,8 +710,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="aa482bfe387f90e649c9387361ac07f7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa482bfe387f90e649c9387361ac07f7f">&#9670;&nbsp;</a></span>dxThisMulExpXAt0()</h2>
+<a id="af2cd3805e471a421087f34be2737bfce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cd3805e471a421087f34be2737bfce">&#9670;&nbsp;</a></span>dxThisMulExpXAt0()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -479,7 +724,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::dxThisMulExpXAt0 </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>unit_complex</em></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
         </tr>
@@ -493,8 +738,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a3549f0c52923ecf8d014612311242e01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3549f0c52923ecf8d014612311242e01">&#9670;&nbsp;</a></span>exp()</h2>
+<a id="af0ffbe5b5a952c2214f2fe4c11e15de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ffbe5b5a952c2214f2fe4c11e15de4">&#9670;&nbsp;</a></span>exp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,9 +752,9 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::exp </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;&#160;</td>
           <td class="paramname"><em>tangent</em></td><td>)</td>
-          <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt; </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> </td>
         </tr>
       </table>
   </td>
@@ -521,8 +766,36 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a91bc748be32c4b2972660e80249e616c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91bc748be32c4b2972660e80249e616c">&#9670;&nbsp;</a></span>hat()</h2>
+<a id="afd1933da0e9244f6d314e552b10fd7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1933da0e9244f6d314e552b10fd7e0">&#9670;&nbsp;</a></span>hasShortestPathAmbiguity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TScalar , int kDim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::hasShortestPathAmbiguity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0191408b7a2c6b0bd33709ae99003950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0191408b7a2c6b0bd33709ae99003950">&#9670;&nbsp;</a></span>hat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,7 +808,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::hat </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;&#160;</td>
           <td class="paramname"><em>tangent</em></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>&gt; </td>
         </tr>
@@ -549,8 +822,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a1b325ff82361abd5a8b0a092fa87cd4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b325ff82361abd5a8b0a092fa87cd4d">&#9670;&nbsp;</a></span>identityParams()</h2>
+<a id="a644705c965b10bbf53098721180a122f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644705c965b10bbf53098721180a122f">&#9670;&nbsp;</a></span>identityParams()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +837,7 @@ template&lt;class TScalar , int kDim&gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::identityParams </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt; </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> </td>
         </tr>
       </table>
   </td>
@@ -576,8 +849,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a3efe1247afec30c97a1a253faba5e167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3efe1247afec30c97a1a253faba5e167">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
+<a id="abc5dca66906a0598a094bef44428ae0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5dca66906a0598a094bef44428ae0f">&#9670;&nbsp;</a></span>invalidParamsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,7 +864,7 @@ template&lt;class TScalar , int kDim&gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::invalidParamsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -603,8 +876,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a1b156b6e172d119804245d2960e31e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b156b6e172d119804245d2960e31e6c">&#9670;&nbsp;</a></span>inverse()</h2>
+<a id="a58ffbaaecacdd88f9cec6d573ec81104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ffbaaecacdd88f9cec6d573ec81104">&#9670;&nbsp;</a></span>inverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,9 +890,9 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::inverse </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
-          <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt; </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> </td>
         </tr>
       </table>
   </td>
@@ -631,8 +904,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="ad33681fbbb3056e9eab03fbcfb2e1d8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad33681fbbb3056e9eab03fbcfb2e1d8c">&#9670;&nbsp;</a></span>log()</h2>
+<a id="a9d587ba4e6a0c7a17826187344f7bea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d587ba4e6a0c7a17826187344f7bea1">&#9670;&nbsp;</a></span>log()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -645,9 +918,9 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::log </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
-          <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
+          <td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> </td>
         </tr>
       </table>
   </td>
@@ -659,8 +932,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="ab8e7f92a45527a19b2e6a8bdf7f26cca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8e7f92a45527a19b2e6a8bdf7f26cca">&#9670;&nbsp;</a></span>matrix()</h2>
+<a id="a1eb126cc3b7565d0ad00651b72cc1c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb126cc3b7565d0ad00651b72cc1c1e">&#9670;&nbsp;</a></span>matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -673,7 +946,7 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::matrix </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
           <td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>&gt; </td>
         </tr>
@@ -687,8 +960,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="ae6388b7adbd7fe4226f7cfd02a42cbff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6388b7adbd7fe4226f7cfd02a42cbff">&#9670;&nbsp;</a></span>matV()</h2>
+<a id="aa8efb2409dfcaab038aa9b184d5f4432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8efb2409dfcaab038aa9b184d5f4432">&#9670;&nbsp;</a></span>matV()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,13 +974,13 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::matV </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -725,8 +998,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a8861f2830bbabd3a786a7119f984faa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8861f2830bbabd3a786a7119f984faa7">&#9670;&nbsp;</a></span>matVInverse()</h2>
+<a id="a8b19056c2be99c5d608485a6d8041372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b19056c2be99c5d608485a6d8041372">&#9670;&nbsp;</a></span>matVInverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,13 +1012,13 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::matVInverse </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a> const &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -763,13 +1036,15 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="a571dd0c463202fd2a57932d3a0b2f2d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a571dd0c463202fd2a57932d3a0b2f2d5">&#9670;&nbsp;</a></span>multiplication()</h2>
+<a id="a6b13fa081f2a5bdf3cece53eeed592e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b13fa081f2a5bdf3cece53eeed592e2">&#9670;&nbsp;</a></span>multiplication()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TScalar , int kDim&gt; </div>
+<div class="memtemplate">
+template&lt;class TCompatibleScalar &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -777,19 +1052,19 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::multiplication </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a> const &amp;&#160;</td>
           <td class="paramname"><em>lhs_params</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype">Eigen::Vector&lt; TCompatibleScalar, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs_params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#af99529b913f48c3937ff6e9fb52782d6">ParamsReturn</a>&lt;TCompatibleScalar&gt; </td>
         </tr>
       </table>
   </td>
@@ -801,8 +1076,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="ac57e24d680fc18c2d88002cd5942a87c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57e24d680fc18c2d88002cd5942a87c">&#9670;&nbsp;</a></span>paramsExamples()</h2>
+<a id="acfe7d6ff33932eb8198acc0450073aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe7d6ff33932eb8198acc0450073aa2">&#9670;&nbsp;</a></span>paramsExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -816,7 +1091,7 @@ template&lt;class TScalar , int kDim&gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::paramsExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a64c6613da2cb143c6b6a0f56293792fe">Params</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -828,8 +1103,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="adc59fb9be8eaf2bc83b071fe1010cc1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc59fb9be8eaf2bc83b071fe1010cc1b">&#9670;&nbsp;</a></span>tangentExamples()</h2>
+<a id="a2bab0a32f91d59cb6d7db485754d9361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bab0a32f91d59cb6d7db485754d9361">&#9670;&nbsp;</a></span>tangentExamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -843,7 +1118,7 @@ template&lt;class TScalar , int kDim&gt; </div>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::tangentExamples </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::vector&lt;Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt;&gt; </td>
+          <td> -&gt; std::vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a57c32bfc684d2736662579e472b9acba">Tangent</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -855,8 +1130,8 @@ template&lt;class TScalar , int kDim&gt; </div>
 
 </div>
 </div>
-<a id="ac1fc2a6a8471cfa714694785cf3a6052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1fc2a6a8471cfa714694785cf3a6052">&#9670;&nbsp;</a></span>toAmbient()</h2>
+<a id="ad9bd39c6639324d4af43f5dc34850357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9bd39c6639324d4af43f5dc34850357">&#9670;&nbsp;</a></span>toAmbient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -869,47 +1144,9 @@ template&lt;class TScalar , int kDim&gt; </div>
         <tr>
           <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::toAmbient </td>
           <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a860614eb04d1ac03d5c3f87d617621d8">Point</a> const &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> -&gt; Eigen::Vector&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aa820a5bb8fe558bb922deaab03be7d8b">kAmbientDim</a>&gt; </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac041035ca06a3c678bdbd27e5dd1f42e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac041035ca06a3c678bdbd27e5dd1f42e">&#9670;&nbsp;</a></span>topRightAdj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TScalar , int kDim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html">sophus::lie::IdentityImpl</a>&lt; TScalar, kDim &gt;::topRightAdj </td>
-          <td>(</td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#ac940a5c359dbdc570d62c64ec14dda80">kNumParams</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>params</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::Vector&lt; <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a> &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; Eigen::Matrix&lt;<a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#aaad9906eb7e44a14e1db1fe201997bd0">Scalar</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#a713d4b5bb371a9c33974c0078f93d38b">kPointDim</a>, <a class="el" href="classsophus_1_1lie_1_1_identity_impl.html#adca4f4fa5c86b17fa904ad21e341618a">kDof</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -1191,7 +1428,7 @@ template&lt;class TScalar , int kDim&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/lie/impl/<a class="el" href="impl_2identity_8h_source.html">identity.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/lie/impl/<a class="el" href="impl_2identity_8h_source.html">identity.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

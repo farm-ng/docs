@@ -22,10 +22,11 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "farm-ng, Sophus & friends", "index.html", [
+  [ "farm-ng-core", "index.html", [
     [ "FARM_ENUM", "md_projects_farm-ng-core_cpp_farm_ng_core_enum__r_e_a_d_m_e.html", [
       [ "Examples", "md_projects_farm-ng-core_cpp_farm_ng_core_enum__r_e_a_d_m_e.html#autotoc_md1", null ]
     ] ],
+    [ "README", "md_projects_farm-ng-core_cpp_sophus__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -44,7 +45,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
+        [ "Typedefs", "functions_type.html", "functions_type" ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -62,17 +63,19 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_sophus_2cpp_2sophus_2common_2enum_8h.html",
-"classfarm__ng_1_1_event_log_reader.html#a15a37da166cc9399f25fdc31469143d7",
-"classsophus_1_1_dyn_image.html#ae4da3de2361d16bdd8b9a7c76d017798",
-"classsophus_1_1_rotation2.html#a51496190abab45e220866864f99bf683",
-"classsophus_1_1kannala__brandt__camera_1_1_test_pinhole.html#abda391d4074d50ded74bdfb8a56ee292",
-"dir_d866e4c9d09af7d8a7d56f13813d21a0.html",
-"functions_a.html",
-"image__types_8h.html#ab78ffc2a17048a8085bec9c013bb696f",
-"namespacecore_1_1events__file__writer.html",
-"region_8h.html#a46559536888e732d42e6496049c685dc",
-"structsophus_1_1_mapper_3_01_t_scalar_00_01typename_01std_1_1enable__if_3_01k_is_mappable_v_3_01cd5529748b13d40e64d4c3ee260777da.html"
+"____init_____8py.html",
+"classfarm__ng_1_1_input_config.html#aaa223f565bf87063bed755d7273380da",
+"classsophus_1_1_dyn_image_view.html#ae5be4a5fbf37ceadf95bdfb256c20f4d",
+"classsophus_1_1_region.html#a24d69d213e451c1412384e8a163badbe",
+"classsophus_1_1lie_1_1_group.html#a9f7d3f135a047765b8efbe562b9f493c",
+"dyn__image__types_8h.html#aaac92c6b8004f7a54d0a57651bfcb451",
+"format_8cpp.html#a6c6290936330c19aa6fb728c1bce89dc",
+"image__types_8cpp.html#ab8a2fe6e4867459a3b1007bf2738c769",
+"misc_2proto_2conv_8h.html",
+"proto__conv_2calculus_2conv_8cpp.html#af7bf6b7676a3453b33e9ecb0d194b4ce",
+"spiral__similarity2_8h.html#a7e73e8848ba6c2ec120421bc3aa31c33",
+"structsophus_1_1_pixel_format.html#a66f1fd496bbc2c8140c0a9685df76f72",
+"translation_8h.html#a0df0d29d0a083d440a6abe13ef5220e2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

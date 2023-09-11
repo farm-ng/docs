@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::test::LieGroupPropTestSuite&lt; TGroup &gt; Struct Template Reference</title>
+<title>farm-ng-core: sophus::test::LieGroupPropTestSuite&lt; TGroup &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -114,6 +114,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ac09bfb81061039e736957fa60482d0"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a4ac09bfb81061039e736957fa60482d0">preservabilityTests</a> (std::string group_name) -&gt; void</td></tr>
+<tr class="separator:a4ac09bfb81061039e736957fa60482d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ccd6ca0e775d40686d5ab91bedf338f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a2ccd6ca0e775d40686d5ab91bedf338f">expTests</a> (std::string group_name) -&gt; void</td></tr>
 <tr class="separator:a2ccd6ca0e775d40686d5ab91bedf338f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fb29c4523943a0b725cf626eac4139"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#af6fb29c4523943a0b725cf626eac4139">adjointTests</a> (std::string group_name) -&gt; void</td></tr>
@@ -139,8 +141,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:afd8977e19227d26ca210423807eb2585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70fc556a9a2356a53bacc266df08a7a7"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a70fc556a9a2356a53bacc266df08a7a7">kAmbientDim</a> = Group::kAmbientDim</td></tr>
 <tr class="separator:a70fc556a9a2356a53bacc266df08a7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2ac5d6cf0f163c2e01554c9fde5789"><td class="memItemLeft" align="right" valign="top">static decltype(Group::paramsExamples()) const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a4d2ac5d6cf0f163c2e01554c9fde5789">kParamsExamples</a></td></tr>
-<tr class="separator:a4d2ac5d6cf0f163c2e01554c9fde5789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb3d3b4c442b5f99a9308d951c79c50"><td class="memItemLeft" align="right" valign="top">static decltype(Group::elementExamples()) const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#adeb3d3b4c442b5f99a9308d951c79c50">kElementExamples</a></td></tr>
+<tr class="separator:adeb3d3b4c442b5f99a9308d951c79c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c1624541759923a49cd9b1af9702d4"><td class="memItemLeft" align="right" valign="top">static decltype(Group::tangentExamples()) const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#ac0c1624541759923a49cd9b1af9702d4">kTangentExamples</a></td></tr>
 <tr class="separator:ac0c1624541759923a49cd9b1af9702d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac044b74387dd7dcf024ea67e73d85917"><td class="memItemLeft" align="right" valign="top">static decltype(<a class="el" href="namespacesophus.html#a26abf66ab765312cd8e1ba443c58ba54">pointExamples</a>&lt; <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#a354aa3570b519c56dd3f5f05d0f1b6ed">Scalar</a>, Group::kPointDim &gt;()) const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html#ac044b74387dd7dcf024ea67e73d85917">kPointExamples</a></td></tr>
@@ -428,6 +430,34 @@ template&lt;concepts::LieGroup TGroup&gt; </div>
 
 </div>
 </div>
+<a id="a4ac09bfb81061039e736957fa60482d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac09bfb81061039e736957fa60482d0">&#9670;&nbsp;</a></span>preservabilityTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html">sophus::test::LieGroupPropTestSuite</a>&lt; TGroup &gt;::preservabilityTests </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>group_name</em></td><td>)</td>
+          <td> -&gt; void </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a091bfeecbb74101622384404e672a5d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a091bfeecbb74101622384404e672a5d3">&#9670;&nbsp;</a></span>runAllTests()</h2>
 
@@ -505,6 +535,30 @@ template&lt;concepts::LieGroup TGroup&gt; </div>
 
 </div>
 </div>
+<a id="adeb3d3b4c442b5f99a9308d951c79c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb3d3b4c442b5f99a9308d951c79c50">&#9670;&nbsp;</a></span>kElementExamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::LieGroup TGroup&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">decltype(Group::elementExamples()) const <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html">sophus::test::LieGroupPropTestSuite</a>&lt; TGroup &gt;::kElementExamples</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1592fa7c784d1f4710bac7f6847a4fc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1592fa7c784d1f4710bac7f6847a4fc4">&#9670;&nbsp;</a></span>kNumParams</h2>
 
@@ -523,30 +577,6 @@ template&lt;concepts::LieGroup TGroup&gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4d2ac5d6cf0f163c2e01554c9fde5789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d2ac5d6cf0f163c2e01554c9fde5789">&#9670;&nbsp;</a></span>kParamsExamples</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;concepts::LieGroup TGroup&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">decltype(Group::paramsExamples()) const <a class="el" href="structsophus_1_1test_1_1_lie_group_prop_test_suite.html">sophus::test::LieGroupPropTestSuite</a>&lt; TGroup &gt;::kParamsExamples</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -626,7 +656,7 @@ template&lt;concepts::LieGroup TGroup&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/concepts/<a class="el" href="lie__group__prop__tests_8h_source.html">lie_group_prop_tests.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/concepts/<a class="el" href="lie__group__prop__tests_8h_source.html">lie_group_prop_tests.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

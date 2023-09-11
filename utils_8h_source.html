@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/concepts/utils.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/concepts/utils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -126,13 +126,21 @@ $(document).ready(function(){initNavTree('utils_8h_source.html',''); initResizab
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>TT, <span class="keyword">class</span>... TArgs&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#a72c1dbb87a30c48240fcecad62c7ac05">   38</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#a72c1dbb87a30c48240fcecad62c7ac05">ConstructibleFrom</a> =</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::is_nothrow_destructible_v&lt;TT&gt; &amp;&amp; std::is_constructible_v&lt;TT, TArgs...&gt;;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace concepts</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace sophus</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacesophus_1_1concepts.html#afad436533a1ee7ad7cf99d1182765e97">   42</a></span>&#160;concept <a class="code" href="namespacesophus_1_1concepts.html#afad436533a1ee7ad7cf99d1182765e97">Range</a> = requires(T&amp; t) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  t.begin();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  t.end();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace concepts</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace sophus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a9740680692b623441f4b04abb6a7d7e2"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a9740680692b623441f4b04abb6a7d7e2">sophus::concepts::SameAs</a></div><div class="ttdeci">concept SameAs</div><div class="ttdef"><b>Definition:</b> utils.h:24</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a61fd7e9ba5453903c1460060b6fd37dd"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a61fd7e9ba5453903c1460060b6fd37dd">sophus::concepts::EnumType</a></div><div class="ttdeci">concept EnumType</div><div class="ttdef"><b>Definition:</b> utils.h:27</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
+<div class="ttc" id="anamespacesophus_1_1concepts_html_afad436533a1ee7ad7cf99d1182765e97"><div class="ttname"><a href="namespacesophus_1_1concepts.html#afad436533a1ee7ad7cf99d1182765e97">sophus::concepts::Range</a></div><div class="ttdeci">concept Range</div><div class="ttdef"><b>Definition:</b> utils.h:42</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a72c1dbb87a30c48240fcecad62c7ac05"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a72c1dbb87a30c48240fcecad62c7ac05">sophus::concepts::ConstructibleFrom</a></div><div class="ttdeci">concept ConstructibleFrom</div><div class="ttdef"><b>Definition:</b> utils.h:38</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a85d9d9c13c5574d710bd9505cc4688f8"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a85d9d9c13c5574d710bd9505cc4688f8">sophus::concepts::DerivedFrom</a></div><div class="ttdeci">concept DerivedFrom</div><div class="ttdef"><b>Definition:</b> utils.h:18</div></div>
 <div class="ttc" id="anamespacesophus_1_1concepts_html_a0a4485ba253408b0da33fb8e7cadb906"><div class="ttname"><a href="namespacesophus_1_1concepts.html#a0a4485ba253408b0da33fb8e7cadb906">sophus::concepts::Arithmetic</a></div><div class="ttdeci">concept Arithmetic</div><div class="ttdef"><b>Definition:</b> utils.h:30</div></div>
@@ -141,7 +149,7 @@ $(document).ready(function(){initNavTree('utils_8h_source.html',''); initResizab
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_ebd4b11f127c051715e3dea2cf720135.html">concepts</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_b4ead6f24c7d26f98bd06ead78ad6012.html">concepts</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

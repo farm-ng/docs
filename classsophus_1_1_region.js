@@ -33,6 +33,8 @@ var classsophus_1_1_region =
     [ "setElem", "classsophus_1_1_region.html#a00f15a9f24c75491b61ac8e23bfb3fd3", null ],
     [ "setElem", "classsophus_1_1_region.html#aba3907f7134ffcc1d70b0df6839c6120", null ],
     [ "translated", "classsophus_1_1_region.html#a7157ccd8c7fc386f498da00c7f48fe29", null ],
+    [ "tryMax", "classsophus_1_1_region.html#aa7ab5f27428b18c3d83449f53704a97f", null ],
+    [ "tryMin", "classsophus_1_1_region.html#afc9ba1e6929035286186dd00e78c6db6", null ],
     [ "region", "classsophus_1_1_region.html#a7343f5440af9538aee9e38f9d61b4683", null ],
     [ "Region2< TScalar >", "classsophus_1_1_region.html#a59ba7022d0b1f3326fa9ba05873911c1", null ],
     [ "Region2< TScalar >", "classsophus_1_1_region.html#a0eee0943731cca86cbad90c3ae67b6ad", null ],

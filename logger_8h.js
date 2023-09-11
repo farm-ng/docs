@@ -1,9 +1,9 @@
 var logger_8h =
 [
     [ "StreamLogger", "classfarm__ng_1_1_stream_logger.html", "classfarm__ng_1_1_stream_logger" ],
+    [ "LogClock", "structfarm__ng_1_1_stream_logger_1_1_log_clock.html", "structfarm__ng_1_1_stream_logger_1_1_log_clock" ],
     [ "CheckNear", "structfarm__ng_1_1details_1_1_check_near.html", null ],
-    [ "CheckNear< double >", "structfarm__ng_1_1details_1_1_check_near_3_01double_01_4.html", null ],
-    [ "CheckNear< float >", "structfarm__ng_1_1details_1_1_check_near_3_01float_01_4.html", null ],
+    [ "CheckNear< TT, std::enable_if_t< std::is_arithmetic_v< TT >, void > >", "structfarm__ng_1_1details_1_1_check_near_3_01_t_t_00_01std_1_1enable__if__t_3_01std_1_1is__arith017fa716e541913aaa43294e80fbce56.html", null ],
     [ "ErrorDetail", "structfarm__ng_1_1_error_detail.html", "structfarm__ng_1_1_error_detail" ],
     [ "UnwrapImpl", "structfarm__ng_1_1details_1_1_unwrap_impl.html", null ],
     [ "FARM_ASSERT", "logger_8h.html#a947e44ca3e19aa0a10045fe6d70de290", null ],
@@ -41,6 +41,6 @@ var logger_8h =
     [ "defaultLogger", "logger_8h.html#ab1ba3ac58871ae436e4c3b4cc56bde05", null ],
     [ "FARM_ENUM", "logger_8h.html#aabe92270562561657f2b24f670a56b58", null ],
     [ "insertKeyValueInMap", "logger_8h.html#a994e10ebe5373b404f49877be02a571f", null ],
-    [ "stringFromLogLevel", "logger_8h.html#ad6d4877059522f6ccddff4e1970ded92", null ],
+    [ "stringFromLogLevel", "logger_8h.html#a714150d965f30bede4f8bedbc6242287", null ],
     [ "unwrapImpl", "logger_8h.html#ac368ae2ef8278ead7959d082add4f962", null ]
 ];

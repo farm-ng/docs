@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/Sophus/cpp/sophus/geometry/plane_conv.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/sophus/geometry/plane_conv.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('plane__conv_8h_source.html',''); initR
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="stringliteral">&quot;{}&quot;</span>,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      normal_in_foo.transpose().eval());</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  normal_in_foo.normalize();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1lie_1_1_group.html#a9e9976d1adfe13f499457526a197444a">Rotation2&lt;TScalar&gt;::fromParams</a>(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1lie_1_1_group.html#ac94b6dfc9087ea289f5a2f3671713e8b">Rotation2&lt;TScalar&gt;::fromParams</a>(</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      {normal_in_foo.y(), -normal_in_foo.x()});</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('plane__conv_8h_source.html',''); initR
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  TScalar <span class="keyword">const</span> d = plane_in_foo.offset();</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  Eigen::Vector3&lt;TScalar&gt; <span class="keyword">const</span> n = plane_in_foo.normal();</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <a class="code" href="classsophus_1_1_rotation3.html">Rotation3&lt;TScalar&gt;</a> <span class="keyword">const</span> foo_rotation_plane = <a class="code" href="namespacesophus.html#a0b6feadd49b04f1f699370ccf02ecdd1">rotation3FromPlane</a>(n);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1_isometry3.html">Isometry3&lt;TScalar&gt;</a>(foo_rotation_plane, -d * n);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classsophus_1_1_isometry3.html">Isometry3&lt;TScalar&gt;</a>(-d * n, foo_rotation_plane);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/// Takes in a hyperplane and returns unique representation by ensuring that the</span></div>
@@ -305,12 +305,12 @@ $(document).ready(function(){initNavTree('plane__conv_8h_source.html',''); initR
 <div class="ttc" id="aclasssophus_1_1_rotation3_html"><div class="ttname"><a href="classsophus_1_1_rotation3.html">sophus::Rotation3</a></div><div class="ttdef"><b>Definition:</b> rotation3.h:20</div></div>
 <div class="ttc" id="anamespacesophus_html_a8aa93cc5196e3e17bd10446658357c52"><div class="ttname"><a href="namespacesophus.html#a8aa93cc5196e3e17bd10446658357c52">sophus::lineFromIsometry</a></div><div class="ttdeci">auto lineFromIsometry(Isometry2&lt; TScalar &gt; const &amp;foo_from_line) -&gt; Eigen::Hyperplane&lt; TScalar, 2 &gt;</div><div class="ttdoc">Returns a line (wrt. to frame foo), given a pose of the line in reference frame foo.</div><div class="ttdef"><b>Definition:</b> plane_conv.h:151</div></div>
 <div class="ttc" id="anamespacesophus_html"><div class="ttname"><a href="namespacesophus.html">sophus</a></div><div class="ttdoc">Image MutImage, owning images types.</div><div class="ttdef"><b>Definition:</b> num_diff.h:20</div></div>
+<div class="ttc" id="aclasssophus_1_1lie_1_1_group_html_ac94b6dfc9087ea289f5a2f3671713e8b"><div class="ttname"><a href="classsophus_1_1lie_1_1_group.html#ac94b6dfc9087ea289f5a2f3671713e8b">sophus::lie::Group&lt; Rotation2, TScalar, lie::Rotation2Impl &gt;::fromParams</a></div><div class="ttdeci">static auto fromParams(Params const &amp;params) -&gt; Derived</div><div class="ttdef"><b>Definition:</b> lie_group.h:79</div></div>
 <div class="ttc" id="anamespacesophus_html_a0b6feadd49b04f1f699370ccf02ecdd1"><div class="ttname"><a href="namespacesophus.html#a0b6feadd49b04f1f699370ccf02ecdd1">sophus::rotation3FromPlane</a></div><div class="ttdeci">auto rotation3FromPlane(Eigen::Vector3&lt; TScalar &gt; const &amp;normal_in_foo) -&gt; Rotation3&lt; TScalar &gt;</div><div class="ttdoc">Takes in plane normal in reference frame foo and constructs a corresponding rotation matrix foo_rotat...</div><div class="ttdef"><b>Definition:</b> plane_conv.h:139</div></div>
 <div class="ttc" id="anamespacesophus_html_a88fe813e749fa656faef7c64c292727f"><div class="ttname"><a href="namespacesophus.html#a88fe813e749fa656faef7c64c292727f">sophus::normalFromRotation3</a></div><div class="ttdeci">auto normalFromRotation3(Rotation3&lt; TScalar &gt; const &amp;foo_rotation_plane) -&gt; Eigen::Vector3&lt; TScalar &gt;</div><div class="ttdoc">Takes in a rotation foo_rotation_plane and returns the corresponding plane normal along the z-axis (i...</div><div class="ttdef"><b>Definition:</b> plane_conv.h:50</div></div>
 <div class="ttc" id="aisometry3_8h_html"><div class="ttname"><a href="isometry3_8h.html">isometry3.h</a></div></div>
-<div class="ttc" id="aclasssophus_1_1_rotation3_html_a6b339341fd0f52e9b2084fd3f9e4e6ca"><div class="ttname"><a href="classsophus_1_1_rotation3.html#a6b339341fd0f52e9b2084fd3f9e4e6ca">sophus::Rotation3::fromRotationMatrix</a></div><div class="ttdeci">static auto fromRotationMatrix(Eigen::Matrix3&lt; TScalar &gt; const &amp;mat_r) -&gt; Rotation3</div><div class="ttdef"><b>Definition:</b> rotation3.h:59</div></div>
+<div class="ttc" id="aclasssophus_1_1_rotation3_html_a6b339341fd0f52e9b2084fd3f9e4e6ca"><div class="ttname"><a href="classsophus_1_1_rotation3.html#a6b339341fd0f52e9b2084fd3f9e4e6ca">sophus::Rotation3::fromRotationMatrix</a></div><div class="ttdeci">static auto fromRotationMatrix(Eigen::Matrix3&lt; TScalar &gt; const &amp;mat_r) -&gt; Rotation3</div><div class="ttdef"><b>Definition:</b> rotation3.h:65</div></div>
 <div class="ttc" id="acommon_8h_html_a72a75eb7f9bba13d95af868b8667a0a0"><div class="ttname"><a href="common_8h.html#a72a75eb7f9bba13d95af868b8667a0a0">SOPHUS_ASSERT_NEAR</a></div><div class="ttdeci">#define SOPHUS_ASSERT_NEAR(...)</div><div class="ttdef"><b>Definition:</b> common.h:47</div></div>
-<div class="ttc" id="aclasssophus_1_1lie_1_1_group_html_a9e9976d1adfe13f499457526a197444a"><div class="ttname"><a href="classsophus_1_1lie_1_1_group.html#a9e9976d1adfe13f499457526a197444a">sophus::lie::Group&lt; Rotation2&lt; TScalar &gt;, lie::Rotation2Impl&lt; TScalar &gt; &gt;::fromParams</a></div><div class="ttdeci">static auto fromParams(Eigen::Vector&lt; Scalar, kNumParams &gt; const &amp;params) -&gt; Rotation2&lt; TScalar &gt;</div><div class="ttdef"><b>Definition:</b> lie_group.h:34</div></div>
 <div class="ttc" id="aisometry2_8h_html"><div class="ttname"><a href="isometry2_8h.html">isometry2.h</a></div></div>
 <div class="ttc" id="anamespacesophus_html_ae0e170f115bf93a0a641ce14e84922f7"><div class="ttname"><a href="namespacesophus.html#ae0e170f115bf93a0a641ce14e84922f7">sophus::makeHyperplaneUnique</a></div><div class="ttdeci">auto makeHyperplaneUnique(Eigen::Hyperplane&lt; TScalar, kMatrixDim &gt; const &amp;plane) -&gt; Eigen::Hyperplane&lt; TScalar, kMatrixDim &gt;</div><div class="ttdoc">Takes in a hyperplane and returns unique representation by ensuring that the offset is not negative.</div><div class="ttdef"><b>Definition:</b> plane_conv.h:201</div></div>
 <div class="ttc" id="aclasssophus_1_1_isometry2_html"><div class="ttname"><a href="classsophus_1_1_isometry2.html">sophus::Isometry2</a></div><div class="ttdef"><b>Definition:</b> isometry2.h:22</div></div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('plane__conv_8h_source.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_8d47b62c803253d18aed6f5705beadf6.html">Sophus</a></li><li class="navelem"><a class="el" href="dir_0d389da46a6c389d2bb3aa1af702acdf.html">cpp</a></li><li class="navelem"><a class="el" href="dir_145ff606f9d38b9611d00850c1a1848f.html">sophus</a></li><li class="navelem"><a class="el" href="dir_8028503c7a289d5c13f61778d61a682d.html">geometry</a></li><li class="navelem"><a class="el" href="plane__conv_8h.html">plane_conv.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_2f2389b3686113effb376d33028dbae4.html">farm-ng-core</a></li><li class="navelem"><a class="el" href="dir_9ef66414b9751291c1a384d039911395.html">cpp</a></li><li class="navelem"><a class="el" href="dir_6dd44066754f8c92baa290cb51678b3a.html">sophus</a></li><li class="navelem"><a class="el" href="dir_adb47c116a75c666b79f314aa2e4eed3.html">geometry</a></li><li class="navelem"><a class="el" href="plane__conv_8h.html">plane_conv.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

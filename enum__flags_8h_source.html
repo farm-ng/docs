@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: projects/farm-ng-core/cpp/farm_ng/core/enum/enum_flags.h Source File</title>
+<title>farm-ng-core: projects/farm-ng-core/cpp/farm_ng/core/enum/enum_flags.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -116,24 +116,25 @@ $(document).ready(function(){initNavTree('enum__flags_8h_source.html',''); initR
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="enum__flags_8h.html#aa062d8b7cbfb75000f4996b9cdb97a93">   30</a></span>&#160;<span class="preprocessor">#define FARM_ENUMFLAGS_OSTREAM_OVERLOAD(NAME)                           \</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">  namespace enum_wrapper_ {                                             \</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">  inline std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, NAME##Impl value) { \</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    os &lt;&lt; toPretty(value);                                              \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    return os;                                                          \</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">  }                                                                     \</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">  }  // namespace enum_wrapper_</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Convenience marco which defines the enum flags plus alias and adds the</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// ostream overload.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="enum__flags_8h.html#a3119d921bdb6afbabc190e45dc04b9d1">   40</a></span>&#160;<span class="preprocessor">#define FARM_ENUMFLAGS(EnumName, UINT_TYPE, ...)                    \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_WITHOUT_OSTREAM(EnumName, UINT_TYPE, __VA_ARGS__); \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_OSTREAM_OVERLOAD(EnumName)</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Convenience marco which defines the enum flags and adds the ostream overload.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="enum__flags_8h.html#a3cb5b852adcf321cba3f0b90463e195f">   45</a></span>&#160;<span class="preprocessor">#define FARM_ENUMFLAGS_DEF(EnumName, UINT_TYPE, ...)                    \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_WITHOUT_OSTREAM_DEF(EnumName, UINT_TYPE, __VA_ARGS__); \</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_OSTREAM_OVERLOAD(EnumName)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="enum__flags_8h.html#aa062d8b7cbfb75000f4996b9cdb97a93">   30</a></span>&#160;<span class="preprocessor">#define FARM_ENUMFLAGS_OSTREAM_OVERLOAD(NAME)                \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">  namespace enum_wrapper_ {                                  \</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">  inline auto operator&lt;&lt;(std::ostream &amp;os, NAME##Impl value) \</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">      -&gt; std::ostream &amp; {                                    \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    os &lt;&lt; toPretty(value);                                   \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    return os;                                               \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">  }                                                          \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">  }  // namespace enum_wrapper_</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Convenience marco which defines the enum flags plus alias and adds the</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// ostream overload.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="enum__flags_8h.html#a3119d921bdb6afbabc190e45dc04b9d1">   41</a></span>&#160;<span class="preprocessor">#define FARM_ENUMFLAGS(EnumName, UINT_TYPE, ...)                    \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_WITHOUT_OSTREAM(EnumName, UINT_TYPE, __VA_ARGS__); \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_OSTREAM_OVERLOAD(EnumName)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// Convenience marco which defines the enum flags and adds the ostream overload.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="enum__flags_8h.html#a3cb5b852adcf321cba3f0b90463e195f">   46</a></span>&#160;<span class="preprocessor">#define FARM_ENUMFLAGS_DEF(EnumName, UINT_TYPE, ...)                    \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_WITHOUT_OSTREAM_DEF(EnumName, UINT_TYPE, __VA_ARGS__); \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">  FARM_ENUMFLAGS_OSTREAM_OVERLOAD(EnumName)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aenum__flags__without__ostream_8h_html"><div class="ttname"><a href="enum__flags__without__ostream_8h.html">enum_flags_without_ostream.h</a></div></div>

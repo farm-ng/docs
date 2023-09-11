@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>farm-ng, Sophus &amp; friends: sophus::Region&lt; TPoint &gt; Class Template Reference</title>
+<title>farm-ng-core: sophus::Region&lt; TPoint &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">farm-ng, Sophus &amp; friends
+   <div id="projectname">farm-ng-core
    </div>
   </td>
  </tr>
@@ -141,8 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5695248a6df6f50e1a8bd56ac155808"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsophus_1_1_region.html#a7343f5440af9538aee9e38f9d61b4683">region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#ae5695248a6df6f50e1a8bd56ac155808">setElem</a> (segment_w, 3)</td></tr>
 <tr class="separator:ae5695248a6df6f50e1a8bd56ac155808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeede4edbece195c92ea29442530563a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#abeede4edbece195c92ea29442530563a">getElem</a> (size_t row) const -&gt; <a class="el" href="classsophus_1_1_region.html">Region</a>&lt; <a class="el" href="classsophus_1_1_region.html#a43e4d6c11c1053318d987891d0d468a1">Scalar</a> &gt; const &amp;</td></tr>
+<tr class="memdesc:abeede4edbece195c92ea29442530563a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precondition: !this-&gt;isEmptpy()  <a href="classsophus_1_1_region.html#abeede4edbece195c92ea29442530563a">More...</a><br /></td></tr>
 <tr class="separator:abeede4edbece195c92ea29442530563a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3907f7134ffcc1d70b0df6839c6120"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#aba3907f7134ffcc1d70b0df6839c6120">setElem</a> (size_t row, <a class="el" href="classsophus_1_1_region.html">Region</a>&lt; <a class="el" href="classsophus_1_1_region.html#a43e4d6c11c1053318d987891d0d468a1">Scalar</a> &gt; const &amp;s)</td></tr>
+<tr class="memdesc:aba3907f7134ffcc1d70b0df6839c6120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precondition: !this-&gt;isEmptpy()  <a href="classsophus_1_1_region.html#aba3907f7134ffcc1d70b0df6839c6120">More...</a><br /></td></tr>
 <tr class="separator:aba3907f7134ffcc1d70b0df6839c6120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba553d203a965a60a6c7a5e371d26f5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#acba553d203a965a60a6c7a5e371d26f5">min</a> () const noexcept -&gt; TPoint const &amp;</td></tr>
 <tr class="memdesc:acba553d203a965a60a6c7a5e371d26f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lower bound of the region.  <a href="classsophus_1_1_region.html#acba553d203a965a60a6c7a5e371d26f5">More...</a><br /></td></tr>
@@ -150,6 +152,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f1e0d3116491842bad07eea7a0bdfab"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#a5f1e0d3116491842bad07eea7a0bdfab">max</a> () const noexcept -&gt; TPoint const &amp;</td></tr>
 <tr class="memdesc:a5f1e0d3116491842bad07eea7a0bdfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the upper bound of the region.  <a href="classsophus_1_1_region.html#a5f1e0d3116491842bad07eea7a0bdfab">More...</a><br /></td></tr>
 <tr class="separator:a5f1e0d3116491842bad07eea7a0bdfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9ba1e6929035286186dd00e78c6db6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#afc9ba1e6929035286186dd00e78c6db6">tryMin</a> () const noexcept -&gt; std::optional&lt; TPoint &gt;</td></tr>
+<tr class="memdesc:afc9ba1e6929035286186dd00e78c6db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lower bound of the region if it exit and nullopt otherwise.  <a href="classsophus_1_1_region.html#afc9ba1e6929035286186dd00e78c6db6">More...</a><br /></td></tr>
+<tr class="separator:afc9ba1e6929035286186dd00e78c6db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ab5f27428b18c3d83449f53704a97f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#aa7ab5f27428b18c3d83449f53704a97f">tryMax</a> () const noexcept -&gt; std::optional&lt; TPoint &gt;</td></tr>
+<tr class="memdesc:aa7ab5f27428b18c3d83449f53704a97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lower bound of the region if it exists and nullopt otherwise.  <a href="classsophus_1_1_region.html#aa7ab5f27428b18c3d83449f53704a97f">More...</a><br /></td></tr>
+<tr class="separator:aa7ab5f27428b18c3d83449f53704a97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f66ec509e50e37b6ffa4533db5ba2a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsophus_1_1_region.html#a19f66ec509e50e37b6ffa4533db5ba2a">clamp</a> (TPoint const &amp;point) const noexcept -&gt; TPoint</td></tr>
 <tr class="memdesc:a19f66ec509e50e37b6ffa4533db5ba2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the clamped version of the given point.  <a href="classsophus_1_1_region.html#a19f66ec509e50e37b6ffa4533db5ba2a">More...</a><br /></td></tr>
 <tr class="separator:a19f66ec509e50e37b6ffa4533db5ba2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,7 +252,7 @@ Static Public Attributes</h2></td></tr>
 class sophus::Region&lt; TPoint &gt;</h3>
 
 <p>A region is a closed interval [a, b] with a being the lower bound (=min) and b being the upper bound (=max). </p>
-<p>Here, the bounds a, b sre either boths scalars (e.g. floats, doubles) or fixed length vectors/arrays (such as Eigen::Vector3f or Eigen::Array2d).</p>
+<p>Here, the bounds a, b sre either both scalars (e.g. floats, doubles) or fixed length vectors/arrays (such as Eigen::Vector3f or Eigen::Array2d).</p>
 <p>Special case for integer numbers:</p>
 <p>An integer number X is considered being equivalent to a real region [X-0.5, X+0.5]. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -382,6 +390,7 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the clamped version of the given point. </p>
+<p>Precondition: !this-&gt;isEmptpy() </p>
 
 </div>
 </div>
@@ -634,6 +643,8 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Precondition: !this-&gt;isEmptpy() </p>
+
 </div>
 </div>
 <a id="a5d4b2036994dec6c6fb760c41532ecbc"></a>
@@ -778,6 +789,7 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the upper bound of the region. </p>
+<p>Precondition: !this-&gt;isEmptpy() </p>
 
 </div>
 </div>
@@ -807,7 +819,8 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the mid point. </p>
-<p>Note: If TPoint is an integer point then the result will be rounded to the closed integer. </p>
+<p>Note: If TPoint is an integer point then the result will be rounded to the closed integer.</p>
+<p>Precondition: !this-&gt;isEmptpy() </p>
 
 </div>
 </div>
@@ -837,6 +850,7 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the lower bound of the region. </p>
+<p>Precondition: !this-&gt;isEmptpy() </p>
 
 </div>
 </div>
@@ -1274,6 +1288,8 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Precondition: !this-&gt;isEmptpy() </p>
+
 </div>
 </div>
 <a id="a7157ccd8c7fc386f498da00c7f48fe29"></a>
@@ -1303,6 +1319,64 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </div><div class="memdoc">
 
 <p>Returns translated region. </p>
+
+</div>
+</div>
+<a id="aa7ab5f27428b18c3d83449f53704a97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ab5f27428b18c3d83449f53704a97f">&#9670;&nbsp;</a></span>tryMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::PointType TPoint&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_region.html">sophus::Region</a>&lt; TPoint &gt;::tryMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; std::optional&lt;TPoint&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the lower bound of the region if it exists and nullopt otherwise. </p>
+
+</div>
+</div>
+<a id="afc9ba1e6929035286186dd00e78c6db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9ba1e6929035286186dd00e78c6db6">&#9670;&nbsp;</a></span>tryMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::PointType TPoint&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classsophus_1_1_region.html">sophus::Region</a>&lt; TPoint &gt;::tryMin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; std::optional&lt;TPoint&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the lower bound of the region if it exit and nullopt otherwise. </p>
 
 </div>
 </div>
@@ -1565,11 +1639,11 @@ template&lt;concepts::PointType TPoint&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>projects/Sophus/cpp/sophus/calculus/<a class="el" href="region_8h_source.html">region.h</a></li>
+<li>projects/farm-ng-core/cpp/sophus/calculus/<a class="el" href="region_8h_source.html">region.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasssophus_1_1_region_html_a7343f5440af9538aee9e38f9d61b4683"><div class="ttname"><a href="classsophus_1_1_region.html#a7343f5440af9538aee9e38f9d61b4683">sophus::Region::region</a></div><div class="ttdeci">return region</div><div class="ttdef"><b>Definition:</b> region.h:135</div></div>
+<div class="ttc" id="aclasssophus_1_1_region_html_a7343f5440af9538aee9e38f9d61b4683"><div class="ttname"><a href="classsophus_1_1_region.html#a7343f5440af9538aee9e38f9d61b4683">sophus::Region::region</a></div><div class="ttdeci">return region</div><div class="ttdef"><b>Definition:</b> region.h:137</div></div>
 <div class="ttc" id="aclasssophus_1_1_region_html_ad3aaa6fe8f10fa6030a4345c387cdddd"><div class="ttname"><a href="classsophus_1_1_region.html#ad3aaa6fe8f10fa6030a4345c387cdddd">sophus::Region::uninitialized</a></div><div class="ttdeci">static auto uninitialized() noexcept -&gt; Region&lt; TPoint &gt;</div><div class="ttdoc">Creates an uninitialized region.</div><div class="ttdef"><b>Definition:</b> region.h:67</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

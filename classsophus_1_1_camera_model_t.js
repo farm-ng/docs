@@ -13,6 +13,7 @@ var classsophus_1_1_camera_model_t =
     [ "binUp", "classsophus_1_1_camera_model_t.html#ad04393410d8e32cd6964fd2a3b8c22cb", null ],
     [ "camProj", "classsophus_1_1_camera_model_t.html#a75019e833299c1b15c7cf03639f63783", null ],
     [ "camUnproj", "classsophus_1_1_camera_model_t.html#ab32c557470d3493aa79f88b78340491d", null ],
+    [ "cast", "classsophus_1_1_camera_model_t.html#a51ae36588f006e0d3600988ead44ee6f", null ],
     [ "contains", "classsophus_1_1_camera_model_t.html#acd1152ef2b9b5627fdcb70b1462bbe7e", null ],
     [ "contains", "classsophus_1_1_camera_model_t.html#a8341da15d205a50fc8350529ac7a79e8", null ],
     [ "data", "classsophus_1_1_camera_model_t.html#a57dfdb0e907283039b9f7f0be2db6c89", null ],
