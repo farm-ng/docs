@@ -1,10 +1,9 @@
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "farm-ng, Sophus & friends"
+PROJECT_NAME           = "farm-ng-core"
 INPUT                  = projects/farm-ng-core/cpp/farm_ng \ 
-                         projects/farm-ng-core/py/farm_ng \
-                         projects/Sophus/cpp/sophus \
-                         projects/Sophus/py/sympy/sophus \
-                         projects/farm-ng-amiga/py/farm_ng
+                         projects/farm-ng-core/cpp/sophus \ 
+                         projects/farm-ng-core/py/farm_ng
+EXCLUDE_PATTERNS       = */sympy/*
 RECURSIVE              = YES
 #EXTRACT_ALL           = NO
 ENABLE_PREPROCESSING   = YES
